@@ -128,13 +128,11 @@ const BothTeamsToScore = (statistics) => {
 
     if (isHomeScored && isAwayScored) {
       outcomes["14001"] = "win";
-      outcomes["14002"] = "lose";
     } else if (
       (!isHomeScored && !isAwayScored) ||
       (isHomeScored && !isAwayScored) ||
       (isAwayScored && !isHomeScored)
     ) {
-      outcomes["14001"] = "lose";
       outcomes["14002"] = "win";
     }
 
