@@ -1,0 +1,21 @@
+{
+  "name": "OutcomesCalculation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "Sergei Voronov",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
