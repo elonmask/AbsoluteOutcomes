@@ -15,7 +15,7 @@ const TOKEN = "95603-ONW0LPXBHKYRXI";
   10002 - Common ID of Half Time/Full Time market
 
   * */
-const marketIDsOne = [ { odd_types: 27 }, { prematch: 40 }, { common: 10002 } ];
+const marketIDsOne = [{ odd_types: 27 }, { prematch: 40 }, { common: 10002 }];
 
 /*
 
@@ -28,7 +28,7 @@ marketsToEstimate array example 2:
 42 - Prematch ID of Half Time/Full time market
 
 * */
-const marketsIDTwo = [ { live: 10565 }, { odd_types: 1 }, { prematch: 42 } ];
+const marketsIDsTwo = [{ live: 10565 }, { odd_types: 1 }, { prematch: 42 }];
 
 /*********MAIN EXECUTION***********/
 
@@ -40,8 +40,12 @@ request.requestStatistics().then((data) => {
   //Calculate all markets in first test array by statistics
   const estimation = new Estimate(statistics, marketIDsOne);
   estimation.Start();
+  const estimationResult = estimation.GetResults();
+  console.log("Result for first markets set: ", estimationResult);
 
   //Calculate all markets in second test array by statistics
-  const estimation2 = new Estimate(statistics, marketIDsOne);
+  const estimation2 = new Estimate(statistics, marketsIDsTwo);
   estimation2.Start();
+  const estimationResult2 = estimation2.GetResults();
+  console.log("Result for second markets set: ", estimationResult2);
 });

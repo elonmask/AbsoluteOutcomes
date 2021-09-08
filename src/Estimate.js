@@ -100,7 +100,6 @@ class Estimate {
     });
 
     console.log("Markets estimated.");
-    console.log("Results: ", this.GetResults);
   };
 }
 
