@@ -19,7 +19,7 @@ const fullTimeResult = (statistics) => {
     }
 
     return {
-      CommonID: 1,
+      CommonID: 10001,
       LiveID: 1777,
       OddTypesID: 1,
       PrematchID: 40,
@@ -100,7 +100,7 @@ const HalfTimeFullTime = (statistics) => {
       }
 
       return {
-        CommonID: 2,
+        CommonID: 10002,
         LiveID: 10560,
         OddTypesID: 42,
         PrematchID: 42,
@@ -137,7 +137,7 @@ const BothTeamsToScore = (statistics) => {
     }
 
     return {
-      CommonID: 32,
+      CommonID: 10032,
       LiveID: 10565,
       OddTypesID: 27,
       PrematchID: 10150,

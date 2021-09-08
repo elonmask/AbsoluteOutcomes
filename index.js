@@ -2,7 +2,7 @@ const Request = require("./src/Request");
 const Estimate = require("./src/Estimate");
 
 const EVENT_ID = "106122931";
-const TOKEN = "95603-ONW0LPXBHKYRXI";
+const TOKEN = "85271-bP30yXDU77GIT9";
 
 /*
 
@@ -35,7 +35,7 @@ const marketsIDsTwo = [{ live: 10565 }, { odd_types: 1 }, { prematch: 42 }];
 const request = new Request(EVENT_ID, TOKEN);
 
 request.requestStatistics().then((data) => {
-  const statistics = JSON.parse(data);
+  const statistics = data.results[0];
 
   //Calculate all markets in first test array by statistics
   const estimation = new Estimate(statistics, marketIDsOne);
