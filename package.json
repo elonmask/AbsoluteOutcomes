@@ -6,13 +6,13 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "prod": "node index.js"
   },
   "author": "Sergei Voronov",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
-    "eslint": "^7.32.0",
     "prettier": "^2.3.2"
   },
   "devDependencies": {
