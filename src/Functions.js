@@ -1,3 +1,4 @@
+const { parse } = require("nodemon/lib/cli");
 const fullTimeResult = (statistics, market) => {
   if (statistics.time_status === "3") {
     market.outcomes.forEach((outcome) => {
@@ -19,6 +20,54 @@ const fullTimeResult = (statistics, market) => {
     console.log("Wrong time status for Full Time Result estimation.");
     return false;
   }
+};
+
+const WhichTeamToScoreNGoal = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  const goalNumber = parseInt(market.specifiers.goalnr);
+  const homeTeam = statistics.home.name;
+  const awayTeam = statistics.away.name;
+
+  //TODO
+  /*Доработать обработку автогола. Автогол приносит очко команде соперника*/
+  let homeGoals = 0;
+  let awayGoals = 0;
+  let fullTimeEnded = false;
+
+  statistics.events.forEach((event) => {
+    if (event.text.includes(" Goal -")) {
+      const teamScored =
+        event.text.split(" ")[6].replace("(", "").replace(")", "") === homeTeam
+          ? "home"
+          : "away";
+
+      //Check if it's not extra time
+      if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+        if (teamScored === "home") {
+          homeGoals++;
+        } else if (teamScored === "away") {
+          awayGoals++;
+        }
+      }
+    } else if (event.text.includes("Score After Full Time")) {
+      fullTimeEnded = true;
+    }
+  });
+
+  if (homeGoals >= goalNumber) {
+    market.outcomes[0].status = 2;
+  } else if (awayGoals >= goalNumber) {
+    market.outcomes[2].status = 2;
+  } else {
+    if (fullTimeEnded) {
+      market.outcomes[1].status = 2;
+    }
+  }
+
+  console.log("N Goal market estimated.");
 };
 
 const HalfTimeFullTime = (statistics) => {
@@ -139,4 +188,9 @@ const BothTeamsToScore = (statistics) => {
   }
 };
 
-module.exports = { fullTimeResult, HalfTimeFullTime, BothTeamsToScore };
+module.exports = {
+  fullTimeResult,
+  HalfTimeFullTime,
+  BothTeamsToScore,
+  WhichTeamToScoreNGoal,
+};
