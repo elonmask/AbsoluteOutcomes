@@ -1,32 +1,22 @@
-const fullTimeResult = (statistics) => {
-  //Outcomes with Common IDs
-  const outcomes = {
-    1001: "lose",
-    1002: "lose",
-    1003: "lose",
-  };
-
+const fullTimeResult = (statistics, market) => {
   if (statistics.time_status === "3") {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
     const homeScore = parseInt(statistics.ss.split("-")[0]);
     const awayScore = parseInt(statistics.ss.split("-")[1]);
 
     if (homeScore === awayScore) {
-      outcomes["1002"] = "win";
+      market.outcomes[0].status = 2;
     } else if (homeScore > awayScore) {
-      outcomes["1001"] = "win";
+      market.outcomes[1].status = 2;
     } else {
-      outcomes["1003"] = "win";
+      market.outcomes[2].status = 2;
     }
-
-    return {
-      CommonID: 10001,
-      LiveID: 1777,
-      OddTypesID: 1,
-      PrematchID: 40,
-      Outcomes: outcomes,
-    };
+    console.log("Full Time Result estimated.");
   } else {
-    console.log("Wrong time status");
+    console.log("Wrong time status for Full Time Result estimation.");
     return false;
   }
 };

@@ -1,8 +1,25 @@
-const Request = require("./src/Request");
+const app = require("express")();
+const PORT = 3000;
+
+//const Request = require("./src/Request");
 const Estimate = require("./src/Estimate");
 
-const EVENT_ID = "106122931";
-const TOKEN = "85271-bP30yXDU77GIT9";
+app.get("/estimation", (req, res) => {
+  const odds = require("./json/match_to_estimate.json").odds;
+  const statistics = require("./json/bet365_statistics.json").results[0];
+
+  const estimation = new Estimate(statistics, odds);
+  estimation.Start();
+
+  res.send(odds);
+});
+
+app.listen(PORT, () => {
+  console.log(`App listening at http://localhost:${PORT}`);
+});
+
+//const EVENT_ID = "106122931";
+//const TOKEN = "85271-bP30yXDU77GIT9";
 
 /*
 
@@ -15,7 +32,7 @@ const TOKEN = "85271-bP30yXDU77GIT9";
   10002 - Common ID of Half Time/Full Time market
 
   * */
-const marketIDsOne = [{ odd_types: 27 }, { prematch: 40 }, { common: 10002 }];
+//const marketIDsOne = [{ odd_types: 27 }, { prematch: 40 }, { common: 10002 }];
 
 /*
 
@@ -28,13 +45,11 @@ marketsToEstimate array example 2:
 42 - Prematch ID of Half Time/Full time market
 
 * */
-const marketsIDsTwo = [{ live: 10565 }, { odd_types: 1 }, { prematch: 42 }];
+//const marketsIDsTwo = [{ live: 10565 }, { odd_types: 1 }, { prematch: 42 }];
 
-/*********MAIN EXECUTION***********/
+//const request = new Request(EVENT_ID, TOKEN);
 
-const request = new Request(EVENT_ID, TOKEN);
-
-request.requestStatistics().then((data) => {
+/*request.requestStatistics().then((data) => {
   const statistics = data.results[0];
 
   //Calculate all markets in first test array by statistics
@@ -48,4 +63,4 @@ request.requestStatistics().then((data) => {
   estimation2.Start();
   const estimationResult2 = estimation2.GetResults();
   console.log("Result for second markets set: ", estimationResult2);
-});
+});*/

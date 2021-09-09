@@ -1,0 +1,499 @@
+{
+    "success": 1,
+    "results": [
+        {
+            "id": "3765287",
+            "sport_id": "1",
+            "time": "1629646200",
+            "time_status": "3",
+            "league": {
+                "id": "94",
+                "name": "England Premier League",
+                "cc": "gb"
+            },
+            "home": {
+                "id": "17230",
+                "name": "Arsenal",
+                "image_id": "42",
+                "cc": "gb"
+            },
+            "away": {
+                "id": "44000",
+                "name": "Chelsea",
+                "image_id": "38",
+                "cc": "gb"
+            },
+            "ss": "0-2",
+            "scores": {
+                "2": {
+                    "home": "0",
+                    "away": "2"
+                },
+                "1": {
+                    "home": "0",
+                    "away": "2"
+                }
+            },
+            "stats": {
+                "attacks": [
+                    "90",
+                    "83"
+                ],
+                "ball_safe": [
+                    "68",
+                    "92"
+                ],
+                "corners": [
+                    "9",
+                    "8"
+                ],
+                "corner_h": [
+                    "4",
+                    "2"
+                ],
+                "dangerous_attacks": [
+                    "48",
+                    "59"
+                ],
+                "fouls": [
+                    "10",
+                    "4"
+                ],
+                "freekicks": [
+                    "4",
+                    "14"
+                ],
+                "goalattempts": [
+                    "5",
+                    "10"
+                ],
+                "goalkicks": [
+                    "7",
+                    "4"
+                ],
+                "goals": [
+                    "0",
+                    "2"
+                ],
+                "injuries": [
+                    "2",
+                    "1"
+                ],
+                "offsides": [
+                    "5",
+                    "0"
+                ],
+                "off_target": [
+                    "3",
+                    "17"
+                ],
+                "on_target": [
+                    "3",
+                    "5"
+                ],
+                "penalties": [
+                    "0",
+                    "0"
+                ],
+                "possession_rt": [
+                    "35",
+                    "65"
+                ],
+                "redcards": [
+                    "0",
+                    "0"
+                ],
+                "saves": [
+                    "3",
+                    "3"
+                ],
+                "shots_blocked": [
+                    "0",
+                    "11"
+                ],
+                "substitutions": [
+                    "3",
+                    "3"
+                ],
+                "throwins": [
+                    "14",
+                    "22"
+                ],
+                "yellowcards": [
+                    "3",
+                    "0"
+                ],
+                "yellowred_cards": [
+                    "0",
+                    "0"
+                ]
+            },
+            "extra": {
+                "length": 90,
+                "home_pos": "17",
+                "away_pos": "7",
+                "away_manager": {
+                    "id": "72771",
+                    "name": "Thomas Tuchel",
+                    "cc": "de"
+                },
+                "home_manager": {
+                    "id": "1152",
+                    "name": "Mikel Arteta",
+                    "cc": "es"
+                },
+                "numberofperiods": "2",
+                "periodlength": "45",
+                "referee": {
+                    "id": "104864",
+                    "name": "Paul Tierney",
+                    "cc": "gb"
+                },
+                "stadium_data": {
+                    "id": "624",
+                    "name": "Emirates Stadium",
+                    "city": "London",
+                    "country": "England",
+                    "capacity": "60272",
+                    "googlecoords": "51.555050,-0.108046"
+                },
+                "round": "2"
+            },
+            "events": [
+                {
+                    "id": "83088540",
+                    "text": "10' - 1st Corner - Arsenal"
+                },
+                {
+                    "id": "83088609",
+                    "text": "0:0 Cards 00:00 - 09:59"
+                },
+                {
+                    "id": "83088610",
+                    "text": "1:0 Corners 00:00 - 09:59"
+                },
+                {
+                    "id": "83088611",
+                    "text": "0:0 Goals 00:00 - 09:59"
+                },
+                {
+                    "id": "83088612",
+                    "text": "1:4 Throw Ins 00:00 - 09:59"
+                },
+                {
+                    "id": "83088613",
+                    "text": "1:0 Goal Kicks 00:00 - 09:59"
+                },
+                {
+                    "id": "83088614",
+                    "text": "1:0 Free Kicks 00:00 - 09:59"
+                },
+                {
+                    "id": "83088964",
+                    "text": "15' - 1st Goal - Lukaku  (Chelsea) - Shot (Assist: James)"
+                },
+                {
+                    "id": "83089387",
+                    "text": "20' - 2nd Corner - Chelsea"
+                },
+                {
+                    "id": "83089446",
+                    "text": "0:0 Cards 10:00 - 19:59"
+                },
+                {
+                    "id": "83089447",
+                    "text": "0:1 Corners 10:00 - 19:59"
+                },
+                {
+                    "id": "83089448",
+                    "text": "0:1 Goals 10:00 - 19:59"
+                },
+                {
+                    "id": "83089449",
+                    "text": "1:1 Throw Ins 10:00 - 19:59"
+                },
+                {
+                    "id": "83089450",
+                    "text": "0:1 Goal Kicks 10:00 - 19:59"
+                },
+                {
+                    "id": "83089451",
+                    "text": "0:3 Free Kicks 10:00 - 19:59"
+                },
+                {
+                    "id": "83089677",
+                    "text": "24' - 3rd Corner - Chelsea"
+                },
+                {
+                    "id": "83090038",
+                    "text": "0:0 Cards 20:00 - 29:59"
+                },
+                {
+                    "id": "83090039",
+                    "text": "0:1 Corners 20:00 - 29:59"
+                },
+                {
+                    "id": "83090040",
+                    "text": "0:0 Goals 20:00 - 29:59"
+                },
+                {
+                    "id": "83090041",
+                    "text": "3:5 Throw Ins 20:00 - 29:59"
+                },
+                {
+                    "id": "83090042",
+                    "text": "2:1 Goal Kicks 20:00 - 29:59"
+                },
+                {
+                    "id": "83090043",
+                    "text": "0:0 Free Kicks 20:00 - 29:59"
+                },
+                {
+                    "id": "83090224",
+                    "text": "34' - 1st Yellow Card - Pablo Mari (Arsenal)"
+                },
+                {
+                    "id": "83090272",
+                    "text": "35' - 2nd Goal - James  (Chelsea) - Shot (Assist: Mount)"
+                },
+                {
+                    "id": "83090646",
+                    "text": "1:0 Cards 30:00 - 39:59"
+                },
+                {
+                    "id": "83090647",
+                    "text": "0:0 Corners 30:00 - 39:59"
+                },
+                {
+                    "id": "83090648",
+                    "text": "0:1 Goals 30:00 - 39:59"
+                },
+                {
+                    "id": "83090649",
+                    "text": "0:1 Throw Ins 30:00 - 39:59"
+                },
+                {
+                    "id": "83090650",
+                    "text": "1:0 Goal Kicks 30:00 - 39:59"
+                },
+                {
+                    "id": "83090651",
+                    "text": "0:1 Free Kicks 30:00 - 39:59"
+                },
+                {
+                    "id": "83090716",
+                    "text": "42' - 4th Corner - Arsenal"
+                },
+                {
+                    "id": "83090872",
+                    "text": "44' - 5th Corner - Arsenal"
+                },
+                {
+                    "id": "83090873",
+                    "text": "44' - Race to 3 Corners - Arsenal"
+                },
+                {
+                    "id": "83090938",
+                    "text": "45' - 2nd Yellow Card - Holding (Arsenal)"
+                },
+                {
+                    "id": "83091016",
+                    "text": "45+1' - 6th Corner - Arsenal"
+                },
+                {
+                    "id": "83091135",
+                    "text": "Score After First Half - 0-2"
+                },
+                {
+                    "id": "83092480",
+                    "text": "1:0 Cards 40:00 - 49:59"
+                },
+                {
+                    "id": "83092481",
+                    "text": "3:0 Corners 40:00 - 49:59"
+                },
+                {
+                    "id": "83092482",
+                    "text": "0:0 Goals 40:00 - 49:59"
+                },
+                {
+                    "id": "83092483",
+                    "text": "4:2 Throw Ins 40:00 - 49:59"
+                },
+                {
+                    "id": "83092484",
+                    "text": "0:0 Goal Kicks 40:00 - 49:59"
+                },
+                {
+                    "id": "83092485",
+                    "text": "0:4 Free Kicks 40:00 - 49:59"
+                },
+                {
+                    "id": "83092555",
+                    "text": "52' - 7th Corner - Arsenal"
+                },
+                {
+                    "id": "83092556",
+                    "text": "52' - Race to 5 Corners - Arsenal"
+                },
+                {
+                    "id": "83092594",
+                    "text": "53' - 8th Corner - Arsenal"
+                },
+                {
+                    "id": "83092841",
+                    "text": "56' - 9th Corner - Chelsea"
+                },
+                {
+                    "id": "83093110",
+                    "text": "59' - 10th Corner - Arsenal"
+                },
+                {
+                    "id": "83093111",
+                    "text": "59' - Race to 7 Corners - Arsenal"
+                },
+                {
+                    "id": "83093244",
+                    "text": "0:0 Cards 50:00 - 59:59"
+                },
+                {
+                    "id": "83093245",
+                    "text": "3:1 Corners 50:00 - 59:59"
+                },
+                {
+                    "id": "83093246",
+                    "text": "0:0 Goals 50:00 - 59:59"
+                },
+                {
+                    "id": "83093247",
+                    "text": "0:1 Throw Ins 50:00 - 59:59"
+                },
+                {
+                    "id": "83093248",
+                    "text": "1:2 Goal Kicks 50:00 - 59:59"
+                },
+                {
+                    "id": "83093249",
+                    "text": "1:1 Free Kicks 50:00 - 59:59"
+                },
+                {
+                    "id": "83093306",
+                    "text": "61' - Substitution - Aubameyang for Saka (Arsenal)"
+                },
+                {
+                    "id": "83093610",
+                    "text": "66' - Substitution - Nuno Tavares for Tierney (Arsenal)"
+                },
+                {
+                    "id": "83093651",
+                    "text": "67' - 3rd Yellow Card - Sambi Lokonga (Arsenal)"
+                },
+                {
+                    "id": "83093835",
+                    "text": "71' - 11th Corner - Chelsea"
+                },
+                {
+                    "id": "83093838",
+                    "text": "1:0 Cards 60:00 - 69:59"
+                },
+                {
+                    "id": "83093839",
+                    "text": "0:0 Corners 60:00 - 69:59"
+                },
+                {
+                    "id": "83093840",
+                    "text": "0:0 Goals 60:00 - 69:59"
+                },
+                {
+                    "id": "83093841",
+                    "text": "0:2 Throw Ins 60:00 - 69:59"
+                },
+                {
+                    "id": "83093842",
+                    "text": "1:0 Goal Kicks 60:00 - 69:59"
+                },
+                {
+                    "id": "83093843",
+                    "text": "1:3 Free Kicks 60:00 - 69:59"
+                },
+                {
+                    "id": "83093888",
+                    "text": "72' - Substitution - Kante for Kovacic (Chelsea)"
+                },
+                {
+                    "id": "83094005",
+                    "text": "74' - 12th Corner - Arsenal"
+                },
+                {
+                    "id": "83094076",
+                    "text": "76' - 13th Corner - Chelsea"
+                },
+                {
+                    "id": "83094175",
+                    "text": "78' - 14th Corner - Chelsea"
+                },
+                {
+                    "id": "83094257",
+                    "text": "79' - Substitution - Balogun for Martinelli (Arsenal)"
+                },
+                {
+                    "id": "83094334",
+                    "text": "0:0 Cards 70:00 - 79:59"
+                },
+                {
+                    "id": "83094335",
+                    "text": "1:3 Corners 70:00 - 79:59"
+                },
+                {
+                    "id": "83094336",
+                    "text": "0:0 Goals 70:00 - 79:59"
+                },
+                {
+                    "id": "83094337",
+                    "text": "2:0 Throw Ins 70:00 - 79:59"
+                },
+                {
+                    "id": "83094338",
+                    "text": "1:0 Goal Kicks 70:00 - 79:59"
+                },
+                {
+                    "id": "83094339",
+                    "text": "1:0 Free Kicks 70:00 - 79:59"
+                },
+                {
+                    "id": "83094452",
+                    "text": "82' - Substitution - Ziyech for Mount (Chelsea)"
+                },
+                {
+                    "id": "83094488",
+                    "text": "84' - 15th Corner - Arsenal"
+                },
+                {
+                    "id": "83094489",
+                    "text": "83' - Race to 9 Corners - Arsenal"
+                },
+                {
+                    "id": "83094800",
+                    "text": "89' - 16th  Corner - Chelsea"
+                },
+                {
+                    "id": "83094838",
+                    "text": "89' - 17th Corner - Chelsea"
+                },
+                {
+                    "id": "83094863",
+                    "text": "89' - Substitution - Werner for Havertz (Chelsea)"
+                },
+                {
+                    "id": "83095132",
+                    "text": "Score After Full Time - 0-2"
+                }
+            ],
+            "has_lineup": 1,
+            "inplay_created_at": "1629645375",
+            "inplay_updated_at": "1629652894",
+            "confirmed_at": "1631037143",
+            "bet365_id": "106122931"
+        }
+    ]
+}

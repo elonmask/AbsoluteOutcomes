@@ -8,13 +8,15 @@ class Estimate {
   constructor(statistics, marketsToEstimate) {
     this.statistics = statistics;
     this.marketsToEstimate = marketsToEstimate;
-    this.estimatedOutcomes = [];
+    //this.estimatedOutcomes = [];
   }
-
+  /*
   AddResult = (marketResult) => {
     this.estimatedOutcomes.push(marketResult);
   };
+*/
 
+  /*
   EstimateCommon = (id) => {
     switch (id) {
       case 10001:
@@ -70,33 +72,28 @@ class Estimate {
         break;
     }
   };
+  */
 
-  EstimateMarket = (idType, id) => {
-    switch (idType) {
-      case "common":
-        this.EstimateCommon(id);
-        break;
-      case "live":
-        this.EstimateLive(id);
-        break;
-      case "odd_types":
-        this.EstimateOddTypes(id);
-        break;
-      case "prematch":
-        this.EstimatePrematch(id);
+  EstimateMarket = (market) => {
+    const outcomeID = market.outcomes[0].outcomeId;
+
+    switch (outcomeID) {
+      case "1001":
+        //Estimate Full Time Result market
+        fullTimeResult(this.statistics, market);
         break;
       default:
-        console.log("Market's ID type not defined: ");
+        console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
   };
-
+  /*
   GetResults = () => {
     return this.estimatedOutcomes;
   };
-
+*/
   Start = () => {
     this.marketsToEstimate.forEach((market) => {
-      this.EstimateMarket(Object.keys(market)[0], Object.values(market)[0]);
+      this.EstimateMarket(market);
     });
 
     console.log("Markets estimated.");
