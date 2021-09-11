@@ -14,6 +14,10 @@ app.get("/estimation", (req, res) => {
   res.send(odds);
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/estimation");
+});
+
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`);
 });
