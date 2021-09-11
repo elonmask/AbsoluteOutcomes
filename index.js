@@ -14,6 +14,10 @@ app.get("/estimation", (req, res) => {
   res.send(odds);
 });
 
+app.get("/server-test", (req, res) => {
+  res.send({ status: "OK" });
+});
+
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`);
 });
