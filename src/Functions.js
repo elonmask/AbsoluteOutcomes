@@ -70,6 +70,33 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
   console.log("N Goal market estimated.");
 };
 
+const DoubleChance = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  if (statistics.time_status === "3") {
+    const homeScore =
+      parseInt(statistics.scores["1"].home) +
+      parseInt(statistics.scores["2"].home);
+    const awayScore =
+      parseInt(statistics.scores["1"].away) +
+      parseInt(statistics.scores["2"].away);
+
+    if (homeScore > awayScore || homeScore === awayScore) {
+      market.outcomes[0].status = 2;
+    }
+    if (awayScore > homeScore || homeScore === awayScore) {
+      market.outcomes[2].status = 2;
+    }
+    if (homeScore > awayScore || awayScore > homeScore) {
+      market.outcomes[1].status = 2;
+    }
+
+    console.log("Double chance market estimated.");
+  }
+};
+
 const HalfTimeFullTime = (statistics) => {
   const outcomes = {
     2001: "lose",
@@ -193,4 +220,5 @@ module.exports = {
   HalfTimeFullTime,
   BothTeamsToScore,
   WhichTeamToScoreNGoal,
+  DoubleChance,
 };

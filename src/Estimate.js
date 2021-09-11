@@ -3,6 +3,7 @@ const {
   HalfTimeFullTime,
   BothTeamsToScore,
   WhichTeamToScoreNGoal,
+  DoubleChance,
 } = require("./Functions");
 
 class Estimate {
@@ -86,6 +87,10 @@ class Estimate {
       case "8001":
         //Estimate which team to score N Goal market
         WhichTeamToScoreNGoal(this.statistics, market);
+        break;
+      case "10001":
+        //Estimate Double Chance market
+        DoubleChance(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
