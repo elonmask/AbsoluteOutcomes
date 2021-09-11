@@ -14,8 +14,8 @@ app.get("/estimation", (req, res) => {
   res.send(odds);
 });
 
-app.get("/server-test", (req, res) => {
-  res.send({ status: "OK" });
+app.get("/", (req, res) => {
+  res.redirect("/estimation");
 });
 
 app.listen(PORT, () => {
