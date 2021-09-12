@@ -220,15 +220,182 @@ const GoalScoredInBoth = (statistics, market) => {
     statistics.scores["2"] &&
     isFullTimeEnded(statistics)
   ) {
-    if (
-      parseInt(statistics.scores["1"].home) > 0 ||
-      (parseInt(statistics.scores["1"].away > 0) &&
-        (parseInt(statistics.scores["2"].home) > 0 ||
-          parseInt(statistics.scores["2"].away > 0)))
-    ) {
+    let goalInFirtsHalf = false;
+    let goalInSecondHalf = false;
+
+    statistics.events.forEach((event) => {
+      if (event.text.includes(" Goal -")) {
+        const time = parseInt(event.text.split(" ")[0].replace("'", ""));
+        console.log(time);
+        if (time < 45) {
+          goalInFirtsHalf = true;
+        }
+        if (time > 45 && time < 90) {
+          goalInSecondHalf = true;
+        }
+      }
+    });
+
+    console.log(goalInFirtsHalf, goalInSecondHalf);
+
+    if (goalInSecondHalf && goalInFirtsHalf) {
       market.outcomes[0].status = 2;
     } else {
       market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const MatchBetBothScore = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const fullTimeWinner =
+      parseInt(statistics.scores["2"].home) >
+      parseInt(statistics.scores["2"].away)
+        ? "home"
+        : parseInt(statistics.scores["2"].away) >
+          parseInt(statistics.scores["2"].home)
+        ? "away"
+        : parseInt(statistics.scores["2"].home) ===
+          parseInt(statistics.scores["2"].home)
+        ? "draw"
+        : "undefined";
+
+    if (fullTimeWinner !== "undefined") {
+      let homeScored = false;
+      let awayScored = false;
+
+      statistics.events.forEach((event) => {
+        if (event.text.includes(" Goal -")) {
+          if (event.text.includes(statistics.home.name)) {
+            homeScored = true;
+          }
+          if (event.text.includes(statistics.away.name)) {
+            awayScored = true;
+          }
+        }
+      });
+
+      const bothScored = homeScored && awayScored;
+
+      if (fullTimeWinner === "home" && bothScored) {
+        market.outcomes[0].status = 2;
+      }
+      if (fullTimeWinner === "draw" && bothScored) {
+        market.outcomes[1].status = 2;
+      }
+      if (fullTimeWinner === "away" && bothScored) {
+        market.outcomes[2].status = 2;
+      }
+    }
+  }
+};
+
+const WinOver = (statistics, market) => {
+  //TODO
+  //статус при возврате
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const total = parseFloat(market.specifiers.total);
+
+    const homeResult = parseInt(statistics.scores["2"].home);
+    const awayResult = parseInt(statistics.scores["2"].away);
+
+    if (homeResult > awayResult) {
+      if (homeResult - awayResult >= total) {
+        market.outcomes[1].status = 2;
+      }
+    }
+    if (awayResult > homeResult) {
+      if (awayResult - homeResult >= total) {
+        market.outcomes[0].status = 2;
+      }
+    }
+  }
+};
+
+const Handicap3Way = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+  const handicap = parseFloat(market.specifiers.hcp.replace("+"));
+  console.log(handicap);
+
+  if (isFullTimeEnded(statistics)) {
+    const homeResult = parseInt(statistics.scores["2"].home);
+    const awayResult = parseInt(statistics.scores["2"].away);
+
+    const homeBetHcp = market.outcomes[0].outcome.includes("+hcp") ? "+" : "-";
+    const drawBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
+    const awayBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
+
+    //Home bet estimation
+    if (homeBetHcp === "+") {
+      const homeBetHcpResult = homeResult + handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+    }
+    if (homeBetHcp === "-") {
+      const homeBetHcpResult = homeResult - handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+    }
+
+    //draw bet estimation
+    if (drawBetHcp === "+" && homeBetHcp === "+") {
+      const homeBetHcpResult = homeResult + handicap;
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (drawBetHcp === "+" && awayBetHcp === "+") {
+      const awayBetHcpResult = awayResult + handicap;
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (drawBetHcp === "-" && homeBetHcp === "-") {
+      const homeBetHcpResult = homeResult - handicap;
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (drawBetHcp === "-" && awayBetHcp === "-") {
+      const awayBetHcpResult = awayResult - handicap;
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    //Away bet estimation
+    if (awayBetHcp === "+") {
+      const awayBetHcpResult = awayResult + handicap;
+
+      if (awayBetHcpResult > homeResult) {
+        market.outcomes[2].status = 2;
+      }
+    }
+    if (awayBetHcp === "-") {
+      const awayBetHcpResult = awayResult - handicap;
+
+      if (awayBetHcpResult > awayResult) {
+        market.outcomes[2].status = 2;
+      }
     }
   }
 };
@@ -360,4 +527,7 @@ module.exports = {
   CorrectScoreComninations,
   DrawNoBet,
   GoalScoredInBoth,
+  MatchBetBothScore,
+  WinOver,
+  Handicap3Way,
 };

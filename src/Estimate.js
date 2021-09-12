@@ -7,6 +7,9 @@ const {
   CorrectScoreComninations,
   DrawNoBet,
   GoalScoredInBoth,
+  MatchBetBothScore,
+  WinOver,
+  Handicap3Way,
 } = require("./Functions");
 
 class Estimate {
@@ -103,6 +106,15 @@ class Estimate {
         break;
       case "1035001":
         GoalScoredInBoth(this.statistics, market);
+        break;
+      case "1036002":
+        MatchBetBothScore(this.statistics, market);
+        break;
+      case "1037002":
+        WinOver(this.statistics, market);
+        break;
+      case "14001":
+        Handicap3Way(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
