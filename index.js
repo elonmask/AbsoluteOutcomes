@@ -18,6 +18,12 @@ app.get("/", (req, res) => {
   res.redirect("/estimation");
 });
 
+app.get("/statistics", (req, res) => {
+  const stat = require("./json/bet365_statistics.json");
+
+  res.send(stat);
+});
+
 app.listen(PORT, () => {
   console.log(`App listening at http://localhost:${PORT}`);
 });
