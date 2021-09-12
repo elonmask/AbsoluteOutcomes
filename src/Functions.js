@@ -107,6 +107,7 @@ const DoubleChance = (statistics, market) => {
 };
 
 const CorrectScoreComninations = (statistics, market) => {
+  let nonCombinationReached = true;
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -131,14 +132,15 @@ const CorrectScoreComninations = (statistics, market) => {
 
       if (scores.length === 3) {
         scores.forEach((score) => {
-          if (score.home === homeScore && awayScore === awayScore) {
+          if (score.home === homeScore && score.away === awayScore) {
             outcome.status = 2;
+            nonCombinationReached = false;
           }
         });
       }
 
       if (outcome.outcomeId === "1034005") {
-        if (homeScore > awayScore) {
+        if (homeScore > awayScore && nonCombinationReached === true) {
           outcome.status = 2;
         } else {
           outcome.status = 3;
@@ -146,7 +148,7 @@ const CorrectScoreComninations = (statistics, market) => {
       }
 
       if (outcome.outcomeId === "1034009") {
-        if (awayScore > homeScore) {
+        if (awayScore > homeScore && nonCombinationReached === true) {
           outcome.status = 2;
         } else {
           outcome.status = 3;
@@ -177,10 +179,10 @@ const CorrectScoreComninations = (statistics, market) => {
         ) {
           outcome.status = 2;
         }
+      }
 
-        if (homeScore === awayScore && outcome.outcomeId === "1034010") {
-          outcome.status = 2;
-        }
+      if (homeScore === awayScore && outcome.outcomeId === "1034010") {
+        outcome.status = 2;
       }
     });
   } else {
@@ -322,8 +324,8 @@ const Handicap3Way = (statistics, market) => {
   market.outcomes.forEach((outcome) => {
     outcome.status = 3;
   });
+
   const handicap = parseFloat(market.specifiers.hcp.replace("+"));
-  console.log(handicap);
 
   if (isFullTimeEnded(statistics)) {
     const homeResult = parseInt(statistics.scores["2"].home);
@@ -331,7 +333,7 @@ const Handicap3Way = (statistics, market) => {
 
     const homeBetHcp = market.outcomes[0].outcome.includes("+hcp") ? "+" : "-";
     const drawBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
-    const awayBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
+    const awayBetHcp = market.outcomes[2].outcome.includes("+hcp") ? "+" : "-";
 
     //Home bet estimation
     if (homeBetHcp === "+") {
@@ -352,6 +354,7 @@ const Handicap3Way = (statistics, market) => {
     //draw bet estimation
     if (drawBetHcp === "+" && homeBetHcp === "+") {
       const homeBetHcpResult = homeResult + handicap;
+      console.log(homeBetHcpResult === awayResult);
 
       if (homeBetHcpResult === awayResult) {
         market.outcomes[1].status = 2;
@@ -393,7 +396,7 @@ const Handicap3Way = (statistics, market) => {
     if (awayBetHcp === "-") {
       const awayBetHcpResult = awayResult - handicap;
 
-      if (awayBetHcpResult > awayResult) {
+      if (awayBetHcpResult > homeResult) {
         market.outcomes[2].status = 2;
       }
     }
