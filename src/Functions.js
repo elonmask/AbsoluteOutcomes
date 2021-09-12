@@ -403,6 +403,289 @@ const Handicap3Way = (statistics, market) => {
   }
 };
 
+const BothToScoreTotalGoals = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const total = parseFloat(market.specifiers.total);
+
+    const homeTeam = statistics.home.name;
+    const awayTeam = statistics.away.name;
+
+    let homeScored = false;
+    let awayScored = false;
+
+    let totalGoals = 0;
+
+    statistics.events.forEach((event) => {
+      if (event.text.includes(" Goal -")) {
+        const teamScored =
+          event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+          homeTeam
+            ? "home"
+            : "away";
+
+        //Check if it's not extra time
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+          totalGoals++;
+          if (teamScored === "home") {
+            homeScored = true;
+          } else if (teamScored === "away") {
+            awayScored = true;
+          }
+        }
+      }
+    });
+
+    if (homeScored && awayScored) {
+      if (totalGoals < total) {
+        market.outcomes[0].status = 2;
+      }
+      if (totalGoals > total) {
+        market.outcomes[1].status = 2;
+      }
+    } else {
+      if (totalGoals < total) {
+        market.outcomes[2].status = 2;
+      }
+      if (totalGoals > total) {
+        market.outcomes[3].status = 2;
+      }
+    }
+  }
+};
+
+const ToWinToNil = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const marketBetTeam =
+      market.outcomes[0].outcomeId === "1039002" ? "home" : "away";
+
+    const homeResult = parseInt(statistics.scores["2"].home);
+    const awayResult = parseInt(statistics.scores["2"].away);
+
+    if (marketBetTeam === "home") {
+      if (homeResult > awayResult && awayResult === 0) {
+        market.outcomes[0].status = 2;
+      } else {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (marketBetTeam === "away") {
+      if (awayResult > homeResult && homeResult === 0) {
+        market.outcomes[0].status = 2;
+      } else {
+        market.outcomes[1].status = 2;
+      }
+    }
+  }
+};
+
+const Handicap = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  const handicap = parseFloat(market.specifiers.hcp.replace("+"));
+
+  if (isFullTimeEnded(statistics)) {
+    const homeResult = parseInt(statistics.scores["2"].home);
+    const awayResult = parseInt(statistics.scores["2"].away);
+
+    const homeBetHcp = market.outcomes[0].outcome.includes("+hcp") ? "+" : "-";
+    const awayBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
+
+    //Home bet estimation
+    if (homeBetHcp === "+") {
+      const homeBetHcpResult = homeResult + handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[0].status = 4;
+      }
+    }
+    if (homeBetHcp === "-") {
+      const homeBetHcpResult = homeResult - handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[0].status = 4;
+      }
+    }
+
+    //Away bet estimation
+    if (awayBetHcp === "+") {
+      const awayBetHcpResult = awayResult + handicap;
+
+      if (awayBetHcpResult > homeResult) {
+        market.outcomes[1].status = 2;
+      }
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 4;
+      }
+    }
+    if (awayBetHcp === "-") {
+      const awayBetHcpResult = awayResult - handicap;
+
+      if (awayBetHcpResult > homeResult) {
+        market.outcomes[1].status = 2;
+      }
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 4;
+      }
+    }
+  }
+};
+
+const TotalGoals = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+  const total = parseFloat(market.specifiers.total);
+  let totalGoals = 0;
+
+  statistics.events.forEach((event) => {
+    if (event.text.includes(" Goal -")) {
+      //Check if it's not extra time
+      if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+        totalGoals++;
+      }
+    }
+  });
+
+  if (totalGoals < total) {
+    market.outcomes[0].status = 2;
+  }
+  if (totalGoals > total) {
+    market.outcomes[1].status = 2;
+  }
+};
+
+const BothToScoreNoDraw = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const homeTeam = statistics.home.name;
+    const awayTeam = statistics.away.name;
+
+    let homeScored = false;
+    let awayScored = false;
+
+    statistics.events.forEach((event) => {
+      if (event.text.includes(" Goal -")) {
+        const teamScored =
+          event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+          homeTeam
+            ? "home"
+            : "away";
+
+        //Check if it's not extra time
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+          if (teamScored === "home") {
+            homeScored = true;
+          } else if (teamScored === "away") {
+            awayScored = true;
+          }
+        }
+      }
+    });
+
+    const homeResult = parseInt(statistics.scores["2"].home);
+    const awayResult = parseInt(statistics.scores["2"].away);
+
+    const draw = homeResult === awayResult;
+
+    if (homeScored && awayScored && !draw) {
+      market.outcomes[0].status = 2;
+    } else {
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TeamTotalGoals = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const homeTeam = statistics.home.name;
+    const total = parseFloat(market.specifiers.total);
+
+    if (market.outcomes[0].outcomeId === "18002") {
+      let totalGoals = 0;
+      statistics.events.forEach((event) => {
+        if (event.text.includes(" Goal -")) {
+          const teamScored =
+            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+            homeTeam
+              ? "home"
+              : "away";
+
+          //Check if it's not extra time
+          if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+            if (teamScored === "home") {
+              totalGoals++;
+            }
+          }
+        }
+      });
+
+      if (totalGoals < total) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (totalGoals > total) {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (market.outcomes[0].outcomeId === "19002") {
+      let totalGoals = 0;
+      statistics.events.forEach((event) => {
+        if (event.text.includes(" Goal -")) {
+          const teamScored =
+            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+            homeTeam
+              ? "home"
+              : "away";
+
+          //Check if it's not extra time
+          if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+            if (teamScored === "away") {
+              totalGoals++;
+            }
+          }
+        }
+      });
+
+      if (totalGoals < total) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (totalGoals > total) {
+        market.outcomes[1].status = 2;
+      }
+    }
+  }
+};
+
 const HalfTimeFullTime = (statistics) => {
   const outcomes = {
     2001: "lose",
@@ -533,4 +816,10 @@ module.exports = {
   MatchBetBothScore,
   WinOver,
   Handicap3Way,
+  BothToScoreTotalGoals,
+  ToWinToNil,
+  Handicap,
+  TotalGoals,
+  BothToScoreNoDraw,
+  TeamTotalGoals,
 };

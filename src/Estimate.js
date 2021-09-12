@@ -10,6 +10,12 @@ const {
   MatchBetBothScore,
   WinOver,
   Handicap3Way,
+  BothToScoreTotalGoals,
+  ToWinToNil,
+  Handicap,
+  TotalGoals,
+  BothToScoreNoDraw,
+  TeamTotalGoals,
 } = require("./Functions");
 
 class Estimate {
@@ -115,6 +121,26 @@ class Estimate {
         break;
       case "14001":
         Handicap3Way(this.statistics, market);
+        break;
+      case "1038004":
+        BothToScoreTotalGoals(this.statistics, market);
+        break;
+      case "1039002":
+      case "1040002":
+        ToWinToNil(this.statistics, market);
+        break;
+      case "16001":
+        Handicap(this.statistics, market);
+        break;
+      case "17002":
+        TotalGoals(this.statistics, market);
+        break;
+      case "1041001":
+        BothToScoreNoDraw(this.statistics, market);
+        break;
+      case "18002":
+      case "19002":
+        TeamTotalGoals(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
