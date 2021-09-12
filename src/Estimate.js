@@ -4,6 +4,9 @@ const {
   BothTeamsToScore,
   WhichTeamToScoreNGoal,
   DoubleChance,
+  CorrectScoreComninations,
+  DrawNoBet,
+  GoalScoredInBoth,
 } = require("./Functions");
 
 class Estimate {
@@ -91,6 +94,15 @@ class Estimate {
       case "10001":
         //Estimate Double Chance market
         DoubleChance(this.statistics, market);
+        break;
+      case "1034001":
+        CorrectScoreComninations(this.statistics, market);
+        break;
+      case "11001":
+        DrawNoBet(this.statistics, market);
+        break;
+      case "1035001":
+        GoalScoredInBoth(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);

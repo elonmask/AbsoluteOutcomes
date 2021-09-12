@@ -1,4 +1,13 @@
 const { parse } = require("nodemon/lib/cli");
+
+const isFullTimeEnded = (statistics) => {
+  if (statistics.scores["1"] && statistics.scores["2"]) {
+    return statistics.time_status === "3";
+  } else {
+    return false;
+  }
+};
+
 const fullTimeResult = (statistics, market) => {
   if (statistics.time_status === "3") {
     market.outcomes.forEach((outcome) => {
@@ -94,6 +103,133 @@ const DoubleChance = (statistics, market) => {
     }
 
     console.log("Double chance market estimated.");
+  }
+};
+
+const CorrectScoreComninations = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+      const competitorSpec = outcome.outcome
+        .split(" ")[0]
+        .includes("$competitor1")
+        ? 1
+        : 2;
+      const scores = [];
+
+      outcome.outcome.split(" ").forEach((item, idx) => {
+        if (item.includes(":")) {
+          scores.push({
+            home: parseInt(item.split(":")[competitorSpec === 1 ? 0 : 1]),
+            away: parseInt(item.split(":")[competitorSpec === 1 ? 1 : 0]),
+          });
+        }
+      });
+
+      const homeScore = parseInt(statistics.ss.split("-")[0]);
+      const awayScore = parseInt(statistics.ss.split("-")[1]);
+
+      if (scores.length === 3) {
+        scores.forEach((score) => {
+          if (score.home === homeScore && awayScore === awayScore) {
+            outcome.status = 2;
+          }
+        });
+      }
+
+      if (outcome.outcomeId === "1034005") {
+        if (homeScore > awayScore) {
+          outcome.status = 2;
+        } else {
+          outcome.status = 3;
+        }
+      }
+
+      if (outcome.outcomeId === "1034009") {
+        if (awayScore > homeScore) {
+          outcome.status = 2;
+        } else {
+          outcome.status = 3;
+        }
+      }
+
+      if (outcome.outcomeId === "1034004") {
+        const betScoreFirst = {
+          home: parseInt(outcome.outcome.split(" ")[0].split(":")[0]),
+          away: parseInt(outcome.outcome.split(" ")[0].split(":")[1]),
+        };
+
+        const betScoreSecond = {
+          home: parseInt(outcome.outcome.split(" ")[2].split(":")[0]),
+          away: parseInt(outcome.outcome.split(" ")[2].split(":")[1]),
+        };
+
+        if (
+          betScoreFirst.home === homeScore &&
+          betScoreFirst.away === awayScore
+        ) {
+          outcome.status = 2;
+        }
+
+        if (
+          betScoreSecond.home === homeScore &&
+          betScoreSecond.away === awayScore
+        ) {
+          outcome.status = 2;
+        }
+
+        if (homeScore === awayScore && outcome.outcomeId === "1034010") {
+          outcome.status = 2;
+        }
+      }
+    });
+  } else {
+    console.log("Full Time not Ended");
+  }
+};
+
+const DrawNoBet = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const homeScore = parseInt(statistics.ss.split("-")[0]);
+    const awayScore = parseInt(statistics.ss.split("-")[1]);
+
+    if (homeScore > awayScore) {
+      market.outcomes[0].status = 2;
+    }
+    if (awayScore > homeScore) {
+      market.outcomes[1].status = 2;
+    }
+    if (homeScore === awayScore) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = "Return";
+      });
+    }
+  }
+};
+
+const GoalScoredInBoth = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  if (
+    statistics.scores["1"] &&
+    statistics.scores["2"] &&
+    isFullTimeEnded(statistics)
+  ) {
+    if (
+      parseInt(statistics.scores["1"].home) > 0 ||
+      (parseInt(statistics.scores["1"].away > 0) &&
+        (parseInt(statistics.scores["2"].home) > 0 ||
+          parseInt(statistics.scores["2"].away > 0)))
+    ) {
+      market.outcomes[0].status = 2;
+    } else {
+      market.outcomes[1].status = 2;
+    }
   }
 };
 
@@ -221,4 +357,7 @@ module.exports = {
   BothTeamsToScore,
   WhichTeamToScoreNGoal,
   DoubleChance,
+  CorrectScoreComninations,
+  DrawNoBet,
+  GoalScoredInBoth,
 };
