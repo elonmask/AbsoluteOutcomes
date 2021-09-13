@@ -16,6 +16,9 @@ const {
   TotalGoals,
   BothToScoreNoDraw,
   TeamTotalGoals,
+  OneMinuteEvents,
+  BothToScoreInBothHalves,
+  TotalGoalsOddEven,
 } = require("./Functions");
 
 class Estimate {
@@ -141,6 +144,15 @@ class Estimate {
       case "18002":
       case "19002":
         TeamTotalGoals(this.statistics, market);
+        break;
+      case "1043010":
+        OneMinuteEvents(this.statistics, market);
+        break;
+      case "1044001":
+        BothToScoreInBothHalves(this.statistics, market);
+        break;
+      case "24001":
+        TotalGoalsOddEven(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);

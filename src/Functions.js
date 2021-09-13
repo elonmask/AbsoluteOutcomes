@@ -686,6 +686,141 @@ const TeamTotalGoals = (statistics, market) => {
   }
 };
 
+const OneMinuteEvents = (statistics, market) => {
+  //TODO - доработать
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  const period = market.specifiers.period;
+  const min = parseInt(
+    period.split(" ")[0].split(":")[0].split()[0] === "0"
+      ? period.split(" ")[0].split(":")[0].replace("0", "")
+      : period.split(" ")[0].split(":")[0]
+  );
+  const max = min + 1;
+
+  let goalScored = false;
+  let cornerAwarded = false;
+  let cardAwarded = false;
+
+  statistics.events.forEach((event) => {
+    if (event.text.split(" ")[0].includes("'")) {
+      const eventMinute = parseInt(event.text.split(" ")[0].replace("'", ""));
+
+      if (min <= eventMinute <= max) {
+        if (event.text.includes(" Goal -")) {
+          market.outcomes[0].status = 2;
+          goalScored = true;
+        }
+
+        if (event.text.includes(" Corner -")) {
+          market.outcomes[1].status = 2;
+          cornerAwarded = true;
+        }
+
+        if (event.text.includes(" Card -")) {
+          market.outcomes[2].status = 2;
+          cardAwarded = true;
+        }
+      }
+    }
+  });
+
+  if (!goalScored) {
+    market.outcomes[7].status = 2;
+  }
+
+  if (!cornerAwarded) {
+    market.outcomes[8].status = 2;
+  }
+
+  if (!cardAwarded) {
+    market.outcomes[9].status = 2;
+  }
+};
+
+const BothToScoreInBothHalves = (statistics, market) => {
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
+
+  const homeTeam = statistics.home.name;
+  const awayTeam = statistics.away.name;
+
+  let homeScoredInFirst = false;
+  let homeScoredInSecond = false;
+
+  let awayScoredInFirst = false;
+  let awayScoredInSecond = false;
+
+  statistics.events.forEach((event) => {
+    if (
+      event.text.includes(" Goal -") &&
+      parseInt(event.text.split(" ")[0].replace("'", "")) <= 45
+    ) {
+      if (event.text.includes(homeTeam)) {
+        homeScoredInFirst = true;
+      }
+
+      if (event.text.includes(awayTeam)) {
+        awayScoredInFirst = true;
+      }
+    }
+
+    if (
+      event.text.includes(" Goal -") &&
+      parseInt(event.text.split(" ")[0].replace("'", "")) >= 45 < 90
+    ) {
+      if (event.text.includes(homeTeam)) {
+        homeScoredInSecond = true;
+      }
+
+      if (event.text.includes(awayTeam)) {
+        awayScoredInSecond = true;
+      }
+    }
+  });
+
+  if (
+    homeScoredInFirst &&
+    homeScoredInSecond &&
+    awayScoredInFirst &&
+    awayScoredInSecond
+  ) {
+    market.outcomes[0].status = 2;
+  } else {
+    market.outcomes[1].status = 2;
+  }
+};
+
+const TotalGoalsOddEven = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    let totalGoals = 0;
+
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes(" Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 90
+      ) {
+        totalGoals++;
+      }
+    });
+
+    if (totalGoals % 2 === 1) {
+      market.outcomes[0] = 2;
+    }
+
+    if (totalGoals % 2 === 0) {
+      market.outcomes[1] = 2;
+    }
+  }
+};
+
 const HalfTimeFullTime = (statistics) => {
   const outcomes = {
     2001: "lose",
@@ -822,4 +957,7 @@ module.exports = {
   TotalGoals,
   BothToScoreNoDraw,
   TeamTotalGoals,
+  OneMinuteEvents,
+  BothToScoreInBothHalves,
+  TotalGoalsOddEven,
 };
