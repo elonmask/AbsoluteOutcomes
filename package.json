@@ -6,15 +6,15 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "prod": "node index.js"
+    "start": "node index.js"
   },
   "author": "Sergei Voronov",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
-    "prettier": "^2.3.2"
+    "prettier": "^2.3.2",
+    "yarn": "^1.22.11"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
