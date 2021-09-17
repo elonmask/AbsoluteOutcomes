@@ -1,5 +1,3 @@
-const { parse } = require("nodemon/lib/cli");
-
 const isFullTimeEnded = (statistics) => {
   if (statistics.scores["1"] && statistics.scores["2"]) {
     return statistics.time_status === "3";

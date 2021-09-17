@@ -3,6 +3,7 @@ const PORT = 3000;
 
 //const Request = require("./src/Request");
 const Estimate = require("./src/Estimate");
+const StatisticsComposer = require("./src/StatisticsComposer");
 
 app.get("/estimation", (req, res) => {
   const odds = require("./json/match_to_estimate.json").odds;
@@ -19,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/statistics", (req, res) => {
-  const stat = require("./json/bet365_statistics.json");
+  const stat = StatisticsComposer.Compose();
 
   res.send(stat);
 });
