@@ -1,3 +1,65 @@
+const replaceAll = (str, find, replace) => {
+  return str.replace(new RegExp(find, "g"), replace);
+};
+
+const nameToFitFormat = (eventName) => {
+  if (
+    eventName.includes("st") ||
+    eventName.includes("nd") ||
+    eventName.includes("rd") ||
+    eventName.includes("th")
+  ) {
+    let formedName = [];
+    eventName.split(" ").forEach((part, idx) => {
+      if (idx !== 2) {
+        if (eventName.split(" ").length - 1 === idx) {
+          formedName.push(part);
+        } else {
+          formedName.push(part + " ");
+        }
+      }
+    });
+
+    return replaceAll(formedName.toString(), ",", "");
+  } else {
+    return eventName;
+  }
+};
+
+const eventNameToCommon = (eventName) => {
+  return eventName
+    .replace("Corner kick", "Corner")
+    .replace("Yellow card", "Yellow Card");
+};
+
+const BetradarEventWithPlayer = (event, team) => {
+  return (
+    event.time +
+    "'" +
+    " - " +
+    event.name +
+    " - " +
+    event.player.name.replace(" ", "").split(",")[1] +
+    " " +
+    event.player.name.replace(" ", "").split(",")[0] +
+    " (" +
+    team +
+    ")"
+  );
+};
+
+const BetradarEventWithoutPlayer = (event, team) => {
+  return event.time + "'" + " - " + event.name + " - " + team;
+};
+
+const BetradarEventTeam = (event, source) => {
+  return event.team.length > 3
+    ? event.team === "home"
+      ? source.data.match.teams.home.name
+      : source.data.match.teams.away.name
+    : "";
+};
+
 class StatisticsComposer {
   /*
   sourcesArray - Array of different statistic object.
@@ -14,40 +76,6 @@ class StatisticsComposer {
   constructor(sourcesArray = []) {
     this.sources = sourcesArray;
   }
-
-  replaceAll = (str, find, replace) => {
-    return str.replace(new RegExp(find, "g"), replace);
-  };
-
-  nameToFitFormat = (eventName) => {
-    if (
-      eventName.includes("st") ||
-      eventName.includes("nd") ||
-      eventName.includes("rd") ||
-      eventName.includes("th")
-    ) {
-      let formedName = [];
-      eventName.split(" ").forEach((part, idx) => {
-        if (idx !== 2) {
-          if (eventName.split(" ").length - 1 === idx) {
-            formedName.push(part);
-          } else {
-            formedName.push(part + " ");
-          }
-        }
-      });
-
-      return this.replaceAll(formedName.toString(), ",", "");
-    } else {
-      return eventName;
-    }
-  };
-
-  eventNameToCommon = (eventName) => {
-    return eventName
-      .replace("Corner kick", "Corner")
-      .replace("Yellow card", "Yellow Card");
-  };
 
   ComposeEvents = () => {
     //Buffer to store all events
@@ -79,15 +107,23 @@ class StatisticsComposer {
               //Handle mm:ss - mm:ss statistics
             }
             if (event.text.split(" ")[0].includes("'")) {
-              const eventData = this.nameToFitFormat(event.text);
+              const eventData = nameToFitFormat(event.text);
 
               const bufferValue = eventsBuffer.find(
-                (event) => event.data === eventData
+                (event) =>
+                  event.data === eventData ||
+                  (event.data.split(" ")[0] === eventData.split(" ")[0] &&
+                    event.data.split(" ")[2] === eventData.split(" ")[2])
               );
               if (typeof bufferValue !== "undefined") {
                 //Event exist in buffer
                 if (bufferValue.confirmable) {
-                  bufferValue.confirmations++;
+                  if (eventData.length > bufferValue.data.length) {
+                    bufferValue.data = eventData;
+                    bufferValue.confirmations++;
+                  } else {
+                    bufferValue.confirmations++;
+                  }
                 }
               } else {
                 //Event is not in buffer
@@ -106,41 +142,29 @@ class StatisticsComposer {
               typeof event.player !== "undefined" &&
               event.player.name.length > 3
             ) {
-              console.log("Event with player");
-              const team =
-                event.team === "home"
-                  ? source.data.match.teams.home.name
-                  : source.data.match.teams.away.name;
-              const eventData = this.eventNameToCommon(
-                event.time +
-                  "'" +
-                  " - " +
-                  event.name +
-                  " - " +
-                  event.player.name.replace(" ", "").split(",")[1] +
-                  " " +
-                  event.player.name.replace(" ", "").split(",")[0] +
-                  " (" +
-                  team +
-                  ")"
+              const team = BetradarEventTeam(event, source);
+              const eventData = eventNameToCommon(
+                BetradarEventWithPlayer(event, team)
               );
 
               const bufferValue = eventsBuffer.find(
-                (event) => event.data === eventData
+                (event) =>
+                  event.data === eventData ||
+                  (event.data.split(" ")[0] === eventData.split(" ")[0] &&
+                    event.data.split(" ")[2] === eventData.split(" ")[2])
               );
               if (typeof bufferValue !== "undefined") {
-                console.log(bufferValue);
                 //Event exist in buffer
                 if (bufferValue.confirmable) {
-                  bufferValue.confirmations++;
+                  if (eventData.length > bufferValue.data.length) {
+                    bufferValue.data = eventData;
+                    bufferValue.confirmations++;
+                  } else {
+                    bufferValue.confirmations++;
+                  }
                 }
               } else {
                 //Event is not in buffer
-                console.log({
-                  data: eventData,
-                  confirmations: 1,
-                  confirmable: event.time > 0,
-                });
                 eventsBuffer.push({
                   data: eventData,
                   confirmations: 1,
@@ -148,25 +172,26 @@ class StatisticsComposer {
                 });
               }
             } else {
-              console.log("Event without player");
-              const team =
-                event.team.length > 3
-                  ? event.team === "home"
-                    ? source.data.match.teams.home.name
-                    : source.data.match.teams.away.name
-                  : "";
-              const eventData = this.eventNameToCommon(
-                event.time + "'" + " - " + event.name + " - " + team
+              const team = BetradarEventTeam(event, source);
+              const eventData = eventNameToCommon(
+                BetradarEventWithoutPlayer(event, team)
               );
 
               const bufferValue = eventsBuffer.find(
-                (event) => event.data === eventData
+                (event) =>
+                  event.data === eventData ||
+                  (event.data.split(" ")[0] === eventData.split(" ")[0] &&
+                    event.data.split(" ")[2] === eventData.split(" ")[2])
               );
               if (typeof bufferValue !== "undefined") {
-                console.log(bufferValue);
                 //Event exist in buffer
                 if (bufferValue.confirmable) {
-                  bufferValue.confirmations++;
+                  if (eventData.length > bufferValue.data.length) {
+                    bufferValue.data = eventData;
+                    bufferValue.confirmations++;
+                  } else {
+                    bufferValue.confirmations++;
+                  }
                 }
               } else {
                 //Event is not in buffer
@@ -183,6 +208,8 @@ class StatisticsComposer {
           break;
       }
     });
+
+    //Sort events by time
     eventsBuffer.sort((a, b) => {
       if (
         parseInt(a.data.split(" ")[0].replace("'", "")) <
