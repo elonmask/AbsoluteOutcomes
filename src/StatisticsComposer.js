@@ -15,11 +15,38 @@ class StatisticsComposer {
     this.sources = sourcesArray;
   }
 
-  toBet365Format = (eventName) => {
-    switch (eventName) {
-      case "Throw-in":
-        return "Throw in";
+  replaceAll = (str, find, replace) => {
+    return str.replace(new RegExp(find, "g"), replace);
+  };
+
+  nameToFitFormat = (eventName) => {
+    if (
+      eventName.includes("st") ||
+      eventName.includes("nd") ||
+      eventName.includes("rd") ||
+      eventName.includes("th")
+    ) {
+      let formedName = [];
+      eventName.split(" ").forEach((part, idx) => {
+        if (idx !== 2) {
+          if (eventName.split(" ").length - 1 === idx) {
+            formedName.push(part);
+          } else {
+            formedName.push(part + " ");
+          }
+        }
+      });
+
+      return this.replaceAll(formedName.toString(), ",", "");
+    } else {
+      return eventName;
     }
+  };
+
+  eventNameToCommon = (eventName) => {
+    return eventName
+      .replace("Corner kick", "Corner")
+      .replace("Yellow card", "Yellow Card");
   };
 
   ComposeEvents = () => {
@@ -52,7 +79,8 @@ class StatisticsComposer {
               //Handle mm:ss - mm:ss statistics
             }
             if (event.text.split(" ")[0].includes("'")) {
-              const eventData = event.text;
+              const eventData = this.nameToFitFormat(event.text);
+
               const bufferValue = eventsBuffer.find(
                 (event) => event.data === eventData
               );
@@ -83,18 +111,19 @@ class StatisticsComposer {
                 event.team === "home"
                   ? source.data.match.teams.home.name
                   : source.data.match.teams.away.name;
-              const eventData =
+              const eventData = this.eventNameToCommon(
                 event.time +
-                "'" +
-                " - " +
-                event.name +
-                " - " +
-                event.player.name.replace(" ", "").split(",")[1] +
-                " " +
-                event.player.name.replace(" ", "").split(",")[0] +
-                " (" +
-                team +
-                ")";
+                  "'" +
+                  " - " +
+                  event.name +
+                  " - " +
+                  event.player.name.replace(" ", "").split(",")[1] +
+                  " " +
+                  event.player.name.replace(" ", "").split(",")[0] +
+                  " (" +
+                  team +
+                  ")"
+              );
 
               const bufferValue = eventsBuffer.find(
                 (event) => event.data === eventData
@@ -126,8 +155,9 @@ class StatisticsComposer {
                     ? source.data.match.teams.home.name
                     : source.data.match.teams.away.name
                   : "";
-              const eventData =
-                event.time + "'" + " - " + event.name + " - " + team;
+              const eventData = this.eventNameToCommon(
+                event.time + "'" + " - " + event.name + " - " + team
+              );
 
               const bufferValue = eventsBuffer.find(
                 (event) => event.data === eventData
@@ -168,6 +198,7 @@ class StatisticsComposer {
       }
       return 0;
     });
+
     return eventsBuffer;
   };
 
