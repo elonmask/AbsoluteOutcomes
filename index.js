@@ -5,6 +5,22 @@ const PORT = 3000;
 const Estimate = require("./src/Estimate");
 const StatisticsComposer = require("./src/StatisticsComposer");
 
+const getStatisticsData = () => {
+  const bet365 = require("./json/bet365_statistics.json").results[0];
+  const betradar = require("./json/bet365_statistics.json").results[0];
+
+  return [
+    {
+      source: "bet365",
+      data: bet365,
+    },
+    {
+      source: "betradar",
+      data: betradar,
+    },
+  ];
+};
+
 app.get("/estimation", (req, res) => {
   const odds = require("./json/match_to_estimate.json").odds;
   const statistics = require("./json/bet365_statistics.json").results[0];
@@ -20,7 +36,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/statistics", (req, res) => {
-  const stat = StatisticsComposer.Compose();
+  const stat = new StatisticsComposer(getStatisticsData()).Compose();
 
   res.send(stat);
 });
