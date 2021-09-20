@@ -15,9 +15,160 @@ class StatisticsComposer {
     this.sources = sourcesArray;
   }
 
+  toBet365Format = (eventName) => {
+    switch (eventName) {
+      case "Throw-in":
+        return "Throw in";
+    }
+  };
+
   ComposeEvents = () => {
-    //TODO
-    return [];
+    //Buffer to store all events
+    const eventsBuffer = [];
+
+    /*
+    Example of events in Buffer:
+    {
+      data: "Corner",
+      confirmations: 2,
+      confirmable: true
+    },
+    {
+      data: "Throw In",
+      confirmations: 1,
+      confirmable: true,
+    },
+    {
+      data: "Match about to start",
+      confirmable: false,
+    }
+    * */
+
+    this.sources.forEach((source) => {
+      switch (source.source) {
+        case "bet365":
+          source.data.events.forEach((event) => {
+            if (event.text.split(" ")[0].includes(":")) {
+              //Handle mm:ss - mm:ss statistics
+            }
+            if (event.text.split(" ")[0].includes("'")) {
+              const eventData = event.text;
+              const bufferValue = eventsBuffer.find(
+                (event) => event.data === eventData
+              );
+              if (typeof bufferValue !== "undefined") {
+                //Event exist in buffer
+                if (bufferValue.confirmable) {
+                  bufferValue.confirmations++;
+                }
+              } else {
+                //Event is not in buffer
+                eventsBuffer.push({
+                  data: eventData,
+                  confirmations: 1,
+                  confirmable: true,
+                });
+              }
+            }
+          });
+          break;
+        case "betradar":
+          source.data.events.forEach((event) => {
+            if (
+              typeof event.player !== "undefined" &&
+              event.player.name.length > 3
+            ) {
+              console.log("Event with player");
+              const team =
+                event.team === "home"
+                  ? source.data.match.teams.home.name
+                  : source.data.match.teams.away.name;
+              const eventData =
+                event.time +
+                "'" +
+                " - " +
+                event.name +
+                " - " +
+                event.player.name.replace(" ", "").split(",")[1] +
+                " " +
+                event.player.name.replace(" ", "").split(",")[0] +
+                " (" +
+                team +
+                ")";
+
+              const bufferValue = eventsBuffer.find(
+                (event) => event.data === eventData
+              );
+              if (typeof bufferValue !== "undefined") {
+                console.log(bufferValue);
+                //Event exist in buffer
+                if (bufferValue.confirmable) {
+                  bufferValue.confirmations++;
+                }
+              } else {
+                //Event is not in buffer
+                console.log({
+                  data: eventData,
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+                eventsBuffer.push({
+                  data: eventData,
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+              }
+            } else {
+              console.log("Event without player");
+              const team =
+                event.team.length > 3
+                  ? event.team === "home"
+                    ? source.data.match.teams.home.name
+                    : source.data.match.teams.away.name
+                  : "";
+              const eventData =
+                event.time + "'" + " - " + event.name + " - " + team;
+
+              const bufferValue = eventsBuffer.find(
+                (event) => event.data === eventData
+              );
+              if (typeof bufferValue !== "undefined") {
+                console.log(bufferValue);
+                //Event exist in buffer
+                if (bufferValue.confirmable) {
+                  bufferValue.confirmations++;
+                }
+              } else {
+                //Event is not in buffer
+                if (event.time > 0) {
+                  eventsBuffer.push({
+                    data: eventData,
+                    confirmations: 1,
+                    confirmable: event.time > 0,
+                  });
+                }
+              }
+            }
+          });
+          break;
+      }
+    });
+    eventsBuffer.sort((a, b) => {
+      if (
+        parseInt(a.data.split(" ")[0].replace("'", "")) <
+        parseInt(b.data.split(" ")[0].replace("'", ""))
+      ) {
+        return -1;
+      }
+      if (
+        parseInt(a.data.split(" ")[0].replace("'", "")) >
+        parseInt(b.data.split(" ")[0].replace("'", ""))
+      ) {
+        return 1;
+      }
+      return 0;
+    });
+    return eventsBuffer;
   };
 
   Compose = () => {

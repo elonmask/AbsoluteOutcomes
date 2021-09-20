@@ -7,7 +7,7 @@ const StatisticsComposer = require("./src/StatisticsComposer");
 
 const getStatisticsData = () => {
   const bet365 = require("./json/bet365_statistics.json").results[0];
-  const betradar = require("./json/bet365_statistics.json").results[0];
+  const betradar = require("./json/betradar_statistics.json").doc[0].data;
 
   return [
     {
