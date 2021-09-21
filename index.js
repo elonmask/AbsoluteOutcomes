@@ -5,7 +5,6 @@ const PORT = 3000;
 
 const Estimate = require("./src/Estimate");
 const StatisticsComposer = require("./src/StatisticsComposer");
-const { odds } = require("./json/match_to_estimate.json");
 
 const getStatisticsData = () => {
   const bet365 = require("./json/bet365_statistics.json").results[0];
