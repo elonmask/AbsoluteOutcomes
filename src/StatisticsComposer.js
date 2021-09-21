@@ -1,64 +1,11 @@
-const replaceAll = (str, find, replace) => {
-  return str.replace(new RegExp(find, "g"), replace);
-};
-
-const nameToFitFormat = (eventName) => {
-  if (
-    eventName.includes("st") ||
-    eventName.includes("nd") ||
-    eventName.includes("rd") ||
-    eventName.includes("th")
-  ) {
-    let formedName = [];
-    eventName.split(" ").forEach((part, idx) => {
-      if (idx !== 2) {
-        if (eventName.split(" ").length - 1 === idx) {
-          formedName.push(part);
-        } else {
-          formedName.push(part + " ");
-        }
-      }
-    });
-
-    return replaceAll(formedName.toString(), ",", "");
-  } else {
-    return eventName;
-  }
-};
-
-const eventNameToCommon = (eventName) => {
-  return eventName
-    .replace("Corner kick", "Corner")
-    .replace("Yellow card", "Yellow Card");
-};
-
-const BetradarEventWithPlayer = (event, team) => {
-  return (
-    event.time +
-    "'" +
-    " - " +
-    event.name +
-    " - " +
-    event.player.name.replace(" ", "").split(",")[1] +
-    " " +
-    event.player.name.replace(" ", "").split(",")[0] +
-    " (" +
-    team +
-    ")"
-  );
-};
-
-const BetradarEventWithoutPlayer = (event, team) => {
-  return event.time + "'" + " - " + event.name + " - " + team;
-};
-
-const BetradarEventTeam = (event, source) => {
-  return event.team.length > 3
-    ? event.team === "home"
-      ? source.data.match.teams.home.name
-      : source.data.match.teams.away.name
-    : "";
-};
+const {
+  nameToFitFormat,
+  BetradarEventTeam,
+  eventNameToCommon,
+  BetradarEventWithPlayer,
+  BetradarEventWithoutPlayer,
+  Validate,
+} = require("./utils/utils");
 
 class StatisticsComposer {
   /*
@@ -226,7 +173,31 @@ class StatisticsComposer {
       return 0;
     });
 
-    return eventsBuffer;
+    const result = [];
+
+    /*
+     * validity: 1 - Event was confirmed by all sources
+     * validuty: 2 - Event was confirmed by 50% sources
+     * validity: 3 - Event was confirmed by less then 50% sources
+     * */
+    eventsBuffer.forEach((event) => {
+      const validity = Validate(this.sources, event);
+      const info =
+        validity === 1
+          ? "Confirmed by all sources"
+          : validity === 2
+          ? "Confirmed by 50% sources"
+          : validity === 3
+          ? "Confirmed by less then 50% sources"
+          : "";
+      result.push({
+        text: event.data,
+        validity: validity,
+        info: info,
+      });
+    });
+
+    return result;
   };
 
   Compose = () => {
