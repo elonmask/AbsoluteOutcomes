@@ -1,17 +1,46 @@
+const axios = require("axios");
+
 const app = require("express")();
 const PORT = 3000;
 
-//const Request = require("./src/Request");
 const Estimate = require("./src/Estimate");
+const StatisticsComposer = require("./src/StatisticsComposer");
+
+const getStatisticsData = () => {
+  const bet365 = require("./json/bet365_statistics.json").results[0];
+  const betradar = require("./json/betradar_statistics.json").doc[0].data;
+
+  return [
+    {
+      source: "bet365",
+      data: bet365,
+    },
+    {
+      source: "betradar",
+      data: betradar,
+    },
+  ];
+};
 
 app.get("/estimation", (req, res) => {
   const odds = require("./json/match_to_estimate.json").odds;
-  const statistics = require("./json/bet365_statistics.json").results[0];
+  //const odds = require("./json/match_estimated.json").odds;
+  //const statistics = require("./json/bet365_statistics.json").results[0];
 
-  const estimation = new Estimate(statistics, odds);
-  estimation.Start();
+  axios
+    .get(`http://localhost:${PORT}/statistics`)
+    .then((response) => {
+      // handle success
+      const statistics = response.data;
+      const estimation = new Estimate(statistics, odds);
+      estimation.Start();
 
-  res.send(odds);
+      res.send(odds);
+    })
+    .catch(function (error) {
+      // handle error
+      res.send(error);
+    });
 });
 
 app.get("/", (req, res) => {
@@ -19,7 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/statistics", (req, res) => {
-  const stat = require("./json/bet365_statistics.json");
+  const stat = new StatisticsComposer(getStatisticsData()).Compose();
 
   res.send(stat);
 });

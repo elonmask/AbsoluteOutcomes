@@ -4,77 +4,28 @@ const {
   BothTeamsToScore,
   WhichTeamToScoreNGoal,
   DoubleChance,
+  CorrectScoreComninations,
+  DrawNoBet,
+  GoalScoredInBoth,
+  MatchBetBothScore,
+  WinOver,
+  Handicap3Way,
+  BothToScoreTotalGoals,
+  ToWinToNil,
+  Handicap,
+  TotalGoals,
+  BothToScoreNoDraw,
+  TeamTotalGoals,
+  OneMinuteEvents,
+  BothToScoreInBothHalves,
+  TotalGoalsOddEven,
 } = require("./Functions");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
     this.statistics = statistics;
     this.marketsToEstimate = marketsToEstimate;
-    //this.estimatedOutcomes = [];
   }
-  /*
-  AddResult = (marketResult) => {
-    this.estimatedOutcomes.push(marketResult);
-  };
-*/
-
-  /*
-  EstimateCommon = (id) => {
-    switch (id) {
-      case 10001:
-        this.AddResult(fullTimeResult(this.statistics));
-        break;
-      case 10002:
-        this.AddResult(HalfTimeFullTime(this.statistics));
-        break;
-      case 10032:
-        this.AddResult(BothTeamsToScore(this.statistics));
-        break;
-    }
-  };
-
-  EstimateLive = (id) => {
-    switch (id) {
-      case 1777:
-        this.AddResult(fullTimeResult(this.statistics));
-        break;
-      case 10560:
-        this.AddResult(HalfTimeFullTime(this.statistics));
-        break;
-      case 10565:
-        this.AddResult(BothTeamsToScore(this.statistics));
-        break;
-    }
-  };
-
-  EstimatePrematch = (id) => {
-    switch (id) {
-      case 40:
-        this.AddResult(fullTimeResult(this.statistics));
-        break;
-      case 42:
-        this.AddResult(HalfTimeFullTime(this.statistics));
-        break;
-      case 10150:
-        this.AddResult(BothTeamsToScore(this.statistics));
-        break;
-    }
-  };
-
-  EstimateOddTypes = (id) => {
-    switch (id) {
-      case 1:
-        this.AddResult(fullTimeResult(this.statistics));
-        break;
-      case 42:
-        this.AddResult(HalfTimeFullTime(this.statistics));
-        break;
-      case 27:
-        this.AddResult(BothTeamsToScore(this.statistics));
-        break;
-    }
-  };
-  */
 
   EstimateMarket = (market) => {
     const outcomeID = market.outcomes[0].outcomeId;
@@ -92,15 +43,58 @@ class Estimate {
         //Estimate Double Chance market
         DoubleChance(this.statistics, market);
         break;
+      case "1034001":
+        CorrectScoreComninations(this.statistics, market);
+        break;
+      case "11001":
+        DrawNoBet(this.statistics, market);
+        break;
+      case "1035001":
+        GoalScoredInBoth(this.statistics, market);
+        break;
+      case "1036002":
+        MatchBetBothScore(this.statistics, market);
+        break;
+      case "1037002":
+        WinOver(this.statistics, market);
+        break;
+      case "14001":
+        Handicap3Way(this.statistics, market);
+        break;
+      case "1038004":
+        BothToScoreTotalGoals(this.statistics, market);
+        break;
+      case "1039002":
+      case "1040002":
+        ToWinToNil(this.statistics, market);
+        break;
+      case "16001":
+        Handicap(this.statistics, market);
+        break;
+      case "17002":
+        TotalGoals(this.statistics, market);
+        break;
+      case "1041001":
+        BothToScoreNoDraw(this.statistics, market);
+        break;
+      case "18002":
+      case "19002":
+        TeamTotalGoals(this.statistics, market);
+        break;
+      case "1043010":
+        OneMinuteEvents(this.statistics, market);
+        break;
+      case "1044001":
+        BothToScoreInBothHalves(this.statistics, market);
+        break;
+      case "24001":
+        TotalGoalsOddEven(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
   };
-  /*
-  GetResults = () => {
-    return this.estimatedOutcomes;
-  };
-*/
+
   Start = () => {
     this.marketsToEstimate.forEach((market) => {
       this.EstimateMarket(market);
