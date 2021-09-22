@@ -53,7 +53,11 @@ class StatisticsComposer {
             if (event.text.split(" ")[0].includes(":")) {
               //Handle mm:ss - mm:ss statistics
               const minute =
-                parseInt(event.text.split(" ").at(-1).split(":")[0]) + 1;
+                parseInt(
+                  event.text
+                    .split(" ")
+                    [event.text.split(" ").length - 1].split(":")[0]
+                ) + 1;
               eventsBuffer.push({
                 data: minute + "' - " + event.text,
                 confirmations: 1,

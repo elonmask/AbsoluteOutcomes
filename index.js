@@ -24,6 +24,7 @@ const getStatisticsData = () => {
 
 app.get("/estimation", (req, res) => {
   const odds = require("./json/match_to_estimate.json").odds;
+  //const odds = require("./json/match_estimated.json").odds;
   //const statistics = require("./json/bet365_statistics.json").results[0];
 
   axios
