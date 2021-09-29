@@ -1,0 +1,2801 @@
+{
+  "id": 967764,
+  "providerTimestamp": 1615301794000,
+  "sportsbookTimestamp": 1615301794000,
+  "startDate": "2021-03-09T13:00:00.000+0000",
+  "status": 0,
+  "providerStatus": "ended",
+  "eventType": "Match",
+  "sportId": 1,
+  "categoryId": 500000055,
+  "leagueId": 941,
+  "competitors": [
+    {
+      "id": 112,
+      "name": "Kyetume FC",
+      "externalIds": {
+        "RampFeed": "49_Kyetume FC",
+        "betradarUnified": "1111323315"
+      }
+    },
+    {
+      "id": 6755,
+      "name": "Kampala City Council",
+      "externalIds": {
+        "RampFeed": "49_Kampala City Council",
+        "betradarUnified": "1111134274"
+      }
+    }
+  ],
+  "odds": [
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "20",
+        "from": "11"
+      },
+      "outcomes": [
+        {
+          "id": 217499379,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.5,
+          "providerTimestamp": "2021-03-09T13:25:12.000+0000"
+        },
+        {
+          "id": 217499377,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T13:25:12.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "30",
+        "from": "21"
+      },
+      "outcomes": [
+        {
+          "id": 217499525,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.7,
+          "providerTimestamp": "2021-03-09T13:35:15.000+0000"
+        },
+        {
+          "id": 217499524,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.22222,
+          "providerTimestamp": "2021-03-09T13:35:15.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "40",
+        "from": "31"
+      },
+      "outcomes": [
+        {
+          "id": 217499415,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-03-09T13:45:10.000+0000"
+        },
+        {
+          "id": 217499416,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.28571,
+          "providerTimestamp": "2021-03-09T13:45:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "55",
+        "from": "46"
+      },
+      "outcomes": [
+        {
+          "id": 217499512,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.5,
+          "providerTimestamp": "2021-03-09T14:18:46.000+0000"
+        },
+        {
+          "id": 217499511,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T14:18:46.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "65",
+        "from": "56"
+      },
+      "outcomes": [
+        {
+          "id": 217499409,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-03-09T14:28:14.000+0000"
+        },
+        {
+          "id": 217499406,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.28571,
+          "providerTimestamp": "2021-03-09T14:28:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 896,
+      "name": "A goal between the {from} and {to} min?",
+      "specifiers": {
+        "to": "75",
+        "from": "66"
+      },
+      "outcomes": [
+        {
+          "id": 217499614,
+          "outcome": "yes",
+          "outcomeId": "896001",
+          "status": 0,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499613,
+          "outcome": "no",
+          "outcomeId": "896002",
+          "status": 0,
+          "oddValue": 1.28571,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "3 way ",
+      "outcomes": [
+        {
+          "id": 217462143,
+          "outcome": "{$competitor1}",
+          "outcomeId": "1001",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217462142,
+          "outcome": "X",
+          "outcomeId": "1002",
+          "status": 0,
+          "oddValue": 125,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217462141,
+          "outcome": "{$competitor2}",
+          "outcomeId": "1003",
+          "status": 0,
+          "oddValue": 1.005,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "name": "{from} - {to} minute 1x2",
+      "specifiers": {
+        "to": "20",
+        "from": "11"
+      },
+      "outcomes": [
+        {
+          "id": 217499611,
+          "outcome": "{$competitor1}",
+          "outcomeId": "902001",
+          "status": 0,
+          "oddValue": 10,
+          "providerTimestamp": "2021-03-09T13:25:12.000+0000"
+        },
+        {
+          "id": 217499609,
+          "outcome": "draw",
+          "outcomeId": "902003",
+          "status": 0,
+          "oddValue": 1.2,
+          "providerTimestamp": "2021-03-09T13:25:12.000+0000"
+        },
+        {
+          "id": 217499610,
+          "outcome": "{$competitor2}",
+          "outcomeId": "902002",
+          "status": 0,
+          "oddValue": 5.25,
+          "providerTimestamp": "2021-03-09T13:25:12.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "name": "{from} - {to} minute 1x2",
+      "specifiers": {
+        "to": "30",
+        "from": "21"
+      },
+      "outcomes": [
+        {
+          "id": 217499440,
+          "outcome": "{$competitor1}",
+          "outcomeId": "902001",
+          "status": 0,
+          "oddValue": 12.5,
+          "providerTimestamp": "2021-03-09T13:35:15.000+0000"
+        },
+        {
+          "id": 217499435,
+          "outcome": "draw",
+          "outcomeId": "902003",
+          "status": 0,
+          "oddValue": 1.2,
+          "providerTimestamp": "2021-03-09T13:35:15.000+0000"
+        },
+        {
+          "id": 217499438,
+          "outcome": "{$competitor2}",
+          "outcomeId": "902002",
+          "status": 0,
+          "oddValue": 4.7,
+          "providerTimestamp": "2021-03-09T13:35:15.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "name": "{from} - {to} minute 1x2",
+      "specifiers": {
+        "to": "40",
+        "from": "31"
+      },
+      "outcomes": [
+        {
+          "id": 217499422,
+          "outcome": "{$competitor1}",
+          "outcomeId": "902001",
+          "status": 0,
+          "oddValue": 9,
+          "providerTimestamp": "2021-03-09T13:45:10.000+0000"
+        },
+        {
+          "id": 217499429,
+          "outcome": "draw",
+          "outcomeId": "902003",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T13:45:10.000+0000"
+        },
+        {
+          "id": 217499420,
+          "outcome": "{$competitor2}",
+          "outcomeId": "902002",
+          "status": 0,
+          "oddValue": 5.25,
+          "providerTimestamp": "2021-03-09T13:45:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "name": "{from} - {to} minute 1x2",
+      "specifiers": {
+        "to": "65",
+        "from": "56"
+      },
+      "outcomes": [
+        {
+          "id": 217499421,
+          "outcome": "{$competitor1}",
+          "outcomeId": "902001",
+          "status": 0,
+          "oddValue": 9.5,
+          "providerTimestamp": "2021-03-09T14:28:14.000+0000"
+        },
+        {
+          "id": 217499424,
+          "outcome": "draw",
+          "outcomeId": "902003",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T14:28:14.000+0000"
+        },
+        {
+          "id": 217499419,
+          "outcome": "{$competitor2}",
+          "outcomeId": "902002",
+          "status": 0,
+          "oddValue": 4.65,
+          "providerTimestamp": "2021-03-09T14:28:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "name": "{from} - {to} minute 1x2",
+      "specifiers": {
+        "to": "75",
+        "from": "66"
+      },
+      "outcomes": [
+        {
+          "id": 217499621,
+          "outcome": "{$competitor1}",
+          "outcomeId": "902001",
+          "status": 0,
+          "oddValue": 9.25,
+          "providerTimestamp": "2021-03-09T14:38:21.000+0000"
+        },
+        {
+          "id": 217499622,
+          "outcome": "draw",
+          "outcomeId": "902003",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T14:38:21.000+0000"
+        },
+        {
+          "id": 217499619,
+          "outcome": "{$competitor2}",
+          "outcomeId": "902002",
+          "status": 0,
+          "oddValue": 4.75,
+          "providerTimestamp": "2021-03-09T14:38:21.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 217499585,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499579,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499580,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 217499624,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 4.95,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499625,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499627,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 2.15,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 217499584,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 100,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499583,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.03,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499578,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 13,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 217499484,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 3.9,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499479,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499481,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 2.45,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 217499448,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 5.75,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499445,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499443,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 4,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 217499576,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 10.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499581,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.16,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499582,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 6.75,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "6"
+      },
+      "outcomes": [
+        {
+          "id": 217499405,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 17.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499404,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.05,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499616,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 13.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "7"
+      },
+      "outcomes": [
+        {
+          "id": 217499630,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 44,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499632,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499631,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 28,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "8"
+      },
+      "outcomes": [
+        {
+          "id": 217499390,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 100,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499391,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.005,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499389,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 70,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "which team to score {!goalnr} goal",
+      "specifiers": {
+        "goalnr": "9"
+      },
+      "outcomes": [
+        {
+          "id": 217499537,
+          "outcome": "{$competitor1}",
+          "outcomeId": "8001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499536,
+          "outcome": "none",
+          "outcomeId": "8002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499535,
+          "outcome": "{$competitor2}",
+          "outcomeId": "8003",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 905,
+      "name": "Halftime - {minute} minute 1x2",
+      "specifiers": {
+        "minute": "55"
+      },
+      "outcomes": [
+        {
+          "id": 217499623,
+          "outcome": "{$competitor1}",
+          "outcomeId": "905001",
+          "status": 0,
+          "oddValue": 8.25,
+          "providerTimestamp": "2021-03-09T14:18:46.000+0000"
+        },
+        {
+          "id": 217499620,
+          "outcome": "draw",
+          "outcomeId": "905002",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T14:18:46.000+0000"
+        },
+        {
+          "id": 217499618,
+          "outcome": "{$competitor2}",
+          "outcomeId": "905003",
+          "status": 0,
+          "oddValue": 5,
+          "providerTimestamp": "2021-03-09T14:18:46.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Double chance",
+      "outcomes": [
+        {
+          "id": 217499401,
+          "outcome": "{$competitor1}X",
+          "outcomeId": "10001",
+          "status": 0,
+          "oddValue": 12.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499398,
+          "outcome": "{$competitor1}{$competitor2}",
+          "outcomeId": "10002",
+          "status": 0,
+          "oddValue": 1.03,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499399,
+          "outcome": "X{$competitor2}",
+          "outcomeId": "10003",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Draw no bet",
+      "outcomes": [
+        {
+          "id": 217499615,
+          "outcome": "{$competitor1}",
+          "outcomeId": "11001",
+          "status": 0,
+          "oddValue": 51,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499617,
+          "outcome": "{$competitor2}",
+          "outcomeId": "11002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 1036,
+      "name": "Matchbet & both to score",
+      "outcomes": [
+        {
+          "id": 217499382,
+          "outcome": "{$competitor1} & yes",
+          "outcomeId": "1036002",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499387,
+          "outcome": "draw & yes",
+          "outcomeId": "1036001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499384,
+          "outcome": "{$competitor2} & yes",
+          "outcomeId": "1036003",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 1037,
+      "name": "Win & over (DNUO)",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499393,
+          "outcome": "{$competitor2} {total}",
+          "outcomeId": "1037002",
+          "status": 0,
+          "oddValue": 2.4,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499392,
+          "outcome": "{$competitor1} {total}",
+          "outcomeId": "1037001",
+          "status": 0,
+          "oddValue": 6,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 1037,
+      "name": "Win & over (DNUO)",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499403,
+          "outcome": "{$competitor2} {total}",
+          "outcomeId": "1037002",
+          "status": 0,
+          "oddValue": 4.05,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499402,
+          "outcome": "{$competitor1} {total}",
+          "outcomeId": "1037001",
+          "status": 0,
+          "oddValue": 11,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Handicap (3 way)",
+      "specifiers": {
+        "hcp": "1.0"
+      },
+      "outcomes": [
+        {
+          "id": 217499449,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "14001",
+          "status": 0,
+          "oddValue": 12.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499434,
+          "outcome": "draw ({+hcp})",
+          "outcomeId": "14002",
+          "status": 0,
+          "oddValue": 1.15,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499437,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "14003",
+          "status": 0,
+          "oddValue": 6.25,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499461,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499460,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 1.57143,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499426,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 1.0125,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499427,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 11,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499543,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499544,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499509,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499510,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "4.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499606,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499605,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total goals",
+      "specifiers": {
+        "total": "5.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499612,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499571,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "2nd half - total goals",
+      "specifiers": {
+        "total": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499395,
+          "outcome": "under {total}",
+          "outcomeId": "82002",
+          "status": 0,
+          "oddValue": 5.5,
+          "providerTimestamp": "2021-03-09T14:29:14.000+0000"
+        },
+        {
+          "id": 217499397,
+          "outcome": "over {total}",
+          "outcomeId": "82001",
+          "status": 0,
+          "oddValue": 1.11111,
+          "providerTimestamp": "2021-03-09T14:29:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "2nd half - total goals",
+      "specifiers": {
+        "total": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499508,
+          "outcome": "under {total}",
+          "outcomeId": "82002",
+          "status": 0,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499507,
+          "outcome": "over {total}",
+          "outcomeId": "82001",
+          "status": 0,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "2nd half - total goals",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499604,
+          "outcome": "under {total}",
+          "outcomeId": "82002",
+          "status": 0,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499602,
+          "outcome": "over {total}",
+          "outcomeId": "82001",
+          "status": 0,
+          "oddValue": 3.6,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "name": "2nd half - total goals",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499414,
+          "outcome": "under {total}",
+          "outcomeId": "82002",
+          "status": 0,
+          "oddValue": 1.05,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499418,
+          "outcome": "over {total}",
+          "outcomeId": "82001",
+          "status": 0,
+          "oddValue": 8,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499607,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.0125,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499608,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 11,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499423,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499425,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499506,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499505,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499600,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499599,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "4.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499412,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499413,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "{$competitor1} - total goals",
+      "specifiers": {
+        "total": "5.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499547,
+          "outcome": "under {total}",
+          "outcomeId": "18002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499538,
+          "outcome": "over {total}",
+          "outcomeId": "18001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499541,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499542,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499417,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.08333,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499411,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 6.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499598,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499597,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 67,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499487,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499491,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "4.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499378,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499380,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "{$competitor2} - total goals",
+      "specifiers": {
+        "total": "5.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499556,
+          "outcome": "under {total}",
+          "outcomeId": "19002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499561,
+          "outcome": "over {total}",
+          "outcomeId": "19001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 916,
+      "name": "Team To Score the Last Goal",
+      "outcomes": [
+        {
+          "id": 217499432,
+          "outcome": "{$competitor1}",
+          "outcomeId": "916001",
+          "status": 0,
+          "oddValue": 2.55,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499431,
+          "outcome": "no goals",
+          "outcomeId": "916002",
+          "status": 0,
+          "oddValue": 14,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499430,
+          "outcome": "{$competitor2}",
+          "outcomeId": "916003",
+          "status": 0,
+          "oddValue": 1.55,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 919,
+      "name": "2nd half goals",
+      "outcomes": [
+        {
+          "id": 217499433,
+          "outcome": "exactly 1 goal",
+          "outcomeId": "919002",
+          "status": 0,
+          "oddValue": 2.15,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499436,
+          "outcome": "exactly 2 goals",
+          "outcomeId": "919003",
+          "status": 0,
+          "oddValue": 2.35,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499439,
+          "outcome": "3 or more goals",
+          "outcomeId": "919004",
+          "status": 0,
+          "oddValue": 4.45,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499441,
+          "outcome": "no goals",
+          "outcomeId": "919001",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 920,
+      "name": "To score in both halves",
+      "outcomes": [
+        {
+          "id": 217499428,
+          "outcome": "{$competitor1}{$suffix1} team",
+          "outcomeId": "920001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499596,
+          "outcome": "{$competitor2}{$suffix2} team",
+          "outcomeId": "920002",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "total goals Odd/even",
+      "outcomes": [
+        {
+          "id": 217499562,
+          "outcome": "odd",
+          "outcomeId": "24001",
+          "status": 0,
+          "oddValue": 1.44444,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499563,
+          "outcome": "even",
+          "outcomeId": "24002",
+          "status": 0,
+          "oddValue": 2.6,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 921,
+      "name": "To win both halves",
+      "outcomes": [
+        {
+          "id": 217499407,
+          "outcome": "{$competitor1}{$suffix1} team",
+          "outcomeId": "921001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499410,
+          "outcome": "{$competitor2}{$suffix2} team",
+          "outcomeId": "921002",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Both teams to score",
+      "outcomes": [
+        {
+          "id": 217499466,
+          "outcome": "yes",
+          "outcomeId": "27001",
+          "status": 0,
+          "oddValue": 67,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499468,
+          "outcome": "no",
+          "outcomeId": "27002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Halftime/fulltime",
+      "outcomes": [
+        {
+          "id": 217499471,
+          "outcome": "{$competitor1}/{$competitor1}",
+          "outcomeId": "42001",
+          "status": 0,
+          "oddValue": 65,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499476,
+          "outcome": "{$competitor1}/X",
+          "outcomeId": "42002",
+          "status": 0,
+          "oddValue": 81,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499474,
+          "outcome": "{$competitor1}/{$competitor2}",
+          "outcomeId": "42003",
+          "status": 0,
+          "oddValue": 81,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499480,
+          "outcome": "X/{$competitor1}",
+          "outcomeId": "42004",
+          "status": 0,
+          "oddValue": 5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499478,
+          "outcome": "X/X",
+          "outcomeId": "42005",
+          "status": 0,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499483,
+          "outcome": "X/{$competitor2}",
+          "outcomeId": "42006",
+          "status": 0,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499482,
+          "outcome": "{$competitor2}/{$competitor1}",
+          "outcomeId": "42007",
+          "status": 0,
+          "oddValue": 81,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499486,
+          "outcome": "{$competitor2}/X",
+          "outcomeId": "42008",
+          "status": 0,
+          "oddValue": 81,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499485,
+          "outcome": "{$competitor2}/{$competitor2}",
+          "outcomeId": "42009",
+          "status": 0,
+          "oddValue": 23,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Highest scoring half",
+      "outcomes": [
+        {
+          "id": 217499629,
+          "outcome": "1st half",
+          "outcomeId": "47001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499626,
+          "outcome": "equal",
+          "outcomeId": "47003",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        },
+        {
+          "id": 217499628,
+          "outcome": "2nd half",
+          "outcomeId": "47002",
+          "status": 0,
+          "oddValue": 1.55,
+          "providerTimestamp": "2021-03-09T14:29:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 946,
+      "name": "Total goals in match",
+      "outcomes": [
+        {
+          "id": 217499533,
+          "outcome": "exactly 1 goal",
+          "outcomeId": "946002",
+          "status": 0,
+          "oddValue": 1.4,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499532,
+          "outcome": "exactly 2 goals",
+          "outcomeId": "946003",
+          "status": 0,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499531,
+          "outcome": "exactly 3 goals",
+          "outcomeId": "946004",
+          "status": 0,
+          "oddValue": 13,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499530,
+          "outcome": "exactly 4 goals",
+          "outcomeId": "946005",
+          "status": 0,
+          "oddValue": 81,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499529,
+          "outcome": "exactly 5 goals",
+          "outcomeId": "946006",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499528,
+          "outcome": "6 or more goals",
+          "outcomeId": "946007",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499534,
+          "outcome": "no goals",
+          "outcomeId": "946001",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:47:06.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 950,
+      "name": "To win either half",
+      "outcomes": [
+        {
+          "id": 217499527,
+          "outcome": "{$competitor1}{$suffix1} team",
+          "outcomeId": "950001",
+          "status": 0,
+          "oddValue": 4.35,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499526,
+          "outcome": "{$competitor2}{$suffix2} team",
+          "outcomeId": "950002",
+          "status": 0,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "1st half - 3 way",
+      "outcomes": [
+        {
+          "id": 217499493,
+          "outcome": "{$competitor1}",
+          "outcomeId": "55001",
+          "status": 0,
+          "oddValue": 30,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499498,
+          "outcome": "draw",
+          "outcomeId": "55002",
+          "status": 0,
+          "oddValue": 1.02,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499496,
+          "outcome": "{$competitor2}",
+          "outcomeId": "55003",
+          "status": 0,
+          "oddValue": 16.5,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 889,
+      "name": "Correct score",
+      "outcomes": [
+        {
+          "id": 217499386,
+          "outcome": "1:0",
+          "outcomeId": "889002",
+          "status": 0,
+          "oddValue": 7.75,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499385,
+          "outcome": "2:0",
+          "outcomeId": "889003",
+          "status": 0,
+          "oddValue": 31,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499515,
+          "outcome": "2:1",
+          "outcomeId": "889007",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499383,
+          "outcome": "3:0",
+          "outcomeId": "889004",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499514,
+          "outcome": "3:1",
+          "outcomeId": "889008",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499522,
+          "outcome": "3:2",
+          "outcomeId": "889011",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499381,
+          "outcome": "4:0",
+          "outcomeId": "889005",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499513,
+          "outcome": "4:1",
+          "outcomeId": "889009",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499521,
+          "outcome": "4:2",
+          "outcomeId": "889012",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499519,
+          "outcome": "4:3",
+          "outcomeId": "889014",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499477,
+          "outcome": "5:0",
+          "outcomeId": "889030",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499475,
+          "outcome": "5:1",
+          "outcomeId": "889031",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499473,
+          "outcome": "5:2",
+          "outcomeId": "889032",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499472,
+          "outcome": "5:3",
+          "outcomeId": "889033",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499470,
+          "outcome": "5:4",
+          "outcomeId": "889034",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499469,
+          "outcome": "6:0",
+          "outcomeId": "889035",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499467,
+          "outcome": "6:1",
+          "outcomeId": "889036",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499465,
+          "outcome": "6:2",
+          "outcomeId": "889037",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499464,
+          "outcome": "6:3",
+          "outcomeId": "889038",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499446,
+          "outcome": "6:4",
+          "outcomeId": "889039",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499459,
+          "outcome": "6:5",
+          "outcomeId": "889040",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499458,
+          "outcome": "7:0",
+          "outcomeId": "889041",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499457,
+          "outcome": "7:1",
+          "outcomeId": "889042",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499456,
+          "outcome": "7:2",
+          "outcomeId": "889043",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499455,
+          "outcome": "7:3",
+          "outcomeId": "889044",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499454,
+          "outcome": "7:4",
+          "outcomeId": "889045",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499453,
+          "outcome": "8:0",
+          "outcomeId": "889046",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499452,
+          "outcome": "8:1",
+          "outcomeId": "889047",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499451,
+          "outcome": "8:2",
+          "outcomeId": "889048",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499450,
+          "outcome": "8:3",
+          "outcomeId": "889049",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499595,
+          "outcome": "9:0",
+          "outcomeId": "889050",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499594,
+          "outcome": "9:1",
+          "outcomeId": "889051",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499593,
+          "outcome": "9:2",
+          "outcomeId": "889052",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499492,
+          "outcome": "10:0",
+          "outcomeId": "889027",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499463,
+          "outcome": "10:1",
+          "outcomeId": "889028",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499462,
+          "outcome": "11:0",
+          "outcomeId": "889029",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499388,
+          "outcome": "0:0",
+          "outcomeId": "889001",
+          "status": 0,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-03-09T14:55:48.000+0000"
+        },
+        {
+          "id": 217499516,
+          "outcome": "1:1",
+          "outcomeId": "889006",
+          "status": 0,
+          "oddValue": 125,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499523,
+          "outcome": "2:2",
+          "outcomeId": "889010",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499520,
+          "outcome": "3:3",
+          "outcomeId": "889013",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499518,
+          "outcome": "4:4",
+          "outcomeId": "889015",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499494,
+          "outcome": "5:5",
+          "outcomeId": "889026",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499517,
+          "outcome": "0:1",
+          "outcomeId": "889016",
+          "status": 0,
+          "oddValue": 1.03,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499490,
+          "outcome": "0:2",
+          "outcomeId": "889017",
+          "status": 0,
+          "oddValue": 13,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499503,
+          "outcome": "1:2",
+          "outcomeId": "889020",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499489,
+          "outcome": "0:3",
+          "outcomeId": "889018",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499502,
+          "outcome": "1:3",
+          "outcomeId": "889021",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499499,
+          "outcome": "2:3",
+          "outcomeId": "889023",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499488,
+          "outcome": "0:4",
+          "outcomeId": "889019",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499501,
+          "outcome": "1:4",
+          "outcomeId": "889022",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499497,
+          "outcome": "2:4",
+          "outcomeId": "889024",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499495,
+          "outcome": "3:4",
+          "outcomeId": "889025",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499589,
+          "outcome": "0:5",
+          "outcomeId": "889056",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499588,
+          "outcome": "1:5",
+          "outcomeId": "889057",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499587,
+          "outcome": "2:5",
+          "outcomeId": "889058",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499586,
+          "outcome": "3:5",
+          "outcomeId": "889059",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499575,
+          "outcome": "4:5",
+          "outcomeId": "889060",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499573,
+          "outcome": "0:6",
+          "outcomeId": "889061",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499572,
+          "outcome": "1:6",
+          "outcomeId": "889062",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499570,
+          "outcome": "2:6",
+          "outcomeId": "889063",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499569,
+          "outcome": "3:6",
+          "outcomeId": "889064",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499568,
+          "outcome": "4:6",
+          "outcomeId": "889065",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499567,
+          "outcome": "5:6",
+          "outcomeId": "889066",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499566,
+          "outcome": "0:7",
+          "outcomeId": "889067",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499565,
+          "outcome": "1:7",
+          "outcomeId": "889068",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499564,
+          "outcome": "2:7",
+          "outcomeId": "889069",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499557,
+          "outcome": "3:7",
+          "outcomeId": "889070",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499555,
+          "outcome": "4:7",
+          "outcomeId": "889071",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499554,
+          "outcome": "0:8",
+          "outcomeId": "889072",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499553,
+          "outcome": "1:8",
+          "outcomeId": "889073",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499552,
+          "outcome": "2:8",
+          "outcomeId": "889074",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499551,
+          "outcome": "3:8",
+          "outcomeId": "889075",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499550,
+          "outcome": "0:9",
+          "outcomeId": "889076",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499549,
+          "outcome": "1:9",
+          "outcomeId": "889077",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499548,
+          "outcome": "2:9",
+          "outcomeId": "889078",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499592,
+          "outcome": "0:10",
+          "outcomeId": "889053",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499591,
+          "outcome": "1:10",
+          "outcomeId": "889054",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499590,
+          "outcome": "0:11",
+          "outcomeId": "889055",
+          "status": 0,
+          "oddValue": 150,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "1st half - double chance",
+      "outcomes": [
+        {
+          "id": 217499442,
+          "outcome": "{$competitor1}X",
+          "outcomeId": "58001",
+          "status": 0,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499447,
+          "outcome": "{$competitor1}{$competitor2}",
+          "outcomeId": "58002",
+          "status": 0,
+          "oddValue": 13,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499444,
+          "outcome": "X{$competitor2}",
+          "outcomeId": "58003",
+          "status": 0,
+          "oddValue": 1.005,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 956,
+      "name": "Team to score",
+      "outcomes": [
+        {
+          "id": 217499545,
+          "outcome": "{$competitor1}{$suffix1} team",
+          "outcomeId": "956001",
+          "status": 0,
+          "oddValue": 5.5,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499546,
+          "outcome": "{$competitor2}{$suffix2} team",
+          "outcomeId": "956002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T14:47:06.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499394,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.0125,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499396,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 11,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499577,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499574,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499603,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T13:51:22.000+0000"
+        },
+        {
+          "id": 217499601,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:22.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499500,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T13:51:22.000+0000"
+        },
+        {
+          "id": 217499504,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:22.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "4.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499540,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499539,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 34,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "1st half - total goals",
+      "specifiers": {
+        "total": "5.5"
+      },
+      "outcomes": [
+        {
+          "id": 217499400,
+          "outcome": "under {total}",
+          "outcomeId": "62002",
+          "status": 0,
+          "oddValue": 1.001,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        },
+        {
+          "id": 217499408,
+          "outcome": "over {total}",
+          "outcomeId": "62001",
+          "status": 0,
+          "oddValue": 101,
+          "providerTimestamp": "2021-03-09T13:51:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 895,
+      "name": "Number of goals",
+      "outcomes": [
+        {
+          "id": 217499558,
+          "outcome": "0 or 1",
+          "outcomeId": "895003",
+          "status": 0,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499559,
+          "outcome": "2 or 3",
+          "outcomeId": "895002",
+          "status": 0,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        },
+        {
+          "id": 217499560,
+          "outcome": "4 or more",
+          "outcomeId": "895001",
+          "status": 0,
+          "oddValue": 100,
+          "providerTimestamp": "2021-03-09T14:56:17.000+0000"
+        }
+      ]
+    }
+  ],
+  "score": {
+    "CURRENT": "-:-"
+  },
+  "externalIds": {
+    "RampProvider": null,
+    "BetradarCtrl": "36786968",
+    "RampFeed": "8060989",
+    "betradarUnified": "sr:match:26233398",
+    "betradar": "sr:match:26233398",
+    "aams": "1614055"
+  },
+  "additionalData": {
+    "periodId": {
+      "data": 100
+    },
+    "eventClock": {
+      "data": {
+        "currentPeriodStartTimestamp": 1615298807919,
+        "regularPeriodLength": 45
+      }
+    },
+    "soccerStatistics": {
+      "data": [
+        {
+          "teamType": "HOME",
+          "redCards": 0,
+          "yellowCards": 1,
+          "yellowRedCards": 0,
+          "cornerKicks": 5
+        },
+        {
+          "teamType": "AWAY",
+          "redCards": 0,
+          "yellowCards": 0,
+          "yellowRedCards": 0,
+          "cornerKicks": 6
+        }
+      ]
+    },
+    "static": {
+      "venue": {
+        "name": "Nakisunga Saaza Stadium",
+        "city": "Mukono",
+        "country": "Uganda"
+      },
+      "jersey": [
+        {
+          "base": "ffff00",
+          "number": "ffffff",
+          "sleeve": "0000ff",
+          "type": "third"
+        }
+      ],
+      "extraInfo": {
+        "streaming": "false",
+        "auto_traded": "false",
+        "period_length": "45",
+        "neutral_ground": "false",
+        "coverage_source": "venue",
+        "overtime_length": "0",
+        "extended_live_markets_offered": "false"
+      }
+    },
+    "scoreboard": {
+      "data": {
+        "currentHomeScore": "0",
+        "currentAwayScore": "1",
+        "periodScores": [
+          {
+            "homeScore": "0",
+            "awayScore": "0",
+            "periodType": "RegularPeriod",
+            "periodNumber": 1
+          },
+          {
+            "homeScore": "0",
+            "awayScore": "1",
+            "periodType": "RegularPeriod",
+            "periodNumber": 2
+          }
+        ],
+        "fullTimeHomeScore": "0",
+        "fullTimeAwayScore": "1"
+      }
+    }
+  },
+  "oddsCount": 0,
+  "enrichment": {
+    "fastMarkets": [
+      "system"
+    ],
+    "animation": [
+      "betradarTracker"
+    ]
+  }
+}

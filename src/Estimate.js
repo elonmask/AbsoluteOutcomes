@@ -19,6 +19,21 @@ const {
   OneMinuteEvents,
   BothToScoreInBothHalves,
   TotalGoalsOddEven,
+  FromTo3WayResult,
+  GoalBetween,
+  HalftimeMinuteResult,
+  SecondHTotalGoalsOverUnder,
+  TeamToScoreLast,
+  ToScoreInBoth,
+  ToWinBoth,
+  HighestScoringHalf,
+  ToWinEitherHalf,
+  HalfTime3Way,
+  CorrectScore,
+  HalfTimeDoubleChance,
+  TeamToScore,
+  HalfTimeTotalGoals,
+  NumberOfGoals,
 } = require("./Functions");
 
 class Estimate {
@@ -89,6 +104,57 @@ class Estimate {
         break;
       case "24001":
         TotalGoalsOddEven(this.statistics, market);
+        break;
+      case "902001":
+        FromTo3WayResult(this.statistics, market);
+        break;
+      case "896001":
+        GoalBetween(this.statistics, market);
+        break;
+      case "905001":
+        HalftimeMinuteResult(this.statistics, market);
+        break;
+      case "82002":
+        SecondHTotalGoalsOverUnder(this.statistics, market);
+        break;
+      case "916001":
+        TeamToScoreLast(this.statistics, market);
+        break;
+      case "920001":
+        ToScoreInBoth(this.statistics, market);
+        break;
+      case "921001":
+        ToWinBoth(this.statistics, market);
+        break;
+      case "27001":
+        BothTeamsToScore(this.statistics, market);
+        break;
+      case "42001":
+        HalfTimeFullTime(this.statistics, market);
+        break;
+      case "47001":
+        HighestScoringHalf(this.statistics, market);
+        break;
+      case "950001":
+        ToWinEitherHalf(this.statistics, market);
+        break;
+      case "55001":
+        HalfTime3Way(this.statistics, market);
+        break;
+      case "889002":
+        CorrectScore(this.statistics, market);
+        break;
+      case "58001":
+        HalfTimeDoubleChance(this.statistics, market);
+        break;
+      case "956001":
+        TeamToScore(this.statistics, market);
+        break;
+      case "62002":
+        HalfTimeTotalGoals(this.statistics, market);
+        break;
+      case "895003":
+        NumberOfGoals(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);

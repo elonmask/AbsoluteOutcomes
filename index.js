@@ -7,7 +7,7 @@ const Estimate = require("./src/Estimate");
 const StatisticsComposer = require("./src/StatisticsComposer");
 
 const getStatisticsData = () => {
-  const bet365 = require("./json/bet365_statistics.json").results[0];
+  /*const bet365 = require("./json/bet365_statistics.json").results[0];
   const betradar = require("./json/betradar_statistics.json").doc[0].data;
 
   return [
@@ -19,14 +19,23 @@ const getStatisticsData = () => {
       source: "betradar",
       data: betradar,
     },
+  ];*/
+  const betradar = require("./json/test/betradar_statistics.json").doc[0].data;
+  return [
+    {
+      source: "betradar",
+      data: betradar,
+    },
   ];
 };
 
 app.get("/estimation", (req, res) => {
-  const odds = require("./json/match_to_estimate.json").odds;
+  //const odds = require("./json/match_to_estimate.json").odds;
   //const odds = require("./json/match_estimated.json").odds;
   //const statistics = require("./json/bet365_statistics.json").results[0];
 
+  const odds = require("./json/test/match_to_estimate.json").odds;
+  //console.log(odds);
   axios
     .get(`http://localhost:${PORT}/statistics`)
     .then((response) => {
@@ -34,6 +43,8 @@ app.get("/estimation", (req, res) => {
       const statistics = response.data;
       const estimation = new Estimate(statistics, odds);
       estimation.Start();
+
+      console.log(odds);
 
       res.send(odds);
     })

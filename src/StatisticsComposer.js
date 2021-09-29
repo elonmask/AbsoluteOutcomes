@@ -214,7 +214,7 @@ class StatisticsComposer {
   Compose = () => {
     const result = {
       sport_id: null,
-      time: null,
+      //time: null,
       time_status: null,
       home: {
         name: null,
@@ -224,12 +224,36 @@ class StatisticsComposer {
       },
       ss: null,
       scores: {},
-      stats: {},
-      extra: {
+      stats: {
+        attacks: ["0", "0"],
+        ball_safe: ["0", "0"],
+        corners: ["0", "0"],
+        corner_h: ["0", "0"],
+        dangerous_attacks: ["0", "0"],
+        fouls: ["0", "0"],
+        freekicks: ["0", "0"],
+        goalattempts: ["0", "0"],
+        goalkicks: ["0", "0"],
+        goals: ["0", "0"],
+        injuries: ["0", "0"],
+        offsides: ["0", "0"],
+        off_target: ["0", "0"],
+        on_target: ["0", "0"],
+        penalties: ["0", "0"],
+        possession_rt: ["0", "0"],
+        redcards: ["0", "0"],
+        saves: ["0", "0"],
+        shots_blocked: ["0", "0"],
+        substitutions: ["0", "0"],
+        throwins: ["0", "0"],
+        yellowcards: ["0", "0"],
+        yellowred_cards: ["0", "0"],
+      },
+      /* extra: {
         length: null,
         numberofperiods: null,
         periodlength: null,
-      },
+      },*/
       events: [],
     };
 
@@ -237,7 +261,7 @@ class StatisticsComposer {
       switch (source.source) {
         case "bet365":
           //sport id
-          const sport_id = source.data.sport_id;
+          const sport_id = source.data.sport_id?.toString();
           if (result.sport_id === null) {
             result.sport_id = sport_id;
           } else {
@@ -305,12 +329,200 @@ class StatisticsComposer {
 
           break;
         case "betradar":
+          const sport_id_ = source.data.match._sid.toString();
+          if (result.sport_id === null) {
+            result.sport_id = sport_id_;
+          } else {
+            if (result.sport_id !== sport_id_) {
+              result.sport_id = "not_defined";
+            }
+          }
+
+          //time
+          /*const time = source.data.time;
+          if (result.time === null) {
+            result.time = time;
+          } else {
+            if (result.time !== time) {
+              result.time = "not_defined";
+            }
+          }*/
+
+          //time status
+          const time_status_ =
+            source.data.match.status.name === "Ended" ? "3" : "not_ended";
+          if (result.time_status === null) {
+            result.time_status = time_status_;
+          } else {
+            if (result.time_status !== time_status_) {
+              result.time_status = "not_defined";
+            }
+          }
+
+          const homeName_ = source.data.match.teams.home.name;
+          if (result.home.name === null) {
+            result.home.name = homeName_;
+          } else {
+            if (result.home.name !== homeName_) {
+              result.home.name = "not_defined";
+            }
+          }
+
+          const awayName_ = source.data.match.teams.away.name;
+          if (result.away.name === null) {
+            result.away.name = awayName_;
+          } else {
+            if (result.away.name !== awayName_) {
+              result.away.name = "not_defined";
+            }
+          }
+
+          const score_ =
+            result.time_status === "3"
+              ? `${source.data.match.result.home}-${source.data.match.result.away}`
+              : `${
+                  source.data?.periods?.p1.home + source.data?.periods?.ft.home
+                }-${
+                  source.data?.periods?.p1.away + source.data?.periods?.ft.away
+                }`;
+          if (result.ss === null) {
+            result.ss = score_;
+          } else {
+            if (result.ss !== score_) {
+              result.ss = "not_defined";
+            }
+          }
+
+          //scores
+          source.data.match.periods?.p1
+            ? (result.scores["1"] = source.data.match.periods.p1)
+            : "";
+          source.data.match.periods?.ft
+            ? (result.scores["2"] = source.data.match.periods.ft)
+            : "";
+
+          //TODO
+          //result.stats = source.data.stats;
+
+          //TODO
+          //result.extra = source.data.extra;
           break;
       }
     });
 
     //Events
     result.events = this.ComposeEvents();
+
+    //Stats
+    result.events.forEach((event) => {
+      const addToStats = (statType, eventTeam) => {
+        if (eventTeam === "home") {
+          result.stats[statType][0] = (
+            parseInt(result.stats[statType][0]) + 1
+          ).toString();
+        }
+
+        if (eventTeam === "away") {
+          result.stats[statType][1] = (
+            parseInt(result.stats[statType][1]) + 1
+          ).toString();
+        }
+      };
+
+      //TODO - Attacks
+      result.stats.attacks[0] = "-";
+      result.stats.attacks[1] = "-";
+      //TODO - ball_safe
+      result.stats.ball_safe[0] = "-";
+      result.stats.ball_safe[1] = "-";
+      //TODO - corner_h
+      result.stats.corner_h[0] = "-";
+      result.stats.corner_h[1] = "-";
+      //TODO - dangerous attacks
+      result.stats.dangerous_attacks[0] = "-";
+      result.stats.dangerous_attacks[1] = "-";
+      //TODO - fouls
+      result.stats.fouls[0] = "-";
+      result.stats.fouls[1] = "-";
+      //TODO - goal attempts
+      result.stats.goalattempts[0] = "-";
+      result.stats.goalattempts[1] = "-";
+      //TODO - possesion_rt
+      result.stats.possession_rt[0] = "-";
+      result.stats.possession_rt[1] = "-";
+
+      const eventText = event.text;
+      const eventTeam = event.text
+        .split(" - ")
+        [event.text.split(" - ").length - 1].includes(result.home.name)
+        ? "home"
+        : "away";
+
+      //Corners
+      if (eventText.includes("Corner")) {
+        addToStats("corners", eventTeam);
+      }
+
+      if (eventText.includes("Freekick")) {
+        addToStats("freekicks", eventTeam);
+      }
+
+      if (eventText.includes("Goal kick")) {
+        addToStats("goalkicks", eventTeam);
+      }
+
+      if (eventText.includes(" - Goal - ")) {
+        addToStats("goals", eventTeam);
+      }
+
+      if (eventText.includes("injured")) {
+        addToStats("injuries", eventTeam);
+      }
+
+      if (eventText.includes("Offside")) {
+        addToStats("offsides", eventTeam);
+      }
+
+      if (eventText.includes("Shot off target")) {
+        addToStats("off_target", eventTeam);
+      }
+
+      if (eventText.includes("Shot on target")) {
+        addToStats("on_target", eventTeam);
+      }
+
+      if (eventText.includes("Penalty")) {
+        addToStats("penalties", eventTeam);
+      }
+
+      if (eventText.includes("Red Card")) {
+        addToStats("redcards", eventTeam);
+      }
+
+      if (eventText.includes("save")) {
+        addToStats("saves", eventTeam);
+      }
+
+      if (eventText.includes("Shot blocked")) {
+        addToStats("shots_blocked", eventTeam);
+      }
+
+      if (eventText.includes("Substitution")) {
+        addToStats("substitutions", eventTeam);
+      }
+
+      if (eventText.includes("Throw-in")) {
+        addToStats("throwins", eventTeam);
+      }
+
+      if (eventText.includes("Yellow Card")) {
+        addToStats("yellowcards", eventTeam);
+      }
+
+      if (eventText.includes("Card")) {
+        addToStats("yellowred_cards", eventTeam);
+      }
+    });
 
     return result;
   };
