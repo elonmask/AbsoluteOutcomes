@@ -49,11 +49,10 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
     statistics.events.forEach((event) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
-          event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+          event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
           homeTeam
             ? "home"
             : "away";
-
         //Check if it's not extra time
         if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
           if (teamScored === "home") {
@@ -96,7 +95,7 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
     statistics.events.forEach((event) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
-          event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+          event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
           homeTeam
             ? "home"
             : "away";
@@ -129,11 +128,10 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
 };
 
 const DoubleChance = (statistics, market) => {
-  market.outcomes.forEach((outcome) => {
-    outcome.status = 3;
-  });
-
   if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
     const homeScore =
       parseInt(statistics.scores["1"].home) +
       parseInt(statistics.scores["2"].home);
@@ -595,8 +593,8 @@ const Handicap = (statistics, market) => {
 
     const handicap = parseFloat(market.specifiers.hcp.replace("+"));
 
-    const homeResult = parseInt(statistics.scores["2"].home);
-    const awayResult = parseInt(statistics.scores["2"].away);
+    const homeResult = parseInt(statistics.ss.split("-")[0]);
+    const awayResult = parseInt(statistics.ss.split("-")[1]);
 
     const homeBetHcp = market.outcomes[0].outcome.includes("+hcp") ? "+" : "-";
     const awayBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
@@ -790,24 +788,22 @@ const BothToScoreNoDraw = (statistics, market) => {
 };
 
 const TeamTotalGoals = (statistics, market) => {
-  if (
-    parseInt(statistics.stats.goals[0]) >=
-      parseFloat(market.specifiers.total) &&
-    parseInt(statistics.stats.goals[1]) >= parseFloat(market.specifiers.total)
-  ) {
-    market.outcomes.forEach((outcome) => {
-      outcome.status = 3;
-    });
+  const homeTeam = statistics.home.name;
+  const total = parseFloat(market.specifiers.total);
 
-    const homeTeam = statistics.home.name;
-    const total = parseFloat(market.specifiers.total);
+  if (market.outcomes[0].outcomeId === "18002") {
+    if (
+      parseInt(statistics.stats.goals[0]) >= parseFloat(market.specifiers.total)
+    ) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
 
-    if (market.outcomes[0].outcomeId === "18002") {
       let totalGoals = 0;
       statistics.events.forEach((event) => {
         if (event.text.includes(" Goal -")) {
           const teamScored =
-            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+            event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
             homeTeam
               ? "home"
               : "away";
@@ -829,76 +825,20 @@ const TeamTotalGoals = (statistics, market) => {
         market.outcomes[1].status = 2;
       }
     }
+  }
 
-    if (market.outcomes[0].outcomeId === "19002") {
-      let totalGoals = 0;
-      statistics.events.forEach((event) => {
-        if (event.text.includes(" Goal -")) {
-          const teamScored =
-            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-            homeTeam
-              ? "home"
-              : "away";
-
-          //Check if it's not extra time
-          if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
-            if (teamScored === "away") {
-              totalGoals++;
-            }
-          }
-        }
+  if (market.outcomes[0].outcomeId === "19002") {
+    if (
+      parseInt(statistics.stats.goals[1]) >= parseFloat(market.specifiers.total)
+    ) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
       });
-
-      if (totalGoals < total) {
-        market.outcomes[0].status = 2;
-      }
-
-      if (totalGoals > total) {
-        market.outcomes[1].status = 2;
-      }
-    }
-  } else if (isFullTimeEnded(statistics)) {
-    market.outcomes.forEach((outcome) => {
-      outcome.status = 3;
-    });
-
-    const homeTeam = statistics.home.name;
-    const total = parseFloat(market.specifiers.total);
-
-    if (market.outcomes[0].outcomeId === "18002") {
       let totalGoals = 0;
       statistics.events.forEach((event) => {
         if (event.text.includes(" Goal -")) {
           const teamScored =
-            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-            homeTeam
-              ? "home"
-              : "away";
-
-          //Check if it's not extra time
-          if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
-            if (teamScored === "home") {
-              totalGoals++;
-            }
-          }
-        }
-      });
-
-      if (totalGoals < total) {
-        market.outcomes[0].status = 2;
-      }
-
-      if (totalGoals > total) {
-        market.outcomes[1].status = 2;
-      }
-    }
-
-    if (market.outcomes[0].outcomeId === "19002") {
-      let totalGoals = 0;
-      statistics.events.forEach((event) => {
-        if (event.text.includes(" Goal -")) {
-          const teamScored =
-            event.text.split(" ")[6].replace("(", "").replace(")", "") ===
+            event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
             homeTeam
               ? "home"
               : "away";
@@ -1033,29 +973,29 @@ const BothToScoreInBothHalves = (statistics, market) => {
 };
 
 const TotalGoalsOddEven = (statistics, market) => {
-  if (isFullTimeEnded(statistics)) {
-    market.outcomes.forEach((outcome) => {
-      outcome.status = 3;
-    });
+  market.outcomes.forEach((outcome) => {
+    outcome.status = 3;
+  });
 
-    let totalGoals = 0;
+  let totalGoals = 0;
 
-    statistics.events.forEach((event) => {
-      if (
-        event.text.includes(" Goal -") &&
-        parseInt(event.text.split(" ")[0].replace("'", "")) < 90
-      ) {
-        totalGoals++;
-      }
-    });
-
-    if (totalGoals % 2 === 1) {
-      market.outcomes[0].status = 2;
+  statistics.events.forEach((event) => {
+    if (
+      event.text.includes(" Goal -") &&
+      parseInt(event.text.split(" ")[0].replace("'", "")) < 90
+    ) {
+      totalGoals++;
     }
+  });
 
-    if (totalGoals % 2 === 0) {
-      market.outcomes[1].status = 2;
-    }
+  console.log(totalGoals);
+
+  if (totalGoals % 2 === 1) {
+    market.outcomes[0].status = 2;
+  }
+
+  if (totalGoals % 2 === 0) {
+    market.outcomes[1].status = 2;
   }
 };
 
@@ -1455,6 +1395,17 @@ const CorrectScore = (statistics, market) => {
   }
 };
 
+const AnyTimeCorrectScore = (statistics, market) => {
+  const score = statistics.ss.replace("-", ":");
+  market.outcomes.forEach((outcome) => {
+    if (outcome.outcome === score) {
+      outcome.status = 2;
+    } else {
+      outcome.status = 3;
+    }
+  });
+};
+
 const HalfTimeDoubleChance = (statistics, market) => {
   if (statistics.scores["1"]) {
     market.outcomes.forEach((outcome) => {
@@ -1612,4 +1563,5 @@ module.exports = {
   TeamToScore,
   HalfTimeTotalGoals,
   NumberOfGoals,
+  AnyTimeCorrectScore,
 };

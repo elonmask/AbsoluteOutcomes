@@ -377,14 +377,7 @@ class StatisticsComposer {
             }
           }
 
-          const score_ =
-            result.time_status === "3"
-              ? `${source.data.match.result.home}-${source.data.match.result.away}`
-              : `${
-                  source.data?.periods?.p1.home + source.data?.periods?.ft.home
-                }-${
-                  source.data?.periods?.p1.away + source.data?.periods?.ft.away
-                }`;
+          const score_ = `${source.data.match.result.home}-${source.data.match.result.away}`;
           if (result.ss === null) {
             result.ss = score_;
           } else {
@@ -394,12 +387,22 @@ class StatisticsComposer {
           }
 
           //scores
-          source.data.match.periods?.p1
-            ? (result.scores["1"] = source.data.match.periods.p1)
-            : "";
-          source.data.match.periods?.ft
-            ? (result.scores["2"] = source.data.match.periods.ft)
-            : "";
+          if (result.time_status === "3") {
+            source.data.match.periods?.p1
+              ? (result.scores["1"] = source.data.match.periods.p1)
+              : "";
+            source.data.match.periods?.ft
+              ? (result.scores["2"] = source.data.match.periods.ft)
+              : "";
+          } else {
+            if (source.data.match.status.name === "1st half") {
+              result.scores["1"] = {
+                home: parseInt(result.ss.split("-")[0]),
+                away: parseInt(result.ss.split("-")[1]),
+              };
+            } else if (source.data.match.status.name === "2nd half") {
+            }
+          }
 
           //TODO
           //result.stats = source.data.stats;

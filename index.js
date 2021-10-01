@@ -20,7 +20,8 @@ const getStatisticsData = () => {
       data: betradar,
     },
   ];*/
-  const betradar = require("./json/test/betradar_statistics.json").doc[0].data;
+  //const betradar = require("./json/test/betradar_statistics.json").doc[0].data;
+  const betradar = require("./json/timeline.json").doc[0].data;
   return [
     {
       source: "betradar",
@@ -34,7 +35,7 @@ app.get("/estimation", (req, res) => {
   //const odds = require("./json/match_estimated.json").odds;
   //const statistics = require("./json/bet365_statistics.json").results[0];
 
-  const odds = require("./json/test/match_to_estimate.json").odds;
+  const odds = require("./json/event.json").odds;
   //console.log(odds);
   axios
     .get(`http://localhost:${PORT}/statistics`)

@@ -34,7 +34,9 @@ const {
   TeamToScore,
   HalfTimeTotalGoals,
   NumberOfGoals,
+  AnyTimeCorrectScore,
 } = require("./Functions");
+const { mark } = require("yarn/lib/cli");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -44,6 +46,7 @@ class Estimate {
 
   EstimateMarket = (market) => {
     const outcomeID = market.outcomes[0].outcomeId;
+    console.log(outcomeID);
 
     switch (outcomeID) {
       case "1001":
@@ -73,6 +76,7 @@ class Estimate {
       case "1037002":
         WinOver(this.statistics, market);
         break;
+        4;
       case "14001":
         Handicap3Way(this.statistics, market);
         break;
@@ -143,6 +147,9 @@ class Estimate {
         break;
       case "889002":
         CorrectScore(this.statistics, market);
+        break;
+      case "1050011":
+        AnyTimeCorrectScore(this.statistics, market);
         break;
       case "58001":
         HalfTimeDoubleChance(this.statistics, market);
