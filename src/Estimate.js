@@ -35,6 +35,10 @@ const {
   HalfTimeTotalGoals,
   NumberOfGoals,
   AnyTimeCorrectScore,
+  HalfTimeAnyTimeCorrectScore,
+  HalfTimeResultTotal,
+  GoalScorer,
+  HalfTimeTeamTotalGoals,
 } = require("./Functions");
 const { mark } = require("yarn/lib/cli");
 
@@ -162,8 +166,23 @@ class Estimate {
       case "895003":
         NumberOfGoals(this.statistics, market);
         break;
+      case "1051017":
+        HalfTimeAnyTimeCorrectScore(this.statistics, market);
+        break;
+      case "1054006":
+        HalfTimeResultTotal(this.statistics, market);
+        break;
+      case "63002":
+      case "64002":
+        HalfTimeTeamTotalGoals(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
+    }
+    switch (market.name) {
+      case "{!goalnr} goalscorer":
+        GoalScorer(this.statistics, market);
+        break;
     }
   };
 

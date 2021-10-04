@@ -33,19 +33,64 @@ const eventNameToCommon = (eventName) => {
 };
 
 const BetradarEventWithPlayer = (event, team) => {
-  return (
-    event.time +
-    "'" +
-    " - " +
-    event.name +
-    " - " +
-    event.player.name.replace(" ", "").split(",")[1] +
-    " " +
-    event.player.name.replace(" ", "").split(",")[0] +
-    " (" +
-    team +
-    ")"
-  );
+  if (event.player) {
+    if (event.player.name.includes(",")) {
+      return (
+        event.time +
+        "'" +
+        " - " +
+        event.name +
+        " - " +
+        event.player.name.replace(" ", "").split(",")[1] +
+        " " +
+        event.player.name.replace(" ", "").split(",")[0] +
+        " (" +
+        team +
+        ")"
+      );
+    } else {
+      return (
+        event.time +
+        "'" +
+        " - " +
+        event.name +
+        " - " +
+        event.player.name +
+        " (" +
+        team +
+        ")"
+      );
+    }
+  }
+  if (event.scorer) {
+    if (event.scorer.name.includes(",")) {
+      return (
+        event.time +
+        "'" +
+        " - " +
+        event.name +
+        " - " +
+        event.scorer.name.replace(" ", "").split(",")[1] +
+        " " +
+        event.scorer.name.replace(" ", "").split(",")[0] +
+        " (" +
+        team +
+        ")"
+      );
+    } else {
+      return (
+        event.time +
+        "'" +
+        " - " +
+        event.name +
+        " - " +
+        event.scorer.name +
+        " (" +
+        team +
+        ")"
+      );
+    }
+  }
 };
 
 const BetradarEventWithoutPlayer = (event, team) => {

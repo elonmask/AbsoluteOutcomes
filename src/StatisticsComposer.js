@@ -97,8 +97,10 @@ class StatisticsComposer {
         case "betradar":
           source.data.events.forEach((event) => {
             if (
-              typeof event.player !== "undefined" &&
-              event.player.name.length > 3
+              (typeof event.player !== "undefined" &&
+                event.player.name.length > 3) ||
+              (typeof event.scorer !== "undefined" &&
+                event.scorer.name.length > 3)
             ) {
               const team = BetradarEventTeam(event, source);
               const eventData = eventNameToCommon(

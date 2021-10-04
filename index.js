@@ -45,8 +45,6 @@ app.get("/estimation", (req, res) => {
       const estimation = new Estimate(statistics, odds);
       estimation.Start();
 
-      console.log(odds);
-
       res.send(odds);
     })
     .catch(function (error) {
