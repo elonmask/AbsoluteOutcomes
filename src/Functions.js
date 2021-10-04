@@ -556,30 +556,51 @@ const BothToScoreTotalGoals = (statistics, market) => {
 };
 
 const ToWinToNil = (statistics, market) => {
-  if (isFullTimeEnded(statistics)) {
-    market.outcomes.forEach((outcome) => {
-      outcome.status = 3;
-    });
-
+  if (
+    parseInt(statistics.ss.split("-")[0]) > 0 ||
+    parseInt(statistics.ss.split("-")[1]) > 0
+  ) {
     const marketBetTeam =
       market.outcomes[0].outcomeId === "1039002" ? "home" : "away";
 
-    const homeResult = parseInt(statistics.scores["2"].home);
-    const awayResult = parseInt(statistics.scores["2"].away);
+    const homeResult = parseInt(statistics.ss.split("-")[0]);
+    const awayResult = parseInt(statistics.ss.split("-")[1]);
 
     if (marketBetTeam === "home") {
-      if (homeResult > awayResult && awayResult === 0) {
-        market.outcomes[0].status = 2;
+      if (isFullTimeEnded(statistics)) {
+        market.outcomes.forEach((outcome) => {
+          outcome.status = 3;
+        });
+
+        if (homeResult > awayResult && awayResult === 0) {
+          market.outcomes[0].status = 2;
+        } else {
+          market.outcomes[1].status = 2;
+        }
       } else {
-        market.outcomes[1].status = 2;
+        if (awayResult > 0) {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 2;
+        }
       }
     }
 
     if (marketBetTeam === "away") {
-      if (awayResult > homeResult && homeResult === 0) {
-        market.outcomes[0].status = 2;
+      if (isFullTimeEnded(statistics)) {
+        market.outcomes.forEach((outcome) => {
+          outcome.status = 3;
+        });
+
+        if (awayResult > homeResult && homeResult === 0) {
+          market.outcomes[0].status = 2;
+        } else {
+          market.outcomes[1].status = 2;
+        }
       } else {
-        market.outcomes[1].status = 2;
+        if (homeResult > 0) {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 2;
+        }
       }
     }
   }
@@ -973,29 +994,31 @@ const BothToScoreInBothHalves = (statistics, market) => {
 };
 
 const TotalGoalsOddEven = (statistics, market) => {
-  market.outcomes.forEach((outcome) => {
-    outcome.status = 3;
-  });
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
 
-  let totalGoals = 0;
+    let totalGoals = 0;
 
-  statistics.events.forEach((event) => {
-    if (
-      event.text.includes(" Goal -") &&
-      parseInt(event.text.split(" ")[0].replace("'", "")) < 90
-    ) {
-      totalGoals++;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes(" Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 90
+      ) {
+        totalGoals++;
+      }
+    });
+
+    console.log(totalGoals);
+
+    if (totalGoals % 2 === 1) {
+      market.outcomes[0].status = 2;
     }
-  });
 
-  console.log(totalGoals);
-
-  if (totalGoals % 2 === 1) {
-    market.outcomes[0].status = 2;
-  }
-
-  if (totalGoals % 2 === 0) {
-    market.outcomes[1].status = 2;
+    if (totalGoals % 2 === 0) {
+      market.outcomes[1].status = 2;
+    }
   }
 };
 
@@ -1397,13 +1420,34 @@ const CorrectScore = (statistics, market) => {
 
 const AnyTimeCorrectScore = (statistics, market) => {
   const score = statistics.ss.replace("-", ":");
-  market.outcomes.forEach((outcome) => {
-    if (outcome.outcome === score) {
-      outcome.status = 2;
-    } else {
-      outcome.status = 3;
-    }
-  });
+
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      if (
+        outcome.outcome === score ||
+        (parseInt(score.split(":")[0]) <=
+          parseInt(outcome.outcome.split(":")[0]) &&
+          parseInt(score.split(":")[1]) <=
+            parseInt(outcome.outcome.split(":")[1]))
+      ) {
+        outcome.status = 2;
+      } else {
+        outcome.status = 3;
+      }
+    });
+  } else {
+    market.outcomes.forEach((outcome) => {
+      if (
+        outcome.outcome === score ||
+        (parseInt(outcome.outcome.split(":")[0]) <=
+          parseInt(score.split(":")[0]) &&
+          parseInt(outcome.outcome.split(":")[1]) <=
+            parseInt(score.split(":")[1]))
+      ) {
+        outcome.status = 2;
+      }
+    });
+  }
 };
 
 const HalfTimeDoubleChance = (statistics, market) => {
