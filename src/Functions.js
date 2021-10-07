@@ -1246,117 +1246,288 @@ const BothTeamsToScore = (statistics, market) => {
   }
 };
 
+const BothTeamsToScoreHalfTime = (statistics, market) => {
+  if (
+    parseInt(statistics.stats.goals[0]) > 0 &&
+    parseInt(statistics.stats.goals[1]) > 0
+  ) {
+    let awayScored = false;
+    let homeScored = false;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
+        if (event.text.includes(statistics.home.name)) {
+          homeScored = true;
+        }
+        if (event.text.includes(statistics.away.name)) {
+          awayScored = true;
+        }
+      }
+    });
+
+    if (awayScored && homeScored) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+  }
+};
+
 const FromTo3WayResult = (statistics, market) => {
-  market.outcomes.forEach((outcome) => {
-    outcome.status = 3;
-  });
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
 
-  const homeTeam = statistics.home.name;
-  const awayTeam = statistics.away.name;
+    const homeTeam = statistics.home.name;
+    const awayTeam = statistics.away.name;
 
-  const from = market.specifiers.from;
-  const to = market.specifiers.to;
+    const from = market.specifiers.from;
+    const to = market.specifiers.to;
 
-  let homeGoals = 0;
-  let awayGoals = 0;
+    let homeGoals = 0;
+    let awayGoals = 0;
 
-  statistics.events.forEach((event) => {
-    if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
-      if (
-        parseInt(event.text.split(" ")[0].replace("'", "")) >= parseInt(from) &&
-        parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
-      ) {
-        homeGoals++;
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
+        if (
+          parseInt(event.text.split(" ")[0].replace("'", "")) >=
+            parseInt(from) &&
+          parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+        ) {
+          homeGoals++;
+        }
+      }
+      if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
+        if (
+          parseInt(event.text.split(" ")[0].replace("'", "")) >=
+            parseInt(from) &&
+          parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+        ) {
+          awayGoals++;
+        }
+      }
+    });
+    if (homeGoals > awayGoals) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (awayGoals > homeGoals) {
+      market.outcomes[2].status = 2;
+    }
+
+    if (homeGoals === awayGoals) {
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (
+      parseInt(
+        statistics.events[statistics.events.length - 1].text
+          .split(" ")[0]
+          .replace("'", "")
+      ) >= parseInt(market.specifiers.to)
+    ) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+
+      const homeTeam = statistics.home.name;
+      const awayTeam = statistics.away.name;
+
+      const from = market.specifiers.from;
+      const to = market.specifiers.to;
+
+      let homeGoals = 0;
+      let awayGoals = 0;
+
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
+          if (
+            parseInt(event.text.split(" ")[0].replace("'", "")) >=
+              parseInt(from) &&
+            parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+          ) {
+            homeGoals++;
+          }
+        }
+        if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
+          if (
+            parseInt(event.text.split(" ")[0].replace("'", "")) >=
+              parseInt(from) &&
+            parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+          ) {
+            awayGoals++;
+          }
+        }
+      });
+      if (homeGoals > awayGoals) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (awayGoals > homeGoals) {
+        market.outcomes[2].status = 2;
+      }
+
+      if (homeGoals === awayGoals) {
+        market.outcomes[1].status = 2;
       }
     }
-    if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
-      if (
-        parseInt(event.text.split(" ")[0].replace("'", "")) >= parseInt(from) &&
-        parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
-      ) {
-        awayGoals++;
-      }
-    }
-  });
-
-  console.log(`Home: ${homeGoals}. Away goals: ${awayGoals}`);
-  if (homeGoals > awayGoals) {
-    market.outcomes[0].status = 2;
-  }
-
-  if (awayGoals > homeGoals) {
-    market.outcomes[2].status = 2;
-  }
-
-  if (homeGoals === awayGoals) {
-    market.outcomes[1].status = 2;
   }
 };
 
 const GoalBetween = (statistics, market) => {
-  market.outcomes.forEach((outcome) => {
-    outcome.status = 3;
-  });
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
 
-  const from = market.specifiers.from;
-  const to = market.specifiers.to;
-  let goals = 0;
+    const from = market.specifiers.from;
+    const to = market.specifiers.to;
+    let goals = 0;
 
-  statistics.events.forEach((event) => {
-    if (event.text.includes("- Goal -")) {
-      if (
-        parseInt(event.text.split(" ")[0].replace("'", "")) >= parseInt(from) &&
-        parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
-      ) {
-        goals++;
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Goal -")) {
+        if (
+          parseInt(event.text.split(" ")[0].replace("'", "")) >=
+            parseInt(from) &&
+          parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+        ) {
+          goals++;
+        }
+      }
+    });
+
+    if (goals > 0) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (goals === 0) {
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (
+      parseInt(
+        statistics.events[statistics.events.length - 1].text
+          .split(" ")[0]
+          .replace("'", "")
+      ) >= parseInt(market.specifiers.to)
+    ) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+
+      const from = market.specifiers.from;
+      const to = market.specifiers.to;
+      let goals = 0;
+
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal -")) {
+          if (
+            parseInt(event.text.split(" ")[0].replace("'", "")) >=
+              parseInt(from) &&
+            parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
+          ) {
+            goals++;
+          }
+        }
+      });
+
+      if (goals > 0) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (goals === 0) {
+        market.outcomes[1].status = 2;
       }
     }
-  });
-
-  if (goals > 0) {
-    market.outcomes[0].status = 2;
-  }
-
-  if (goals === 0) {
-    market.outcomes[1].status = 2;
   }
 };
 
 const HalftimeMinuteResult = (statistics, market) => {
-  market.outcomes.forEach((outcome) => {
-    outcome.status = 3;
-  });
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
 
-  const homeTeam = statistics.home.name;
-  const awayTeam = statistics.away.name;
+    const homeTeam = statistics.home.name;
+    const awayTeam = statistics.away.name;
 
-  let homeGoals = 0;
-  let awayGoals = 0;
+    let homeGoals = 0;
+    let awayGoals = 0;
 
-  const minute = parseInt(market.specifiers.minute);
-  statistics.events.forEach((event) => {
-    if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
-      if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
-        homeGoals++;
+    const minute = parseInt(market.specifiers.minute);
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
+          homeGoals++;
+        }
+      }
+      if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
+          awayGoals++;
+        }
+      }
+    });
+
+    if (homeGoals > awayGoals) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (awayGoals > homeGoals) {
+      market.outcomes[2].status = 2;
+    }
+
+    if (awayGoals === homeGoals) {
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (
+      parseInt(
+        statistics.events[statistics.events.length - 1].text
+          .split(" ")[0]
+          .replace("'", "")
+      ) >= parseInt(market.specifiers.minute)
+    ) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+
+      const homeTeam = statistics.home.name;
+      const awayTeam = statistics.away.name;
+
+      let homeGoals = 0;
+      let awayGoals = 0;
+
+      const minute = parseInt(market.specifiers.minute);
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
+          if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
+            homeGoals++;
+          }
+        }
+        if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
+          if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
+            awayGoals++;
+          }
+        }
+      });
+
+      if (homeGoals > awayGoals) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (awayGoals > homeGoals) {
+        market.outcomes[2].status = 2;
+      }
+
+      if (awayGoals === homeGoals) {
+        market.outcomes[1].status = 2;
       }
     }
-    if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
-      if (parseInt(event.text.split(" ")[0].replace("'", "")) <= minute) {
-        awayGoals++;
-      }
-    }
-  });
-
-  if (homeGoals > awayGoals) {
-    market.outcomes[0].status = 2;
-  }
-
-  if (awayGoals > homeGoals) {
-    market.outcomes[2].status = 2;
-  }
-
-  if (awayGoals === homeGoals) {
-    market.outcomes[1].status = 2;
   }
 };
 
@@ -1631,7 +1802,8 @@ const HalfTimeAnyTimeCorrectScore = (statistics, market) => {
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       if (
-        outcome.outcome === score ||
+        outcome.outcome ===
+          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["1"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
@@ -1658,11 +1830,51 @@ const HalfTimeAnyTimeCorrectScore = (statistics, market) => {
   }
 };
 
+const HalfTimeCorrectScore = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      if (
+        outcome.outcome ===
+          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        (parseInt(outcome.outcome.split(":")[0]) <=
+          statistics.scores["1"].home &&
+          parseInt(outcome.outcome.split(":")[1]) <=
+            statistics.scores["1"].away)
+      ) {
+        outcome.status = 2;
+      } else {
+        outcome.status = 3;
+      }
+    });
+  } else if (
+    statistics.scores["1"] &&
+    parseInt(
+      statistics.events[statistics.events.length - 1].text
+        .split(" ")[0]
+        .replace("'", "")
+    ) > 45
+  ) {
+    market.outcomes.forEach((outcome) => {
+      if (
+        outcome.outcome ===
+          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        (parseInt(outcome.outcome.split(":")[0]) <=
+          statistics.scores["1"].home &&
+          parseInt(outcome.outcome.split(":")[1]) <=
+            statistics.scores["1"].away)
+      ) {
+        outcome.status = 2;
+      }
+    });
+  }
+};
+
 const SecondHalfAnyTimeCorrectScore = (statistics, market) => {
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       if (
-        outcome.outcome === score ||
+        outcome.outcome ===
+          `${statistics.scores["2"].home}:${statistics.scores["2"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["2"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
@@ -1765,7 +1977,10 @@ const HalfTimeTotalGoals = (statistics, market) => {
     const goalsArr = [];
 
     statistics.events.forEach((event) => {
-      if (parseInt(event.text.split(" ")[0].replace("'", "")) < 45) {
+      if (
+        event.text.includes("- Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
         goalsArr.push(event);
       }
     });
@@ -1786,7 +2001,10 @@ const HalfTimeTotalGoals = (statistics, market) => {
     const goalsArr = [];
 
     statistics.events.forEach((event) => {
-      if (parseInt(event.text.split(" ")[0].replace("'", "")) < 45) {
+      if (
+        event.text.includes("- Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
         goalsArr.push(event);
       }
     });
@@ -2358,6 +2576,483 @@ const SecondHalfTeamTotalGoals = (statistics, market) => {
   }
 };
 
+const TotalGoalsInFirst10Minutes = (statistics, market) => {
+  if (
+    parseInt(
+      statistics.events[statistics.events.length - 1].text
+        .split(" ")[0]
+        .replace("'", "")
+    ) >= 10
+  ) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    let totalGoals = 0;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) <= 10
+      ) {
+        totalGoals++;
+      }
+    });
+    const total = parseFloat(market.specifiers.sbv);
+
+    if (totalGoals < total) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (totalGoals > total) {
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TotalThrowInsInFirst10Minutes = (statistics, market) => {
+  if (
+    parseInt(
+      statistics.events[statistics.events.length - 1].text
+        .split(" ")[0]
+        .replace("'", "")
+    ) >= 10
+  ) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    let totalThrowIns = 0;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Throw-in -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) <= 10
+      ) {
+        totalThrowIns++;
+      }
+    });
+    const total = parseFloat(market.specifiers.sbv);
+
+    if (totalThrowIns < total) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (totalThrowIns > total) {
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TeamTotalSaves = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const bettingTeam =
+    market.outcomes[0].outcomeId === "5000000730" ? "home" : "away";
+
+  if (isFullTimeEnded(statistics)) {
+    if (
+      parseInt(statistics.stats.saves[bettingTeam === "home" ? 0 : 1]) < total
+    ) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+
+    if (
+      parseInt(statistics.stats.saves[bettingTeam === "home" ? 0 : 1]) > total
+    ) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (
+      parseInt(statistics.stats.saves[bettingTeam === "home" ? 0 : 1]) > total
+    ) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TotalSaves = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const totalSaves =
+    parseInt(statistics.stats.saves[0]) + parseInt(statistics.stats.saves[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalSaves < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalSaves > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalSaves > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const HalfTimeTeamTotalThrowIns = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const bettingTeam =
+    market.outcomes[0].outcomeId === "5000000700" ? "away" : "home";
+  let totalThrowIns = 0;
+
+  statistics.events.forEach((event) => {
+    if (
+      event.text.includes("- Throw-in - ") &&
+      event.text.includes(
+        bettingTeam === "home" ? statistics.home.name : statistics.away.name
+      ) &&
+      parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+    ) {
+      totalThrowIns++;
+    }
+  });
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalThrowIns < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalThrowIns > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalThrowIns > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const HalfTimeTeamTotalShots = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const bettingTeam =
+    market.outcomes[0].outcomeId === "5000000660" ? "away" : "home";
+  let totalShots = 0;
+
+  statistics.events.forEach((event) => {
+    if (
+      event.text.includes("- Shot off") ||
+      (event.text.includes("- Shot on") &&
+        event.text.includes(
+          bettingTeam === "home" ? statistics.home.name : statistics.away.name
+        ) &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45)
+    ) {
+      totalShots++;
+    }
+  });
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalShots < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalShots > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalShots > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TotalCorners = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const totalCorners =
+    parseInt(statistics.stats.corners[0]) +
+    parseInt(statistics.stats.corners[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalCorners < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TeamTotalCorners = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const bettingTeam =
+    market.outcomes[0].outcomeId === "157002" ? "home" : "away";
+  const totalCorners = parseInt(
+    statistics.stats.corners[bettingTeam === "home" ? 0 : 1]
+  );
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalCorners < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TotalOffsides = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const totalOffsides =
+    parseInt(statistics.stats.offsides[0]) +
+    parseInt(statistics.stats.offsides[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalOffsides < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalOffsides > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalOffsides > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const TotalShotsOnGoal = (statistics, market) => {
+  const total = parseFloat(market.specifiers.sbv);
+  const totalShotsOnGoal =
+    parseInt(statistics.stats.on_target[0]) +
+    parseInt(statistics.stats.on_target[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalShotsOnGoal < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalShotsOnGoal > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalShotsOnGoal > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const HalfTimeTotalShotsOnGoal = (statistics, market) => {
+  if (
+    statistics.scores["1"] &&
+    parseInt(statistics.stats.on_target[0]) +
+      parseInt(statistics.stats.on_target[1]) >=
+      parseFloat(market.specifiers.total)
+  ) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const total = parseInt(market.specifiers.total);
+    const shotsArr = [];
+
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Shot on target -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
+        shotsArr.push(event);
+      }
+    });
+
+    if (shotsArr.length > total) {
+      market.outcomes[1].status = 2;
+    }
+
+    if (shotsArr.length < total) {
+      market.outcomes[0].status = 2;
+    }
+  } else if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const total = parseInt(market.specifiers.total);
+    const shotsArr = [];
+
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Shot on target -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
+        shotsArr.push(event);
+      }
+    });
+
+    if (shotsArr.length > total) {
+      market.outcomes[1].status = 2;
+    }
+
+    if (shotsArr.length < total) {
+      market.outcomes[0].status = 2;
+    }
+  }
+};
+
+const FirstToScore = (statistics, market) => {
+  if (
+    parseInt(statistics.stats.goals[0]) > 0 ||
+    parseInt(statistics.stats.goals[1]) > 0
+  ) {
+    let goalsCounter = 0;
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Goal -") && goalsCounter === 0) {
+        goalsCounter = 1;
+        const scorer = event.text
+          .split(" - ")[2]
+          .replace(statistics.home.name)
+          .replace(statistics.away.name)
+          .replace(" (", "")
+          .replace(")", "");
+
+        console.log("SCORER:::::::", scorer);
+
+        market.outcomes.forEach((outcome) => {
+          if (scorer.includes(outcome.outcome) || scorer === outcome.outcome) {
+            outcome.status = 2;
+          } else {
+            outcome.status = 3;
+          }
+        });
+      }
+    });
+  }
+};
+
+const ToScoreTwoOrMoreGoals = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      const Player = outcome.outcome;
+      let score = 0;
+
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal -")) {
+          const scorer = event.text
+            .split(" - ")[2]
+            .replace(statistics.home.name)
+            .replace(statistics.away.name)
+            .replace(" (", "")
+            .replace(")", "");
+          if (scorer.includes(Player)) {
+            score++;
+          }
+        }
+      });
+
+      if (score >= 2) {
+        outcome.status = 2;
+      } else {
+        outcome.status = 3;
+      }
+    });
+  } else {
+    if (
+      parseInt(statistics.stats.goals[0]) >= 2 ||
+      parseInt(statistics.stats.goals[1]) >= 2
+    ) {
+      market.outcomes.forEach((outcome) => {
+        const Player = outcome.outcome;
+        let score = 0;
+
+        statistics.events.forEach((event) => {
+          if (event.text.includes("- Goal -")) {
+            const scorer = event.text
+              .split(" - ")[2]
+              .replace(statistics.home.name)
+              .replace(statistics.away.name)
+              .replace(" (", "")
+              .replace(")", "");
+            if (scorer.includes(Player)) {
+              score++;
+            }
+          }
+        });
+
+        if (score >= 2) {
+          outcome.status = 2;
+        }
+      });
+    }
+  }
+};
+
+const TimeOfTeamFirstGoal = (statistics, market) => {
+  //TODO
+  /*if (isFullTimeEnded(statistics)) {
+  } else {
+    if (parseInt(statistics.stats.goals[0]) > 0 || parseInt(statistics.stats.goals[1]) > 0) {
+      if (parseInt(statistics.stats.goals[0]) > 0) {
+
+      }
+      if (parseInt(statistics.stats.goals[1]) > 0) {
+
+      }
+    }
+  }*/
+};
+
+const HalfTimeGoals = (statistics, market) => {
+  if (
+    parseInt(
+      statistics.events[statistics.events.length - 1].text
+        .split(" ")[0]
+        .replace("'", "")
+    ) > 45
+  ) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    let totalGoals = 0;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.includes("- Goal -") &&
+        parseInt(event.text.split(" ")[0].replace("'", "")) < 45
+      ) {
+        totalGoals++;
+      }
+    });
+
+    if (totalGoals === 1) {
+      market.outcomes[0].status = 2;
+    }
+
+    if (totalGoals === 2) {
+      market.outcomes[1].status = 2;
+    }
+
+    if (totalGoals >= 3) {
+      market.outcomes[2].status = 2;
+    }
+
+    if (totalGoals === 0) {
+      market.outcomes[3].status = 2;
+    }
+  }
+};
 module.exports = {
   fullTimeResult,
   HalfTimeFullTime,
@@ -2405,4 +3100,20 @@ module.exports = {
   SecondTimeTotalGoals,
   SecondHalfResultTotal,
   SecondHalfTeamTotalGoals,
+  BothTeamsToScoreHalfTime,
+  HalfTimeCorrectScore,
+  TotalGoalsInFirst10Minutes,
+  TotalThrowInsInFirst10Minutes,
+  TeamTotalSaves,
+  TotalSaves,
+  HalfTimeTeamTotalThrowIns,
+  HalfTimeTeamTotalShots,
+  TotalCorners,
+  TeamTotalCorners,
+  TotalOffsides,
+  TotalShotsOnGoal,
+  HalfTimeTotalShotsOnGoal,
+  FirstToScore,
+  ToScoreTwoOrMoreGoals,
+  HalfTimeGoals,
 };

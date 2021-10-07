@@ -320,13 +320,10 @@ class StatisticsComposer {
             }
           }
 
-          //TODO
           result.scores = source.data.scores;
 
-          //TODO
           result.stats = source.data.stats;
 
-          //TODO
           result.extra = source.data.extra;
 
           break;
@@ -405,12 +402,6 @@ class StatisticsComposer {
             } else if (source.data.match.status.name === "2nd half") {
             }
           }
-
-          //TODO
-          //result.stats = source.data.stats;
-
-          //TODO
-          //result.extra = source.data.extra;
           break;
       }
     });

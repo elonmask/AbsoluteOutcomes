@@ -43,8 +43,23 @@ const {
   SecondHalfAnyTimeCorrectScore,
   SecondTimeTotalGoals,
   SecondHalfTeamTotalGoals,
+  BothTeamsToScoreHalfTime,
+  HalfTimeCorrectScore,
+  TotalGoalsInFirst10Minutes,
+  TotalThrowInsInFirst10Minutes,
+  TeamTotalSaves,
+  TotalSaves,
+  HalfTimeTeamTotalThrowIns,
+  HalfTimeTeamTotalShots,
+  TotalCorners,
+  TeamTotalCorners,
+  TotalOffsides,
+  TotalShotsOnGoal,
+  HalfTimeTotalShotsOnGoal,
+  FirstToScore,
+  ToScoreTwoOrMoreGoals,
+  HalfTimeGoals,
 } = require("./Functions");
-const { mark } = require("yarn/lib/cli");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -190,6 +205,52 @@ class Estimate {
       case "84002":
         SecondHalfTeamTotalGoals(this.statistics, market);
         break;
+      case "69001":
+        BothTeamsToScoreHalfTime(this.statistics, market);
+        break;
+      case "75004":
+        HalfTimeCorrectScore(this.statistics, market);
+        break;
+      case "5000000760":
+        TotalGoalsInFirst10Minutes(this.statistics, market);
+        break;
+      case "5000000790":
+        TotalThrowInsInFirst10Minutes(this.statistics, market);
+        break;
+      case "5000000730":
+      case "5000000740":
+        TeamTotalSaves(this.statistics, market);
+        break;
+      case "5000000720":
+        TotalSaves(this.statistics, market);
+        break;
+      case "5000000700":
+      case "5000000670":
+        HalfTimeTeamTotalThrowIns(this.statistics, market);
+        break;
+      case "5000000630":
+      case "5000000660":
+        HalfTimeTeamTotalShots(this.statistics, market);
+        break;
+      case "156002":
+        TotalCorners(this.statistics, market);
+        break;
+      case "157002":
+      case "158002":
+        TeamTotalCorners(this.statistics, market);
+        break;
+      case "5000000090":
+        TotalOffsides(this.statistics, market);
+        break;
+      case "5000000110":
+        TotalShotsOnGoal(this.statistics, market);
+        break;
+      case "5000000310":
+        HalfTimeTotalShotsOnGoal(this.statistics, market);
+        break;
+      case "918001":
+        HalfTimeGoals(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -197,12 +258,19 @@ class Estimate {
       case "{!goalnr} goalscorer":
         GoalScorer(this.statistics, market);
         break;
+      case "First to score for their team":
+        FirstToScore(this.statistics, market);
+        break;
+      case "To score 2 or more goals":
+        ToScoreTwoOrMoreGoals(this.statistics, market);
+        break;
     }
   };
 
   Start = () => {
     this.marketsToEstimate.forEach((market) => {
       this.EstimateMarket(market);
+      console.log(market.name);
     });
 
     console.log("Markets estimated.");
