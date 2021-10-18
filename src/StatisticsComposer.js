@@ -4,7 +4,7 @@ const {
   eventNameToCommon,
   BetradarEventWithPlayer,
   BetradarEventWithoutPlayer,
-  Validate,
+  Validate, BetradarTennisEventTeam, BetradarTennisEvent,
 } = require("./utils/utils");
 
 class StatisticsComposer {
@@ -24,7 +24,7 @@ class StatisticsComposer {
     this.sources = sourcesArray;
   }
 
-  ComposeEvents = () => {
+  ComposeEventsSoccer = () => {
     //Buffer to store all events
     const eventsBuffer = [];
 
@@ -212,8 +212,85 @@ class StatisticsComposer {
 
     return result;
   };
+  ComposeEventsTennis = () => {
+    const eventsBuffer = [];
 
-  Compose = () => {
+    this.sources.forEach((source) => {
+      switch (source.source) {
+        case "bet365":
+          break;
+        case "betradar":
+          source.data.events.forEach((event) => {
+            const player = BetradarTennisEventTeam(event, source);
+            const eventData = BetradarTennisEvent(event, player);
+
+            const bufferValue = eventsBuffer.find(event => event.data === eventData);
+
+            if (typeof bufferValue !== "undefined") {
+              //Event exist in buffer
+              if (bufferValue.confirmable) {
+                if (eventData.length > bufferValue.data.length) {
+                  bufferValue.data = eventData;
+                  bufferValue.confirmations++;
+                } else {
+                  bufferValue.confirmations++;
+                }
+              }
+            } else {
+              //Event is not in buffer
+              if (eventData.includes("periodscore") || eventData.includes("Score change tennis")) {
+                eventsBuffer.push({
+                  data: eventData,
+                  extra: {
+                    set_score: event.set_score,
+                    game_score: event.game_score,
+                    game_points: event.game_points,
+                    service: event.service
+                  },
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+              } else {
+                eventsBuffer.push({
+                  data: eventData,
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+              }
+            }
+          });
+      }
+    });
+
+    const result = [];
+
+    /*
+     * validity: 1 - Event was confirmed by all sources
+     * validuty: 2 - Event was confirmed by 50% sources
+     * validity: 3 - Event was confirmed by less then 50% sources
+     * */
+    eventsBuffer.forEach((event) => {
+      const validity = Validate(this.sources, event);
+      const info =
+        validity === 1
+          ? "Confirmed by all sources"
+          : validity === 2
+            ? "Confirmed by 50% sources"
+            : validity === 3
+              ? "Confirmed by less then 50% sources"
+              : "";
+      result.push({
+        text: event.data,
+        extra: event?.extra || null,
+        validity: validity,
+        info: info,
+      });
+    });
+
+    return result;
+  };
+
+  ComposeSoccer = () => {
     const result = {
       sport_id: null,
       //time: null,
@@ -407,7 +484,7 @@ class StatisticsComposer {
     });
 
     //Events
-    result.events = this.ComposeEvents();
+    result.events = this.ComposeEventsSoccer();
 
     //Stats
     result.events.forEach((event) => {
@@ -521,6 +598,66 @@ class StatisticsComposer {
     });
 
     return result;
+  }
+  ComposeTennis = () => {
+    const result = {
+      sport_id: null,
+      //time: null,
+      time_status: null,
+      home: {
+        name: null,
+      },
+      away: {
+        name: null,
+      },
+      result: null,
+      periods: null,
+      events: [],
+    };
+
+    this.sources.forEach(source => {
+      switch (source.source) {
+        case "betradar":
+          const sport_id_ = source.data.match._sid.toString();
+          if (result.sport_id === null) {
+            result.sport_id = sport_id_;
+          } else {
+            if (result.sport_id !== sport_id_) {
+              result.sport_id = "not_defined";
+            }
+          }
+
+          //time status
+          if (source.data.match.timeinfo.running === true) {
+            result.time_status = "not_ended"
+          } else {
+            result.time_status = "3";
+          }
+
+          //home
+          result.home.name = source.data.match.teams.home.name;
+          //away
+          result.away.name = source.data.match.teams.away.name;
+
+          //result
+          result.result = source.data.match.result;
+          //periods
+          result.periods = source.data.match.periods
+
+          //events
+          result.events = this.ComposeEventsTennis()
+      }
+    })
+    return result;
+  }
+
+  Compose = (sportID) => {
+    switch (sportID) {
+      case 1:
+        return this.ComposeSoccer()
+      case 5:
+        return this.ComposeTennis()
+    }
   };
 }
 

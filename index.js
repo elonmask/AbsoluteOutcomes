@@ -21,7 +21,7 @@ const getStatisticsData = () => {
     },
   ];*/
   //const betradar = require("./json/test/betradar_statistics.json").doc[0].data;
-  const betradar = require("./json/timeline.json").doc[0].data;
+  const betradar = require("./json/tennis/event1_statistics_ended.json").doc[0].data;
   return [
     {
       source: "betradar",
@@ -35,10 +35,11 @@ app.get("/estimation", (req, res) => {
   //const odds = require("./json/match_estimated.json").odds;
   //const statistics = require("./json/bet365_statistics.json").results[0];
 
-  const odds = require("./json/event.json").odds;
-  //console.log(odds);
+  const odds = require("./json/tennis/event1_outcomes.json").odds;
+  //For tennis
+  const sport_id = 5;
   axios
-    .get(`http://localhost:${PORT}/statistics`)
+    .get(`http://localhost:${PORT}/statistics/?sport_id=${sport_id}`)
     .then((response) => {
       // handle success
       const statistics = response.data;
@@ -58,7 +59,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/statistics", (req, res) => {
-  const stat = new StatisticsComposer(getStatisticsData()).Compose();
+  const stat = new StatisticsComposer(getStatisticsData()).Compose(parseInt(req.query.sport_id));
 
   res.send(stat);
 });

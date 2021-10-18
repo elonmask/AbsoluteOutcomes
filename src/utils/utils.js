@@ -105,6 +105,28 @@ const BetradarEventTeam = (event, source) => {
     : "";
 };
 
+const BetradarTennisEventTeam = (event, source) => {
+  return event.team.length > 3
+    ? event.team === "home"
+      ? source.data.match.teams.home.name
+      : source.data.match.teams.away.name
+    : "";
+}
+
+const BetradarTennisEvent = (event, team) => {
+  if (team.length > 1) {
+    if (event.type === "score_change_tennis" && event.pointflag.length > 1) {
+      return event.name + " - " + team + " - " + event.pointflag;
+    }
+    if (event.type === "periodscore") {
+      return event.name + " periodscore" + " - " + team + " - " + event.pointflag
+    }
+    return event.name + " - " + team;
+  } else {
+    return event.name;
+  }
+}
+
 const Validate = (sources, event) => {
   if (event.confirmations >= sources.length) {
     return 1;
@@ -125,4 +147,6 @@ module.exports = {
   BetradarEventWithoutPlayer,
   BetradarEventTeam,
   Validate,
+  BetradarTennisEventTeam,
+  BetradarTennisEvent
 };
