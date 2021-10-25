@@ -3,7 +3,7 @@
   "providerTimestamp": 1633891979463,
   "sportsbookTimestamp": 1633891980231,
   "startDate": "2021-10-10T18:11:08.000+0000",
-  "status": 1,
+  "status": 0,
   "providerStatus": "live",
   "eventType": "Match",
   "sportId": 5,
@@ -45,7 +45,7 @@
           "id": 329120637,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -53,7 +53,7 @@
           "id": 329120638,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -72,7 +72,7 @@
           "id": 329124625,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -80,7 +80,7 @@
           "id": 329124626,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.1,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -126,7 +126,7 @@
           "id": 329101635,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:18:25.000+0000"
         },
@@ -134,7 +134,7 @@
           "id": 329101634,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.2,
           "providerTimestamp": "2021-10-10T18:18:25.000+0000"
         }
@@ -153,7 +153,7 @@
           "id": 329101639,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:21:19.000+0000"
         },
@@ -161,7 +161,7 @@
           "id": 329101638,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.05556,
           "providerTimestamp": "2021-10-10T18:21:19.000+0000"
         }
@@ -180,7 +180,7 @@
           "id": 329107233,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -188,7 +188,7 @@
           "id": 329107234,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -207,7 +207,7 @@
           "id": 329111213,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:29:44.000+0000"
         },
@@ -215,7 +215,7 @@
           "id": 329111212,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.05556,
           "providerTimestamp": "2021-10-10T18:29:44.000+0000"
         }
@@ -234,7 +234,7 @@
           "id": 329112176,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:33:13.000+0000"
         },
@@ -242,7 +242,7 @@
           "id": 329112175,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:33:13.000+0000"
         }
@@ -261,7 +261,7 @@
           "id": 329113235,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         },
@@ -269,7 +269,7 @@
           "id": 329113234,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.08333,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         }
@@ -288,7 +288,7 @@
           "id": 329115035,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -296,7 +296,7 @@
           "id": 329115036,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         }
@@ -315,7 +315,7 @@
           "id": 329117074,
           "outcome": "under {total}",
           "outcomeId": "1024002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:45:58.000+0000"
         },
@@ -323,7 +323,7 @@
           "id": 329117073,
           "outcome": "over {total}",
           "outcomeId": "1024001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.11111,
           "providerTimestamp": "2021-10-10T18:45:58.000+0000"
         }
@@ -342,7 +342,7 @@
           "id": 329120650,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:51:31.000+0000"
         },
@@ -350,7 +350,7 @@
           "id": 329120652,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.1,
           "providerTimestamp": "2021-10-10T18:51:31.000+0000"
         }
@@ -369,7 +369,7 @@
           "id": 329124636,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -377,7 +377,7 @@
           "id": 329124637,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -423,7 +423,7 @@
           "id": 329101691,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -431,7 +431,7 @@
           "id": 329101690,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.05556,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -450,7 +450,7 @@
           "id": 329101693,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -458,7 +458,7 @@
           "id": 329101692,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         }
@@ -477,7 +477,7 @@
           "id": 329107251,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:25:52.000+0000"
         },
@@ -485,7 +485,7 @@
           "id": 329107253,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.08333,
           "providerTimestamp": "2021-10-10T18:25:52.000+0000"
         }
@@ -504,7 +504,7 @@
           "id": 329111200,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:28:32.000+0000"
         },
@@ -512,7 +512,7 @@
           "id": 329111198,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:28:32.000+0000"
         }
@@ -531,7 +531,7 @@
           "id": 329112187,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 7.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -539,7 +539,7 @@
           "id": 329112190,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0625,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -558,7 +558,7 @@
           "id": 329113211,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:37:43.000+0000"
         },
@@ -566,7 +566,7 @@
           "id": 329113210,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:37:43.000+0000"
         }
@@ -585,7 +585,7 @@
           "id": 329115068,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:43:56.000+0000"
         },
@@ -593,7 +593,7 @@
           "id": 329115069,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.1,
           "providerTimestamp": "2021-10-10T18:43:56.000+0000"
         }
@@ -612,7 +612,7 @@
           "id": 329117056,
           "outcome": "under {total}",
           "outcomeId": "1025002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.5,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -620,7 +620,7 @@
           "id": 329117055,
           "outcome": "over {total}",
           "outcomeId": "1025001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.5,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -639,7 +639,7 @@
           "id": 328525187,
           "outcome": "2:0",
           "outcomeId": "1027002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -647,7 +647,7 @@
           "id": 328525173,
           "outcome": "1:1",
           "outcomeId": "1027001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.55,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -655,7 +655,7 @@
           "id": 328525189,
           "outcome": "0:2",
           "outcomeId": "1027003",
-          "status": 1,
+          "status": 0,
           "oddValue": 27,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -674,7 +674,7 @@
           "id": 328525243,
           "outcome": "4:0",
           "outcomeId": "1027006",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         },
@@ -682,7 +682,7 @@
           "id": 328525237,
           "outcome": "3:1",
           "outcomeId": "1027005",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.001,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         },
@@ -690,7 +690,7 @@
           "id": 328525238,
           "outcome": "2:2",
           "outcomeId": "1027004",
-          "status": 1,
+          "status": 0,
           "oddValue": 14,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         },
@@ -698,7 +698,7 @@
           "id": 328525246,
           "outcome": "0:4",
           "outcomeId": "1027008",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         },
@@ -706,7 +706,7 @@
           "id": 328525240,
           "outcome": "1:3",
           "outcomeId": "1027007",
-          "status": 1,
+          "status": 0,
           "oddValue": 16.5,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         }
@@ -725,7 +725,7 @@
           "id": 328525185,
           "outcome": "6:0",
           "outcomeId": "1027012",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -733,7 +733,7 @@
           "id": 328525174,
           "outcome": "5:1",
           "outcomeId": "1027011",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -741,7 +741,7 @@
           "id": 328525175,
           "outcome": "4:2",
           "outcomeId": "1027010",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.12,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -749,7 +749,7 @@
           "id": 328525165,
           "outcome": "3:3",
           "outcomeId": "1027009",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -757,7 +757,7 @@
           "id": 328525186,
           "outcome": "0:6",
           "outcomeId": "1027015",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -765,7 +765,7 @@
           "id": 328525188,
           "outcome": "1:5",
           "outcomeId": "1027014",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -773,7 +773,7 @@
           "id": 328525182,
           "outcome": "2:4",
           "outcomeId": "1027013",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -791,7 +791,7 @@
           "id": 328525228,
           "outcome": "under {total}",
           "outcomeId": "1030002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -799,7 +799,7 @@
           "id": 328525227,
           "outcome": "over {total}",
           "outcomeId": "1030001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         }
@@ -817,7 +817,7 @@
           "id": 328525168,
           "outcome": "under {total}",
           "outcomeId": "1031002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -825,7 +825,7 @@
           "id": 328525166,
           "outcome": "over {total}",
           "outcomeId": "1031001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         }
@@ -843,7 +843,7 @@
           "id": 328525199,
           "outcome": "under {total}",
           "outcomeId": "1057002",
-          "status": 1,
+          "status": 0,
           "oddValue": 9,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -851,7 +851,7 @@
           "id": 328525198,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.04,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -895,7 +895,7 @@
           "id": 328525254,
           "outcome": "under {total}",
           "outcomeId": "1057002",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -903,7 +903,7 @@
           "id": 328525248,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.001,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -921,7 +921,7 @@
           "id": 328525196,
           "outcome": "under {total}",
           "outcomeId": "1057002",
-          "status": 1,
+          "status": 0,
           "oddValue": 11,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -929,7 +929,7 @@
           "id": 328525195,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.02,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -947,7 +947,7 @@
           "id": 328525205,
           "outcome": "under {total}",
           "outcomeId": "1057002",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         },
@@ -955,7 +955,7 @@
           "id": 328525204,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -973,7 +973,7 @@
           "id": 328525223,
           "outcome": "under {total}",
           "outcomeId": "1057002",
-          "status": 1,
+          "status": 0,
           "oddValue": 21,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -981,7 +981,7 @@
           "id": 328525225,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.002,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -1059,7 +1059,7 @@
           "id": 328525167,
           "outcome": "over {total}",
           "outcomeId": "1057001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.001,
           "providerTimestamp": "2021-10-09T20:25:41.000+0000"
         }
@@ -1249,7 +1249,7 @@
           "id": 328525107,
           "outcome": "by 10",
           "outcomeId": "1067003",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         },
@@ -1257,7 +1257,7 @@
           "id": 328525114,
           "outcome": "by 11",
           "outcomeId": "1067004",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:29:31.000+0000"
         },
@@ -1265,7 +1265,7 @@
           "id": 328525118,
           "outcome": "by 12 or more",
           "outcomeId": "1067005",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:17:11.000+0000"
         },
@@ -1351,7 +1351,7 @@
           "id": 328525208,
           "outcome": "by 9",
           "outcomeId": "1068013",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:25:14.000+0000"
         },
@@ -1359,7 +1359,7 @@
           "id": 328525233,
           "outcome": "by 10",
           "outcomeId": "1068003",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:22:01.000+0000"
         },
@@ -1367,7 +1367,7 @@
           "id": 328525260,
           "outcome": "by 11",
           "outcomeId": "1068004",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -1375,7 +1375,7 @@
           "id": 328525258,
           "outcome": "by 12 or more",
           "outcomeId": "1068005",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:12:32.000+0000"
         },
@@ -1470,7 +1470,7 @@
           "id": 328128143,
           "outcome": "6:0 or 6:1",
           "outcomeId": "1071001",
-          "status": 1,
+          "status": 0,
           "oddValue": 11.5,
           "providerTimestamp": "2021-10-10T18:29:31.000+0000"
         },
@@ -1478,7 +1478,7 @@
           "id": 328128145,
           "outcome": "6:2 or 6:3",
           "outcomeId": "1071002",
-          "status": 1,
+          "status": 0,
           "oddValue": 30,
           "providerTimestamp": "2021-10-10T18:44:13.000+0000"
         },
@@ -1486,7 +1486,7 @@
           "id": 328128147,
           "outcome": "6:4, 7:5 or 7:6",
           "outcomeId": "1071003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01,
           "providerTimestamp": "2021-10-10T18:44:13.000+0000"
         }
@@ -1564,7 +1564,7 @@
           "id": 328525122,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.2,
           "providerTimestamp": "2021-10-10T18:52:22.000+0000"
         },
@@ -1572,7 +1572,7 @@
           "id": 328525120,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.65,
           "providerTimestamp": "2021-10-10T18:52:22.000+0000"
         }
@@ -1616,7 +1616,7 @@
           "id": 328525263,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -1624,7 +1624,7 @@
           "id": 328525264,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.16667,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         }
@@ -1668,7 +1668,7 @@
           "id": 329108636,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         },
@@ -1676,7 +1676,7 @@
           "id": 329108635,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.16667,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         }
@@ -1694,7 +1694,7 @@
           "id": 329109664,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         },
@@ -1702,7 +1702,7 @@
           "id": 329109663,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.1,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         }
@@ -1720,7 +1720,7 @@
           "id": 329111227,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 21,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         },
@@ -1728,7 +1728,7 @@
           "id": 329111228,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.004,
           "providerTimestamp": "2021-10-10T18:34:36.000+0000"
         }
@@ -1746,7 +1746,7 @@
           "id": 329111490,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 26,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         },
@@ -1754,7 +1754,7 @@
           "id": 329111492,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.002,
           "providerTimestamp": "2021-10-10T18:34:55.000+0000"
         }
@@ -1824,7 +1824,7 @@
           "id": 328525180,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -1832,7 +1832,7 @@
           "id": 328525179,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.7,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         }
@@ -1876,7 +1876,7 @@
           "id": 328525153,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.07143,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -1884,7 +1884,7 @@
           "id": 328525155,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         }
@@ -1902,7 +1902,7 @@
           "id": 328672902,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "176001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.05,
           "providerTimestamp": "2021-10-10T18:44:50.000+0000"
         },
@@ -1910,7 +1910,7 @@
           "id": 328672903,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "176002",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:44:50.000+0000"
         }
@@ -1952,7 +1952,7 @@
           "id": 329035081,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "177001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:52:41.000+0000"
         },
@@ -1960,7 +1960,7 @@
           "id": 329035080,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "177002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:52:41.000+0000"
         }
@@ -2000,7 +2000,7 @@
           "id": 329110859,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.1,
           "providerTimestamp": "2021-10-10T18:38:32.000+0000"
         },
@@ -2008,7 +2008,7 @@
           "id": 329110858,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.36364,
           "providerTimestamp": "2021-10-10T18:38:32.000+0000"
         }
@@ -2026,7 +2026,7 @@
           "id": 328525131,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.25,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         },
@@ -2034,7 +2034,7 @@
           "id": 328525130,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         }
@@ -2052,7 +2052,7 @@
           "id": 328525116,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.7,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         },
@@ -2060,7 +2060,7 @@
           "id": 328525113,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         }
@@ -2078,7 +2078,7 @@
           "id": 328525191,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.4,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -2086,7 +2086,7 @@
           "id": 328525157,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         }
@@ -2130,7 +2130,7 @@
           "id": 328525206,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.375,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         },
@@ -2138,7 +2138,7 @@
           "id": 328525207,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.57143,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         }
@@ -2182,7 +2182,7 @@
           "id": 328525241,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:49:05.000+0000"
         },
@@ -2190,7 +2190,7 @@
           "id": 328525236,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:46:23.000+0000"
         }
@@ -2208,7 +2208,7 @@
           "id": 329035085,
           "outcome": "under {total}",
           "outcomeId": "178002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         },
@@ -2216,7 +2216,7 @@
           "id": 329035084,
           "outcome": "over {total}",
           "outcomeId": "178001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.15,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         }
@@ -2260,7 +2260,7 @@
           "id": 328525139,
           "outcome": "under {total}",
           "outcomeId": "179002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.25,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         },
@@ -2268,7 +2268,7 @@
           "id": 328525142,
           "outcome": "over {total}",
           "outcomeId": "179001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.6,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         }
@@ -2312,7 +2312,7 @@
           "id": 328525259,
           "outcome": "under {total}",
           "outcomeId": "180002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:36:54.000+0000"
         },
@@ -2320,7 +2320,7 @@
           "id": 328525247,
           "outcome": "over {total}",
           "outcomeId": "180001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:36:54.000+0000"
         }
@@ -2338,7 +2338,7 @@
           "id": 329111224,
           "outcome": "under {total}",
           "outcomeId": "180002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.86957,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         },
@@ -2346,7 +2346,7 @@
           "id": 329111223,
           "outcome": "over {total}",
           "outcomeId": "180001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.86957,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         }
@@ -2364,7 +2364,7 @@
           "id": 329111915,
           "outcome": "under {total}",
           "outcomeId": "180002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.86957,
           "providerTimestamp": "2021-10-10T18:35:21.000+0000"
         },
@@ -2372,7 +2372,7 @@
           "id": 329111914,
           "outcome": "over {total}",
           "outcomeId": "180001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.86957,
           "providerTimestamp": "2021-10-10T18:35:21.000+0000"
         }
@@ -2390,7 +2390,7 @@
           "id": 329113082,
           "outcome": "under {total}",
           "outcomeId": "180002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.95,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         },
@@ -2398,7 +2398,7 @@
           "id": 329113081,
           "outcome": "over {total}",
           "outcomeId": "180001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:38:52.000+0000"
         }
@@ -2464,7 +2464,7 @@
           "id": 328525141,
           "outcome": "under 8.5",
           "outcomeId": "1077003",
-          "status": 1,
+          "status": 0,
           "oddValue": 10.5,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         },
@@ -2472,7 +2472,7 @@
           "id": 328525138,
           "outcome": "9 or 10",
           "outcomeId": "1077001",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.5,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -2480,7 +2480,7 @@
           "id": 328525144,
           "outcome": "over 10.5",
           "outcomeId": "1077002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.04,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -2550,7 +2550,7 @@
           "id": 328525245,
           "outcome": "yes",
           "outcomeId": "183001",
-          "status": 1,
+          "status": 0,
           "oddValue": 34,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         },
@@ -2558,7 +2558,7 @@
           "id": 328525239,
           "outcome": "no",
           "outcomeId": "183002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.004,
           "providerTimestamp": "2021-10-09T20:25:41.000+0000"
         }
@@ -2572,7 +2572,7 @@
           "id": 328525105,
           "outcome": "yes",
           "outcomeId": "184001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         },
@@ -2580,7 +2580,7 @@
           "id": 328525108,
           "outcome": "no",
           "outcomeId": "184002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:11:09.000+0000"
         }
@@ -2676,7 +2676,7 @@
           "id": 329109670,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "190001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -2684,7 +2684,7 @@
           "id": 329109671,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "190002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -2703,7 +2703,7 @@
           "id": 329111206,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "190001",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -2711,7 +2711,7 @@
           "id": 329111207,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "190002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.14286,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -2730,7 +2730,7 @@
           "id": 328525181,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "190001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.125,
           "providerTimestamp": "2021-10-10T18:52:22.000+0000"
         },
@@ -2738,7 +2738,7 @@
           "id": 328525184,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "190002",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.5,
           "providerTimestamp": "2021-10-10T18:52:22.000+0000"
         }
@@ -2752,7 +2752,7 @@
           "id": 328525222,
           "outcome": "yes",
           "outcomeId": "960002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.11111,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -2760,7 +2760,7 @@
           "id": 328525230,
           "outcome": "no",
           "outcomeId": "960001",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         }
@@ -2777,7 +2777,7 @@
           "id": 328128188,
           "outcome": "6:0",
           "outcomeId": "194001",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:02.000+0000"
         },
@@ -2785,7 +2785,7 @@
           "id": 328128187,
           "outcome": "6:1",
           "outcomeId": "194002",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.75,
           "providerTimestamp": "2021-10-10T18:29:31.000+0000"
         },
@@ -2793,7 +2793,7 @@
           "id": 328128186,
           "outcome": "6:2",
           "outcomeId": "194003",
-          "status": 1,
+          "status": 0,
           "oddValue": 9,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         },
@@ -2801,7 +2801,7 @@
           "id": 328128185,
           "outcome": "6:3",
           "outcomeId": "194004",
-          "status": 1,
+          "status": 0,
           "oddValue": 25,
           "providerTimestamp": "2021-10-10T18:44:13.000+0000"
         },
@@ -2809,7 +2809,7 @@
           "id": 328128181,
           "outcome": "6:4",
           "outcomeId": "194005",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -2833,7 +2833,7 @@
           "id": 328128176,
           "outcome": "0:6",
           "outcomeId": "194008",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:15:06.000+0000"
         },
@@ -2841,7 +2841,7 @@
           "id": 328128184,
           "outcome": "1:6",
           "outcomeId": "194009",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:19:25.000+0000"
         },
@@ -2849,7 +2849,7 @@
           "id": 328128166,
           "outcome": "2:6",
           "outcomeId": "194010",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:22:37.000+0000"
         },
@@ -2857,7 +2857,7 @@
           "id": 328128163,
           "outcome": "3:6",
           "outcomeId": "194011",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:33:57.000+0000"
         },
@@ -2865,7 +2865,7 @@
           "id": 328128172,
           "outcome": "4:6",
           "outcomeId": "194012",
-          "status": 1,
+          "status": 0,
           "oddValue": 39,
           "providerTimestamp": "2021-10-10T18:46:23.000+0000"
         },
@@ -3020,7 +3020,7 @@
           "id": 329101688,
           "outcome": "{$competitor1}",
           "outcomeId": "195001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.02,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -3028,7 +3028,7 @@
           "id": 329101689,
           "outcome": "{$competitor2}",
           "outcomeId": "195002",
-          "status": 1,
+          "status": 0,
           "oddValue": 11,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -3046,7 +3046,7 @@
           "id": 329101615,
           "outcome": "{$competitor1}",
           "outcomeId": "195001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.00133,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -3054,7 +3054,7 @@
           "id": 329101616,
           "outcome": "{$competitor2}",
           "outcomeId": "195002",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -3072,7 +3072,7 @@
           "id": 329101640,
           "outcome": "{$competitor1}",
           "outcomeId": "195001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -3080,7 +3080,7 @@
           "id": 329101641,
           "outcome": "{$competitor2}",
           "outcomeId": "195002",
-          "status": 1,
+          "status": 0,
           "oddValue": 15,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -3098,7 +3098,7 @@
           "id": 329111232,
           "outcome": "{$competitor1}",
           "outcomeId": "195001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.00333,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         },
@@ -3106,7 +3106,7 @@
           "id": 329111233,
           "outcome": "{$competitor2}",
           "outcomeId": "195002",
-          "status": 1,
+          "status": 0,
           "oddValue": 34,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -3124,7 +3124,7 @@
           "id": 329120651,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 9,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3132,7 +3132,7 @@
           "id": 329120648,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.04,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -3150,7 +3150,7 @@
           "id": 329124627,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.001,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         },
@@ -3202,7 +3202,7 @@
           "id": 329101603,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.002,
           "providerTimestamp": "2021-10-10T18:15:22.000+0000"
         },
@@ -3210,7 +3210,7 @@
           "id": 329101602,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 21,
           "providerTimestamp": "2021-10-10T18:15:22.000+0000"
         }
@@ -3228,7 +3228,7 @@
           "id": 329101694,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -3236,7 +3236,7 @@
           "id": 329101695,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -3254,7 +3254,7 @@
           "id": 329101669,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01515,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -3262,7 +3262,7 @@
           "id": 329101670,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 12,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -3280,7 +3280,7 @@
           "id": 329107238,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -3288,7 +3288,7 @@
           "id": 329107239,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.001,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -3306,7 +3306,7 @@
           "id": 329111229,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.75,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -3314,7 +3314,7 @@
           "id": 329111234,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -3332,7 +3332,7 @@
           "id": 329112181,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.125,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -3340,7 +3340,7 @@
           "id": 329112182,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -3358,7 +3358,7 @@
           "id": 329113236,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.3,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -3366,7 +3366,7 @@
           "id": 329113237,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.57143,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -3384,7 +3384,7 @@
           "id": 329115032,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 21,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -3392,7 +3392,7 @@
           "id": 329115034,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.002,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -3410,7 +3410,7 @@
           "id": 329117087,
           "outcome": "{$competitor1}",
           "outcomeId": "197001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.002,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -3418,7 +3418,7 @@
           "id": 329117090,
           "outcome": "{$competitor2}",
           "outcomeId": "197002",
-          "status": 1,
+          "status": 0,
           "oddValue": 23,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -3436,7 +3436,7 @@
           "id": 329120629,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3444,7 +3444,7 @@
           "id": 329120628,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -3514,7 +3514,7 @@
           "id": 329101683,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.5,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -3522,7 +3522,7 @@
           "id": 329101679,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.125,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         }
@@ -3540,7 +3540,7 @@
           "id": 329101632,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -3548,7 +3548,7 @@
           "id": 329101633,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -3566,7 +3566,7 @@
           "id": 329101643,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.875,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -3574,7 +3574,7 @@
           "id": 329101642,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.36364,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -3592,7 +3592,7 @@
           "id": 329107249,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 13,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -3600,7 +3600,7 @@
           "id": 329107250,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0125,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -3618,7 +3618,7 @@
           "id": 329111215,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -3626,7 +3626,7 @@
           "id": 329111210,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -3644,7 +3644,7 @@
           "id": 329112166,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -3652,7 +3652,7 @@
           "id": 329112165,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -3670,7 +3670,7 @@
           "id": 329113212,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         },
@@ -3678,7 +3678,7 @@
           "id": 329113213,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         }
@@ -3696,7 +3696,7 @@
           "id": 329115072,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -3704,7 +3704,7 @@
           "id": 329115071,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.08333,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         }
@@ -3722,7 +3722,7 @@
           "id": 329117061,
           "outcome": "yes",
           "outcomeId": "199001",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -3730,7 +3730,7 @@
           "id": 329117060,
           "outcome": "no",
           "outcomeId": "199002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -3748,7 +3748,7 @@
           "id": 329120630,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 40,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3756,7 +3756,7 @@
           "id": 329120645,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 42,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3764,7 +3764,7 @@
           "id": 329120644,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3772,7 +3772,7 @@
           "id": 329120647,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.5,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3780,7 +3780,7 @@
           "id": 329120646,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3788,7 +3788,7 @@
           "id": 329120642,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.65,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3796,7 +3796,7 @@
           "id": 329120641,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -3804,7 +3804,7 @@
           "id": 329120643,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.35,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -3854,7 +3854,7 @@
           "id": 329124643,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 36,
           "providerTimestamp": "2021-10-10T18:52:22.000+0000"
         },
@@ -3862,7 +3862,7 @@
           "id": 329124642,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 41,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         },
@@ -3870,7 +3870,7 @@
           "id": 329124641,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 45,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         },
@@ -3970,7 +3970,7 @@
           "id": 329101624,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.3,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -3978,7 +3978,7 @@
           "id": 329101628,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.65,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -3986,7 +3986,7 @@
           "id": 329101627,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.95,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -3994,7 +3994,7 @@
           "id": 329101626,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 7,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -4002,7 +4002,7 @@
           "id": 329101625,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 38,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -4010,7 +4010,7 @@
           "id": 329101631,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 41,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -4018,7 +4018,7 @@
           "id": 329101630,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 20,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -4026,7 +4026,7 @@
           "id": 329101629,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 24,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         }
@@ -4044,7 +4044,7 @@
           "id": 329101659,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.55,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4052,7 +4052,7 @@
           "id": 329101658,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.7,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4060,7 +4060,7 @@
           "id": 329101654,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4068,7 +4068,7 @@
           "id": 329101653,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.25,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4076,7 +4076,7 @@
           "id": 329101656,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.75,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4084,7 +4084,7 @@
           "id": 329101655,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.05,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4092,7 +4092,7 @@
           "id": 329101662,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.25,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -4100,7 +4100,7 @@
           "id": 329101661,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.55,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -4118,7 +4118,7 @@
           "id": 329101684,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4126,7 +4126,7 @@
           "id": 329101682,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4134,7 +4134,7 @@
           "id": 329101681,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.35,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4142,7 +4142,7 @@
           "id": 329101680,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.45,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4150,7 +4150,7 @@
           "id": 329101678,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 50,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4158,7 +4158,7 @@
           "id": 329101677,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4166,7 +4166,7 @@
           "id": 329101676,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         },
@@ -4174,7 +4174,7 @@
           "id": 329101685,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 12.5,
           "providerTimestamp": "2021-10-10T18:22:51.000+0000"
         }
@@ -4192,7 +4192,7 @@
           "id": 329107226,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 44,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4200,7 +4200,7 @@
           "id": 329107225,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 46,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4208,7 +4208,7 @@
           "id": 329107228,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 50,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4216,7 +4216,7 @@
           "id": 329107227,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4224,7 +4224,7 @@
           "id": 329107230,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4232,7 +4232,7 @@
           "id": 329107229,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.25,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4240,7 +4240,7 @@
           "id": 329107232,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 11.5,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4248,7 +4248,7 @@
           "id": 329107231,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 27,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -4266,7 +4266,7 @@
           "id": 329111211,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.75,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4274,7 +4274,7 @@
           "id": 329111201,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4282,7 +4282,7 @@
           "id": 329111199,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.6,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4290,7 +4290,7 @@
           "id": 329111197,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.7,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4298,7 +4298,7 @@
           "id": 329111196,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 18.5,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4306,7 +4306,7 @@
           "id": 329111205,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.7,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4314,7 +4314,7 @@
           "id": 329111203,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.7,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -4322,7 +4322,7 @@
           "id": 329111202,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -4340,7 +4340,7 @@
           "id": 329112191,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4348,7 +4348,7 @@
           "id": 329112192,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4356,7 +4356,7 @@
           "id": 329112197,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 7.25,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4364,7 +4364,7 @@
           "id": 329112198,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 16.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4372,7 +4372,7 @@
           "id": 329112199,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4380,7 +4380,7 @@
           "id": 329112200,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.3,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4388,7 +4388,7 @@
           "id": 329112195,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.75,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4396,7 +4396,7 @@
           "id": 329112196,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -4414,7 +4414,7 @@
           "id": 329113233,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4422,7 +4422,7 @@
           "id": 329113231,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4430,7 +4430,7 @@
           "id": 329113232,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4438,7 +4438,7 @@
           "id": 329113226,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.25,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4446,7 +4446,7 @@
           "id": 329113227,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 30,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4454,7 +4454,7 @@
           "id": 329113224,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 6.5,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4462,7 +4462,7 @@
           "id": 329113225,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.9,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -4470,7 +4470,7 @@
           "id": 329113222,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.55,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -4488,7 +4488,7 @@
           "id": 329115043,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 37,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4496,7 +4496,7 @@
           "id": 329115044,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 16,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4504,7 +4504,7 @@
           "id": 329115045,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 11.5,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4512,7 +4512,7 @@
           "id": 329115046,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 25,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4520,7 +4520,7 @@
           "id": 329115047,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.8,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4528,7 +4528,7 @@
           "id": 329115049,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.35,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4536,7 +4536,7 @@
           "id": 329115051,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.15,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         },
@@ -4544,7 +4544,7 @@
           "id": 329115052,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 9,
           "providerTimestamp": "2021-10-10T18:44:28.000+0000"
         }
@@ -4562,7 +4562,7 @@
           "id": 329117065,
           "outcome": "{$competitor1} to 0",
           "outcomeId": "201001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.7,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4570,7 +4570,7 @@
           "id": 329117068,
           "outcome": "{$competitor1} to 15",
           "outcomeId": "201002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.95,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4578,7 +4578,7 @@
           "id": 329117069,
           "outcome": "{$competitor1} to 30",
           "outcomeId": "201003",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4586,7 +4586,7 @@
           "id": 329117066,
           "outcome": "{$competitor1} to 40",
           "outcomeId": "201004",
-          "status": 1,
+          "status": 0,
           "oddValue": 16.5,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4594,7 +4594,7 @@
           "id": 329117067,
           "outcome": "{$competitor2} to 0",
           "outcomeId": "201005",
-          "status": 1,
+          "status": 0,
           "oddValue": 33,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4602,7 +4602,7 @@
           "id": 329117071,
           "outcome": "{$competitor2} to 15",
           "outcomeId": "201006",
-          "status": 1,
+          "status": 0,
           "oddValue": 35,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4610,7 +4610,7 @@
           "id": 329117072,
           "outcome": "{$competitor2} to 30",
           "outcomeId": "201007",
-          "status": 1,
+          "status": 0,
           "oddValue": 38,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4618,7 +4618,7 @@
           "id": 329117070,
           "outcome": "{$competitor2} to 40",
           "outcomeId": "201008",
-          "status": 1,
+          "status": 0,
           "oddValue": 40,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -4632,7 +4632,7 @@
           "id": 328525110,
           "outcome": "yes",
           "outcomeId": "1098001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.1,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -4640,7 +4640,7 @@
           "id": 328525117,
           "outcome": "no",
           "outcomeId": "1098002",
-          "status": 1,
+          "status": 0,
           "oddValue": 6,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         }
@@ -4660,7 +4660,7 @@
           "id": 329101617,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:19:01.000+0000"
         },
@@ -4668,7 +4668,7 @@
           "id": 329101618,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:19:01.000+0000"
         }
@@ -4688,7 +4688,7 @@
           "id": 329101645,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:21:43.000+0000"
         },
@@ -4696,7 +4696,7 @@
           "id": 329101649,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:21:43.000+0000"
         }
@@ -4716,7 +4716,7 @@
           "id": 329107241,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.75,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -4724,7 +4724,7 @@
           "id": 329107240,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.22222,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -4744,7 +4744,7 @@
           "id": 329111247,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:27:20.000+0000"
         },
@@ -4752,7 +4752,7 @@
           "id": 329111246,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:27:20.000+0000"
         }
@@ -4772,7 +4772,7 @@
           "id": 329112173,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -4780,7 +4780,7 @@
           "id": 329112174,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.25,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -4800,7 +4800,7 @@
           "id": 329113209,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.75,
           "providerTimestamp": "2021-10-10T18:35:47.000+0000"
         },
@@ -4808,7 +4808,7 @@
           "id": 329113208,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.22222,
           "providerTimestamp": "2021-10-10T18:35:47.000+0000"
         }
@@ -4828,7 +4828,7 @@
           "id": 329115041,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:42:44.000+0000"
         },
@@ -4836,7 +4836,7 @@
           "id": 329115042,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:42:44.000+0000"
         }
@@ -4856,7 +4856,7 @@
           "id": 329117084,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -4864,7 +4864,7 @@
           "id": 329117083,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -4884,7 +4884,7 @@
           "id": 329120615,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:49:59.000+0000"
         },
@@ -4892,7 +4892,7 @@
           "id": 329120616,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:49:59.000+0000"
         }
@@ -4912,7 +4912,7 @@
           "id": 329124651,
           "outcome": "under {total}",
           "outcomeId": "1099002",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -4920,7 +4920,7 @@
           "id": 329124653,
           "outcome": "over {total}",
           "outcomeId": "1099001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -5021,7 +5021,7 @@
           "id": 329126940,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:49:21.000+0000"
         },
@@ -5029,7 +5029,7 @@
           "id": 329126941,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:49:21.000+0000"
         }
@@ -5048,7 +5048,7 @@
           "id": 329126930,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:49:59.000+0000"
         },
@@ -5056,7 +5056,7 @@
           "id": 329126932,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:49:59.000+0000"
         }
@@ -5075,7 +5075,7 @@
           "id": 329126924,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:50:49.000+0000"
         },
@@ -5083,7 +5083,7 @@
           "id": 329126925,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:50:49.000+0000"
         }
@@ -5102,7 +5102,7 @@
           "id": 329126943,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:51:31.000+0000"
         },
@@ -5110,7 +5110,7 @@
           "id": 329126944,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:51:31.000+0000"
         }
@@ -5129,7 +5129,7 @@
           "id": 329126950,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -5137,7 +5137,7 @@
           "id": 329126951,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -5237,7 +5237,7 @@
           "id": 329131588,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:52:55.000+0000"
         },
@@ -5245,7 +5245,7 @@
           "id": 329131587,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:52:55.000+0000"
         }
@@ -5264,7 +5264,7 @@
           "id": 329131586,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:52:39.000+0000"
         },
@@ -5272,7 +5272,7 @@
           "id": 329131585,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:52:39.000+0000"
         }
@@ -5291,7 +5291,7 @@
           "id": 329131592,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3636364,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         },
@@ -5299,7 +5299,7 @@
           "id": 329131591,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.875,
           "providerTimestamp": "2021-10-10T18:52:59.000+0000"
         }
@@ -5480,7 +5480,7 @@
           "id": 329101614,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:13:38.000+0000"
         },
@@ -5488,7 +5488,7 @@
           "id": 329101613,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:13:38.000+0000"
         }
@@ -5507,7 +5507,7 @@
           "id": 329101612,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:14:20.000+0000"
         },
@@ -5515,7 +5515,7 @@
           "id": 329101611,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:14:20.000+0000"
         }
@@ -5534,7 +5534,7 @@
           "id": 329101620,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.36364,
           "providerTimestamp": "2021-10-10T18:14:47.000+0000"
         },
@@ -5542,7 +5542,7 @@
           "id": 329101619,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.875,
           "providerTimestamp": "2021-10-10T18:14:47.000+0000"
         }
@@ -5561,7 +5561,7 @@
           "id": 329101637,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:15:22.000+0000"
         },
@@ -5569,7 +5569,7 @@
           "id": 329101636,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:15:22.000+0000"
         }
@@ -5723,7 +5723,7 @@
           "id": 329107236,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:17:27.000+0000"
         },
@@ -5731,7 +5731,7 @@
           "id": 329107235,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:17:27.000+0000"
         }
@@ -5750,7 +5750,7 @@
           "id": 329107224,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:18:25.000+0000"
         },
@@ -5758,7 +5758,7 @@
           "id": 329107223,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:18:25.000+0000"
         }
@@ -5777,7 +5777,7 @@
           "id": 329107220,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:19:01.000+0000"
         },
@@ -5785,7 +5785,7 @@
           "id": 329107219,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:19:01.000+0000"
         }
@@ -5804,7 +5804,7 @@
           "id": 329107247,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -5812,7 +5812,7 @@
           "id": 329107248,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -5993,7 +5993,7 @@
           "id": 329111209,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.36364,
           "providerTimestamp": "2021-10-10T18:20:49.000+0000"
         },
@@ -6001,7 +6001,7 @@
           "id": 329111208,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.875,
           "providerTimestamp": "2021-10-10T18:20:49.000+0000"
         }
@@ -6020,7 +6020,7 @@
           "id": 329111240,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:21:19.000+0000"
         },
@@ -6028,7 +6028,7 @@
           "id": 329111241,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:21:19.000+0000"
         }
@@ -6047,7 +6047,7 @@
           "id": 329111239,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:21:43.000+0000"
         },
@@ -6055,7 +6055,7 @@
           "id": 329111235,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.2,
           "providerTimestamp": "2021-10-10T18:21:43.000+0000"
         }
@@ -6074,7 +6074,7 @@
           "id": 329111221,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:22:15.000+0000"
         },
@@ -6082,7 +6082,7 @@
           "id": 329111222,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:22:15.000+0000"
         }
@@ -6101,7 +6101,7 @@
           "id": 329111243,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.36364,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -6109,7 +6109,7 @@
           "id": 329111242,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.875,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -6209,7 +6209,7 @@
           "id": 329112189,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:25:28.000+0000"
         },
@@ -6217,7 +6217,7 @@
           "id": 329112188,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:25:28.000+0000"
         }
@@ -6236,7 +6236,7 @@
           "id": 329112172,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:25:52.000+0000"
         },
@@ -6244,7 +6244,7 @@
           "id": 329112171,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:25:52.000+0000"
         }
@@ -6263,7 +6263,7 @@
           "id": 329112168,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -6271,7 +6271,7 @@
           "id": 329112167,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.33333,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -6479,7 +6479,7 @@
           "id": 329113216,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:27:20.000+0000"
         },
@@ -6487,7 +6487,7 @@
           "id": 329113219,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:27:20.000+0000"
         }
@@ -6506,7 +6506,7 @@
           "id": 329113241,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:27:56.000+0000"
         },
@@ -6514,7 +6514,7 @@
           "id": 329113240,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:27:56.000+0000"
         }
@@ -6533,7 +6533,7 @@
           "id": 329113221,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:28:32.000+0000"
         },
@@ -6541,7 +6541,7 @@
           "id": 329113223,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:28:32.000+0000"
         }
@@ -6560,7 +6560,7 @@
           "id": 329113238,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:29:08.000+0000"
         },
@@ -6568,7 +6568,7 @@
           "id": 329113239,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:29:08.000+0000"
         }
@@ -6587,7 +6587,7 @@
           "id": 329113206,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -6595,7 +6595,7 @@
           "id": 329113207,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -6695,7 +6695,7 @@
           "id": 329115039,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:32:29.000+0000"
         },
@@ -6703,7 +6703,7 @@
           "id": 329115040,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:32:29.000+0000"
         }
@@ -6722,7 +6722,7 @@
           "id": 329115048,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:33:13.000+0000"
         },
@@ -6730,7 +6730,7 @@
           "id": 329115050,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:33:13.000+0000"
         }
@@ -6749,7 +6749,7 @@
           "id": 329115062,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -6757,7 +6757,7 @@
           "id": 329115063,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -7019,7 +7019,7 @@
           "id": 329117082,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:35:47.000+0000"
         },
@@ -7027,7 +7027,7 @@
           "id": 329117081,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:35:47.000+0000"
         }
@@ -7046,7 +7046,7 @@
           "id": 329117089,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:36:27.000+0000"
         },
@@ -7054,7 +7054,7 @@
           "id": 329117088,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:36:27.000+0000"
         }
@@ -7073,7 +7073,7 @@
           "id": 329117054,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:37:09.000+0000"
         },
@@ -7081,7 +7081,7 @@
           "id": 329117053,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:37:09.000+0000"
         }
@@ -7100,7 +7100,7 @@
           "id": 329117059,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:37:43.000+0000"
         },
@@ -7108,7 +7108,7 @@
           "id": 329117058,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:37:43.000+0000"
         }
@@ -7127,7 +7127,7 @@
           "id": 329117086,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         },
@@ -7135,7 +7135,7 @@
           "id": 329117085,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:38:21.000+0000"
         }
@@ -7154,7 +7154,7 @@
           "id": 329117920,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:39:07.000+0000"
         },
@@ -7162,7 +7162,7 @@
           "id": 329117919,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:39:07.000+0000"
         }
@@ -7181,7 +7181,7 @@
           "id": 329118144,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -7189,7 +7189,7 @@
           "id": 329118143,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -7262,7 +7262,7 @@
           "id": 329120636,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:42:44.000+0000"
         },
@@ -7270,7 +7270,7 @@
           "id": 329120635,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:42:44.000+0000"
         }
@@ -7289,7 +7289,7 @@
           "id": 329120626,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.625,
           "providerTimestamp": "2021-10-10T18:43:12.000+0000"
         },
@@ -7297,7 +7297,7 @@
           "id": 329120625,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:43:12.000+0000"
         }
@@ -7316,7 +7316,7 @@
           "id": 329120634,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:43:56.000+0000"
         },
@@ -7324,7 +7324,7 @@
           "id": 329120633,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:43:56.000+0000"
         }
@@ -7343,7 +7343,7 @@
           "id": 329120640,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -7351,7 +7351,7 @@
           "id": 329120639,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -7478,7 +7478,7 @@
           "id": 329124631,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:45:36.000+0000"
         },
@@ -7486,7 +7486,7 @@
           "id": 329124629,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.5,
           "providerTimestamp": "2021-10-10T18:45:36.000+0000"
         }
@@ -7505,7 +7505,7 @@
           "id": 329124647,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.4,
           "providerTimestamp": "2021-10-10T18:45:58.000+0000"
         },
@@ -7513,7 +7513,7 @@
           "id": 329124648,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.75,
           "providerTimestamp": "2021-10-10T18:45:58.000+0000"
         }
@@ -7532,7 +7532,7 @@
           "id": 329124635,
           "outcome": "{$competitor1} ",
           "outcomeId": "205001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -7540,7 +7540,7 @@
           "id": 329124633,
           "outcome": "{$competitor2}",
           "outcomeId": "205002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -7692,7 +7692,7 @@
           "id": 328525135,
           "outcome": "{$competitor1}",
           "outcomeId": "1104001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.14286,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -7700,7 +7700,7 @@
           "id": 328525129,
           "outcome": "{$competitor2}",
           "outcomeId": "1104002",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         }
@@ -7717,7 +7717,7 @@
           "id": 329111237,
           "outcome": "{$competitor1}",
           "outcomeId": "1104001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.2,
           "providerTimestamp": "2021-10-10T18:29:44.000+0000"
         },
@@ -7725,7 +7725,7 @@
           "id": 329111238,
           "outcome": "{$competitor2}",
           "outcomeId": "1104002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:29:44.000+0000"
         }
@@ -7742,7 +7742,7 @@
           "id": 329115067,
           "outcome": "{$competitor1}",
           "outcomeId": "1104001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.05,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -7750,7 +7750,7 @@
           "id": 329115066,
           "outcome": "{$competitor2}",
           "outcomeId": "1104002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -7767,7 +7767,7 @@
           "id": 329117063,
           "outcome": "{$competitor1}",
           "outcomeId": "1104001",
-          "status": 1,
+          "status": 0,
           "oddValue": 4,
           "providerTimestamp": "2021-10-10T18:39:55.000+0000"
         },
@@ -7775,7 +7775,7 @@
           "id": 329117062,
           "outcome": "{$competitor2}",
           "outcomeId": "1104002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.2,
           "providerTimestamp": "2021-10-10T18:39:55.000+0000"
         }
@@ -7818,7 +7818,7 @@
           "id": 328525213,
           "outcome": "under {total}",
           "outcomeId": "1105003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.05,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         },
@@ -7826,7 +7826,7 @@
           "id": 328525215,
           "outcome": "exactly {total}",
           "outcomeId": "1105002",
-          "status": 1,
+          "status": 0,
           "oddValue": 14.5,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         },
@@ -7834,7 +7834,7 @@
           "id": 328525216,
           "outcome": "over {total}",
           "outcomeId": "1105001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:39:24.000+0000"
         }
@@ -7852,7 +7852,7 @@
           "id": 328812476,
           "outcome": "under {total}",
           "outcomeId": "1105003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:39:40.000+0000"
         },
@@ -7860,7 +7860,7 @@
           "id": 328812475,
           "outcome": "exactly {total}",
           "outcomeId": "1105002",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:39:40.000+0000"
         },
@@ -7868,7 +7868,7 @@
           "id": 328812474,
           "outcome": "over {total}",
           "outcomeId": "1105001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:39:40.000+0000"
         }
@@ -7886,7 +7886,7 @@
           "id": 329106226,
           "outcome": "under {total}",
           "outcomeId": "1105003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.05,
           "providerTimestamp": "2021-10-10T18:45:20.000+0000"
         },
@@ -7894,7 +7894,7 @@
           "id": 329106225,
           "outcome": "exactly {total}",
           "outcomeId": "1105002",
-          "status": 1,
+          "status": 0,
           "oddValue": 13.5,
           "providerTimestamp": "2021-10-10T18:45:20.000+0000"
         },
@@ -7902,7 +7902,7 @@
           "id": 329106227,
           "outcome": "over {total}",
           "outcomeId": "1105001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:45:20.000+0000"
         }
@@ -7920,7 +7920,7 @@
           "id": 329111220,
           "outcome": "under {total}",
           "outcomeId": "1105003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.15,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         },
@@ -7928,7 +7928,7 @@
           "id": 329111219,
           "outcome": "exactly {total}",
           "outcomeId": "1105002",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         },
@@ -7936,7 +7936,7 @@
           "id": 329111218,
           "outcome": "over {total}",
           "outcomeId": "1105001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:35:33.000+0000"
         }
@@ -7988,7 +7988,7 @@
           "id": 328525190,
           "outcome": "yes",
           "outcomeId": "1106001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.57143,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -7996,7 +7996,7 @@
           "id": 328525183,
           "outcome": "no",
           "outcomeId": "1106002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.25,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -8088,7 +8088,7 @@
           "id": 328525137,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 17.5,
           "providerTimestamp": "2021-10-10T18:52:40.000+0000"
         }
@@ -8106,7 +8106,7 @@
           "id": 329029981,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1107003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.05,
           "providerTimestamp": "2021-10-10T16:09:52.000+0000"
         },
@@ -8114,7 +8114,7 @@
           "id": 329029982,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1107001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T16:09:52.000+0000"
         }
@@ -8132,7 +8132,7 @@
           "id": 329029980,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 10.5,
           "providerTimestamp": "2021-10-10T16:09:52.000+0000"
         }
@@ -8150,7 +8150,7 @@
           "id": 329105013,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1107003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.9,
           "providerTimestamp": "2021-10-10T18:51:17.000+0000"
         },
@@ -8158,7 +8158,7 @@
           "id": 329105016,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1107001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.95,
           "providerTimestamp": "2021-10-10T18:51:17.000+0000"
         }
@@ -8176,7 +8176,7 @@
           "id": 329105012,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 17,
           "providerTimestamp": "2021-10-10T18:51:17.000+0000"
         }
@@ -8194,7 +8194,7 @@
           "id": 329109666,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1107003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.95,
           "providerTimestamp": "2021-10-10T18:32:40.000+0000"
         },
@@ -8202,7 +8202,7 @@
           "id": 329109665,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1107001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.9,
           "providerTimestamp": "2021-10-10T18:32:40.000+0000"
         }
@@ -8220,7 +8220,7 @@
           "id": 329109667,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 14,
           "providerTimestamp": "2021-10-10T18:32:40.000+0000"
         }
@@ -8238,7 +8238,7 @@
           "id": 329110700,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1107003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         },
@@ -8246,7 +8246,7 @@
           "id": 329110701,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1107001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.35,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         }
@@ -8264,7 +8264,7 @@
           "id": 329110702,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 7,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         }
@@ -8282,7 +8282,7 @@
           "id": 329111230,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1107003",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.85,
           "providerTimestamp": "2021-10-10T18:38:32.000+0000"
         },
@@ -8290,7 +8290,7 @@
           "id": 329111231,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1107001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.25,
           "providerTimestamp": "2021-10-10T18:38:32.000+0000"
         }
@@ -8308,7 +8308,7 @@
           "id": 329111204,
           "outcome": "handicap draw",
           "outcomeId": "1107002",
-          "status": 1,
+          "status": 0,
           "oddValue": 7.75,
           "providerTimestamp": "2021-10-10T18:38:32.000+0000"
         }
@@ -8344,7 +8344,7 @@
           "id": 328525151,
           "outcome": "{$competitor1} to win to love",
           "outcomeId": "1108004",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.8,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8352,7 +8352,7 @@
           "id": 328525147,
           "outcome": "{$competitor1} to win to 15",
           "outcomeId": "1108001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.35,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8360,7 +8360,7 @@
           "id": 328525146,
           "outcome": "{$competitor1} to win to 30",
           "outcomeId": "1108002",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.3,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8368,7 +8368,7 @@
           "id": 328525145,
           "outcome": "{$competitor1} to win to 40",
           "outcomeId": "1108003",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.25,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8376,7 +8376,7 @@
           "id": 328525152,
           "outcome": "{$competitor2} to win to love",
           "outcomeId": "1108008",
-          "status": 1,
+          "status": 0,
           "oddValue": 47,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8384,7 +8384,7 @@
           "id": 328525150,
           "outcome": "{$competitor2} to win to 15",
           "outcomeId": "1108005",
-          "status": 1,
+          "status": 0,
           "oddValue": 22,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8392,7 +8392,7 @@
           "id": 328525149,
           "outcome": "{$competitor2} to win to 30",
           "outcomeId": "1108006",
-          "status": 1,
+          "status": 0,
           "oddValue": 14,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         },
@@ -8400,7 +8400,7 @@
           "id": 328525148,
           "outcome": "{$competitor2} to win to 40",
           "outcomeId": "1108007",
-          "status": 1,
+          "status": 0,
           "oddValue": 19.5,
           "providerTimestamp": "2021-10-10T18:15:21.000+0000"
         }
@@ -8414,7 +8414,7 @@
           "id": 328525219,
           "outcome": "{$competitor1} to win to love",
           "outcomeId": "1109004",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8422,7 +8422,7 @@
           "id": 328525229,
           "outcome": "{$competitor1} to win to 15",
           "outcomeId": "1109001",
-          "status": 1,
+          "status": 0,
           "oddValue": 24,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8430,7 +8430,7 @@
           "id": 328525231,
           "outcome": "{$competitor1} to win to 30",
           "outcomeId": "1109002",
-          "status": 1,
+          "status": 0,
           "oddValue": 15,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8438,7 +8438,7 @@
           "id": 328525232,
           "outcome": "{$competitor1} to win to 40",
           "outcomeId": "1109003",
-          "status": 1,
+          "status": 0,
           "oddValue": 19,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8446,7 +8446,7 @@
           "id": 328525226,
           "outcome": "{$competitor2} to win to love",
           "outcomeId": "1109008",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.75,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8454,7 +8454,7 @@
           "id": 328525220,
           "outcome": "{$competitor2} to win to 15",
           "outcomeId": "1109005",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.25,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8462,7 +8462,7 @@
           "id": 328525221,
           "outcome": "{$competitor2} to win to 30",
           "outcomeId": "1109006",
-          "status": 1,
+          "status": 0,
           "oddValue": 4.3,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         },
@@ -8470,7 +8470,7 @@
           "id": 328525224,
           "outcome": "{$competitor2} to win to 40",
           "outcomeId": "1109007",
-          "status": 1,
+          "status": 0,
           "oddValue": 5.25,
           "providerTimestamp": "2021-10-10T18:19:39.000+0000"
         }
@@ -8484,7 +8484,7 @@
           "id": 328525244,
           "outcome": "yes",
           "outcomeId": "1110001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.2,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         },
@@ -8492,7 +8492,7 @@
           "id": 328525242,
           "outcome": "no",
           "outcomeId": "1110002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         }
@@ -8506,7 +8506,7 @@
           "id": 328525159,
           "outcome": "yes",
           "outcomeId": "1111001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.2,
           "providerTimestamp": "2021-10-10T18:06:22.000+0000"
         },
@@ -8514,7 +8514,7 @@
           "id": 328525161,
           "outcome": "no",
           "outcomeId": "1111002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.3,
           "providerTimestamp": "2021-10-10T18:06:22.000+0000"
         }
@@ -8528,7 +8528,7 @@
           "id": 328525125,
           "outcome": "first",
           "outcomeId": "1114002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.2,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         },
@@ -8536,7 +8536,7 @@
           "id": 328525127,
           "outcome": "draw",
           "outcomeId": "1114001",
-          "status": 1,
+          "status": 0,
           "oddValue": 3.95,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         },
@@ -8544,7 +8544,7 @@
           "id": 328525124,
           "outcome": "second",
           "outcomeId": "1114003",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.55,
           "providerTimestamp": "2021-10-10T18:06:23.000+0000"
         }
@@ -8588,7 +8588,7 @@
           "id": 328525192,
           "outcome": "{$competitor1}",
           "outcomeId": "1116001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.00333,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         },
@@ -8596,7 +8596,7 @@
           "id": 328525197,
           "outcome": "{$competitor2}",
           "outcomeId": "1116002",
-          "status": 1,
+          "status": 0,
           "oddValue": 34,
           "providerTimestamp": "2021-10-10T18:46:37.000+0000"
         }
@@ -8641,7 +8641,7 @@
           "id": 329120622,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -8649,7 +8649,7 @@
           "id": 329120623,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -8668,7 +8668,7 @@
           "id": 329120631,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -8676,7 +8676,7 @@
           "id": 329120632,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -8695,7 +8695,7 @@
           "id": 329124638,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -8703,7 +8703,7 @@
           "id": 329124639,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -8722,7 +8722,7 @@
           "id": 329124652,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -8730,7 +8730,7 @@
           "id": 329124650,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -8803,7 +8803,7 @@
           "id": 329101667,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 12,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -8811,7 +8811,7 @@
           "id": 329101668,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01515,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -8830,7 +8830,7 @@
           "id": 329101663,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -8838,7 +8838,7 @@
           "id": 329101664,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -8857,7 +8857,7 @@
           "id": 329101623,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -8865,7 +8865,7 @@
           "id": 329101622,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -8884,7 +8884,7 @@
           "id": 329101687,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01515,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -8892,7 +8892,7 @@
           "id": 329101686,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 12,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -8911,7 +8911,7 @@
           "id": 329107244,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 10.5,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -8919,7 +8919,7 @@
           "id": 329107246,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.025,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -8938,7 +8938,7 @@
           "id": 329107222,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         },
@@ -8946,7 +8946,7 @@
           "id": 329107221,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:26:16.000+0000"
         }
@@ -8965,7 +8965,7 @@
           "id": 329111225,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -8973,7 +8973,7 @@
           "id": 329111226,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -8992,7 +8992,7 @@
           "id": 329111216,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01515,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -9000,7 +9000,7 @@
           "id": 329111214,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 12,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -9019,7 +9019,7 @@
           "id": 329112194,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 11,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -9027,7 +9027,7 @@
           "id": 329112193,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.025,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -9046,7 +9046,7 @@
           "id": 329112183,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -9054,7 +9054,7 @@
           "id": 329112184,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -9073,7 +9073,7 @@
           "id": 329113214,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -9081,7 +9081,7 @@
           "id": 329113215,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -9100,7 +9100,7 @@
           "id": 329113229,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.025,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -9108,7 +9108,7 @@
           "id": 329113228,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 10.5,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -9127,7 +9127,7 @@
           "id": 329115033,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 10,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -9135,7 +9135,7 @@
           "id": 329115031,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -9154,7 +9154,7 @@
           "id": 329115054,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -9162,7 +9162,7 @@
           "id": 329115053,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -9181,7 +9181,7 @@
           "id": 329117080,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.2,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         },
@@ -9189,7 +9189,7 @@
           "id": 329117079,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.61538,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -9208,7 +9208,7 @@
           "id": 329117075,
           "outcome": "{$competitor1} ({+hcp})",
           "outcomeId": "1117001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.04,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         },
@@ -9216,7 +9216,7 @@
           "id": 329117077,
           "outcome": "{$competitor2} ({-hcp})",
           "outcomeId": "1117002",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.5,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -9234,7 +9234,7 @@
           "id": 329101608,
           "outcome": "6:0",
           "outcomeId": "1118001",
-          "status": 1,
+          "status": 0,
           "oddValue": 26,
           "providerTimestamp": "2021-10-10T18:26:02.000+0000"
         },
@@ -9242,7 +9242,7 @@
           "id": 329101607,
           "outcome": "6:1",
           "outcomeId": "1118002",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.75,
           "providerTimestamp": "2021-10-10T18:29:31.000+0000"
         },
@@ -9250,7 +9250,7 @@
           "id": 329101610,
           "outcome": "6:2",
           "outcomeId": "1118003",
-          "status": 1,
+          "status": 0,
           "oddValue": 9,
           "providerTimestamp": "2021-10-10T18:39:41.000+0000"
         },
@@ -9258,7 +9258,7 @@
           "id": 329101609,
           "outcome": "6:3",
           "outcomeId": "1118004",
-          "status": 1,
+          "status": 0,
           "oddValue": 25,
           "providerTimestamp": "2021-10-10T18:44:13.000+0000"
         },
@@ -9266,7 +9266,7 @@
           "id": 329101605,
           "outcome": "6:4",
           "outcomeId": "1118005",
-          "status": 1,
+          "status": 0,
           "oddValue": 8,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -9366,7 +9366,7 @@
           "id": 329117076,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         },
@@ -9374,7 +9374,7 @@
           "id": 329117078,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -9392,7 +9392,7 @@
           "id": 329120620,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         },
@@ -9400,7 +9400,7 @@
           "id": 329120619,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:51:45.000+0000"
         }
@@ -9444,7 +9444,7 @@
           "id": 329101666,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         },
@@ -9452,7 +9452,7 @@
           "id": 329101665,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -9470,7 +9470,7 @@
           "id": 329101660,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         },
@@ -9478,7 +9478,7 @@
           "id": 329101657,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -9496,7 +9496,7 @@
           "id": 329101674,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         },
@@ -9504,7 +9504,7 @@
           "id": 329101675,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         }
@@ -9522,7 +9522,7 @@
           "id": 329107252,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         },
@@ -9530,7 +9530,7 @@
           "id": 329107216,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.83333,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -9548,7 +9548,7 @@
           "id": 329111245,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.90909,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         },
@@ -9556,7 +9556,7 @@
           "id": 329111244,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.8,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -9574,7 +9574,7 @@
           "id": 329112177,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         },
@@ -9582,7 +9582,7 @@
           "id": 329112178,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.72727,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -9600,7 +9600,7 @@
           "id": 329113218,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.1,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         },
@@ -9608,7 +9608,7 @@
           "id": 329113217,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.66667,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -9626,7 +9626,7 @@
           "id": 329115038,
           "outcome": "yes",
           "outcomeId": "1120001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.2,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         },
@@ -9634,7 +9634,7 @@
           "id": 329115037,
           "outcome": "no",
           "outcomeId": "1120002",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.61538,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -9670,7 +9670,7 @@
           "id": 329101621,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.44444,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -9688,7 +9688,7 @@
           "id": 329107237,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.0303,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -9706,7 +9706,7 @@
           "id": 329111236,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         }
@@ -9724,7 +9724,7 @@
           "id": 329112169,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 51,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -9742,7 +9742,7 @@
           "id": 329113220,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -9760,7 +9760,7 @@
           "id": 329115070,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2.25,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -9778,7 +9778,7 @@
           "id": 329117064,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 9.5,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -9796,7 +9796,7 @@
           "id": 329120649,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 17,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -9814,7 +9814,7 @@
           "id": 329124649,
           "outcome": "yes",
           "outcomeId": "1129001",
-          "status": 1,
+          "status": 0,
           "oddValue": 8.5,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }
@@ -9868,7 +9868,7 @@
           "id": 329101672,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 15,
           "providerTimestamp": "2021-10-10T18:19:40.000+0000"
         }
@@ -9886,7 +9886,7 @@
           "id": 329107242,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 11,
           "providerTimestamp": "2021-10-10T18:22:52.000+0000"
         }
@@ -9904,7 +9904,7 @@
           "id": 329111217,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 10.5,
           "providerTimestamp": "2021-10-10T18:26:17.000+0000"
         }
@@ -9922,7 +9922,7 @@
           "id": 329112170,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 2,
           "providerTimestamp": "2021-10-10T18:29:45.000+0000"
         }
@@ -9940,7 +9940,7 @@
           "id": 329113230,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 5,
           "providerTimestamp": "2021-10-10T18:34:11.000+0000"
         }
@@ -9958,7 +9958,7 @@
           "id": 329115057,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 15,
           "providerTimestamp": "2021-10-10T18:39:56.000+0000"
         }
@@ -9976,7 +9976,7 @@
           "id": 329117057,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 1.01,
           "providerTimestamp": "2021-10-10T18:44:29.000+0000"
         }
@@ -9994,7 +9994,7 @@
           "id": 329120621,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 34,
           "providerTimestamp": "2021-10-10T18:46:38.000+0000"
         }
@@ -10012,7 +10012,7 @@
           "id": 329124628,
           "outcome": "yes",
           "outcomeId": "1130001",
-          "status": 1,
+          "status": 0,
           "oddValue": 41,
           "providerTimestamp": "2021-10-10T18:52:01.000+0000"
         }

@@ -21,7 +21,8 @@ const getStatisticsData = () => {
     },
   ];*/
   //const betradar = require("./json/test/betradar_statistics.json").doc[0].data;
-  const betradar = require("./json/tennis/event1_statistics_ended.json").doc[0].data;
+  const betradar = require("./json/tennis/event1_statistics_live.json").doc[0]
+    .data;
   return [
     {
       source: "betradar",
@@ -59,7 +60,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/statistics", (req, res) => {
-  const stat = new StatisticsComposer(getStatisticsData()).Compose(parseInt(req.query.sport_id));
+  const stat = new StatisticsComposer(getStatisticsData()).Compose(
+    parseInt(req.query.sport_id)
+  );
 
   res.send(stat);
 });

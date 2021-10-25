@@ -59,7 +59,11 @@ const {
   FirstToScore,
   ToScoreTwoOrMoreGoals,
   HalfTimeGoals,
+  SetGameTotalPoints,
+  SetScoreAfterGames,
+  PlayerServiceGameTotalPoints,
 } = require("./Functions");
+const { mark } = require("yarn/lib/cli");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -69,7 +73,6 @@ class Estimate {
 
   EstimateMarket = (market) => {
     const outcomeID = market.outcomes[0].outcomeId;
-    console.log(outcomeID);
 
     switch (outcomeID) {
       case "1001":
@@ -251,6 +254,14 @@ class Estimate {
       case "918001":
         HalfTimeGoals(this.statistics, market);
         break;
+      /*Tennis*/
+      case "1024002":
+        SetGameTotalPoints(this.statistics, market);
+        break;
+      case "1030002":
+      case "1031002":
+        PlayerServiceGameTotalPoints(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -264,13 +275,16 @@ class Estimate {
       case "To score 2 or more goals":
         ToScoreTwoOrMoreGoals(this.statistics, market);
         break;
+      /*Tennis*/
+      case "{!set} set score after {game} games":
+        SetScoreAfterGames(this.statistics, market);
+        break;
     }
   };
 
   Start = () => {
     this.marketsToEstimate.forEach((market) => {
       this.EstimateMarket(market);
-      console.log(market.name);
     });
 
     console.log("Markets estimated.");

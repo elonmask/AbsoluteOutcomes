@@ -1,3 +1,4 @@
+const { getCurrentSetNumber } = require("./utils/utils");
 const isFullTimeEnded = (statistics) => {
   if (statistics.scores["1"] && statistics.scores["2"]) {
     return statistics.time_status === "3";
@@ -3053,6 +3054,121 @@ const HalfTimeGoals = (statistics, market) => {
     }
   }
 };
+
+/* Tennis  */
+
+const SetGameTotalPoints = (statistics, market) => {
+  const setNumber = parseInt(market.specifiers.setnr);
+  const gameNumber = parseInt(market.specifiers.gamenr);
+  const total = parseInt(market.specifiers.total);
+  const player = market.name.includes("$competitor1")
+    ? statistics.home.name
+    : statistics.away.name;
+
+  const currentSet = getCurrentSetNumber(statistics);
+
+  let playerPointsInGame = 0;
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Score change tennis ")) {
+      if (
+        parseInt(event.extra.set_score.home) +
+          parseInt(event.extra.set_score.away) +
+          1 ===
+        setNumber
+      ) {
+      }
+    }
+  });
+
+  if (setNumber < currentSet) {
+    console.log("Estimating");
+  } else {
+    console.log("Not estimating");
+  }
+};
+const SetScoreAfterGames = (statistics, market) => {
+  const setNumber = parseInt(market.specifiers.set);
+  const gameNumber = parseInt(market.specifiers.game);
+
+  if (Object.keys(statistics.periods).length >= setNumber) {
+    let counter = 0;
+    statistics.events.forEach((event) => {
+      if (
+        event.text.split(" ")[event.text.split(" ").length - 1] === "Game" &&
+        event.text.includes("Score change tennis")
+      ) {
+        if (
+          parseInt(event.extra.set_score.home) +
+            parseInt(event.extra.set_score.away) +
+            1 ===
+          setNumber
+        ) {
+          counter++;
+          if (counter === gameNumber) {
+            market.outcomes.forEach((outcome) => {
+              const betScore = outcome.outcome;
+              const actualScore =
+                event.extra.set_score.home + ":" + event.extra.set_score.away;
+
+              if (betScore === actualScore) {
+                outcome.status = 2;
+              } else {
+                outcome.status = 3;
+              }
+            });
+          }
+        }
+      }
+    });
+    if (counter < gameNumber && statistics.time_status === "3") {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+    }
+  }
+};
+
+const PlayerServiceGameTotalPoints = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const serviceGameNumber = parseInt(market.specifiers.gamenr);
+  const player = market.name.includes("$competitor1") ? "home" : "away";
+  const playerName = market.name.includes("$competitor1")
+    ? statistics.home.name
+    : statistics.away.name;
+
+  let serviceCounter = 0;
+  let extraData = null;
+  statistics.events.forEach((event, idx) => {
+    if (event.text === `service taken - ${playerName}`) {
+      serviceCounter++;
+      if (serviceCounter === serviceGameNumber) {
+        for (let i = idx; i < statistics.events.length; i++) {
+          if (statistics.events[i].text.includes("Game point")) {
+            extraData = statistics.events[i].extra;
+            break;
+          }
+        }
+      }
+    }
+  });
+
+  console.log(serviceCounter, extraData);
+  if (serviceCounter >= serviceGameNumber && extraData !== null) {
+    const actualPoints =
+      player === "home"
+        ? parseInt(extraData.game_points.home)
+        : parseInt(extraData.game_points.away);
+    if (actualPoints < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+
+    if (actualPoints > total) {
+      market.outcomes[1].status = 2;
+      market.outcomes[0].status = 3;
+    }
+  }
+};
 module.exports = {
   fullTimeResult,
   HalfTimeFullTime,
@@ -3116,4 +3232,7 @@ module.exports = {
   FirstToScore,
   ToScoreTwoOrMoreGoals,
   HalfTimeGoals,
+  SetGameTotalPoints,
+  SetScoreAfterGames,
+  PlayerServiceGameTotalPoints,
 };

@@ -111,7 +111,7 @@ const BetradarTennisEventTeam = (event, source) => {
       ? source.data.match.teams.home.name
       : source.data.match.teams.away.name
     : "";
-}
+};
 
 const BetradarTennisEvent = (event, team) => {
   if (team.length > 1) {
@@ -119,13 +119,15 @@ const BetradarTennisEvent = (event, team) => {
       return event.name + " - " + team + " - " + event.pointflag;
     }
     if (event.type === "periodscore") {
-      return event.name + " periodscore" + " - " + team + " - " + event.pointflag
+      return (
+        event.name + " periodscore" + " - " + team + " - " + event.pointflag
+      );
     }
     return event.name + " - " + team;
   } else {
     return event.name;
   }
-}
+};
 
 const Validate = (sources, event) => {
   if (event.confirmations >= sources.length) {
@@ -139,6 +141,21 @@ const Validate = (sources, event) => {
   }
 };
 
+const getCurrentSetNumber = (statistics) => {
+  const setsArray = [];
+  statistics.events.forEach((event) => {
+    if (
+      event.text.includes("st set") ||
+      event.text.includes("nd set") ||
+      event.text.includes("rd set") ||
+      event.text.includes("th set")
+    ) {
+      setsArray.push(parseInt(event.text[0]));
+    }
+  });
+
+  return setsArray[setsArray.length - 1];
+};
 module.exports = {
   replaceAll,
   nameToFitFormat,
@@ -148,5 +165,6 @@ module.exports = {
   BetradarEventTeam,
   Validate,
   BetradarTennisEventTeam,
-  BetradarTennisEvent
+  BetradarTennisEvent,
+  getCurrentSetNumber,
 };
