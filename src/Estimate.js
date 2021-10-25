@@ -61,7 +61,8 @@ const {
   HalfTimeGoals,
   SetGameTotalPoints,
   SetScoreAfterGames,
-  PlayerServiceGameTotalPoints,
+  PlayerServiceGameTotalPoints, SetTotalGames, TotalSets, MatchBothPlayersWinSet, TwoWay, GameHandicap, BothToWinSet,
+  TotalGames, PlayerTotalGames, PlayerToWinOneSet, AnySetWillEndSix, SetWinner, SetGameHandicap, SetCorrectScore,
 } = require("./Functions");
 const { mark } = require("yarn/lib/cli");
 
@@ -262,6 +263,44 @@ class Estimate {
       case "1031002":
         PlayerServiceGameTotalPoints(this.statistics, market);
         break;
+      case "1057002":
+        SetTotalGames(this.statistics, market);
+        break;
+      case "291002":
+        TotalSets(this.statistics, market);
+        break;
+      case "1070001":
+        MatchBothPlayersWinSet(this.statistics, market);
+        break;
+      case "175001":
+        TwoWay(this.statistics, market);
+        break;
+      case "176001":
+        GameHandicap(this.statistics, market);
+        break;
+      case "1074002":
+        BothToWinSet(this.statistics, market);
+        break;
+      case "178002":
+        TotalGames(this.statistics, market);
+        break;
+      case "179002":
+      case "180002":
+        PlayerTotalGames(this.statistics, market);
+        break;
+      case "181001":
+      case "182001":
+        PlayerToWinOneSet(this.statistics, market);
+        break;
+      case "183001":
+        AnySetWillEndSix(this.statistics, market);
+        break;
+      case "189001":
+        SetWinner(this.statistics, market);
+        break;
+      case "190001":
+        SetGameHandicap(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -278,6 +317,9 @@ class Estimate {
       /*Tennis*/
       case "{!set} set score after {game} games":
         SetScoreAfterGames(this.statistics, market);
+        break;
+      case "{!setnr} set - correct score":
+        SetCorrectScore(this.statistics, market);
         break;
     }
   };

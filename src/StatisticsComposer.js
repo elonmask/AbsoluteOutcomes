@@ -279,12 +279,21 @@ class StatisticsComposer {
             : validity === 3
               ? "Confirmed by less then 50% sources"
               : "";
-      result.push({
-        text: event.data,
-        extra: event?.extra || null,
-        validity: validity,
-        info: info,
-      });
+      if ( typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
+        result.push({
+          text: event.data,
+          extra: event.extra || null,
+          validity: validity,
+          info: info,
+        });
+      } else {
+        result.push({
+          text: event.data,
+          extra: null,
+          validity: validity,
+          info: info,
+        });
+      }
     });
 
     return result;
