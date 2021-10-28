@@ -59,12 +59,26 @@ const {
   FirstToScore,
   ToScoreTwoOrMoreGoals,
   HalfTimeGoals,
+} = require("./Markets/Soccer");
+
+const {
   SetGameTotalPoints,
   SetScoreAfterGames,
-  PlayerServiceGameTotalPoints, SetTotalGames, TotalSets, MatchBothPlayersWinSet, TwoWay, GameHandicap, BothToWinSet,
-  TotalGames, PlayerTotalGames, PlayerToWinOneSet, AnySetWillEndSix, SetWinner, SetGameHandicap, SetCorrectScore,
-} = require("./Functions");
-const { mark } = require("yarn/lib/cli");
+  PlayerServiceGameTotalPoints,
+  SetTotalGames,
+  TotalSets,
+  MatchBothPlayersWinSet,
+  TwoWay,
+  GameHandicap,
+  BothToWinSet,
+  TotalGames,
+  PlayerTotalGames,
+  PlayerToWinOneSet,
+  AnySetWillEndSix,
+  SetWinner,
+  SetGameHandicap,
+  SetCorrectScore,
+} = require("./Markets/Tennis");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
