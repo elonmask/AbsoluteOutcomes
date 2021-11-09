@@ -113,6 +113,39 @@ const BetradarTennisEventTeam = (event, source) => {
     : "";
 };
 
+const BetradarBasketEventTeam = (event, source) => {
+  return event.team.length > 3
+    ? event.team === "home"
+      ? source.data.match.teams.home.name
+      : source.data.match.teams.away.name
+    : "";
+};
+
+const BetradarBasketEvent = (event, team) => {
+  if (event.time === -1) {
+    if (team.length > 1) {
+      if (event.type === "goal" && event.scorer.name.length > 1) {
+        return event.name + " - " + team + " - " + event.scorer.name
+      } else {
+        return event.name + " - " + team
+      }
+    } else {
+      return event.name
+    }
+  } else {
+    if (team.length > 1) {
+      if (event.type === "goal" && event.scorer.name.length > 1) {
+        return event.name + " - " + team + " - " + event.scorer.name + " - " + event.time + "'"
+      } else {
+        return event.name + " - " + team + " - " + event.time + "'"
+      }
+    } else {
+      return event.name + " - " + event.time + "'"
+    }
+  }
+};
+
+
 const BetradarTennisEvent = (event, team) => {
   if (team.length > 1) {
     if (event.type === "score_change_tennis" && event.pointflag.length > 1) {
@@ -167,4 +200,6 @@ module.exports = {
   BetradarTennisEventTeam,
   BetradarTennisEvent,
   getCurrentSetNumber,
+  BetradarBasketEvent,
+  BetradarBasketEventTeam,
 };
