@@ -13,7 +13,10 @@ app.get("/estimation", (req, res) => {
       ? require("./json/soccer/event.json").odds
       : sportID === 5
       ? require("./json/tennis/event1_outcomes.json").odds
-      : null;
+      : sportID === 2
+      ? require("./json/basketball/outcomes.json").odds
+       :  null
+
   if (odds) {
     axios
       .get(`http://localhost:${PORT}/statistics/?sport_id=${sportID}`)

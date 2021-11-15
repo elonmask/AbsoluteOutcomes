@@ -79,6 +79,31 @@ const {
   SetGameHandicap,
   SetCorrectScore,
 } = require("./Markets/Tennis");
+const {
+  FirstHalfTeamTotal,
+  ThreeWay,
+  HalftimeOddEven,
+  SecondHalfThreeWay,
+  MatchWinner,
+  HandicapWithDraw,
+  SecondHalfDrawNoBet,
+  WillThereBeOvertime,
+  WhichTeamScoresPoint,
+  SecondHalfHandicap,
+  Total,
+  WinnerTotal,
+  HandicapTwoWay,
+  SecondHalfTotal,
+  SecondHalfTotalOddEven,
+  Total3Way,
+  CompetitorTotal,
+  TotalOddEven,
+  WhichTeamRaceToPoints,
+  QuarterHandicap,
+  QuarterOddEven,
+  Quarter3Way,
+  QuarterTotal,
+} = require("./Markets/Basketballl");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -337,11 +362,96 @@ class Estimate {
         break;
     }
   };
+  EstimateMarketBasketBall = (market) => {
+    const outcomeID = market.outcomes[0].outcomeId;
+    switch (outcomeID) {
+      case "64002":
+        FirstHalfTeamTotal(this.statistics, market);
+        break;
+      case "1001":
+        ThreeWay(this.statistics, market);
+        break;
+      case "68001":
+        HalftimeOddEven(this.statistics, market);
+        break;
+      case "76001":
+        SecondHalfThreeWay(this.statistics, market);
+        break;
+      case "206001":
+        MatchWinner(this.statistics, market);
+        break;
+      case "14001":
+        HandicapWithDraw(this.statistics, market);
+        break;
+      case "79001":
+        SecondHalfDrawNoBet(this.statistics, market);
+        break;
+      case "207001":
+        WillThereBeOvertime(this.statistics, market);
+        break;
+      case "272001":
+        WhichTeamScoresPoint(this.statistics, market);
+        break;
+      case "81001":
+      case "218001":
+        SecondHalfHandicap(this.statistics, market);
+        break;
+      case "17002":
+      case "212002":
+        Total(this.statistics, market);
+        break;
+      case "273003":
+        WinnerTotal(this.statistics, market);
+        break;
+      case "210001":
+        HandicapTwoWay(this.statistics, market);
+        break;
+      case "82002":
+      case "219002":
+        SecondHalfTotal(this.statistics, market);
+        break;
+      case "276001":
+      case "86001":
+        SecondHalfTotalOddEven(this.statistics, market);
+        break;
+      case "277001":
+        Total3Way(this.statistics, market);
+        break;
+      case "214002":
+      case "215002":
+        CompetitorTotal(this.statistics, market);
+        break;
+      case "216001":
+        TotalOddEven(this.statistics, market);
+        break;
+      case "217001":
+        WhichTeamRaceToPoints(this.statistics, market);
+        break;
+      case "282001":
+        QuarterHandicap(this.statistics, market);
+        break;
+      case "283001":
+        QuarterOddEven(this.statistics, market);
+        break;
+      case "221001":
+        Quarter3Way(this.statistics, market);
+        break;
+      case "222002":
+        QuarterTotal(this.statistics, market);
+        break;
+    }
+  };
 
   Start = () => {
-    this.marketsToEstimate.forEach((market) => {
-      this.EstimateMarket(market);
-    });
+    if (this.statistics.sport_id === "2") {
+      this.marketsToEstimate.forEach((market) => {
+        this.EstimateMarketBasketBall(market);
+      });
+    } else {
+      this.marketsToEstimate.forEach((market) => {
+        this.EstimateMarket(market);
+      });
+    }
 
     console.log("Markets estimated.");
   };
