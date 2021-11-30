@@ -15,7 +15,7 @@ app.get("/estimation", (req, res) => {
       ? require("./json/tennis/event1_outcomes.json").odds
       : sportID === 2
       ? require("./json/basketball/outcomes.json").odds
-       :  null
+      : null;
 
   if (odds) {
     axios
@@ -46,7 +46,7 @@ app.get("/statistics", (req, res) => {
         return [
           {
             source: "betradar",
-            data: require("./json/soccer/timeline.json").doc[0].data,
+            data: require("./json/soccer/betradar_statistics.json").doc[0].data,
           },
         ];
       case 5:
@@ -62,8 +62,8 @@ app.get("/statistics", (req, res) => {
           {
             source: "betradar",
             data: require("./json/basketball/timeline.json").doc[0].data,
-          }
-        ]
+          },
+        ];
     }
   };
   const id = parseInt(req.query.sport_id);

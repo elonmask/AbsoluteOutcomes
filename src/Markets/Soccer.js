@@ -3054,6 +3054,590 @@ const HalfTimeGoals = (statistics, market) => {
   }
 };
 
+const ToScoreAnytime = (statistics, market) => {
+  if (parseInt(statistics.ss[0]) > 0 || parseInt(statistics.ss[2]) > 0) {
+    if (isFullTimeEnded(statistics)) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal - ")) {
+          const scorer = event.text
+            .split(" - ")[2]
+            .replace(statistics.home.name)
+            .replace(statistics.away.name)
+            .replace(" (", "")
+            .replace(")", "");
+          market.outcomes.forEach((outcome) => {
+            if (outcome.outcome.includes(scorer)) {
+              outcome.status = 2;
+            }
+          });
+        }
+      });
+    } else {
+      statistics.events.forEach((event) => {
+        if (event.text.includes("- Goal - ")) {
+          const scorer = event.text
+            .split(" - ")[2]
+            .replace(statistics.home.name)
+            .replace(statistics.away.name)
+            .replace(" (", "")
+            .replace(")", "");
+          market.outcomes.forEach((outcome) => {
+            if (outcome.outcome.includes(scorer)) {
+              outcome.status = 2;
+            }
+          });
+        }
+      });
+    }
+  }
+};
+
+const WinningMargin = (statistics, market) => {
+  if (isFullTimeEnded()) {
+    /*
+    Home to win by 1 goal,
+    Away to win by 1 goal,
+    Home to win by 2 goal,
+    Away to win by 2 goal,
+    Home to win by 3 goal,
+    Away to win by 3 goal,
+    Home to win by 4+ goal,
+    Away to win by 4+ goal,
+    Score Draw,
+    No Goal
+    * */
+
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const homeResult = statistics.scores["2"].home;
+    const awayResult = statistics.scores["2"].away;
+
+    if (homeResult - awayResult === 1) {
+      market.outcomes[0].status = 2;
+    }
+    if (awayResult - homeResult === 1) {
+      market.outcomes[1].status = 2;
+    }
+    if (homeResult - awayResult === 2) {
+      market.outcomes[2].status = 2;
+    }
+    if (awayResult - homeResult === 2) {
+      market.outcomes[3].status = 2;
+    }
+    if (homeResult - awayResult === 3) {
+      market.outcomes[4].status = 2;
+    }
+    if (awayResult - homeResult === 3) {
+      market.outcomes[5].status = 2;
+    }
+    if (homeResult - awayResult > 4) {
+      market.outcomes[6].status = 2;
+    }
+    if (awayResult - homeResult > 4) {
+      market.outcomes[7].status = 2;
+    }
+    if (homeResult === awayResult) {
+      market.outcomes[8].status = 2;
+    }
+    if (homeResult === 0 && awayResult === 0) {
+      market.outcomes[9].status = 2;
+    }
+  }
+};
+
+const FirstCardReceived = (statistics, market) => {
+  /*
+  Home,
+  No card,
+  Away
+  * */
+
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    let isCardInMatch = false;
+    let cardReceiver = "";
+    statistics.events.forEach((event) => {
+      if (!isCardInMatch) {
+        if (
+          event.text.includes("- Yellow Card - ") ||
+          event.text.includes("- Red Card - ")
+        ) {
+          isCardInMatch = true;
+          cardReceiver = event.text.includes(statistics.home.name)
+            ? "home"
+            : "away";
+        }
+      }
+    });
+
+    if (isCardInMatch) {
+      if (cardReceiver === "home") {
+        market.outcomes[0].status = 2;
+      }
+      if (cardReceiver === "away") {
+        market.outcomes[2].status = 2;
+      }
+    } else {
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    let isCardInMatch = false;
+    let cardReceiver = "";
+    statistics.events.forEach((event) => {
+      if (!isCardInMatch) {
+        if (
+          event.text.includes("- Yellow Card - ") ||
+          event.text.includes("- Red Card - ")
+        ) {
+          isCardInMatch = true;
+          cardReceiver = event.text.includes(statistics.home.name)
+            ? "home"
+            : "away";
+        }
+      }
+    });
+
+    if (isCardInMatch) {
+      if (cardReceiver === "home") {
+        market.outcomes[0].status = 2;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 3;
+      }
+      if (cardReceiver === "away") {
+        market.outcomes[2].status = 2;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 3;
+      }
+    }
+  }
+};
+
+const Corners3Way = (statistics, market) => {
+  /*
+  Over,
+  Exectly,
+  Under
+  */
+
+  const total = parseFloat(market.specifiers.total);
+  const actualTotalCorners =
+    parseInt(statistics.stats.corners[0]) +
+    parseInt(statistics.stats.corners[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    if (actualTotalCorners > total) {
+      market.outcomes[0].status = 2;
+    }
+    if (actualTotalCorners === total) {
+      market.outcomes[1].status = 2;
+    }
+    if (actualTotalCorners < total) {
+      market.outcomes[2].status = 2;
+    }
+  } else {
+    if (actualTotalCorners > total) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+      market.outcomes[0].status = 2;
+    }
+    if (actualTotalCorners === total) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const CornerMatchBet = (statistics, market) => {
+  /*
+  * Home,
+    Tie,
+    Away
+  * */
+  const actualTotalCornersHome = parseInt(statistics.stats.corners[0]);
+  const actualTotalCornersAway = parseInt(statistics.stats.corners[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    if (actualTotalCornersHome > actualTotalCornersAway) {
+      market.outcomes[0].status = 2;
+    }
+    if (actualTotalCornersHome === actualTotalCornersAway) {
+      market.outcomes[1].status = 2;
+    }
+    if (actualTotalCornersAway > actualTotalCornersHome) {
+      market.outcomes[2].status = 2;
+    }
+  }
+};
+
+const Multicorners = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  if (statistics.scores["2"]) {
+    let firstTimeCorners = 0;
+    let secondTimeCorners = 0;
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Corner -")) {
+        const time = parseInt(event.text.split(" - ")[0].replace("'", ""));
+
+        if (time < 45) {
+          firstTimeCorners++;
+        }
+        if (time > 45) {
+          secondTimeCorners++;
+        }
+      }
+    });
+
+    if (isFullTimeEnded(statistics)) {
+      market.outcomes.forEach((outcome) => {
+        outcome.status = 3;
+      });
+      if (firstTimeCorners * secondTimeCorners > total) {
+        market.outcomes[0].status = 2;
+      }
+      if (firstTimeCorners * secondTimeCorners < total) {
+        market.outcomes[1].status = 2;
+      }
+    } else {
+      if (firstTimeCorners * secondTimeCorners > total) {
+        market.outcomes[0].status = 2;
+        market.outcomes[1].status = 3;
+      }
+    }
+  }
+};
+
+const TeamGoalScorer = (statistics, market) => {
+  //TODO
+  const goalnr = parseInt(market.specifiers.goalnr);
+  let goalCounter = 0;
+  if (
+    parseInt(statistics.stats.goals[0]) + parseInt(statistics.stats.goals[1]) >=
+    goalnr
+  ) {
+    statistics.events.forEach((event) => {
+      if (event.text.includes("- Goal -")) {
+        goalCounter++;
+
+        if (goalCounter === goalnr) {
+          const scorer = event.text
+            .split(" - ")[2]
+            .replace(statistics.home.name)
+            .replace(statistics.away.name)
+            .replace(" (", "")
+            .replace(")", "");
+
+          market.outcomes.forEach((outcome) => {
+            if (
+              scorer.includes(outcome.outcome) ||
+              scorer === outcome.outcome
+            ) {
+              outcome.status = 2;
+            } else {
+              outcome.status = 3;
+            }
+          });
+        }
+      }
+    });
+  }
+};
+
+const AsianTotalCorners = (statistics, market) => {
+  //TODO Asian
+  const total = parseFloat(market.specifiers.total);
+  const totalCorners =
+    parseInt(statistics.stats.corners[0]) +
+    parseInt(statistics.stats.corners[1]);
+
+  if (isFullTimeEnded(statistics)) {
+    if (totalCorners < total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (totalCorners > total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const AsianHandicapCorners = (statistics, market) => {
+  //TODO Asian HCP Corners
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    const handicap = parseFloat(market.specifiers.hcp.replace("+"));
+
+    const homeResult = parseInt(statistics.stats.corners[0]);
+    const awayResult = parseInt(statistics.stats.corners[1]);
+
+    const homeBetHcp = market.outcomes[0].outcome.includes("+hcp") ? "+" : "-";
+    const awayBetHcp = market.outcomes[1].outcome.includes("+hcp") ? "+" : "-";
+
+    //Home bet estimation
+    if (homeBetHcp === "+") {
+      const homeBetHcpResult = homeResult + handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[0].status = 4;
+      }
+    }
+    if (homeBetHcp === "-") {
+      const homeBetHcpResult = homeResult - handicap;
+
+      if (homeBetHcpResult > awayResult) {
+        market.outcomes[0].status = 2;
+      }
+
+      if (homeBetHcpResult === awayResult) {
+        market.outcomes[0].status = 4;
+      }
+    }
+
+    //Away bet estimation
+    if (awayBetHcp === "+") {
+      const awayBetHcpResult = awayResult + handicap;
+
+      if (awayBetHcpResult > homeResult) {
+        market.outcomes[1].status = 2;
+      }
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 4;
+      }
+    }
+    if (awayBetHcp === "-") {
+      const awayBetHcpResult = awayResult - handicap;
+
+      if (awayBetHcpResult > homeResult) {
+        market.outcomes[1].status = 2;
+      }
+
+      if (awayBetHcpResult === homeResult) {
+        market.outcomes[1].status = 4;
+      }
+    }
+  }
+};
+
+const AsianTotalCards = (statistics, market) => {
+  //TODO Asian total cards
+  if (
+    parseInt(statistics.stats.yellowred_cards[0]) +
+      parseInt(statistics.stats.yellowred_cards[1]) >=
+    parseFloat(market.specifiers.total)
+  ) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const total = parseFloat(market.specifiers.total);
+    let totalGoals = 0;
+
+    statistics.events.forEach((event) => {
+      if (event.text.includes(" Card -")) {
+        //Check if it's not extra time
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+          totalGoals++;
+        }
+      }
+    });
+
+    if (totalGoals < total) {
+      market.outcomes[0].status = 2;
+    }
+    if (totalGoals > total) {
+      market.outcomes[1].status = 2;
+    }
+  } else if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const total = parseFloat(market.specifiers.total);
+    let totalGoals = 0;
+
+    statistics.events.forEach((event) => {
+      if (event.text.includes(" Card -")) {
+        //Check if it's not extra time
+        if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+          totalGoals++;
+        }
+      }
+    });
+
+    if (totalGoals < total) {
+      market.outcomes[0].status = 2;
+    }
+    if (totalGoals > total) {
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const CleanSheet = (statistics, market) => {
+  /*
+  Home - Yes,
+  Home - No,
+  Away - Yes,
+  Away - No
+  */
+
+  if (isFullTimeEnded(statistics)) {
+    const homeResult = statistics.scores["2"].home;
+    const awayResult = statistics.scores["2"].away;
+
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    if (homeResult > awayResult) {
+      if (awayResult === 0) {
+        market.outcomes[0].status = 2;
+      } else {
+        market.outcomes[1].status = 2;
+      }
+    }
+
+    if (awayResult > homeResult) {
+      if (homeResult === 0) {
+        market.outcomes[2].status = 2;
+      } else {
+        market.outcomes[3].status = 2;
+      }
+    }
+  }
+};
+
+const Wincast = (statistics, market) => {};
+
+const Timecast = (statistics, market) => {};
+
+const OwnGoal = (statistics, market) => {
+  /*
+   * yes, no
+   * */
+};
+
+const Corners2Way = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const actualTotal = parseInt(
+    statistics.stats.corners[0] + statistics.stats.corners[1]
+  );
+
+  if (isFullTimeEnded(statistics)) {
+    if (actualTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (actualTotal < total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (actualTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+  }
+};
+
+const NumberOfCards = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const cardsInMatch = parseInt(
+    statistics.stats.yellowred_cards[0] + statistics.stats.yellowred_cards[1]
+  );
+
+  if (isFullTimeEnded(statistics)) {
+    if (cardsInMatch > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    if (cardsInMatch < total) {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    }
+  } else {
+    if (cardsInMatch > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+  }
+};
+
+const RedCardInMatch = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    if (
+      parseInt(statistics.stats.redcards[0]) > 0 ||
+      parseInt(statistics.stats.redcards[1])
+    ) {
+      market.outcomes[0].status = 2;
+    } else {
+      market.outcomes[1].status = 3;
+    }
+  } else {
+    if (
+      parseInt(statistics.stats.redcards[0]) > 0 ||
+      parseInt(statistics.stats.redcards[1])
+    ) {
+      market.outcomes[0].status = 2;
+    } else {
+      market.outcomes[1].status = 3;
+    }
+  }
+};
+
+const MostCorners = (statistics, market) => {
+  if (isFullTimeEnded(statistics)) {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const HomeCorners = parseInt(statistics.stats.corners[0]);
+    const AwayCorners = parseInt(statistics.stats.corners[1]);
+
+    if (HomeCorners > AwayCorners) {
+      market.outcomes[0].status = 2;
+    }
+    if (AwayCorners > HomeCorners) {
+      market.outcomes[2].status = 2;
+    }
+    if (HomeCorners === AwayCorners) {
+      market.outcomes[1].status = 2;
+    }
+  }
+};
+
 module.exports = {
   fullTimeResult,
   HalfTimeFullTime,

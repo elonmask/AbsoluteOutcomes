@@ -1,4 +1,3 @@
-const { mark } = require("yarn/lib/cli");
 const FirstHalfTeamTotal = (statistics, market) => {
   const total = parseFloat(market.specifiers.total);
   const team = market.name.includes("competitor2") ? "away" : "home";
