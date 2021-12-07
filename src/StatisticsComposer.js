@@ -56,7 +56,7 @@ class StatisticsComposer {
                 parseInt(
                   event.text
                     .split(" ")
-                    [event.text.split(" ").length - 1].split(":")[0]
+                  [event.text.split(" ").length - 1].split(":")[0]
                 ) + 1;
               eventsBuffer.push({
                 data: minute + "' - " + event.text,
@@ -199,10 +199,10 @@ class StatisticsComposer {
         validity === 1
           ? "Confirmed by all sources"
           : validity === 2
-          ? "Confirmed by 50% sources"
-          : validity === 3
-          ? "Confirmed by less then 50% sources"
-          : "";
+            ? "Confirmed by 50% sources"
+            : validity === 3
+              ? "Confirmed by less then 50% sources"
+              : "";
       result.push({
         text: event.data,
         validity: validity,
@@ -280,7 +280,7 @@ class StatisticsComposer {
             : validity === 3
               ? "Confirmed by less then 50% sources"
               : "";
-      if ( typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
+      if (typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
         result.push({
           text: event.data,
           extra: event.extra || null,
@@ -362,7 +362,7 @@ class StatisticsComposer {
             : validity === 3
               ? "Confirmed by less then 50% sources"
               : "";
-      if ( typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
+      if (typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
         result.push({
           text: event.data,
           extra: event.extra || null,
@@ -619,7 +619,7 @@ class StatisticsComposer {
       const eventText = event.text;
       const eventTeam = event.text
         .split(" - ")
-        [event.text.split(" - ").length - 1].includes(result.home.name)
+      [event.text.split(" - ").length - 1].includes(result.home.name)
         ? "home"
         : "away";
 
@@ -742,7 +742,7 @@ class StatisticsComposer {
     })
     return result;
   }
-  ComposeBasketball = () => {
+  ComposeLikeBasketball = () => {
     const result = {
       sport_id: null,
       //time: null,
@@ -791,6 +791,7 @@ class StatisticsComposer {
           result.events = this.ComposeEventsBasketball();
       }
     })
+    console.log(result)
     return result;
   }
 
@@ -800,8 +801,9 @@ class StatisticsComposer {
         return this.ComposeSoccer()
       case 5:
         return this.ComposeTennis()
-      case 2:
-        return this.ComposeBasketball()
+      case 2: case 4:
+        return this.ComposeLikeBasketball()
+
     }
   };
 }

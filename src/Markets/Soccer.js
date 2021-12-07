@@ -1,5 +1,18 @@
+const { ThreeWay, WhichTeamScoresPoint, BothTeamsToScoreBasket } = require("./Basketball");
+const { CompetitorTotal,
+  DoubleChanceHockey,
+  DrawNoBetHockey,
+  Handicap3WayHockey,
+  HandicapHockey,
+  BothTeamsToScoreHockey,
+  TotalGoalsHockey
+} = require("./IceHockey");
+
 const isFullTimeEnded = (statistics) => {
-  if (statistics.scores["1"] && statistics.scores["2"]) {
+  if (statistics.time_status === "3") {
+    return true;
+  }
+  if (statistics.scores?.["1"] && statistics.scores?.["2"]) {
     return statistics.time_status === "3";
   } else {
     return false;
@@ -7,6 +20,9 @@ const isFullTimeEnded = (statistics) => {
 };
 
 const fullTimeResult = (statistics, market) => {
+  if (statistics.result?.home) {
+    return ThreeWay(statistics, market);
+  }
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -27,9 +43,12 @@ const fullTimeResult = (statistics, market) => {
 };
 
 const WhichTeamToScoreNGoal = (statistics, market) => {
+  if (statistics.result?.home) {
+    return WhichTeamScoresPoint(statistics, market);
+  }
   if (
     parseInt(statistics.ss.split("-")[0]) >=
-      parseInt(market.specifiers.goalnr) ||
+    parseInt(market.specifiers.goalnr) ||
     parseInt(statistics.ss.split("-")[1]) >= parseInt(market.specifiers.goalnr)
   ) {
     market.outcomes.forEach((outcome) => {
@@ -50,7 +69,7 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
         //Check if it's not extra time
@@ -96,7 +115,7 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" - ")[2].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
 
@@ -128,6 +147,10 @@ const WhichTeamToScoreNGoal = (statistics, market) => {
 };
 
 const DoubleChance = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return DoubleChanceHockey(statistics, market);
+  }
+
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -238,6 +261,10 @@ const CorrectScoreComninations = (statistics, market) => {
 };
 
 const DrawNoBet = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return DrawNoBetHockey(statistics, market);
+  }
+
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -298,15 +325,15 @@ const MatchBetBothScore = (statistics, market) => {
     });
     const fullTimeWinner =
       parseInt(statistics.scores["2"].home) >
-      parseInt(statistics.scores["2"].away)
+        parseInt(statistics.scores["2"].away)
         ? "home"
         : parseInt(statistics.scores["2"].away) >
           parseInt(statistics.scores["2"].home)
-        ? "away"
-        : parseInt(statistics.scores["2"].home) ===
-          parseInt(statistics.scores["2"].home)
-        ? "draw"
-        : "undefined";
+          ? "away"
+          : parseInt(statistics.scores["2"].home) ===
+            parseInt(statistics.scores["2"].home)
+            ? "draw"
+            : "undefined";
 
     if (fullTimeWinner !== "undefined") {
       let homeScored = false;
@@ -364,6 +391,9 @@ const WinOver = (statistics, market) => {
 };
 
 const Handicap3Way = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return Handicap3WayHockey(statistics, market);
+  }
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -451,7 +481,7 @@ const BothToScoreTotalGoals = (statistics, market) => {
     parseInt(statistics.stats.goals[0]) > 0 &&
     parseInt(statistics.stats.goals[1]) > 0 &&
     parseInt(statistics.stats.goals[0]) + parseInt(statistics.stats.goals[1]) >=
-      parseFloat(market.specifiers.total)
+    parseFloat(market.specifiers.total)
   ) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -471,7 +501,7 @@ const BothToScoreTotalGoals = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
 
@@ -521,7 +551,7 @@ const BothToScoreTotalGoals = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
 
@@ -607,6 +637,10 @@ const ToWinToNil = (statistics, market) => {
 };
 
 const Handicap = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return HandicapHockey(statistics, market);
+  }
+
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -671,6 +705,9 @@ const Handicap = (statistics, market) => {
 };
 
 const TotalGoals = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return TotalGoalsHockey(statistics, market);
+  }
   if (
     parseInt(statistics.stats.goals[0]) + parseInt(statistics.stats.goals[1]) >=
     parseFloat(market.specifiers.total)
@@ -740,7 +777,7 @@ const BothToScoreNoDraw = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
 
@@ -780,7 +817,7 @@ const BothToScoreNoDraw = (statistics, market) => {
       if (event.text.includes(" Goal -")) {
         const teamScored =
           event.text.split(" ")[6].replace("(", "").replace(")", "") ===
-          homeTeam
+            homeTeam
             ? "home"
             : "away";
 
@@ -809,6 +846,9 @@ const BothToScoreNoDraw = (statistics, market) => {
 };
 
 const TeamTotalGoals = (statistics, market) => {
+  if (statistics.result?.home) {
+    return CompetitorTotal(statistics, market);
+  }
   const homeTeam = statistics.home.name;
   const total = parseFloat(market.specifiers.total);
 
@@ -1168,14 +1208,14 @@ const HalfTimeFullTime = (statistics, market) => {
       statistics.scores["1"].home > statistics.scores["1"].away
         ? "home"
         : statistics.scores["1"].home < statistics.scores["1"].away
-        ? "away"
-        : "draw";
+          ? "away"
+          : "draw";
     const fullTimeWinner =
       statistics.scores["2"].home > statistics.scores["2"].away
         ? "home"
         : statistics.scores["2"].home < statistics.scores["2"].away
-        ? "away"
-        : "draw";
+          ? "away"
+          : "draw";
 
     if (halfTimeWinner === "home" && fullTimeWinner === "home") {
       market.outcomes[0].status = 2;
@@ -1216,6 +1256,13 @@ const HalfTimeFullTime = (statistics, market) => {
 };
 
 const BothTeamsToScore = (statistics, market) => {
+  if (statistics.result?.home) {
+    if (statistics.sport_id === '4') {
+      return BothTeamsToScoreHockey(statistics, market);
+    } else {
+      return BothTeamsToScoreBasket(statistics, market);
+    }
+  }
   if (
     parseInt(statistics.stats.goals[0]) > 0 &&
     parseInt(statistics.stats.goals[1]) > 0
@@ -1296,7 +1343,7 @@ const FromTo3WayResult = (statistics, market) => {
       if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
         if (
           parseInt(event.text.split(" ")[0].replace("'", "")) >=
-            parseInt(from) &&
+          parseInt(from) &&
           parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
         ) {
           homeGoals++;
@@ -1305,7 +1352,7 @@ const FromTo3WayResult = (statistics, market) => {
       if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
         if (
           parseInt(event.text.split(" ")[0].replace("'", "")) >=
-            parseInt(from) &&
+          parseInt(from) &&
           parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
         ) {
           awayGoals++;
@@ -1348,7 +1395,7 @@ const FromTo3WayResult = (statistics, market) => {
         if (event.text.includes("- Goal -") && event.text.includes(homeTeam)) {
           if (
             parseInt(event.text.split(" ")[0].replace("'", "")) >=
-              parseInt(from) &&
+            parseInt(from) &&
             parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
           ) {
             homeGoals++;
@@ -1357,7 +1404,7 @@ const FromTo3WayResult = (statistics, market) => {
         if (event.text.includes("- Goal -") && event.text.includes(awayTeam)) {
           if (
             parseInt(event.text.split(" ")[0].replace("'", "")) >=
-              parseInt(from) &&
+            parseInt(from) &&
             parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
           ) {
             awayGoals++;
@@ -1393,7 +1440,7 @@ const GoalBetween = (statistics, market) => {
       if (event.text.includes("- Goal -")) {
         if (
           parseInt(event.text.split(" ")[0].replace("'", "")) >=
-            parseInt(from) &&
+          parseInt(from) &&
           parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
         ) {
           goals++;
@@ -1428,7 +1475,7 @@ const GoalBetween = (statistics, market) => {
         if (event.text.includes("- Goal -")) {
           if (
             parseInt(event.text.split(" ")[0].replace("'", "")) >=
-              parseInt(from) &&
+            parseInt(from) &&
             parseInt(event.text.split(" ")[0].replace("'", "")) <= parseInt(to)
           ) {
             goals++;
@@ -1702,8 +1749,8 @@ const HalfTime3Way = (statistics, market) => {
       statistics.scores["1"].home > statistics.scores["1"].away
         ? "home"
         : statistics.scores["1"].away > statistics.scores["1"].home
-        ? "away"
-        : "draw";
+          ? "away"
+          : "draw";
 
     if (winner === "home") {
       market.outcomes[0].status = 2;
@@ -1736,8 +1783,8 @@ const SecondHalf3Way = (statistics, market) => {
       statistics.scores["2"].home > statistics.scores["2"].away
         ? "home"
         : statistics.scores["2"].away > statistics.scores["2"].home
-        ? "away"
-        : "draw";
+          ? "away"
+          : "draw";
 
     if (winner === "home") {
       market.outcomes[0].status = 2;
@@ -1776,7 +1823,7 @@ const AnyTimeCorrectScore = (statistics, market) => {
         (parseInt(score.split(":")[0]) <=
           parseInt(outcome.outcome.split(":")[0]) &&
           parseInt(score.split(":")[1]) <=
-            parseInt(outcome.outcome.split(":")[1]))
+          parseInt(outcome.outcome.split(":")[1]))
       ) {
         outcome.status = 2;
       } else {
@@ -1790,7 +1837,7 @@ const AnyTimeCorrectScore = (statistics, market) => {
         (parseInt(outcome.outcome.split(":")[0]) <=
           parseInt(score.split(":")[0]) &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            parseInt(score.split(":")[1]))
+          parseInt(score.split(":")[1]))
       ) {
         outcome.status = 2;
       }
@@ -1803,11 +1850,11 @@ const HalfTimeAnyTimeCorrectScore = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       if (
         outcome.outcome ===
-          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["1"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            statistics.scores["1"].away)
+          statistics.scores["1"].away)
       ) {
         outcome.status = 2;
       } else {
@@ -1818,11 +1865,11 @@ const HalfTimeAnyTimeCorrectScore = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       if (
         outcome.outcome ===
-          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["1"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            statistics.scores["1"].away)
+          statistics.scores["1"].away)
       ) {
         outcome.status = 2;
       }
@@ -1835,11 +1882,11 @@ const HalfTimeCorrectScore = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       if (
         outcome.outcome ===
-          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["1"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            statistics.scores["1"].away)
+          statistics.scores["1"].away)
       ) {
         outcome.status = 2;
       } else {
@@ -1857,11 +1904,11 @@ const HalfTimeCorrectScore = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       if (
         outcome.outcome ===
-          `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
+        `${statistics.scores["1"].home}:${statistics.scores["1"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["1"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            statistics.scores["1"].away)
+          statistics.scores["1"].away)
       ) {
         outcome.status = 2;
       }
@@ -1874,11 +1921,11 @@ const SecondHalfAnyTimeCorrectScore = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       if (
         outcome.outcome ===
-          `${statistics.scores["2"].home}:${statistics.scores["2"].away}` ||
+        `${statistics.scores["2"].home}:${statistics.scores["2"].away}` ||
         (parseInt(outcome.outcome.split(":")[0]) <=
           statistics.scores["2"].home &&
           parseInt(outcome.outcome.split(":")[1]) <=
-            statistics.scores["2"].away)
+          statistics.scores["2"].away)
       ) {
         outcome.status = 2;
       } else {
@@ -1967,7 +2014,7 @@ const HalfTimeTotalGoals = (statistics, market) => {
   if (
     statistics.scores["1"] &&
     parseInt(statistics.stats.goals[0]) + parseInt(statistics.stats.goals[1]) >=
-      parseFloat(market.specifiers.total)
+    parseFloat(market.specifiers.total)
   ) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -2023,8 +2070,8 @@ const SecondTimeTotalGoals = (statistics, market) => {
   if (
     statistics.scores["2"] &&
     parseInt(statistics.scores["2"].home) +
-      parseInt(statistics.scores["2"].away) >=
-      parseFloat(market.specifiers.total)
+    parseInt(statistics.scores["2"].away) >=
+    parseFloat(market.specifiers.total)
   ) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -2121,8 +2168,8 @@ const HalfTimeResultTotal = (statistics, market) => {
       statistics.scores["1"].home > statistics.scores["1"].away
         ? "home"
         : statistics.scores["1"].home === statistics.scores["1"].away
-        ? "draw"
-        : "away";
+          ? "draw"
+          : "away";
     let totalGoals = 0;
     statistics.events.forEach((event) => {
       if (
@@ -2177,8 +2224,8 @@ const SecondHalfResultTotal = (statistics, market) => {
       statistics.scores["2"].home > statistics.scores["2"].away
         ? "home"
         : statistics.scores["2"].home === statistics.scores["2"].away
-        ? "draw"
-        : "away";
+          ? "draw"
+          : "away";
     let totalGoals = 0;
     statistics.events.forEach((event) => {
       if (
@@ -2860,8 +2907,8 @@ const HalfTimeTotalShotsOnGoal = (statistics, market) => {
   if (
     statistics.scores["1"] &&
     parseInt(statistics.stats.on_target[0]) +
-      parseInt(statistics.stats.on_target[1]) >=
-      parseFloat(market.specifiers.total)
+    parseInt(statistics.stats.on_target[1]) >=
+    parseFloat(market.specifiers.total)
   ) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;

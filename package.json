@@ -6,7 +6,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "Sergei Voronov",
   "license": "MIT",
@@ -17,6 +17,6 @@
     "yarn": "^1.22.17"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.15"
   }
 }

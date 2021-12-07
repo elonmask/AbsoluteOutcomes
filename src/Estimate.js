@@ -60,7 +60,6 @@ const {
   ToScoreTwoOrMoreGoals,
   HalfTimeGoals,
 } = require("./Markets/Soccer");
-
 const {
   SetGameTotalPoints,
   SetScoreAfterGames,
@@ -103,7 +102,9 @@ const {
   QuarterOddEven,
   Quarter3Way,
   QuarterTotal,
-} = require("./Markets/Basketballl");
+} = require("./Markets/Basketball");
+const { CompetitorExactGoals } = require("./Markets/IceHockey");
+
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -340,6 +341,11 @@ class Estimate {
       case "190001":
         SetGameHandicap(this.statistics, market);
         break;
+      /* Ice hockey */
+      case "384002":
+      case "385002":
+        CompetitorTotal(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -360,6 +366,10 @@ class Estimate {
       case "{!setnr} set - correct score":
         SetCorrectScore(this.statistics, market);
         break;
+    }
+    if (market.name.includes('exact goals (incl. overtime and penalties)')) {
+      CompetitorExactGoals(this.statistics, market);
+      return;
     }
   };
   EstimateMarketBasketBall = (market) => {
