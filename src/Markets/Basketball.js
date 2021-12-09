@@ -275,7 +275,12 @@ const WillThereBeOvertime = (statistics, market) => {
 };
 
 const WhichTeamScoresPoint = (statistics, market) => {
-  const pointNumber = parseInt(market.specifiers.pointnr);
+  let pointNumber = parseInt(market.specifiers.pointnr);
+
+  if (!pointNumber) {
+    pointNumber = parseInt(market.specifiers.goalnr);
+    console.log("pointNumber", pointNumber);
+  }
 
   if (statistics.time_status === "3") {
     if (statistics.result.home >= pointNumber) {

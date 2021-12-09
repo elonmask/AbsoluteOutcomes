@@ -103,7 +103,7 @@ const {
   Quarter3Way,
   QuarterTotal,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals } = require("./Markets/IceHockey");
+const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod } = require("./Markets/IceHockey");
 
 
 class Estimate {
@@ -346,6 +346,38 @@ class Estimate {
       case "385002":
         CompetitorTotal(this.statistics, market);
         break;
+      case "389001":
+        OddEven(this.statistics, market);
+        break;
+      case "390002":
+        WhichTeamToScore(this.statistics, market);
+        break;
+      case "7001":
+        ResultRestOfMatch(this.statistics, market);
+        break;
+      case "391001":
+      case "392001":
+        CompetitorCleanSheet(this.statistics, market);
+        break;
+      case "394001":
+        MatchWinnerTotalGoals(this.statistics, market);
+        break;
+      case "395001":
+        MatchWinnerBothTeamsToScore(this.statistics, market);
+        break;
+      case "396001":
+        PeriodAndWinner(this.statistics, market, true);
+        break;
+      case "12001":
+      case "13001":
+        CompetitorNoBet(this.statistics, market);
+        break;
+      case "398001":
+        PeriodAndWinner(this.statistics, market, false);
+        break;
+      case "401001":
+        HighestScoringPeriod(this.statistics, market, false);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -369,6 +401,10 @@ class Estimate {
     }
     if (market.name.includes('exact goals (incl. overtime and penalties)')) {
       CompetitorExactGoals(this.statistics, market);
+      return;
+    }
+    if (market.name.includes('Winning margin')) {
+      WinningMargin(this.statistics, market);
       return;
     }
   };

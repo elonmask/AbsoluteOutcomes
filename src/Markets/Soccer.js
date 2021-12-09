@@ -5,7 +5,8 @@ const { CompetitorTotal,
   Handicap3WayHockey,
   HandicapHockey,
   BothTeamsToScoreHockey,
-  TotalGoalsHockey
+  TotalGoalsHockey,
+  WhichTeamScoresGoal
 } = require("./IceHockey");
 
 const isFullTimeEnded = (statistics) => {
@@ -43,8 +44,8 @@ const fullTimeResult = (statistics, market) => {
 };
 
 const WhichTeamToScoreNGoal = (statistics, market) => {
-  if (statistics.result?.home) {
-    return WhichTeamScoresPoint(statistics, market);
+  if (statistics.sport_id === '4') {
+    return WhichTeamScoresGoal(statistics, market);
   }
   if (
     parseInt(statistics.ss.split("-")[0]) >=
