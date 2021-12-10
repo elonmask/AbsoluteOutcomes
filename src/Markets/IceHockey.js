@@ -707,6 +707,83 @@ const HighestScoringPeriod = (statistics, market) => {
   }
 }
 
+const CompetitorHighestScoringPeriod = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const team = market.name.includes('competitor1') ? 'home' : 'away';
+    const p1 = statistics.periods.p1[team];
+    const p2 = statistics.periods.p2[team];
+    const p3 = statistics.periods.p3[team];
+
+    if (p1 > p2 && p1 > p3) {
+      market.outcomes[0].status = 2;
+    }
+    if (p2 > p1 && p2 > p3) {
+      market.outcomes[1].status = 2;
+    }
+    if (p3 > p2 && p3 > p1) {
+      market.outcomes[2].status = 2;
+    }
+    if ((p2 === p1 && p2 >= p3) || (p2 === p3 && p2 >= p1) || (p1 === p3 && p1 >= p2)) {
+      market.outcomes[3].status = 2;
+    }
+  } else {
+    return
+  }
+}
+
+const ExactGoals = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+    const goals = statistics.result.home + statistics.result.away;
+
+    market.outcomes.forEach(outcome => {
+      if (outcome.outcome.includes('+')) {
+        const exact = parseFloat(outcome.outcome.split('+')[0]);
+        if (goals >= exact) {
+          outcome.status = 2;
+        } else {
+          outcome.status = 3;
+        }
+      } else {
+        const exact = parseFloat(outcome.outcome);
+        if (goals === exact) {
+          outcome.status = 2;
+        } else {
+          outcome.status = 3;
+        }
+      }
+    });
+  } else {
+    return
+  }
+}
+
+const ToWinAllPeriods = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    const team = market.name.includes('competitor1') ? 'home' : 'away';
+    const oponent = market.name.includes('competitor1') ? 'away' : 'home';
+    const p1Winner = statistics.periods.p1[team] > statistics.periods.p1[oponent];
+    const p2Winner = statistics.periods.p2[team] > statistics.periods.p2[oponent];
+    const p3Winner = statistics.periods.p3[team] > statistics.periods.p3[oponent];
+
+    if (p1Winner && p2Winner && p3Winner) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    } else {
+      market.outcomes[1].status = 2;
+      market.outcomes[0].status = 3;
+    }
+
+  } else {
+    return
+  }
+}
+
 module.exports = {
   CompetitorTotal,
   CompetitorExactGoals,
@@ -726,5 +803,8 @@ module.exports = {
   PeriodAndWinner,
   CompetitorNoBet,
   WinningMargin,
-  HighestScoringPeriod
+  HighestScoringPeriod,
+  CompetitorHighestScoringPeriod,
+  ExactGoals,
+  ToWinAllPeriods
 };
