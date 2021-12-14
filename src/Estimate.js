@@ -103,7 +103,7 @@ const {
   Quarter3Way,
   QuarterTotal,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods } = require("./Markets/IceHockey");
+const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey } = require("./Markets/IceHockey");
 
 
 class Estimate {
@@ -350,20 +350,20 @@ class Estimate {
         OddEven(this.statistics, market);
         break;
       case "390002":
-        WhichTeamToScore(this.statistics, market);
+        WhichTeamToScore(this.statistics, market, true);
         break;
       case "7001":
         ResultRestOfMatch(this.statistics, market);
         break;
       case "391001":
       case "392001":
-        CompetitorCleanSheet(this.statistics, market);
+        CompetitorCleanSheet(this.statistics, market, true, false);
         break;
       case "394001":
-        MatchWinnerTotalGoals(this.statistics, market);
+        MatchWinnerTotalGoals(this.statistics, market, true);
         break;
       case "395001":
-        MatchWinnerBothTeamsToScore(this.statistics, market);
+        MatchWinnerBothTeamsToScore(this.statistics, market, true);
         break;
       case "396001":
         PeriodAndWinner(this.statistics, market, true);
@@ -384,6 +384,56 @@ class Estimate {
       case "404001":
       case "405001":
         ToWinAllPeriods(this.statistics, market);
+        break;
+      case "406001":
+        ToWinAnyPeriod(this.statistics, market);
+      case "407001":
+        ToScoreInAllPeriods(this.statistics, market);
+        break;
+      case "408001":
+      case "409001":
+        TotalGoalsPerPeriod(this.statistics, market);
+        break;
+      case "410001":
+        PeriodThreeWay(this.statistics, market);
+        break;
+      case "411001":
+        PeriodGoal(this.statistics, market);
+        break;
+      case "28004":
+        WhichTeamToScore(this.statistics, market, false, false);
+        break;
+      case "412001":
+        PeriodHandicap(this.statistics, market);
+        break;
+      case "413002":
+        PeriodTotalGoals(this.statistics, market);
+        break;
+      case "29001":
+      case "30001":
+        CompetitorCleanSheet(this.statistics, market, false, false);
+        break;
+      case "416001":
+        BothTeamsToScoreHockey(this.statistics, market, true);
+        break;
+      case "417004":
+        WhichTeamToScore(this.statistics, market, false, true);
+        break;
+      case "33001":
+        MatchWinnerBothTeamsToScore(this.statistics, market, false);
+        break;
+      case "418001":
+      case "419001":
+        CompetitorCleanSheet(this.statistics, market, false, true);
+        break;
+      case "35001":
+        MatchWinnerTotalGoals(this.statistics, market, false);
+        break;
+      case "422002":
+        ResultRestOfPeriod(this.statistics, market);
+        break;
+      case "423001":
+        DrawNoBetHockey(this.statistics, market, true);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
@@ -406,12 +456,16 @@ class Estimate {
         SetCorrectScore(this.statistics, market);
         break;
     }
-    if (market.name.includes('exact goals (incl. overtime and penalties)')) {
-      CompetitorExactGoals(this.statistics, market);
+    if (market.name.toLowerCase().includes('exact goals (incl. overtime and penalties)')) {
+      CompetitorExactGoals(this.statistics, market, false);
       return;
     }
-    if (market.name.includes('Exact goals')) {
-      ExactGoals(this.statistics, market);
+    if (market.name.toLowerCase().includes('exact goals')) {
+      if (market.name.includes('period')) {
+        CompetitorExactGoals(this.statistics, market, true);
+      } else {
+        ExactGoals(this.statistics, market,);
+      }
       return;
     }
     if (market.name.includes('Winning margin')) {

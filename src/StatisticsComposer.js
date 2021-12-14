@@ -791,7 +791,6 @@ class StatisticsComposer {
           result.events = this.ComposeEventsBasketball();
       }
     })
-    console.log(result)
     return result;
   }
 
