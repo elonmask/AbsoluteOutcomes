@@ -347,7 +347,7 @@ class Estimate {
         CompetitorTotal(this.statistics, market);
         break;
       case "389001":
-        OddEven(this.statistics, market);
+        OddEven(this.statistics, market, false);
         break;
       case "390002":
         WhichTeamToScore(this.statistics, market, true);
@@ -404,6 +404,7 @@ class Estimate {
         WhichTeamToScore(this.statistics, market, false, false);
         break;
       case "412001":
+      case "424001":
         PeriodHandicap(this.statistics, market);
         break;
       case "413002":
@@ -434,6 +435,12 @@ class Estimate {
         break;
       case "423001":
         DrawNoBetHockey(this.statistics, market, true);
+        break;
+      case "425001":
+        OddEven(this.statistics, market, true);
+        break;
+      case "174001":
+        GoalAndMatchbet(this.statistics, market, true);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
