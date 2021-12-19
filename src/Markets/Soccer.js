@@ -1802,6 +1802,9 @@ const SecondHalf3Way = (statistics, market) => {
 };
 
 const CorrectScore = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return CorrectScore(statistics, market);
+  }
   if (isFullTimeEnded(statistics)) {
     const score = statistics.ss.replace("-", ":");
     market.outcomes.forEach((outcome) => {

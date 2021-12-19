@@ -1012,10 +1012,7 @@ const PeriodGoal = (statistics, market) => {
       }
 
       if (periodAchieved) {
-        console.log("achieved event:")
-        console.log(event)
         if (event.text.includes("Goal -")) {
-          console.log(event.extra);
           if ((goalsCounter + 1) === goalnr) {
             if (event.text.includes(statistics.home.name)) {
               market.outcomes[0].status = 2;
@@ -1255,20 +1252,64 @@ const GoalAndMatchbet = (statistics, market) => {
     });
     let totalGoals = 0;
 
-    console.log(statistics.events);
     const matchbet = homeResult > awayResult
-      ? 'home'
+      ? 'competitor1'
       : homeResult < awayResult
-        ? 'away'
+        ? 'competitor2'
         : 'draw';
+    let teamScorer = 'no goal';
     statistics.events.forEach((event) => {
-      if (event.text.includes(" Goal -")) {
-        //Check if it's not extra time
-        if (parseInt(event.text.split(" ")[0].replace("'", "")) < 90) {
+      if (event.text.includes("Goal -")) {
+        // TODO: Check if it's not extra time
           totalGoals++;
+
+        if (totalGoals === goalnr) {
+          teamScorer = event.text.includes(statistics.home) ? 'competitor1' : 'competitor2';
         }
       }
     });
+    market.outcomes.forEach((outcome) => {
+      if (teamScorer === 'no goal' && outcome.outcome === 'no goal') {
+        outcome.status = 2;
+        return;
+      }
+      if (outcome.outcome.includes('&') && outcome.outcome.split('&')[1].includes(matchbet)) {
+        if (outcome.outcome.split('&')[0].includes(teamScorer)) {
+          outcome.status = 2;
+        }
+      }
+    });
+
+  } else {
+    return
+  }
+}
+
+const CorrectScore =  (statistics, market) => {
+  const homeResult = statistics.result.home;
+  const awayResult = statistics.result.away;
+  const correctScore = `${homeResult}:${awayResult}`;
+
+  if (statistics.time_status === '3') {
+    market.outcomes.forEach((outcome) => {
+      outcome.status = 3;
+    });
+
+    market.outcomes.forEach((outcome) => {
+      if (outcome.outcome === correctScore) {
+        outcome.status = 2;
+        return;
+      }
+    });
+
+    if (!market.outcomes.some(outcome => outcome.status === 2)) {
+      market.outcomes.forEach(outcome => {
+        if (outcome.outcome === 'other') {
+          outcome.status = 2;
+          return;
+        }
+      })
+    }
   } else {
     return
   }
@@ -1306,5 +1347,6 @@ module.exports = {
   PeriodTotalGoals,
   ResultRestOfPeriod,
   CleanSheet,
-  GoalAndMatchbet
+  GoalAndMatchbet,
+  CorrectScore
 };

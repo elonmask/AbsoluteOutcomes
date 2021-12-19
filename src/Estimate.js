@@ -103,7 +103,7 @@ const {
   Quarter3Way,
   QuarterTotal,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey } = require("./Markets/IceHockey");
+const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet } = require("./Markets/IceHockey");
 
 
 class Estimate {
