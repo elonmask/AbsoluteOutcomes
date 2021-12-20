@@ -135,9 +135,9 @@ const BetradarBasketEvent = (event, team) => {
   } else {
     if (team.length > 1) {
       if (event.type === "goal" && event.scorer.name.length > 1) {
-        return event.name + " - " + team + " - " + event.scorer.name + " - " + event.time + "'"
+        return event.name + " - " + team + " - " + event.scorer.name + " - " + event.time + "' " + event.updated_uts
       } else {
-        return event.name + " - " + team + " - " + event.time + "'"
+        return event.name + " - " + team + " - " + event.time + "' " + event.updated_uts
       }
     } else {
       return event.name + " - " + event.time + "'"

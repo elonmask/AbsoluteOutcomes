@@ -248,6 +248,21 @@ const SecondHalfDrawNoBet = (statistics, market) => {
 };
 
 const WillThereBeOvertime = (statistics, market) => {
+  // Ice hockey
+  if (statistics.sport_id === '4') {
+    const fullTimeIdx = statistics.events.findIndex((event) => event.text === 'Full Time');
+    console.log(`fullTime idx`, fullTimeIdx);
+    if (statistics.events[fullTimeIdx + 1].text === 'Match end') {
+      market.outcomes[0].status = 3;
+      market.outcomes[1].status = 2;
+    } else {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    }
+    return;
+  }
+
+  // Basketball
   let lastEventTime = null;
   statistics.events.forEach((event) => {
     if (event.text[event.text.length - 1] === "'") {

@@ -6,7 +6,9 @@ const { CompetitorTotal,
   HandicapHockey,
   BothTeamsToScoreHockey,
   TotalGoalsHockey,
-  WhichTeamScoresGoal
+  WhichTeamScoresGoal,
+  CorrectScoreHockey,
+  OddEven
 } = require("./IceHockey");
 
 const isFullTimeEnded = (statistics) => {
@@ -1171,6 +1173,9 @@ const BothToScoreInBothHalves = (statistics, market) => {
 };
 
 const TotalGoalsOddEven = (statistics, market) => {
+  if (statistics.sport_id === '4') {
+    return OddEven(statistics, market);
+  }
   if (isFullTimeEnded(statistics)) {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -1803,7 +1808,7 @@ const SecondHalf3Way = (statistics, market) => {
 
 const CorrectScore = (statistics, market) => {
   if (statistics.sport_id === '4') {
-    return CorrectScore(statistics, market);
+    return CorrectScoreHockey(statistics, market);
   }
   if (isFullTimeEnded(statistics)) {
     const score = statistics.ss.replace("-", ":");

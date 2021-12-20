@@ -103,7 +103,7 @@ const {
   Quarter3Way,
   QuarterTotal,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet } = require("./Markets/IceHockey");
+const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet, CorrectScoreHockey, PeriodDoubleChance, Goal } = require("./Markets/IceHockey");
 
 
 class Estimate {
@@ -144,6 +144,7 @@ class Estimate {
         WinOver(this.statistics, market);
         break;
       case "14001":
+      case "378001":
         Handicap3Way(this.statistics, market);
         break;
       case "1038004":
@@ -154,9 +155,11 @@ class Estimate {
         ToWinToNil(this.statistics, market);
         break;
       case "16001":
+      case "380001":
         Handicap(this.statistics, market);
         break;
       case "17002":
+      case "382002":
         TotalGoals(this.statistics, market);
         break;
       case "1041001":
@@ -376,6 +379,7 @@ class Estimate {
         PeriodAndWinner(this.statistics, market, false);
         break;
       case "401001":
+      case "402001":
         HighestScoringPeriod(this.statistics, market, false);
         break;
       case "403001":
@@ -386,8 +390,10 @@ class Estimate {
         ToWinAllPeriods(this.statistics, market);
         break;
       case "406001":
+      case "1131001":
         ToWinAnyPeriod(this.statistics, market);
       case "407001":
+      case "1132001":
         ToScoreInAllPeriods(this.statistics, market);
         break;
       case "408001":
@@ -408,6 +414,8 @@ class Estimate {
         PeriodHandicap(this.statistics, market);
         break;
       case "413002":
+      case "1133002":
+      case "1134002":
         PeriodTotalGoals(this.statistics, market);
         break;
       case "29001":
@@ -442,6 +450,18 @@ class Estimate {
       case "174001":
         GoalAndMatchbet(this.statistics, market, true);
         break;
+      case "207001":
+        WillThereBeOvertime(this.statistics, market);
+        break;
+      case "483001":
+        PeriodDoubleChance(this.statistics, market);
+        break;
+      case "376001":
+        TwoWay(this.statistics, market);
+        break;
+      case "377001":
+        Goal(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
@@ -469,14 +489,22 @@ class Estimate {
     }
     if (market.name.toLowerCase().includes('exact goals')) {
       if (market.name.includes('period')) {
-        CompetitorExactGoals(this.statistics, market, true);
+        if (market.name.includes('competitor')) {
+          CompetitorExactGoals(this.statistics, market, true);
+        } else {
+          ExactGoals(this.statistics, market, true); // 1135
+        }
       } else {
-        ExactGoals(this.statistics, market,);
+        ExactGoals(this.statistics, market, false);
       }
       return;
     }
     if (market.name.includes('Winning margin')) {
       WinningMargin(this.statistics, market);
+      return;
+    }
+    if (market.name.includes('Correct score')) {
+      CorrectScoreHockey(this.statistics, market);
       return;
     }
   };
@@ -503,9 +531,6 @@ class Estimate {
         break;
       case "79001":
         SecondHalfDrawNoBet(this.statistics, market);
-        break;
-      case "207001":
-        WillThereBeOvertime(this.statistics, market);
         break;
       case "272001":
         WhichTeamScoresPoint(this.statistics, market);
