@@ -1,0 +1,356 @@
+{
+  "data": [
+    {
+      "common_id": "20001",
+      "prematch_id": "1763",
+      "odd_types_id": "175"
+    },
+    {
+      "common_id": "20002",
+      "prematch_id": "1764",
+      "odd_types_id": "227"
+    },
+    {
+      "common_id": "20004",
+      "prematch_id": "130006",
+      "odd_types_id": "1027"
+    },
+    {
+      "common_id": "20005",
+      "prematch_id": "130014",
+      "odd_types_id": "881"
+    },
+    {
+      "common_id": "20006",
+      "prematch_id": "130015",
+      "odd_types_id": "189"
+    },
+    {
+      "common_id": "20007",
+      "prematch_id": "130016",
+      "odd_types_id": "194"
+    },
+    {
+      "common_id": "20008",
+      "prematch_id": "130017",
+      "odd_types_id": "1057"
+    },
+    {
+      "common_id": "20009",
+      "prematch_id": "130018",
+      "odd_types_id": "178"
+    },
+    {
+      "common_id": "20010",
+      "prematch_id": "130020",
+      "odd_types_id": "189"
+    },
+    {
+      "common_id": "20013",
+      "prematch_id": "130079"
+    },
+    {
+      "common_id": "20014",
+      "prematch_id": "130082",
+      "odd_types_id": "176"
+    },
+    {
+      "common_id": "20018",
+      "prematch_id": "130118",
+      "odd_types_id": "199"
+    },
+    {
+      "common_id": "20019",
+      "prematch_id": "130120",
+      "odd_types_id": "1058"
+    },
+    {
+      "common_id": "20020",
+      "prematch_id": "130121",
+      "odd_types_id": "836"
+    },
+    {
+      "common_id": "20021",
+      "prematch_id": "130123",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20022",
+      "prematch_id": "130124",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20023",
+      "prematch_id": "130125",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20024",
+      "prematch_id": "130126",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20025",
+      "prematch_id": "130127",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20026",
+      "prematch_id": "130128",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20027",
+      "prematch_id": "130129",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20028",
+      "prematch_id": "130130",
+      "odd_types_id": "1116"
+    },
+    {
+      "common_id": "20029",
+      "prematch_id": "130131",
+      "odd_types_id": "291"
+    },
+    {
+      "common_id": "20031",
+      "prematch_id": "130180",
+      "odd_types_id": "181"
+    },
+    {
+      "common_id": "20033",
+      "prematch_id": "130183",
+      "odd_types_id": "182"
+    },
+    {
+      "common_id": "20037",
+      "prematch_id": "130203",
+      "odd_types_id": "1071"
+    },
+    {
+      "common_id": "20038",
+      "prematch_id": "130204",
+      "odd_types_id": "190"
+    },
+    {
+      "common_id": "20043",
+      "prematch_id": "130210",
+      "odd_types_id": "1027"
+    },
+    {
+      "common_id": "20044",
+      "prematch_id": "130211",
+      "odd_types_id": "1027"
+    },
+    {
+      "common_id": "20045",
+      "prematch_id": "130212",
+      "odd_types_id": "1118"
+    },
+    {
+      "common_id": "20046",
+      "prematch_id": "130213",
+      "odd_types_id": "188"
+    },
+    {
+      "common_id": "20047",
+      "prematch_id": "130215",
+      "odd_types_id": "853"},
+    {
+      "common_id": "20053",
+      "prematch_id": "130222",
+      "odd_types_id": "186"
+    },
+    {
+      "common_id": "20055",
+      "prematch_id": "130224"
+    },
+    {
+      "common_id": "20056",
+      "prematch_id": "130225"
+    },
+    {
+      "common_id": "20057",
+      "prematch_id": "130226"
+    },
+    {
+      "common_id": "20058",
+      "prematch_id": "130228"
+    },
+    {
+      "common_id": "20059",
+      "prematch_id": "130229"
+    },
+    {
+      "common_id": "20060",
+      "prematch_id": "130230"
+    },
+    {
+      "common_id": "20061",
+      "prematch_id": "130231",
+      "odd_types_id": "1024"
+    },
+    {
+      "common_id": "20062",
+      "prematch_id": "130232",
+      "odd_types_id": "177"
+    },
+    {
+      "common_id": "20063",
+      "prematch_id": "130233"
+    },
+    {
+      "common_id": "20064",
+      "prematch_id": "130234"
+    },
+    {
+      "common_id": "20065",
+      "prematch_id": "130235"
+    },
+    {
+      "common_id": "20066",
+      "prematch_id": "130236"
+    },
+    {
+      "common_id": "20067",
+      "prematch_id": "130237"
+    },
+    {
+      "common_id": "20070",
+      "prematch_id": "130240"
+    },
+    {
+      "common_id": "20071",
+      "prematch_id": "130242"
+    },
+    {
+      "common_id": "20072",
+      "prematch_id": "130243"
+    },
+    {
+      "common_id": "20073",
+      "prematch_id": "130248",
+      "odd_types_id": "184"
+    },
+    {
+      "common_id": "20074",
+      "prematch_id": "130355"
+    },
+    {
+      "common_id": "20075",
+      "prematch_id": "130356"},
+    {
+      "common_id": "20076",
+      "prematch_id": "130358"
+    },
+    {
+      "common_id": "20077",
+      "prematch_id": "130359",
+      "odd_types_id": "1118"
+    },
+    {
+      "common_id": "20078",
+      "prematch_id": "130077",
+      "odd_types_id": "289"
+    },
+    {
+      "common_id": "20079",
+      "prematch_id": "130080",
+      "odd_types_id": "836"
+    },
+    {
+      "common_id": "20080",
+      "prematch_id": "130097",
+      "odd_types_id": "1058"
+    },
+    {
+      "common_id": "20081",
+      "prematch_id": "130209"
+    },
+    {
+      "common_id": "20082",
+      "prematch_id": "130246"
+    },
+    {
+      "common_id": "20083",
+      "prematch_id": "130247"
+    },
+    {
+      "common_id": "20084",
+      "prematch_id": "130249"
+    },
+    {
+      "common_id": "20085",
+      "prematch_id": "130250"
+    },
+    {
+      "common_id": "20086",
+      "prematch_id": "130354",
+      "odd_types_id": "837"
+
+    },
+    {
+      "common_id": "20087",
+      "prematch_id": "130362"
+
+    },
+    {
+      "common_id": "20088",
+      "prematch_id": "130363"
+    },
+    {
+      "common_id": "20089",
+      "odd_types_id": "1030"
+    },
+    {
+      "common_id": "20090",
+      "odd_types_id": "1031"
+    },
+    {
+      "common_id": "20091",
+      "odd_types_id": "1291"
+    },
+    {
+      "common_id": "20092",
+      "odd_types_id": "1070"
+    },
+    {
+      "common_id": "20093",
+      "odd_types_id": "176"
+    },
+    {
+      "common_id": "20094",
+      "odd_types_id": "1074"
+    },
+    {
+      "common_id": "20095",
+      "odd_types_id": "179"
+    },
+    {
+      "common_id": "20096",
+      "odd_types_id": "180"
+    },
+    {
+      "common_id": "20097",
+      "odd_types_id": "181"
+    },
+    {
+      "common_id": "20098",
+      "odd_types_id": "182"
+    },
+    {
+      "common_id": "20099",
+      "odd_types_id": "183"
+    },
+    {
+      "common_id": "20100",
+      "odd_types_id": "189"
+    },
+    {
+      "common_id": "20101",
+      "odd_types_id": "190"
+    }
+  ]
+}

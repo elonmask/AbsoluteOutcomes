@@ -580,6 +580,26 @@
     ]
   },
   {
+    "market_name": "Handicap (Y-Z)",
+    "live_id": "11",
+    "common_id": "11175",
+    "odd_types_id": "2271",
+    "outcomes": [
+      {
+        "outcomeId": "2371001",
+        "outcome": "{$competitor1} ({+hcp})"
+      },
+      {
+        "outcomeId": "2371002",
+        "outcome": "draw ({+hcp})"
+      },
+      {
+        "outcomeId": "2371003",
+        "outcome": "{$competitor2} ({-hcp})"
+      }
+    ]
+  },
+  {
     "market_name": "Both teams to score & total goals",
     "prematch_id": "50405",
     "common_id": "10120",
@@ -3242,6 +3262,21 @@
       {
         "outcome": "Away",
         "common_outcomeId": "20177001"
+      }
+    ]
+  },
+  {
+    "market_name": "Asian Handicap (Y-Z)",
+    "live_id": "10162",
+    "common_id": "11177",
+    "outcomes": [
+      {
+        "outcome": "Home",
+        "common_outcomeId": "21177000"
+      },
+      {
+        "outcome": "Away",
+        "common_outcomeId": "21177001"
       }
     ]
   },
