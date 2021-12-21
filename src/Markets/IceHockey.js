@@ -1,7 +1,4 @@
 // status 2 - win 3 - lose
-
-const e = require("express");
-
 const CompetitorTotal = (statistics, market) => {
   const total = parseFloat(market.specifiers.total);
   const team = market.name.includes("competitor2") ? "away" : "home";
@@ -185,25 +182,22 @@ const ResultRestOfPeriod = (statistics, market) => {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
     });
-    const period = parseFloat(market.specifiers.periodnr);
-    const homeScore = parseFloat(statistics.periods[`p${period}`].home),
-      awayScore = parseFloat(statistics.periods[`p${period}`].away);
+    const periodnr = parseFloat(market.specifiers.periodnr);
+    let homeScore = 0,
+      awayScore = 0;
+    for (const period of [1, 2, 3]) {
+      if (period <= periodnr) {
+        homeScore += parseFloat(statistics.periods[`p${period}`].home);
+        awayScore += parseFloat(statistics.periods[`p${period}`].away);
+      }
+    }
     const homeCurrent = parseFloat(market.specifiers.score.split(':')[0]),
       awayCurrent = parseFloat(market.specifiers.score.split(':')[1]);
     // If we take away current score
-    // if (homeScore - homeCurrent > awayScore - awayCurrent) {
-    //   market.outcomes[1].status = 2;
-    // } else {
-    //   if (homeScore - homeCurrent === awayScore - awayCurrent) {
-    //     market.outcomes[0].status = 2;
-    //   } else {
-    //     market.outcomes[2].status = 2;
-    //   }
-    // }
-    if (homeScore > awayScore) {
+    if (homeScore - homeCurrent > awayScore - awayCurrent) {
       market.outcomes[1].status = 2;
     } else {
-      if (homeScore === awayScore) {
+      if (homeScore - homeCurrent === awayScore - awayCurrent) {
         market.outcomes[0].status = 2;
       } else {
         market.outcomes[2].status = 2;
