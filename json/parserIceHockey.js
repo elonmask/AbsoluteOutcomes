@@ -3,13 +3,13 @@ const fs = require("fs");
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
   const markets = JSON.parse(
-    fs.readFileSync("./basket_markets_status.json", "utf8")
+    fs.readFileSync("./iceHockey/hockey.json", "utf8")
   );
 
   const newMarkets = [];
   const marketsWithoutOddTypes = [];
 
-  markets.basketball.forEach((market) => {
+  markets.sport.forEach((market) => {
     delete market["Odd-types outcomes ID"];
     delete market["Group ID,"];
     delete market["Special outcome value"];
@@ -41,16 +41,16 @@ try {
   });
 
   marketsWithoutOddTypes.forEach((market) => {
-    markets.basketball.forEach((market_basket) => {
+    markets.sport.forEach((market_sport) => {
       //console.log("Market: ", market_basket);
-      if (market.common_id === market_basket.common_id) {
+      if (market.common_id === market_sport.common_id) {
         if (
-          typeof market_basket?.common_outcomes_id === "undefined" ||
-          market_basket?.common_outcomes_id === null
+          typeof market_sport?.common_outcomes_id === "undefined" ||
+          market_sport?.common_outcomes_id === null
         ) {
           try {
             const outcomes = [];
-            market_basket?.outcomes.split(",").forEach((outcome, idx) => {
+            market_sport?.outcomes.split(",").forEach((outcome, idx) => {
               outcomes.push({
                 common_id: market.common_id + "000" + idx,
                 outcome: market.outcomes.split(",")[idx],
@@ -58,12 +58,12 @@ try {
             });
             market.outcomes = outcomes;
           } catch (e) {
-            console.log(market_basket);
+            console.log(market_sport);
           }
         } else {
           try {
             const outcomes = [];
-            market_basket?.outcomes.split(",").forEach((outcome, idx) => {
+            market_sport?.outcomes.split(",").forEach((outcome, idx) => {
               outcomes.push({
                 common_id: market.common_outcomes_id.split(",")[idx],
                 outcome: market.outcomes.split(",")[idx],
@@ -71,7 +71,7 @@ try {
             });
             market.outcomes = outcomes;
           } catch (e) {
-            console.log(market_basket);
+            console.log(market_sport);
           }
         }
       }
@@ -103,7 +103,7 @@ try {
   });
 
   fs.writeFile(
-    "markets_parsed_basket.json",
+    "markets_parsed_ice-hockey.json",
     JSON.stringify(newMarkets),
     "utf8",
     function (err) {
