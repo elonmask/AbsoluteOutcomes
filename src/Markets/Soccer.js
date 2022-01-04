@@ -639,9 +639,9 @@ const ToWinToNil = (statistics, market) => {
   }
 };
 
-const Handicap = (statistics, market) => {
+const Handicap = (statistics, market, min) => {
   if (statistics.sport_id === '4') {
-    return HandicapHockey(statistics, market);
+    return HandicapHockey(statistics, market, min);
   }
 
   if (isFullTimeEnded(statistics)) {
@@ -707,9 +707,9 @@ const Handicap = (statistics, market) => {
   }
 };
 
-const TotalGoals = (statistics, market) => {
+const TotalGoals = (statistics, market, min) => {
   if (statistics.sport_id === '4') {
-    return TotalGoalsHockey(statistics, market);
+    return TotalGoalsHockey(statistics, market, min);
   }
   if (
     parseInt(statistics.stats.goals[0]) + parseInt(statistics.stats.goals[1]) >=

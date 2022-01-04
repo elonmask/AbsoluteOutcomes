@@ -21,6 +21,69 @@ const CompetitorTotal = (statistics, market) => {
   }
 };
 
+const Total3Way = (statistics, market) => {
+  const total = parseFloat(market.specifiers.total);
+  const currentTotal = statistics.result.home + statistics.result.away;
+
+  if (statistics.time_status === "3") {
+    if (currentTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+      market.outcomes[2].status = 3;
+    } else {
+      if (currentTotal < total) {
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 2;
+      } else { // Exactly
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 2;
+        market.outcomes[2].status = 3;
+      }
+    }
+  } else {
+    if (currentTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+      market.outcomes[2].status = 3;
+    }
+  }
+}
+
+const Total3Way = (statistics, market, isPeriod) => {
+  const total = parseFloat(market.specifiers.total);
+  let currentTotal = statistics.result.home + statistics.result.away;
+
+  if (isPeriod) {
+    const period = market.specifiers.periodnr;
+    currentTotal = statistics.periods[`p${period}`].home + statistics.periods[`p${period}`].away;
+  }
+
+  if (statistics.time_status === "3") {
+    if (currentTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+      market.outcomes[2].status = 3;
+    } else {
+      if (currentTotal < total) {
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 2;
+      } else { // Exactly
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 2;
+        market.outcomes[2].status = 3;
+      }
+    }
+  } else {
+    if (currentTotal > total) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+      market.outcomes[2].status = 3;
+    }
+  }
+}
+
 const CompetitorExactGoals = (statistics, market, isPeriod) => {
   const team = market.name.includes("competitor2") ? "away" : "home";
   let goals = statistics.result[team];
@@ -659,6 +722,21 @@ const Handicap3WayHockey = (statistics, market) => {
   } else { return }
 }
 
+const calcScoreBeforeMin = (min, statistics) => {
+  let teamScorer = 'no goal';
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Goal -")) {
+      // TODO: Check if it's not extra time
+      totalGoals++;
+
+      if (totalGoals === goalnr) {
+        teamScorer = event.text.includes(statistics.home.name) ? 'competitor1' : 'competitor2';
+      }
+    }
+  });
+  return { homeResult, awayResult }
+}
+
 const HandicapHockey = (statistics, market) => {
   if (statistics.time_status === "3") {
     market.outcomes.forEach((outcome) => {
@@ -1003,6 +1081,46 @@ const PeriodThreeWay = (statistics, market) => {
       }
     }
 
+  } else {
+    return
+  }
+}
+
+const PeriodMoneyLine = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    const periodnr = parseFloat(market.specifiers.periodnr);
+    const homeScore = statistics.periods[`p${periodnr}`].home,
+      awayScore = statistics.periods[`p${periodnr}`].away;
+    if (market.outcomes.length > 2) { // Three wau money line
+      if (homeScore > awayScore) {
+        market.outcomes[0].status = 2;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 3;
+      } else {
+        if (homeScore < awayScore) {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 3;
+          market.outcomes[2].status = 2;
+        } else {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 2;
+          market.outcomes[2].status = 3;
+        }
+      }
+    } else { // Two way money line
+      if (homeScore > awayScore) {
+        market.outcomes[0].status = 2;
+        market.outcomes[1].status = 3;
+      } else {
+        if (homeScore < awayScore) {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 3;
+        } else {
+          market.outcomes[0].status = 4;
+          market.outcomes[1].status = 4;
+        }
+      }
+    }
   } else {
     return
   }
@@ -1429,6 +1547,7 @@ const PeriodDoubleChance = (statistics, market) => {
 
 module.exports = {
   CompetitorTotal,
+  Total3Way,
   CompetitorExactGoals,
   BothTeamsToScoreHockey,
   DoubleChanceHockey,
@@ -1455,6 +1574,7 @@ module.exports = {
   ToScoreInAllPeriods,
   TotalGoalsPerPeriod,
   PeriodThreeWay,
+  PeriodMoneyLine,
   PeriodGoal,
   PeriodTotalGoals,
   ResultRestOfPeriod,
@@ -1462,5 +1582,5 @@ module.exports = {
   Goal,
   GoalAndMatchbet,
   CorrectScoreHockey,
-  PeriodDoubleChance
+  PeriodDoubleChance,
 };
