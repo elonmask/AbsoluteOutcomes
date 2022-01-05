@@ -27,7 +27,6 @@ try {
     delete market["Score Type"];
     delete market["Over time"];
     delete market["Time Type"];
-    delete market["Outcomes"];
     delete market["Group ID"];
     delete market["Odd-types OutcomeId"];
     if (market.odd_types_id) {
@@ -74,7 +73,7 @@ try {
             });
             market.outcomes = outcomes;
           } catch (e) {
-            console.log(market_sport);
+            // console.log(e);
           }
         } else {
           try {
@@ -87,7 +86,7 @@ try {
             });
             market.outcomes = outcomes;
           } catch (e) {
-            console.log(market_sport);
+            // console.log(e);
           }
         }
       }
@@ -96,6 +95,7 @@ try {
   });
 
   const addZeros = (str) => (str.length > 1 ? str.toString() : `0${str}`)
+
 
   newMarkets.forEach((market) => {
     const id = parseInt(market.odd_types_id);
@@ -120,11 +120,24 @@ try {
           }
         }
       });
+      if (!market.outcomes) {
+        market.outcomes = [];
+        market.Outcomes.split(',').forEach((name, idx) => {
+          const outcome = {}
+
+          if (!outcome.outcomeId) {
+            outcome.outcomeId = market.common_id + addZeros(idx);
+            outcome.outcome = name;
+          }
+          market.outcomes.push(outcome);
+        });
+      }
     }
   });
 
   newMarkets.forEach((market) => {
     delete market["common_outcomes_id"];
+    delete market["Outcomes"];
   });
 
   fs.writeFile(
