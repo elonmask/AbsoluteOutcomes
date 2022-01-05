@@ -3,16 +3,7 @@
     "prematch_id": "972",
     "odd_types_id": "380",
     "market_name": "Puck Line",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40001",
-    "Odd-types outcomes Id": "380001,380002",
+    "common_id": "4001",
     "outcomes": [
       {
         "outcomeId": "380001",
@@ -28,16 +19,7 @@
     "prematch_id": "1530",
     "odd_types_id": "382",
     "market_name": "Game Totals",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40002",
-    "Odd-types OutcomeId": "382002,382001",
+    "common_id": "4002",
     "outcomes": [
       {
         "outcomeId": "382002",
@@ -53,16 +35,7 @@
     "prematch_id": "973",
     "odd_types_id": "376",
     "market_name": "Money Line",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40003",
-    "Odd-types OutcomeId": "376001,376002",
+    "common_id": "4003",
     "outcomes": [
       {
         "outcomeId": "376001",
@@ -78,16 +51,7 @@
     "prematch_id": "170008",
     "odd_types_id": "14",
     "market_name": "Handicap Betting",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40004",
-    "Odd-types OutcomeId": "14001,14002,14003",
+    "common_id": "4004",
     "outcomes": [
       {
         "outcomeId": "14001",
@@ -107,16 +71,7 @@
     "prematch_id": "170051",
     "odd_types_id": "1",
     "market_name": "Money Line 3-Way",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40006",
-    "Odd-types OutcomeId": "1001,1002,1003",
+    "common_id": "4006",
     "outcomes": [
       {
         "outcomeId": "1001",
@@ -133,19 +88,62 @@
     ]
   },
   {
+    "prematch_id": "1531",
+    "odd_types_id": "424",
+    "market_name": "1st Period Puck Line 2-Way",
+    "common_id": "4007",
+    "outcomes": [
+      {
+        "outcomeId": "424001",
+        "outcome": "{$competitor1} ({+hcp})"
+      },
+      {
+        "outcomeId": "424002",
+        "outcome": "{$competitor2} ({-hcp})"
+      }
+    ]
+  },
+  {
+    "prematch_id": "1035",
+    "odd_types_id": "413",
+    "market_name": "1st Period Totals",
+    "common_id": "4008",
+    "outcomes": [
+      {
+        "outcomeId": "413002",
+        "outcome": "under {total}"
+      },
+      {
+        "outcomeId": "413001",
+        "outcome": "over {total}"
+      }
+    ]
+  },
+  {
+    "prematch_id": "170407",
+    "odd_types_id": "412",
+    "market_name": "1st Period Puck Line 3-Way",
+    "common_id": "4010",
+    "outcomes": [
+      {
+        "outcomeId": "412001",
+        "outcome": "{$competitor1} ({+hcp})"
+      },
+      {
+        "outcomeId": "412002",
+        "outcome": "draw ({+hcp})"
+      },
+      {
+        "outcomeId": "412003",
+        "outcome": "{$competitor2} ({+hcp})"
+      }
+    ]
+  },
+  {
     "prematch_id": "170038",
     "odd_types_id": "10",
     "market_name": "Double Chance",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home or Away,Home or Draw,Away or Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40022",
-    "Odd-types OutcomeId": "10001,10002,10003",
+    "common_id": "4022",
     "outcomes": [
       {
         "outcomeId": "10001",
@@ -165,17 +163,8 @@
     "prematch_id": "1556",
     "odd_types_id": "379",
     "market_name": "Winning Margin",
-    "Market Type": "S",
-    "Outcome Type": "10",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home by 1,Home by 2,Home by 3,Home by 4,Home by 5+,Away by 1,Away by 2,Away by 3,Away by 4,Away by 5+",
-    "Group ID": "1,2,3,4,5,6,7,8,9,10",
     "Description": "In betradar it has 6 markets (3+)",
-    "common_id": "40023",
-    "Odd-types OutcomeId": "379001,379002,379003,379004,379005,379006",
+    "common_id": "4023",
     "outcomes": [
       {
         "outcomeId": "379001",
@@ -207,16 +196,7 @@
     "prematch_id": "1557",
     "odd_types_id": "401",
     "market_name": "Highest Scoring Period",
-    "Market Type": "S",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Period 1,Period 2,Period 3,Tie",
-    "Group ID": "1,2,3,4",
-    "common_id": "40024",
-    "Odd-types OutcomeId": "401001,401002,401003,401004",
+    "common_id": "4024",
     "outcomes": [
       {
         "outcomeId": "401001",
@@ -240,16 +220,7 @@
     "prematch_id": "170013",
     "odd_types_id": "389",
     "market_name": "Game Total - Odd/Even",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Odd,Even",
-    "Group ID": "1,2",
-    "common_id": "40031",
-    "Odd-types OutcomeId": "389001,389002",
+    "common_id": "4031",
     "outcomes": [
       {
         "outcomeId": "389001",
@@ -262,19 +233,58 @@
     ]
   },
   {
-    "Live ID": "170090",
+    "live_id": "170153",
+    "odd_types_id": "380",
+    "market_name": "Puck Line",
+    "common_id": "4040",
+    "outcomes": [
+      {
+        "outcomeId": "380001",
+        "outcome": "{$competitor1} ({+hcp})"
+      },
+      {
+        "outcomeId": "380002",
+        "outcome": "{$competitor2} ({-hcp})"
+      }
+    ]
+  },
+  {
+    "live_id": "170154",
+    "odd_types_id": "382",
+    "market_name": "Game Total",
+    "common_id": "4041",
+    "outcomes": [
+      {
+        "outcomeId": "382002",
+        "outcome": "under {total}"
+      },
+      {
+        "outcomeId": "382001",
+        "outcome": "over {total}"
+      }
+    ]
+  },
+  {
+    "live_id": "170089",
+    "odd_types_id": "376",
+    "market_name": "Money Line",
+    "common_id": "4042",
+    "outcomes": [
+      {
+        "outcomeId": "376001",
+        "outcome": "{$competitor1}"
+      },
+      {
+        "outcomeId": "376002",
+        "outcome": "{$competitor2}"
+      }
+    ]
+  },
+  {
+    "live_id": "170090",
     "odd_types_id": "378",
     "market_name": "Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Draw,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40043",
-    "Odd-types OutcomeId": "378001378002,378003",
+    "common_id": "4043",
     "outcomes": [
       {
         "outcomeId": "378001",
@@ -291,19 +301,30 @@
     ]
   },
   {
-    "Live ID": "170092",
+    "live_id": "170152",
+    "odd_types_id": "1",
+    "market_name": "Money Line 3-Way",
+    "common_id": "4045",
+    "outcomes": [
+      {
+        "outcomeId": "1001",
+        "outcome": "{$competitor1}"
+      },
+      {
+        "outcomeId": "1002",
+        "outcome": "draw"
+      },
+      {
+        "outcomeId": "1003",
+        "outcome": "{$competitor2}"
+      }
+    ]
+  },
+  {
+    "live_id": "170092",
     "odd_types_id": "11",
     "market_name": "Draw No Bet",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40046",
-    "Odd-types OutcomeId": "11001,11002",
+    "common_id": "4046",
     "outcomes": [
       {
         "outcomeId": "11001",
@@ -316,20 +337,11 @@
     ]
   },
   {
-    "Live ID": "170096",
+    "live_id": "170096",
     "odd_types_id": "8",
     "market_name": "X st Goal",
     "Special market value": "X",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,No Xst goal",
-    "Group ID": "1,2,3",
-    "common_id": "40048",
-    "Odd-types OutcomeId": "8001,8002,8003",
+    "common_id": "4048",
     "outcomes": [
       {
         "outcomeId": "8001",
@@ -346,20 +358,11 @@
     ]
   },
   {
-    "Live ID": "170130",
+    "live_id": "170130",
     "odd_types_id": "424",
     "market_name": "Period N Puck Line",
     "Special market value": "N",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40052",
-    "Odd-types OutcomeId": "424001,424002",
+    "common_id": "4052",
     "outcomes": [
       {
         "outcomeId": "424001",
@@ -372,20 +375,11 @@
     ]
   },
   {
-    "Live ID": "170131",
+    "live_id": "170131",
     "odd_types_id": "413",
     "market_name": "Period N Game Total",
     "Special market value": "N",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40053",
-    "Odd-types OutcomeId": "413002,413001",
+    "common_id": "4053",
     "outcomes": [
       {
         "outcomeId": "413002",
@@ -398,20 +392,11 @@
     ]
   },
   {
-    "Live ID": "170129",
+    "live_id": "170129",
     "odd_types_id": "410",
     "market_name": "Period N Winner 3-Way",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Home,Away,Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40055",
-    "Odd-types OutcomeId": "410001,410002,410003",
+    "common_id": "4055",
     "outcomes": [
       {
         "outcomeId": "410001",
@@ -428,20 +413,11 @@
     ]
   },
   {
-    "Live ID": "170135",
+    "live_id": "170135",
     "odd_types_id": "483",
     "market_name": "Period N Double Chance",
     "Special market value": "N",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Home or Away,Home or Draw,Away or Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40056",
-    "Odd-types OutcomeId": "483001,483002,483003",
+    "common_id": "4056",
     "outcomes": [
       {
         "outcomeId": "483001",
@@ -458,20 +434,11 @@
     ]
   },
   {
-    "Live ID": "170137",
+    "live_id": "170137",
     "odd_types_id": "1133",
     "market_name": "Period N Home Total",
     "Special market value": "N",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40059",
-    "Odd-types OutcomeId": "1133002,1133001",
+    "common_id": "4059",
     "outcomes": [
       {
         "outcomeId": "1133002",
@@ -484,20 +451,11 @@
     ]
   },
   {
-    "Live ID": "170138",
+    "live_id": "170138",
     "odd_types_id": "1134",
     "market_name": "Period N Away Total",
     "Special market value": "N",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40060",
-    "Odd-types OutcomeId": "1134001,1134002",
+    "common_id": "4060",
     "outcomes": [
       {
         "outcomeId": "1134002",
@@ -510,34 +468,17 @@
     ]
   },
   {
-    "Live ID": "170117",
+    "live_id": "170117",
     "odd_types_id": "20",
     "market_name": "Exact Goals",
-    "Market Type": "S",
-    "Outcome Type": "6",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "0 Goals,1 Goal,2 Goals,3  Goals,4  Goals,5 or more Goals",
-    "Group ID": "1,2,3,4,5,6",
-    "common_id": "40076",
+    "common_id": "4076",
     "outcomes": "not_available"
   },
   {
-    "Live ID": "170114",
+    "live_id": "170114",
     "odd_types_id": "24",
     "market_name": "Total Odd/Even",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Odd,Even",
-    "Group ID": "1,2",
-    "common_id": "40083",
-    "Odd-types OutcomeId": "24001,24002",
+    "common_id": "4083",
     "outcomes": [
       {
         "outcomeId": "24001",
@@ -552,17 +493,8 @@
   {
     "odd_types_id": "384",
     "market_name": "Home Total Goals",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Under, Over",
-    "Group ID": "1, 2",
     "Description": "incl. overtimes",
-    "common_id": "40095",
-    "Odd-types OutcomeId": "384002,384001",
+    "common_id": "4095",
     "outcomes": [
       {
         "outcomeId": "384002",
@@ -577,17 +509,8 @@
   {
     "odd_types_id": "385",
     "market_name": "Away Total Goals",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Under, Over",
-    "Group ID": "1, 2",
     "Description": "incl. overtimes",
-    "common_id": "40096",
-    "Odd-types OutcomeId": "385002,385001",
+    "common_id": "4096",
     "outcomes": [
       {
         "outcomeId": "385002",
@@ -602,16 +525,7 @@
   {
     "odd_types_id": "390",
     "market_name": "Which Team To Score",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Both teams",
-    "Group ID": "1,2,3",
-    "common_id": "40099",
-    "Odd-types OutcomeId": "390002,390003,390001",
+    "common_id": "4099",
     "outcomes": [
       {
         "outcomeId": "390002",
@@ -630,14 +544,7 @@
   {
     "odd_types_id": "7",
     "market_name": "Result the rest of the match, current score",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Draw",
-    "common_id": "40100",
-    "Odd-types OutcomeId": "7001,7002,7003",
+    "common_id": "4100",
     "outcomes": [
       {
         "outcomeId": "7001",
@@ -656,14 +563,7 @@
   {
     "odd_types_id": "391",
     "market_name": "Home Clean Sheet",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40101",
-    "Odd-types OutcomeId": "392001,392002",
+    "common_id": "4101",
     "outcomes": [
       {
         "outcomeId": "391001",
@@ -678,14 +578,7 @@
   {
     "odd_types_id": "392",
     "market_name": "Away Clean Sheet",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40102",
-    "Odd-types OutcomeId": "392001,392002",
+    "common_id": "4102",
     "outcomes": [
       {
         "outcomeId": "392001",
@@ -700,14 +593,7 @@
   {
     "odd_types_id": "394",
     "market_name": "Match winner & total goals",
-    "Outcome Type": "6",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
-    "common_id": "40103",
-    "Odd-types OutcomeId": "394001,394002,394003,394004,394005,394006",
+    "common_id": "4103",
     "outcomes": [
       {
         "outcomeId": "394001",
@@ -738,14 +624,7 @@
   {
     "odd_types_id": "395",
     "market_name": "Match winner & both teams to score",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home & Yes,Home & No,Away & Yes,Away & No",
-    "common_id": "40104",
-    "Odd-types OutcomeId": "395001,395002,395003395004",
+    "common_id": "4104",
     "outcomes": [
       {
         "outcomeId": "395001",
@@ -768,14 +647,7 @@
   {
     "odd_types_id": "396",
     "market_name": "Period & winner",
-    "Outcome Type": "6",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home & HomeHome & AwayDraw & HomeDraw & AwayAway & HomeAway & Away",
-    "common_id": "40105",
-    "Odd-types OutcomeId": "396001,396002,396003,396004,396005,396006",
+    "common_id": "4105",
     "outcomes": [
       {
         "outcomeId": "396001",
@@ -806,14 +678,7 @@
   {
     "odd_types_id": "12",
     "market_name": "Home no bet",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Draw,Away",
-    "common_id": "40106",
-    "Odd-types OutcomeId": "12001,12002",
+    "common_id": "4106",
     "outcomes": [
       {
         "outcomeId": "12001",
@@ -828,14 +693,7 @@
   {
     "odd_types_id": "13",
     "market_name": "Home no bet",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Draw,Home",
-    "common_id": "40107",
-    "Odd-types OutcomeId": "13001,13002",
+    "common_id": "4107",
     "outcomes": [
       {
         "outcomeId": "13001",
@@ -850,14 +708,7 @@
   {
     "odd_types_id": "398",
     "market_name": "Period & Matchbet",
-    "Outcome Type": "6",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home & HomeHome & AwayHome & DrawDraw & HomeDraw & AwayDraw & DrawAway & HomeAway & AwayAway & Draw",
-    "common_id": "40108",
-    "Odd-types OutcomeId": "398001,398002,398003,398004,398005,398006,398007,398008,398009",
+    "common_id": "4108",
     "outcomes": [
       {
         "outcomeId": "398001",
@@ -901,31 +752,15 @@
     "prematch_id": "1556",
     "odd_types_id": "15",
     "market_name": "Winning Margin",
-    "Market Type": "S",
-    "Outcome Type": "10",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home by 1,Home by 2,Home by 3+,Draw,Away by 1,Away by 2,Away by 3+",
-    "Group ID": "1,2,3,4,5,6,7",
     "Description": "With draw outcome",
-    "common_id": "40109",
+    "common_id": "4109",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "16",
     "market_name": "Handicap",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
     "Description": "2 way",
-    "common_id": "40110",
-    "Odd-types OutcomeId": "16001,16002",
+    "common_id": "4110",
     "outcomes": [
       {
         "outcomeId": "16001",
@@ -940,15 +775,7 @@
   {
     "odd_types_id": "18",
     "market_name": "Home Total Goals",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "common_id": "40111",
-    "Odd-types OutcomeId": "18002,18001",
+    "common_id": "4111",
     "outcomes": [
       {
         "outcomeId": "18002",
@@ -963,15 +790,7 @@
   {
     "odd_types_id": "19",
     "market_name": "Away Total Goals",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "common_id": "40112",
-    "Odd-types OutcomeId": "19002,19001",
+    "common_id": "4112",
     "outcomes": [
       {
         "outcomeId": "19002",
@@ -986,15 +805,7 @@
   {
     "odd_types_id": "402",
     "market_name": "Home highest scoring period",
-    "Market Type": "H",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "1st,2nd3rd,equal",
-    "common_id": "40113",
-    "Odd-types OutcomeId": "402001,402002,402003,402004",
+    "common_id": "4113",
     "outcomes": [
       {
         "outcomeId": "402001",
@@ -1017,15 +828,7 @@
   {
     "odd_types_id": "403",
     "market_name": "Away highest scoring period",
-    "Market Type": "H",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "1st,2nd3rd,equal",
-    "common_id": "40114",
-    "Odd-types OutcomeId": "403001,403002,403003,403004",
+    "common_id": "4114",
     "outcomes": [
       {
         "outcomeId": "403001",
@@ -1048,15 +851,7 @@
   {
     "odd_types_id": "404",
     "market_name": "Home To Win All Periods",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40115",
-    "Odd-types OutcomeId": "404001,404002",
+    "common_id": "4115",
     "outcomes": [
       {
         "outcomeId": "404001",
@@ -1071,15 +866,7 @@
   {
     "odd_types_id": "405",
     "market_name": "Away To Win All Periods",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40116",
-    "Odd-types OutcomeId": "405001,405003",
+    "common_id": "4116",
     "outcomes": [
       {
         "outcomeId": "405001",
@@ -1094,41 +881,19 @@
   {
     "odd_types_id": "21",
     "market_name": "Home Exact Goals",
-    "Market Type": "H",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "0,1,2,3+",
-    "common_id": "40117",
+    "common_id": "4117",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "22",
     "market_name": "Away Exact Goals",
-    "Market Type": "H",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "0,1,2,3+",
-    "common_id": "40118",
+    "common_id": "4118",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "406",
     "market_name": "Home To Win Any Period",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40119",
-    "Odd-types OutcomeId": "406001,406002",
+    "common_id": "4119",
     "outcomes": [
       {
         "outcomeId": "406001",
@@ -1143,15 +908,7 @@
   {
     "odd_types_id": "407",
     "market_name": "Away To Score In all Periods",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40120",
-    "Odd-types OutcomeId": "407001,407002",
+    "common_id": "4120",
     "outcomes": [
       {
         "outcomeId": "407001",
@@ -1167,15 +924,7 @@
     "odd_types_id": "408",
     "market_name": "Total goals per each period over N",
     "Special market value": "N",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40121",
-    "Odd-types OutcomeId": "408001,408002",
+    "common_id": "4121",
     "outcomes": [
       {
         "outcomeId": "408001",
@@ -1191,15 +940,7 @@
     "odd_types_id": "27",
     "market_name": "Both teams to score",
     "Special market value": "N",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40122",
-    "Odd-types OutcomeId": "27001,27002",
+    "common_id": "4122",
     "outcomes": [
       {
         "outcomeId": "27001",
@@ -1215,16 +956,7 @@
     "odd_types_id": "8",
     "market_name": "N Period X st Goal",
     "Special market value": "N, X",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,No Xst goal,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40123",
-    "Odd-types OutcomeId": "411002,411001,411003",
+    "common_id": "4123",
     "outcomes": [
       {
         "outcomeId": "8001",
@@ -1243,16 +975,7 @@
   {
     "odd_types_id": "28",
     "market_name": "Which Team To Score",
-    "Market Type": "W",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Both teams,Home,Away,None",
-    "Group ID": "1,2,3",
-    "common_id": "40124",
-    "Odd-types OutcomeId": "28004,28001,28002,28003",
+    "common_id": "4124",
     "outcomes": [
       {
         "outcomeId": "28004",
@@ -1276,15 +999,7 @@
     "odd_types_id": "412",
     "market_name": "Period N Handicap",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Draw,Away,",
-    "common_id": "40125",
-    "Odd-types OutcomeId": "412001,412002,412003",
+    "common_id": "4125",
     "outcomes": [
       {
         "outcomeId": "412001",
@@ -1303,15 +1018,7 @@
   {
     "odd_types_id": "29",
     "market_name": "Home Clean Sheet",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40126",
-    "Odd-types OutcomeId": "29001,29002",
+    "common_id": "4126",
     "outcomes": [
       {
         "outcomeId": "29001",
@@ -1326,15 +1033,7 @@
   {
     "odd_types_id": "30",
     "market_name": "Away Clean Sheet",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40127",
-    "Odd-types OutcomeId": "30001,30002",
+    "common_id": "4127",
     "outcomes": [
       {
         "outcomeId": "30001",
@@ -1350,29 +1049,14 @@
     "odd_types_id": "415",
     "market_name": "Period N Away Exact Goals",
     "Special market value": "N",
-    "Market Type": "H",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "0,1,2,3+",
-    "common_id": "40128",
+    "common_id": "4128",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "416",
     "market_name": "Period N Both Teams To Score",
     "Special market value": "N",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40129",
-    "Odd-types OutcomeId": "416001,416002",
+    "common_id": "4129",
     "outcomes": [
       {
         "outcomeId": "416001",
@@ -1388,15 +1072,7 @@
     "odd_types_id": "417",
     "market_name": "Period N Which Team To Score",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Both teams,Home,Away,None",
-    "common_id": "40130",
-    "Odd-types OutcomeId": "417004,417002,417001,417003",
+    "common_id": "4130",
     "outcomes": [
       {
         "outcomeId": "417004",
@@ -1419,15 +1095,7 @@
   {
     "odd_types_id": "33",
     "market_name": "Matchbet & Both Teams To Score",
-    "Market Type": "W",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Both teams,Home,Away,None",
-    "common_id": "40131",
-    "Odd-types OutcomeId": "33001,33002,33003,33004,33005,33006",
+    "common_id": "4131",
     "outcomes": [
       {
         "outcomeId": "33001",
@@ -1459,15 +1127,7 @@
     "odd_types_id": "418",
     "market_name": "Period N Home Clean Sheet",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40132",
-    "Odd-types OutcomeId": "418001,418002",
+    "common_id": "4132",
     "outcomes": [
       {
         "outcomeId": "418001",
@@ -1482,15 +1142,7 @@
   {
     "odd_types_id": "35",
     "market_name": "Match winner & total goals",
-    "Market Type": "W",
-    "Outcome Type": "6",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
-    "common_id": "40133",
-    "Odd-types OutcomeId": "35001,35002,35003,35004,35005.35006",
+    "common_id": "4133",
     "outcomes": [
       {
         "outcomeId": "35001",
@@ -1522,15 +1174,7 @@
     "odd_types_id": "419",
     "market_name": "Period N Away Clean Sheet",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40134",
-    "Odd-types OutcomeId": "419001,419002",
+    "common_id": "4134",
     "outcomes": [
       {
         "outcomeId": "419001",
@@ -1546,15 +1190,7 @@
     "odd_types_id": "422",
     "market_name": "Result (1 X 2) of the rest of the N period , current score",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Draw,Home,Away",
-    "common_id": "40135",
-    "Odd-types OutcomeId": "422002,422001,422003",
+    "common_id": "4135",
     "outcomes": [
       {
         "outcomeId": "422002",
@@ -1574,15 +1210,7 @@
     "odd_types_id": "423",
     "market_name": "Period N Draw No Bet",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "common_id": "40136",
-    "Odd-types OutcomeId": "423001,423002",
+    "common_id": "4136",
     "outcomes": [
       {
         "outcomeId": "423001",
@@ -1598,15 +1226,7 @@
     "odd_types_id": "425",
     "market_name": "Period N Goals Odds/Even",
     "Special market value": "N",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Odd,Even",
-    "common_id": "40137",
-    "Odd-types OutcomeId": "425001,425002",
+    "common_id": "4137",
     "outcomes": [
       {
         "outcomeId": "425001",
@@ -1621,15 +1241,7 @@
   {
     "odd_types_id": "174",
     "market_name": "X st Goal & Match bet",
-    "Market Type": "W",
-    "Outcome Type": "7",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home g & home,Home g & draw,Home g & away,Away g & home,Away g & draw,Away g & away,No goal",
-    "common_id": "40138",
-    "Odd-types OutcomeId": "174001,174002,174003,174004,174005,174006,174007",
+    "common_id": "4138",
     "outcomes": [
       {
         "outcomeId": "174001",
@@ -1664,26 +1276,13 @@
   {
     "odd_types_id": "187",
     "market_name": "Correct Score",
-    "Market Type": "W",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "common_id": "40139",
+    "common_id": "4139",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "207",
     "market_name": "Will there be overtime",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40140",
-    "Odd-types OutcomeId": "207001,207002",
+    "common_id": "4140",
     "outcomes": [
       {
         "outcomeId": "207001",
@@ -1698,15 +1297,7 @@
   {
     "odd_types_id": "1131",
     "market_name": "Away To Win Any Period",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40141",
-    "Odd-types OutcomeId": "1131001,1131002",
+    "common_id": "4141",
     "outcomes": [
       {
         "outcomeId": "1131001",
@@ -1721,15 +1312,7 @@
   {
     "odd_types_id": "1132",
     "market_name": "Home To Win Any Period",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "common_id": "40142",
-    "Odd-types OutcomeId": "1132001,1132002",
+    "common_id": "4142",
     "outcomes": [
       {
         "outcomeId": "1132001",
@@ -1745,27 +1328,14 @@
     "odd_types_id": "1135",
     "market_name": "Period N Exact Goals",
     "Special market value": "N",
-    "Market Type": "H",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "common_id": "40143",
+    "common_id": "4143",
     "outcomes": "not_available"
   },
   {
     "odd_types_id": "377",
     "market_name": "X st Goal",
     "Special market value": "X",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,None,Away",
-    "common_id": "40144",
-    "Odd-types OutcomeId": "377001,377002,377003",
+    "common_id": "4144",
     "outcomes": [
       {
         "outcomeId": "377001",
@@ -1784,16 +1354,7 @@
   {
     "odd_types_id": "17",
     "market_name": "Total goals",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40145",
-    "Odd-types OutcomeId": "17002,17001",
+    "common_id": "4145",
     "outcomes": [
       {
         "outcomeId": "17002",
@@ -1808,1005 +1369,362 @@
   {
     "prematch_id": "170052",
     "market_name": "Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40005"
-  },
-  {
-    "prematch_id": "1531",
-    "market_name": "1st Period Puck Line 2-Way",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40007"
-  },
-  {
-    "prematch_id": "1035",
-    "market_name": "1st Period Totals",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40008"
+    "common_id": "4005"
   },
   {
     "prematch_id": "170406",
     "market_name": "1st Period Money Line 2-Way",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40009"
-  },
-  {
-    "prematch_id": "170407",
-    "market_name": "1st Period Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40010"
+    "common_id": "4009"
   },
   {
     "prematch_id": "170410",
     "market_name": "1st Period Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40011"
+    "common_id": "4011"
   },
   {
     "prematch_id": "170411",
     "market_name": "1st Period Money Line 3-Way",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40012"
+    "common_id": "4012"
   },
   {
     "prematch_id": "170386",
     "market_name": "1st 10 Minute Puck Line 2-Way",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40013"
+    "common_id": "4013"
   },
   {
     "prematch_id": "170390",
     "market_name": "1st 10 Minute Total 2-Way",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40014"
+    "common_id": "4014"
   },
   {
     "prematch_id": "170385",
     "market_name": "1st 10 Minute Money Line 2-Way",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40015"
+    "common_id": "4015"
   },
   {
     "prematch_id": "170387",
     "market_name": "1st 10 Minute Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40016"
+    "common_id": "4016"
   },
   {
     "prematch_id": "170391",
     "market_name": "1st 10 Minute Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40017"
+    "common_id": "4017"
   },
   {
     "prematch_id": "170392",
     "market_name": "1st 10 Minute Money Line 3-Way",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40018"
+    "common_id": "4018"
   },
   {
     "prematch_id": "170226",
     "market_name": "Alternative Puck Line 2-Way",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40019"
+    "common_id": "4019"
   },
   {
     "prematch_id": "170240",
     "market_name": "Alternative Total 2-Way",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40020"
+    "common_id": "4020"
   },
   {
     "prematch_id": "1553",
     "market_name": "Correct Score",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home to win X-Y,Away to win X-Y,Any Other",
-    "Group ID": "1,2,3",
-    "common_id": "40021"
+    "common_id": "4021"
   },
   {
     "prematch_id": "170034",
     "market_name": "Will Game go to Shootout?",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "SHOOTOUT",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40025"
+    "common_id": "4025"
   },
   {
     "prematch_id": "1687",
     "market_name": "Team Scoring First Wins Game",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40026"
+    "common_id": "4026"
   },
   {
     "prematch_id": "1542",
     "market_name": "Team to Score First",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,No 1st goal",
-    "Group ID": "1,2,3",
-    "common_id": "40027"
+    "common_id": "4027"
   },
   {
     "prematch_id": "170225",
     "market_name": "Team to Score Last",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Neither",
-    "Group ID": "1,2,3",
-    "common_id": "40028"
+    "common_id": "4028"
   },
   {
     "prematch_id": "1698",
     "market_name": "Race to 3 Goals",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Neither",
-    "Group ID": "1,2,3",
-    "common_id": "40029"
+    "common_id": "4029"
   },
   {
     "prematch_id": "1689",
     "market_name": "Time of 1st Score",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Score Before 09:30 Elapsed,No Score Before 09:30 Elapsed",
-    "Group ID": "1,2",
-    "common_id": "40030"
+    "common_id": "4030"
   },
   {
     "prematch_id": "170393",
     "market_name": "1st Period Alternative Puck Line 2-Way",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40032"
+    "common_id": "4032"
   },
   {
     "prematch_id": "170395",
     "market_name": "1st Period Alternative Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40033"
+    "common_id": "4033"
   },
   {
     "prematch_id": "170397",
     "market_name": "1st Period Alternative Total 2-Way",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40034"
+    "common_id": "4034"
   },
   {
     "prematch_id": "170399",
     "market_name": "1st Period Alternative Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40035"
+    "common_id": "4035"
   },
   {
     "prematch_id": "170372",
     "market_name": "1st 10 Minute Alternative Puck Line 2-Way",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40036"
+    "common_id": "4036"
   },
   {
     "prematch_id": "170374",
     "market_name": "1st 10 Minute Alternative Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Tie,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40037"
+    "common_id": "4037"
   },
   {
     "prematch_id": "170376",
     "market_name": "1st 10 Minute Alternative Total 2-Way",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40038"
+    "common_id": "4038"
   },
   {
     "prematch_id": "170378",
     "market_name": "1st 10 Minute Alternative Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40039"
+    "common_id": "4039"
   },
   {
-    "Live ID": "170153",
-    "market_name": "Puck Line",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40040"
-  },
-  {
-    "Live ID": "170154",
-    "market_name": "Game Total",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40041"
-  },
-  {
-    "Live ID": "170089",
-    "market_name": "Money Line",
-    "Market Type": "W",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40042"
-  },
-  {
-    "Live ID": "170091",
+    "live_id": "170091",
     "market_name": "Game Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40044"
+    "common_id": "4044"
   },
   {
-    "Live ID": "170152",
-    "market_name": "Money Line 3-Way",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Draw,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40045"
-  },
-  {
-    "Live ID": "170095",
+    "live_id": "170095",
     "market_name": "Double Chance",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home or Away,Home or Draw,Away or Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40047"
+    "common_id": "4047"
   },
   {
-    "Live ID": "170093",
+    "live_id": "170093",
     "market_name": "Asian Puck Line (Y-Z)",
     "Special market value": "Y-Z",
-    "Market Type": "AH",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40049"
+    "common_id": "4049"
   },
   {
-    "Live ID": "170094",
+    "live_id": "170094",
     "market_name": "Asian Goal Line (Y-Z)",
     "Special market value": "Y-Z",
-    "Market Type": "AT",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40050"
+    "common_id": "4050"
   },
   {
-    "Live ID": "170112",
+    "live_id": "170112",
     "market_name": "Race to",
-    "Market Type": "S",
-    "Outcome Type": "12",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home to 2,Away to 2,Neither to 2,Home to 3,Away to 3,Neither to 3,Home to 4,Away to 4,Neither to 4,Home to 5,Away to 5,Neither to 5",
-    "Group ID": "1,2,3,4,5,6,7,8,9.10,11,12",
-    "common_id": "40051"
+    "common_id": "4051"
   },
   {
-    "Live ID": "170133",
+    "live_id": "170133",
     "market_name": "Period N Game Total 3-Way",
     "Special market value": "N",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40054"
+    "common_id": "4054"
   },
   {
-    "Live ID": "170132",
+    "live_id": "170132",
     "market_name": "Period N Asian Puck Line Y-Z",
     "Special market value": "N,Y-Z",
-    "Market Type": "AH",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40057"
+    "common_id": "4057"
   },
   {
-    "Live ID": "170134",
+    "live_id": "170134",
     "market_name": "Period N Asian Goal Line",
     "Special market value": "N",
-    "Market Type": "AT",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40058"
+    "common_id": "4058"
   },
   {
-    "Live ID": "170136",
+    "live_id": "170136",
     "market_name": "Period N Correct Score",
     "Special market value": "N",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "N PERIOD",
-    "Outcomes": "X-YDraw Z-Z,Any Other Score",
-    "Group ID": "1,2,3",
-    "common_id": "40061"
+    "common_id": "4061"
   },
   {
-    "Live ID": "170099",
+    "live_id": "170099",
     "market_name": "Alternative Puck Lines",
-    "Market Type": "H",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away",
-    "Group ID": "1,2",
-    "common_id": "40062"
+    "common_id": "4062"
   },
   {
-    "Live ID": "170100",
+    "live_id": "170100",
     "market_name": "Alternative Game Total",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40063"
+    "common_id": "4063"
   },
   {
-    "Live ID": "170103",
+    "live_id": "170103",
     "market_name": "Alternative Puck Line 3-Way",
-    "Market Type": "H",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Draw,Away",
-    "Group ID": "1,2,3",
-    "common_id": "40064"
+    "common_id": "4064"
   },
   {
-    "Live ID": "170105",
+    "live_id": "170105",
     "market_name": "Alternative Game Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40065"
+    "common_id": "4065"
   },
   {
-    "Live ID": "170106",
+    "live_id": "170106",
     "market_name": "Home Game Total",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40066"
+    "common_id": "4066"
   },
   {
-    "Live ID": "170108",
+    "live_id": "170108",
     "market_name": "Away Game Total",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40067"
+    "common_id": "4067"
   },
   {
-    "Live ID": "170107",
+    "live_id": "170107",
     "market_name": "Home Game Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40068"
+    "common_id": "4068"
   },
   {
-    "Live ID": "170109",
+    "live_id": "170109",
     "market_name": "Away Game Total 3-Way",
-    "Market Type": "T",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Over,Exactly,Under",
-    "Group ID": "1,2,3",
-    "common_id": "40069"
+    "common_id": "4069"
   },
   {
-    "Live ID": "170118",
+    "live_id": "170118",
     "market_name": "Home Exact Goals",
-    "Market Type": "T",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "0 Goals,1 Goal,2 Goals,3 or more Goals",
-    "Group ID": "1,2,3,4",
-    "common_id": "40070"
+    "common_id": "4070"
   },
   {
-    "Live ID": "170119",
+    "live_id": "170119",
     "market_name": "Away Exact Goals",
-    "Market Type": "T",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "0 Goals,1 Goal,2 Goals,3 or more Goals",
-    "Group ID": "1,2,3,4",
-    "common_id": "40071"
+    "common_id": "4071"
   },
   {
-    "Live ID": "170121",
+    "live_id": "170121",
     "market_name": "Both Teams to Score At Least 2 Goals",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40072"
+    "common_id": "4072"
   },
   {
-    "Live ID": "170120",
+    "live_id": "170120",
     "market_name": "Both Teams to Score At Least 3 Goals",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40073"
+    "common_id": "4073"
   },
   {
-    "Live ID": "170151",
+    "live_id": "170151",
     "market_name": "When Will Game End",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Regulation,Overtime,Shootout",
-    "Group ID": "1,2,3",
-    "common_id": "40074"
+    "common_id": "4074"
   },
   {
-    "Live ID": "170097",
+    "live_id": "170097",
     "market_name": "Will Match go to Overtime",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "MATCH",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40075"
+    "common_id": "4075"
   },
   {
-    "Live ID": "170122",
+    "live_id": "170122",
     "market_name": "Team To Win The Most Periods",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40077"
+    "common_id": "4077"
   },
   {
-    "Live ID": "170123",
+    "live_id": "170123",
     "market_name": "Highest Scoring Period",
-    "Market Type": "S",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Period 1,Period 2,Period 3,Draw",
-    "Group ID": "1,2,3,4",
-    "common_id": "40078"
+    "common_id": "4078"
   },
   {
-    "Live ID": "170125",
+    "live_id": "170125",
     "market_name": "Team to Score Last in Regulation",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Home,Away,Neither",
-    "Group ID": "1,2,3",
-    "common_id": "40079"
+    "common_id": "4079"
   },
   {
-    "Live ID": "170126",
+    "live_id": "170126",
     "market_name": "Either Team To Score 3 Successive Goals",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
     "Description": "любая команда три последовательных гола",
-    "common_id": "40080"
+    "common_id": "4080"
   },
   {
-    "Live ID": "170116",
+    "live_id": "170116",
     "market_name": "Correct Score",
-    "Market Type": "S",
-    "Outcome Type": "1",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "X-Y",
-    "Group ID": "1",
-    "common_id": "40081"
+    "common_id": "4081"
   },
   {
-    "Live ID": "170115",
+    "live_id": "170115",
     "market_name": "Winning Margin",
-    "Market Type": "S",
-    "Outcome Type": "10",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "Home by 1,Home by 2,Home by 3,Home by 4,Home by 5 or more,Away by 1,Away by 2,Away by 3,Away by 4,Away by 5 or more",
-    "Group ID": "1,2,3,4,5,6,7,8,9,10",
-    "common_id": "40082"
+    "common_id": "4082"
   },
   {
-    "Live ID": "170140",
+    "live_id": "170140",
     "market_name": "10 Minute Winner 3-Way MM:SS - MM:SS",
     "Special market value": " MM:SS - MM:SS",
-    "Market Type": "W",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Home,Away,Draw",
-    "Group ID": "1,2,3",
-    "common_id": "40084"
+    "common_id": "4084"
   },
   {
-    "Live ID": "170141",
+    "live_id": "170141",
     "market_name": "10 Minute Game Total MM:SS - MM:SS",
     "Special market value": " MM:SS - MM:SS",
-    "Market Type": "T",
-    "Outcome Type": "2",
-    "Return": "Y",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Over,Under",
-    "Group ID": "1,2",
-    "common_id": "40085"
+    "common_id": "4085"
   },
   {
-    "Live ID": "170142",
+    "live_id": "170142",
     "market_name": "10 Minute Home to score MM:SS - MM:SS",
     "Special market value": " MM:SS - MM:SS",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40086"
+    "common_id": "4086"
   },
   {
-    "Live ID": "170143",
+    "live_id": "170143",
     "market_name": "10 Minute Away to score MM:SS - MM:SS",
     "Special market value": " MM:SS - MM:SS",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "TIME",
-    "Outcomes": "Yes,No",
-    "Group ID": "1,2",
-    "common_id": "40087"
+    "common_id": "4087"
   },
   {
-    "Live ID": "170358",
+    "live_id": "170358",
     "market_name": "1st Goalscorer",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 GOAL",
-    "Outcomes": "Player (Home),Player (Away),Any Other Goalscorer,No Goalscorer",
-    "Group ID": "1,2,3,4",
-    "common_id": "40088"
+    "common_id": "4088"
   },
   {
-    "Live ID": "170365",
+    "live_id": "170365",
     "market_name": "To Score in Period 1",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 PERIOD",
-    "Outcomes": "Player (Home),Player (Away),No Goalscorer",
-    "Group ID": "1,2,3",
-    "common_id": "40089"
+    "common_id": "4089"
   },
   {
-    "Live ID": "170362",
+    "live_id": "170362",
     "market_name": "Anytime Goalscorer",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Player (Home),Player (Away),No Goalscorer",
-    "Group ID": "1,2,3",
-    "common_id": "40090"
+    "common_id": "4090"
   },
   {
-    "Live ID": "170359",
+    "live_id": "170359",
     "market_name": "Home 1st Goalscorer",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 GOAL",
-    "Outcomes": "Player,Any Other Goalscorer,No Goalscorer",
-    "Group ID": "1,2,3",
-    "common_id": "40091"
+    "common_id": "4091"
   },
   {
-    "Live ID": "170360",
+    "live_id": "170360",
     "market_name": "Away 1st Goalscorer",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "3",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "1 GOAL",
-    "Outcomes": "Player,Any Other Goalscorer,No Goalscorer",
-    "Group ID": "1,2,3",
-    "common_id": "40092"
+    "common_id": "4092"
   },
   {
-    "Live ID": "170363",
+    "live_id": "170363",
     "market_name": "To Score 2 or More",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Player (Home),Player (Away)",
-    "Group ID": "1,2",
-    "common_id": "40093"
+    "common_id": "4093"
   },
   {
-    "Live ID": "170364",
+    "live_id": "170364",
     "market_name": "To Score 3 or More",
     "Special market value": "Players",
-    "Market Type": "S",
-    "Outcome Type": "2",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "N",
-    "Time Type": "MATCH",
-    "Outcomes": "Player (Home),Player (Away)",
-    "Group ID": "1,2",
-    "common_id": "40094"
+    "common_id": "4094"
   },
   {
     "market_name": "Home Exact Goals",
-    "Market Type": "S",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "0 Goals,1 Goal,2 Goals,3 or more Goals",
-    "Group ID": "1,2,3,4",
-    "common_id": "40097"
+    "common_id": "4097"
   },
   {
     "market_name": "Away Exact Goals",
-    "Market Type": "S",
-    "Outcome Type": "4",
-    "Return": "N",
-    "Score Type": "GOAL",
-    "Over time": "Y",
-    "Time Type": "MATCH",
-    "Outcomes": "0 Goals,1 Goal,2 Goals,3 or more Goals",
-    "Group ID": "1,2,3,4",
-    "common_id": "40098"
+    "common_id": "4098"
   }
 ]
