@@ -26,6 +26,7 @@ class Estimate {
         HandicapWithDraw(this.statistics, market);
         break;
       case "40005":
+      case "4005":
         Total3Way(this.statistics, market);
         break;
       case "40006":
