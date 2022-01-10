@@ -18,7 +18,7 @@ const SetGameTotalPoints = (statistics, market) => {
           }
           if (
             statistics.events[i].text.split(" ")[
-              statistics.events[i].text.split(" ").length - 1
+            statistics.events[i].text.split(" ").length - 1
             ] === "Game"
           ) {
             gamesCounter++;
@@ -97,8 +97,8 @@ const SetScoreAfterGames = (statistics, market) => {
       ) {
         if (
           parseInt(event.extra.set_score.home) +
-            parseInt(event.extra.set_score.away) +
-            1 ===
+          parseInt(event.extra.set_score.away) +
+          1 ===
           setNumber
         ) {
           counter++;
@@ -189,7 +189,7 @@ const SetTotalGames = (statistics, market) => {
             }
             if (
               statistics.events[i].text.split(" ")[
-                statistics.events[i].text.split(" ").length - 1
+              statistics.events[i].text.split(" ").length - 1
               ] === "Game"
             ) {
               gamesCounter++;
@@ -217,7 +217,7 @@ const SetTotalGames = (statistics, market) => {
             }
             if (
               statistics.events[i].text.split(" ")[
-                statistics.events[i].text.split(" ").length - 1
+              statistics.events[i].text.split(" ").length - 1
               ] === "Game"
             ) {
               gamesCounter++;
@@ -301,6 +301,42 @@ const TwoWay = (statistics, market) => {
     if (winner === "away") {
       market.outcomes[0].status = 3;
       market.outcomes[1].status = 2;
+    }
+  }
+};
+
+const calcScoreBeforeMin = (min, statistics) => {
+  let homeScore = 0, awayScore = 0;
+  const home = statistics.home.name;
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Goal -")) {
+      if (parseFloat(event.text.split('\'')[0]?.split(' - ')[2]) < parseFloat(min)) {
+        if (event.text.includes(home)) {
+          homeScore++;
+        } else {
+          awayScore++;
+        }
+      }
+    }
+  });
+  return { homeScore, awayScore };
+}
+
+const TwoWayBeforeMin = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    const { homeScore, awayScore } = calcScoreBeforeMin(min, statistics);
+
+    if (homeScore > awayScore) {
+      market.outcomes[0].status = 2;
+      market.outcomes[1].status = 3;
+    } else {
+      if (homeScore < awayScore) {
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 2;
+      } else {
+        market.outcomes[0].status = 4;
+        market.outcomes[1].status = 4;
+      }
     }
   }
 };
@@ -543,7 +579,7 @@ const SetWinner = (statistics, market) => {
   if (statistics.periods[`p${setNumber}`]) {
     const winner =
       statistics.periods[`p${setNumber}`].home >
-      statistics.periods[`p${setNumber}`].away
+        statistics.periods[`p${setNumber}`].away
         ? "home"
         : "away";
 
@@ -650,6 +686,7 @@ module.exports = {
   TotalSets,
   MatchBothPlayersWinSet,
   TwoWay,
+  TwoWayBeforeMin,
   GameHandicap,
   BothToWinSet,
   TotalGames,

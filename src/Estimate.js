@@ -68,6 +68,7 @@ const {
   TotalSets,
   MatchBothPlayersWinSet,
   TwoWay,
+  TwoWayBeforeMin,
   GameHandicap,
   BothToWinSet,
   TotalGames,
@@ -103,7 +104,7 @@ const {
   Quarter3Way,
   QuarterTotal,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet, CorrectScoreHockey, PeriodDoubleChance, Goal } = require("./Markets/IceHockey");
+const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet, CorrectScoreHockey, PeriodDoubleChance, Goal, PeriodMoneyLine, TotalGoalsBeforeMin, Handicap3WayBeforeMin } = require("./Markets/IceHockey");
 
 
 class Estimate {
@@ -145,6 +146,7 @@ class Estimate {
         break;
       case "14001":
       case "378001":
+        Handicap3WayBeforeMin(this.statistics, market);
         Handicap3Way(this.statistics, market);
         break;
       case "1038004":
@@ -461,6 +463,27 @@ class Estimate {
         break;
       case "377001":
         Goal(this.statistics, market);
+        break;
+      case "400901":
+        PeriodMoneyLine(this.statistics, market);
+        break;
+      case "401101":
+        PeriodTotalGoals(this.statistics, market);
+        break;
+      case "401201":
+        PeriodMoneyLine(this.statistics, market);
+        break;
+      case "400501":
+        Total3Way(this.statistics, market);
+        break;
+      case "401401":
+        TotalGoalsBeforeMin(this.statistics, market)
+        break;
+      case "401501":
+        TwoWayBeforeMin(this.statistics, market)
+        break;
+      case "401601":
+        Handicap3WayBeforeMin(this.statistics, market)
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);

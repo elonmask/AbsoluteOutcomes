@@ -21,35 +21,6 @@ const CompetitorTotal = (statistics, market) => {
   }
 };
 
-const Total3Way = (statistics, market) => {
-  const total = parseFloat(market.specifiers.total);
-  const currentTotal = statistics.result.home + statistics.result.away;
-
-  if (statistics.time_status === "3") {
-    if (currentTotal > total) {
-      market.outcomes[0].status = 2;
-      market.outcomes[1].status = 3;
-      market.outcomes[2].status = 3;
-    } else {
-      if (currentTotal < total) {
-        market.outcomes[0].status = 3;
-        market.outcomes[1].status = 3;
-        market.outcomes[2].status = 2;
-      } else { // Exactly
-        market.outcomes[0].status = 3;
-        market.outcomes[1].status = 2;
-        market.outcomes[2].status = 3;
-      }
-    }
-  } else {
-    if (currentTotal > total) {
-      market.outcomes[0].status = 2;
-      market.outcomes[1].status = 3;
-      market.outcomes[2].status = 3;
-    }
-  }
-}
-
 const Total3Way = (statistics, market, isPeriod) => {
   const total = parseFloat(market.specifiers.total);
   let currentTotal = statistics.result.home + statistics.result.away;
@@ -618,12 +589,18 @@ const DrawNoBetHockey = (statistics, market, isPeriod) => {
   } else { return }
 }
 
-const Handicap3WayHockey = (statistics, market) => {
+const Handicap3WayHockey = (statistics, market, min) => {
   let homeResult = statistics.periods.ft.home;
   let awayResult = statistics.periods.ft.away;
+
   if (market.name.includes('incl. overtime')) {
     homeResult = statistics.result.home;
     awayResult = statistics.result.away;
+  }
+
+  if (min) {
+    homeResult = calcScoreBeforeMin(10, statistics).homeScore;
+    awayResult = calcScoreBeforeMin(10, statistics).awayScore;
   }
 
   if (statistics.time_status === "3") {
@@ -722,19 +699,40 @@ const Handicap3WayHockey = (statistics, market) => {
   } else { return }
 }
 
-const calcScoreBeforeMin = (min, statistics) => {
-  let teamScorer = 'no goal';
+const calcTotalBeforeMin = (min, statistics) => {
+  let totalGoals = 0;
   statistics.events.forEach((event) => {
     if (event.text.includes("Goal -")) {
-      // TODO: Check if it's not extra time
-      totalGoals++;
-
-      if (totalGoals === goalnr) {
-        teamScorer = event.text.includes(statistics.home.name) ? 'competitor1' : 'competitor2';
+      if (parseFloat(event.text.split('\'')[0]?.split(' - ')[2]) < parseFloat(min)) {
+        totalGoals++;
       }
     }
   });
-  return { homeResult, awayResult }
+  return totalGoals;
+}
+
+const calcScoreBeforeMin = (min, statistics) => {
+  let homeScore = 0, awayScore = 0;
+  const home = statistics.home.name;
+
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Goal -")) {
+      console.log(`event`, event);
+      console.log(`home`, home);
+      if (parseFloat(event.text.split('\'')[0]?.split(' - ')[2]) < parseFloat(min)) {
+        if (event.text.includes(home)) {
+          homeScore++;
+        } else {
+          awayScore++;
+        }
+      }
+    }
+  });
+  return { homeScore, awayScore };
+}
+
+const Handicap3WayBeforeMin = (statistics, market) => {
+  Handicap3WayHockey(statistics, market, 10);
 }
 
 const HandicapHockey = (statistics, market) => {
@@ -1334,40 +1332,118 @@ const PeriodTotalGoals = (statistics, market) => {
     const total = parseFloat(market.specifiers.total);
     const period = parseFloat(market.specifiers.periodnr);
 
-    const isOver = market.name.includes('over');
+    const isOver = market.name.toLowerCase().includes('over');
     let totalGoals = statistics.periods[`p${period}`].home + statistics.periods[`p${period}`].away;
     if (market.name.includes('competitor')) {
       const team = market.name.includes('competitor1') ? 'home' : 'away';
       totalGoals = statistics.periods[`p${period}`][team];
     }
 
-    if (isOver) {
+    if (market.outcomes.length > 2) {
       if (totalGoals > total) {
-        market.outcomes[0].status = 2;
+        market.outcomes[0].status = 3;
         market.outcomes[1].status = 3;
+        market.outcomes[2].status = 2;
       } else {
-        if (totalGoals < total) {
-          market.outcomes[1].status = 2;
-          market.outcomes[0].status = 3;
+        if (totalGoals > total) {
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
+          market.outcomes[2].status = 3;
         } else {
-          market.outcomes[1].status = 4;
-          market.outcomes[0].status = 4;
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 2;
+          market.outcomes[2].status = 3;
         }
       }
     } else {
-      if (totalGoals < total) {
-        market.outcomes[0].status = 2;
-        market.outcomes[1].status = 3;
-      } else {
+      if (isOver) {
         if (totalGoals > total) {
-          market.outcomes[1].status = 2;
-          market.outcomes[0].status = 3;
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
         } else {
-          market.outcomes[1].status = 4;
-          market.outcomes[0].status = 4;
+          if (totalGoals < total) {
+            market.outcomes[1].status = 2;
+            market.outcomes[0].status = 3;
+          } else {
+            market.outcomes[1].status = 4;
+            market.outcomes[0].status = 4;
+          }
+        }
+      } else {
+        if (totalGoals < total) {
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
+        } else {
+          if (totalGoals > total) {
+            market.outcomes[1].status = 2;
+            market.outcomes[0].status = 3;
+          } else {
+            market.outcomes[1].status = 4;
+            market.outcomes[0].status = 4;
+          }
         }
       }
     }
+  } else {
+    return
+  }
+}
+
+const TotalGoalsBeforeMin = (statistics, market) => {
+  if (statistics.time_status === "3") {
+    // TODO: parse min
+    const min = '30';
+    const total = parseFloat(market.specifiers.total);
+    const totalGoals = calcTotalBeforeMin(min, statistics);
+    console.log(`totalGoals`, totalGoals);
+    const isOver = market.name.toLowerCase().includes('over');
+
+    if (market.outcomes.length > 2) {
+      if (totalGoals > total) {
+        market.outcomes[0].status = 3;
+        market.outcomes[1].status = 3;
+        market.outcomes[2].status = 2;
+      } else {
+        if (totalGoals > total) {
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
+          market.outcomes[2].status = 3;
+        } else {
+          market.outcomes[0].status = 3;
+          market.outcomes[1].status = 2;
+          market.outcomes[2].status = 3;
+        }
+      }
+    } else {
+      if (isOver) {
+        if (totalGoals > total) {
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
+        } else {
+          if (totalGoals < total) {
+            market.outcomes[1].status = 2;
+            market.outcomes[0].status = 3;
+          } else {
+            market.outcomes[1].status = 4;
+            market.outcomes[0].status = 4;
+          }
+        }
+      } else {
+        if (totalGoals < total) {
+          market.outcomes[0].status = 2;
+          market.outcomes[1].status = 3;
+        } else {
+          if (totalGoals > total) {
+            market.outcomes[1].status = 2;
+            market.outcomes[0].status = 3;
+          } else {
+            market.outcomes[1].status = 4;
+            market.outcomes[0].status = 4;
+          }
+        }
+      }
+    }
+
 
   } else {
     return
@@ -1553,6 +1629,7 @@ module.exports = {
   DoubleChanceHockey,
   DrawNoBetHockey,
   Handicap3WayHockey,
+  Handicap3WayBeforeMin,
   HandicapHockey,
   PeriodHandicap,
   TotalGoalsHockey,
@@ -1583,4 +1660,5 @@ module.exports = {
   GoalAndMatchbet,
   CorrectScoreHockey,
   PeriodDoubleChance,
+  TotalGoalsBeforeMin
 };
