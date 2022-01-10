@@ -1,3 +1,5 @@
+const { calcTotalBeforeMin } = require("./IceHockey");
+
 const FirstHalfTeamTotal = (statistics, market) => {
   const total = parseFloat(market.specifiers.total);
   const team = market.name.includes("competitor2") ? "away" : "home";
@@ -566,10 +568,13 @@ const SecondHalfTotalOddEven = (statistics, market) => {
   }
 };
 
-const Total3Way = (statistics, market) => {
+const Total3Way = (statistics, market, min) => {
   const total = parseFloat(market.specifiers.total);
-  const currentTotal = statistics.result.home + statistics.result.away;
+  let currentTotal = statistics.result.home + statistics.result.away;
 
+  if (min) {
+    currentTotal = calcTotalBeforeMin(min, statistics);
+  }
   if (statistics.time_status === "3") {
     market.outcomes.forEach((outcome) => {
       outcome.status = 3;
@@ -593,6 +598,10 @@ const Total3Way = (statistics, market) => {
     }
   }
 };
+
+const Total3WayBeforeMin = (statistics, market) => {
+  return Total3Way(statistics, market);
+}
 
 const CompetitorTotal = (statistics, market) => {
   const team = market.name.includes("competitor1") ? "home" : "away";
@@ -1198,6 +1207,7 @@ module.exports = {
   SecondHalfTotal,
   SecondHalfTotalOddEven,
   Total3Way,
+  Total3WayBeforeMin,
   CompetitorTotal,
   TotalOddEven,
   WhichTeamRaceToPoints,

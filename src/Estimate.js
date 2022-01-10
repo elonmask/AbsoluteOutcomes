@@ -103,6 +103,7 @@ const {
   QuarterOddEven,
   Quarter3Way,
   QuarterTotal,
+  Total3WayBeforeMin,
 } = require("./Markets/Basketball");
 const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet, CorrectScoreHockey, PeriodDoubleChance, Goal, PeriodMoneyLine, TotalGoalsBeforeMin, Handicap3WayBeforeMin } = require("./Markets/IceHockey");
 
@@ -484,6 +485,9 @@ class Estimate {
         break;
       case "401601":
         Handicap3WayBeforeMin(this.statistics, market)
+        break;
+      case "401701":
+        Total3WayBeforeMin(this.statistics, market)
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);

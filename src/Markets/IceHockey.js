@@ -1622,6 +1622,8 @@ const PeriodDoubleChance = (statistics, market) => {
 }
 
 module.exports = {
+  calcTotalBeforeMin,
+  calcScoreBeforeMin,
   CompetitorTotal,
   Total3Way,
   CompetitorExactGoals,
