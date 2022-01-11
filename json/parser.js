@@ -181,6 +181,10 @@ try {
         externalIds: externalIds,
       };
 
+      if (externalIds.length === 0) {
+        delete marketFormat.externalIds
+      }
+
       if (marketFormat.outcomes !== "not_available") {
         marketsFormated.push(marketFormat);
       }
@@ -217,6 +221,10 @@ try {
         externalOutcomes: externalOutcomes,
         externalIds: externalIds,
       };
+
+      if (externalIds.length === 0) {
+        delete marketFormat.externalIds
+      }
 
       if (marketFormat.outcomes !== "not_available") {
         marketsFormated.push(marketFormat);
