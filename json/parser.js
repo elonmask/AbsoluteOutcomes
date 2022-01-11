@@ -1,16 +1,19 @@
 const fs = require("fs");
 
 const sports = new Map([
-  ['1', 'soccer'],
-  ['2', 'basketball'],
-  ['4', 'ice-hockey'],
-  ['5', 'tennis']
+  ["1", "soccer"],
+  ["2", "basketball"],
+  ["4", "ice-hockey"],
+  ["5", "tennis"],
 ]);
-const SPORT_ID = '4'
+const SPORT_ID = "4";
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
   const markets = JSON.parse(
-    fs.readFileSync(`./${sports.get(SPORT_ID)}/${sports.get(SPORT_ID)}.json`, "utf8")
+    fs.readFileSync(
+      `./${sports.get(SPORT_ID)}/${sports.get(SPORT_ID)}.json`,
+      "utf8"
+    )
   );
 
   const newMarkets = [];
@@ -29,6 +32,7 @@ try {
     delete market["Time Type"];
     delete market["Group ID"];
     delete market["Odd-types OutcomeId"];
+    delete market["Common Outcomes ID"];
     if (market.odd_types_id) {
       if (market.odd_types_id.includes(",")) {
         const firstID = parseInt(market.odd_types_id.split(",")[0]).toString();
@@ -94,8 +98,7 @@ try {
     newMarkets.push(market);
   });
 
-  const addZeros = (str) => (str.length > 1 ? str.toString() : `0${str}`)
-
+  const addZeros = (str) => (str.length > 1 ? str.toString() : `0${str}`);
 
   newMarkets.forEach((market) => {
     const id = parseInt(market.odd_types_id);
@@ -103,6 +106,7 @@ try {
     if (typeof id === "number") {
       JSON.parse(oddTypes)[0].response[0].data.forEach((odd) => {
         if (id === odd.id) {
+          market.odd_types_name = odd.name;
           if (odd.outcomes) {
             market.outcomes = [];
             odd.outcomes.forEach((outcome, idx) => {
@@ -122,27 +126,107 @@ try {
       });
       if (!market.outcomes) {
         market.outcomes = [];
-        market.Outcomes.split(',').forEach((name, idx) => {
-          const outcome = {}
+        if (market.Outcomes) {
+          market.Outcomes.split(",").forEach((name, idx) => {
+            const outcome = {};
 
-          if (!outcome.outcomeId) {
-            outcome.outcomeId = market.common_id + addZeros(idx);
-            outcome.outcome = name;
-          }
-          market.outcomes.push(outcome);
-        });
+            if (!outcome.outcomeId) {
+              outcome.outcomeId = market.common_id + addZeros(idx);
+              outcome.outcome = name;
+            }
+            market.outcomes.push(outcome);
+          });
+        }
       }
     }
   });
 
+  const marketsFormated = [];
+
   newMarkets.forEach((market) => {
-    delete market["common_outcomes_id"];
-    delete market["Outcomes"];
+    //delete market["common_outcomes_id"];
+    //delete market["Outcomes"];
+
+    if (market.odd_types_id) {
+      const externalOutcomes = [];
+      if (market.Outcomes) {
+        market.Outcomes.split(",").forEach((outcome) => {
+          externalOutcomes.push({
+            outcome: outcome,
+            feedName: "bet365",
+          });
+        });
+      }
+      const externalIds = [];
+      if (market.live_id) {
+        externalIds.push({
+          feedName: "bet365",
+          externalId: market.live_id,
+          marketName: market.market_name,
+        });
+      }
+      if (market.prematch_id) {
+        externalIds.push({
+          feedName: "bet365",
+          externalId: market.prematch_id,
+          market_name: market.market_name,
+        });
+      }
+
+      const marketFormat = {
+        id: parseInt(market.odd_types_id),
+        name: market.odd_types_name,
+        outcomes: market.outcomes,
+        externalOutcomes: externalOutcomes,
+        externalIds: externalIds,
+      };
+
+      if (marketFormat.outcomes !== "not_available") {
+        marketsFormated.push(marketFormat);
+      }
+    } else {
+      const externalOutcomes = [];
+      if (market.Outcomes) {
+        market.Outcomes.split(",").forEach((outcome) => {
+          externalOutcomes.push({
+            outcome: outcome,
+            feedName: "bet365",
+          });
+        });
+      }
+      const externalIds = [];
+      if (market.live_id) {
+        externalIds.push({
+          feedName: "bet365",
+          externalId: market.live_id,
+          marketName: market.market_name,
+        });
+      }
+      if (market.prematch_id) {
+        externalIds.push({
+          feedName: "bet365",
+          externalId: market.prematch_id,
+          market_name: market.market_name,
+        });
+      }
+
+      const marketFormat = {
+        id: parseInt(market.common_id),
+        name: market.market_name,
+        outcomes: market.outcomes,
+        externalOutcomes: externalOutcomes,
+        externalIds: externalIds,
+      };
+
+      if (marketFormat.outcomes !== "not_available") {
+        marketsFormated.push(marketFormat);
+      }
+    }
   });
 
   fs.writeFile(
     `markets_parsed_${sports.get(SPORT_ID)}.json`,
-    JSON.stringify(newMarkets),
+    JSON.stringify(marketsFormated),
     "utf8",
     function (err) {
       if (err) {

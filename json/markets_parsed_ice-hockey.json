@@ -1,9 +1,7 @@
 [
   {
-    "prematch_id": "972",
-    "odd_types_id": "380",
-    "market_name": "Puck Line",
-    "common_id": "4001",
+    "id": 380,
+    "name": "Handicap (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "380001",
@@ -13,13 +11,28 @@
         "outcomeId": "380002",
         "outcome": "{$competitor2} ({-hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "972",
+        "market_name": "Puck Line"
+      }
     ]
   },
   {
-    "prematch_id": "1530",
-    "odd_types_id": "382",
-    "market_name": "Game Totals",
-    "common_id": "4002",
+    "id": 382,
+    "name": "Total (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "382002",
@@ -29,13 +42,28 @@
         "outcomeId": "382001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1530",
+        "market_name": "Game Totals"
+      }
     ]
   },
   {
-    "prematch_id": "973",
-    "odd_types_id": "376",
-    "market_name": "Money Line",
-    "common_id": "4003",
+    "id": 376,
+    "name": "Winner (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "376001",
@@ -45,13 +73,28 @@
         "outcomeId": "376002",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "973",
+        "market_name": "Money Line"
+      }
     ]
   },
   {
-    "prematch_id": "170008",
-    "odd_types_id": "14",
-    "market_name": "Handicap Betting",
-    "common_id": "4004",
+    "id": 14,
+    "name": "Handicap",
     "outcomes": [
       {
         "outcomeId": "14001",
@@ -65,13 +108,32 @@
         "outcomeId": "14003",
         "outcome": "{$competitor2} ({+hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170008",
+        "market_name": "Handicap Betting"
+      }
     ]
   },
   {
-    "prematch_id": "170051",
-    "odd_types_id": "1",
-    "market_name": "Money Line 3-Way",
-    "common_id": "4006",
+    "id": 1,
+    "name": "3 way ",
     "outcomes": [
       {
         "outcomeId": "1001",
@@ -85,13 +147,32 @@
         "outcomeId": "1003",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170051",
+        "market_name": "Money Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "1531",
-    "odd_types_id": "424",
-    "market_name": "1st Period Puck Line 2-Way",
-    "common_id": "4007",
+    "id": 424,
+    "name": "{!periodnr} period - handicap",
     "outcomes": [
       {
         "outcomeId": "424001",
@@ -101,13 +182,28 @@
         "outcomeId": "424002",
         "outcome": "{$competitor2} ({-hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1531",
+        "market_name": "1st Period Puck Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "1035",
-    "odd_types_id": "413",
-    "market_name": "1st Period Totals",
-    "common_id": "4008",
+    "id": 413,
+    "name": "{!periodnr} period - total",
     "outcomes": [
       {
         "outcomeId": "413002",
@@ -117,13 +213,28 @@
         "outcomeId": "413001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1035",
+        "market_name": "1st Period Totals"
+      }
     ]
   },
   {
-    "prematch_id": "170407",
-    "odd_types_id": "412",
-    "market_name": "1st Period Puck Line 3-Way",
-    "common_id": "4010",
+    "id": 412,
+    "name": "{!periodnr} period - handicap {hcp}",
     "outcomes": [
       {
         "outcomeId": "412001",
@@ -137,13 +248,32 @@
         "outcomeId": "412003",
         "outcome": "{$competitor2} ({+hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170407",
+        "market_name": "1st Period Puck Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170038",
-    "odd_types_id": "10",
-    "market_name": "Double Chance",
-    "common_id": "4022",
+    "id": 10,
+    "name": "Double chance",
     "outcomes": [
       {
         "outcomeId": "10001",
@@ -157,14 +287,32 @@
         "outcomeId": "10003",
         "outcome": "X{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home or Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home or Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away or Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170038",
+        "market_name": "Double Chance"
+      }
     ]
   },
   {
-    "prematch_id": "1556",
-    "odd_types_id": "379",
-    "market_name": "Winning Margin",
-    "Description": "In betradar it has 6 markets (3+)",
-    "common_id": "4023",
+    "id": 379,
+    "name": "Winning margin (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "379001",
@@ -190,13 +338,60 @@
         "outcomeId": "379006",
         "outcome": "{$competitor2} by 3+"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home by 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 5+",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 5+",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1556",
+        "market_name": "Winning Margin"
+      }
     ]
   },
   {
-    "prematch_id": "1557",
-    "odd_types_id": "401",
-    "market_name": "Highest Scoring Period",
-    "common_id": "4024",
+    "id": 401,
+    "name": "Highest scoring period",
     "outcomes": [
       {
         "outcomeId": "401001",
@@ -214,13 +409,36 @@
         "outcomeId": "401004",
         "outcome": "equal"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Period 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Period 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Period 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1557",
+        "market_name": "Highest Scoring Period"
+      }
     ]
   },
   {
-    "prematch_id": "170013",
-    "odd_types_id": "389",
-    "market_name": "Game Total - Odd/Even",
-    "common_id": "4031",
+    "id": 389,
+    "name": "Odd/even (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "389001",
@@ -230,13 +448,28 @@
         "outcomeId": "389002",
         "outcome": "even"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Odd",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Even",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170013",
+        "market_name": "Game Total - Odd/Even"
+      }
     ]
   },
   {
-    "live_id": "170153",
-    "odd_types_id": "380",
-    "market_name": "Puck Line",
-    "common_id": "4040",
+    "id": 380,
+    "name": "Handicap (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "380001",
@@ -246,13 +479,28 @@
         "outcomeId": "380002",
         "outcome": "{$competitor2} ({-hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170153",
+        "marketName": "Puck Line"
+      }
     ]
   },
   {
-    "live_id": "170154",
-    "odd_types_id": "382",
-    "market_name": "Game Total",
-    "common_id": "4041",
+    "id": 382,
+    "name": "Total (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "382002",
@@ -262,13 +510,28 @@
         "outcomeId": "382001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170154",
+        "marketName": "Game Total"
+      }
     ]
   },
   {
-    "live_id": "170089",
-    "odd_types_id": "376",
-    "market_name": "Money Line",
-    "common_id": "4042",
+    "id": 376,
+    "name": "Winner (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "376001",
@@ -278,13 +541,28 @@
         "outcomeId": "376002",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170089",
+        "marketName": "Money Line"
+      }
     ]
   },
   {
-    "live_id": "170090",
-    "odd_types_id": "378",
-    "market_name": "Puck Line 3-Way",
-    "common_id": "4043",
+    "id": 378,
+    "name": "Handicap {hcp} (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "378001",
@@ -298,13 +576,32 @@
         "outcomeId": "378003",
         "outcome": "{$competitor2} ({+hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170090",
+        "marketName": "Puck Line 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170152",
-    "odd_types_id": "1",
-    "market_name": "Money Line 3-Way",
-    "common_id": "4045",
+    "id": 1,
+    "name": "3 way ",
     "outcomes": [
       {
         "outcomeId": "1001",
@@ -318,13 +615,32 @@
         "outcomeId": "1003",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170152",
+        "marketName": "Money Line 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170092",
-    "odd_types_id": "11",
-    "market_name": "Draw No Bet",
-    "common_id": "4046",
+    "id": 11,
+    "name": "Draw no bet",
     "outcomes": [
       {
         "outcomeId": "11001",
@@ -334,14 +650,28 @@
         "outcomeId": "11002",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170092",
+        "marketName": "Draw No Bet"
+      }
     ]
   },
   {
-    "live_id": "170096",
-    "odd_types_id": "8",
-    "market_name": "X st Goal",
-    "Special market value": "X",
-    "common_id": "4048",
+    "id": 8,
+    "name": "which team to score {!goalnr} goal",
     "outcomes": [
       {
         "outcomeId": "8001",
@@ -355,14 +685,32 @@
         "outcomeId": "8003",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Xst goal",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170096",
+        "marketName": "X st Goal"
+      }
     ]
   },
   {
-    "live_id": "170130",
-    "odd_types_id": "424",
-    "market_name": "Period N Puck Line",
-    "Special market value": "N",
-    "common_id": "4052",
+    "id": 424,
+    "name": "{!periodnr} period - handicap",
     "outcomes": [
       {
         "outcomeId": "424001",
@@ -372,14 +720,28 @@
         "outcomeId": "424002",
         "outcome": "{$competitor2} ({-hcp})"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170130",
+        "marketName": "Period N Puck Line"
+      }
     ]
   },
   {
-    "live_id": "170131",
-    "odd_types_id": "413",
-    "market_name": "Period N Game Total",
-    "Special market value": "N",
-    "common_id": "4053",
+    "id": 413,
+    "name": "{!periodnr} period - total",
     "outcomes": [
       {
         "outcomeId": "413002",
@@ -389,14 +751,28 @@
         "outcomeId": "413001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170131",
+        "marketName": "Period N Game Total"
+      }
     ]
   },
   {
-    "live_id": "170129",
-    "odd_types_id": "410",
-    "market_name": "Period N Winner 3-Way",
-    "Special market value": "N",
-    "common_id": "4055",
+    "id": 410,
+    "name": "{!periodnr} period - 1x2",
     "outcomes": [
       {
         "outcomeId": "410001",
@@ -410,14 +786,32 @@
         "outcomeId": "410003",
         "outcome": "{$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170129",
+        "marketName": "Period N Winner 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170135",
-    "odd_types_id": "483",
-    "market_name": "Period N Double Chance",
-    "Special market value": "N",
-    "common_id": "4056",
+    "id": 483,
+    "name": "{!periodnr} period - double chance",
     "outcomes": [
       {
         "outcomeId": "483001",
@@ -431,14 +825,32 @@
         "outcomeId": "483003",
         "outcome": "draw or {$competitor2}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home or Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home or Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away or Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170135",
+        "marketName": "Period N Double Chance"
+      }
     ]
   },
   {
-    "live_id": "170137",
-    "odd_types_id": "1133",
-    "market_name": "Period N Home Total",
-    "Special market value": "N",
-    "common_id": "4059",
+    "id": 1133,
+    "name": "{!periodnr} period - {$competitor1} total",
     "outcomes": [
       {
         "outcomeId": "1133002",
@@ -448,14 +860,28 @@
         "outcomeId": "1133001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170137",
+        "marketName": "Period N Home Total"
+      }
     ]
   },
   {
-    "live_id": "170138",
-    "odd_types_id": "1134",
-    "market_name": "Period N Away Total",
-    "Special market value": "N",
-    "common_id": "4060",
+    "id": 1134,
+    "name": "{!periodnr} period - {$competitor2} total",
     "outcomes": [
       {
         "outcomeId": "1134002",
@@ -465,20 +891,28 @@
         "outcomeId": "1134001",
         "outcome": "over {total}"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170138",
+        "marketName": "Period N Away Total"
+      }
     ]
   },
   {
-    "live_id": "170117",
-    "odd_types_id": "20",
-    "market_name": "Exact Goals",
-    "common_id": "4076",
-    "outcomes": "not_available"
-  },
-  {
-    "live_id": "170114",
-    "odd_types_id": "24",
-    "market_name": "Total Odd/Even",
-    "common_id": "4083",
+    "id": 24,
+    "name": "Odd/even",
     "outcomes": [
       {
         "outcomeId": "24001",
@@ -488,13 +922,28 @@
         "outcomeId": "24002",
         "outcome": "even"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Odd",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Even",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170114",
+        "marketName": "Total Odd/Even"
+      }
     ]
   },
   {
-    "odd_types_id": "384",
-    "market_name": "Home Total Goals",
-    "Description": "incl. overtimes",
-    "common_id": "4095",
+    "id": 384,
+    "name": "{$competitor1} total (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "384002",
@@ -504,13 +953,22 @@
         "outcomeId": "384001",
         "outcome": "over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": " Over",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "385",
-    "market_name": "Away Total Goals",
-    "Description": "incl. overtimes",
-    "common_id": "4096",
+    "id": 385,
+    "name": "{$competitor2} total (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "385002",
@@ -520,12 +978,22 @@
         "outcomeId": "385001",
         "outcome": "over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": " Over",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "390",
-    "market_name": "Which Team To Score",
-    "common_id": "4099",
+    "id": 390,
+    "name": "Which team to score (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "390002",
@@ -539,12 +1007,26 @@
         "outcomeId": "390001",
         "outcome": "both"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Both teams",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "7",
-    "market_name": "Result the rest of the match, current score",
-    "common_id": "4100",
+    "id": 7,
+    "name": "Which team wins the rest of the match",
     "outcomes": [
       {
         "outcomeId": "7001",
@@ -558,12 +1040,26 @@
         "outcomeId": "7003",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "391",
-    "market_name": "Home Clean Sheet",
-    "common_id": "4101",
+    "id": 391,
+    "name": "{$competitor1} clean sheet (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "391001",
@@ -573,12 +1069,22 @@
         "outcomeId": "391002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "392",
-    "market_name": "Away Clean Sheet",
-    "common_id": "4102",
+    "id": 392,
+    "name": "{$competitor2} clean sheet (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "392001",
@@ -588,12 +1094,22 @@
         "outcomeId": "392002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "394",
-    "market_name": "Match winner & total goals",
-    "common_id": "4103",
+    "id": 394,
+    "name": "1x2 & total (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "394001",
@@ -619,12 +1135,18 @@
         "outcomeId": "394006",
         "outcome": "{$competitor2} & over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "395",
-    "market_name": "Match winner & both teams to score",
-    "common_id": "4104",
+    "id": 395,
+    "name": "1x2 & both teams to score (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "395001",
@@ -642,12 +1164,30 @@
         "outcomeId": "395004",
         "outcome": "{$competitor2} & no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home & Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home & No",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away & Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away & No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "396",
-    "market_name": "Period & winner",
-    "common_id": "4105",
+    "id": 396,
+    "name": "{!periodnr} period 1x2 & winner (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "396001",
@@ -673,12 +1213,18 @@
         "outcomeId": "396006",
         "outcome": "{$competitor2} & {$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home & HomeHome & AwayDraw & HomeDraw & AwayAway & HomeAway & Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "12",
-    "market_name": "Home no bet",
-    "common_id": "4106",
+    "id": 12,
+    "name": "{$competitor1} no bet",
     "outcomes": [
       {
         "outcomeId": "12001",
@@ -688,12 +1234,22 @@
         "outcomeId": "12002",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "13",
-    "market_name": "Home no bet",
-    "common_id": "4107",
+    "id": 13,
+    "name": "{$competitor2} no bet",
     "outcomes": [
       {
         "outcomeId": "13001",
@@ -703,12 +1259,22 @@
         "outcomeId": "13002",
         "outcome": "draw"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "398",
-    "market_name": "Period & Matchbet",
-    "common_id": "4108",
+    "id": 398,
+    "name": "{!periodnr} period 1x2 & 1x2",
     "outcomes": [
       {
         "outcomeId": "398001",
@@ -746,21 +1312,18 @@
         "outcomeId": "398003",
         "outcome": "{$competitor2} & {$competitor1}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home & HomeHome & AwayHome & DrawDraw & HomeDraw & AwayDraw & DrawAway & HomeAway & AwayAway & Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "prematch_id": "1556",
-    "odd_types_id": "15",
-    "market_name": "Winning Margin",
-    "Description": "With draw outcome",
-    "common_id": "4109",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "16",
-    "market_name": "Handicap",
-    "Description": "2 way",
-    "common_id": "4110",
+    "id": 16,
+    "name": "Handicap",
     "outcomes": [
       {
         "outcomeId": "16001",
@@ -770,12 +1333,22 @@
         "outcomeId": "16002",
         "outcome": "{$competitor2} ({-hcp})"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "18",
-    "market_name": "Home Total Goals",
-    "common_id": "4111",
+    "id": 18,
+    "name": "{$competitor1} total",
     "outcomes": [
       {
         "outcomeId": "18002",
@@ -785,12 +1358,22 @@
         "outcomeId": "18001",
         "outcome": "over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "19",
-    "market_name": "Away Total Goals",
-    "common_id": "4112",
+    "id": 19,
+    "name": "{$competitor2} total",
     "outcomes": [
       {
         "outcomeId": "19002",
@@ -800,12 +1383,22 @@
         "outcomeId": "19001",
         "outcome": "over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "402",
-    "market_name": "Home highest scoring period",
-    "common_id": "4113",
+    "id": 402,
+    "name": "{$competitor1} highest scoring period",
     "outcomes": [
       {
         "outcomeId": "402001",
@@ -823,12 +1416,26 @@
         "outcomeId": "402004",
         "outcome": "equal"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "1st",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2nd3rd",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "equal",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "403",
-    "market_name": "Away highest scoring period",
-    "common_id": "4114",
+    "id": 403,
+    "name": "{$competitor2} highest scoring period",
     "outcomes": [
       {
         "outcomeId": "403001",
@@ -846,12 +1453,26 @@
         "outcomeId": "403004",
         "outcome": "equal"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "1st",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2nd3rd",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "equal",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "404",
-    "market_name": "Home To Win All Periods",
-    "common_id": "4115",
+    "id": 404,
+    "name": "{$competitor1} to win all periods",
     "outcomes": [
       {
         "outcomeId": "404001",
@@ -861,12 +1482,22 @@
         "outcomeId": "404002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "405",
-    "market_name": "Away To Win All Periods",
-    "common_id": "4116",
+    "id": 405,
+    "name": "{$competitor2} to win all periods",
     "outcomes": [
       {
         "outcomeId": "405001",
@@ -876,24 +1507,22 @@
         "outcomeId": "405002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "21",
-    "market_name": "Home Exact Goals",
-    "common_id": "4117",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "22",
-    "market_name": "Away Exact Goals",
-    "common_id": "4118",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "406",
-    "market_name": "Home To Win Any Period",
-    "common_id": "4119",
+    "id": 406,
+    "name": "{$competitor1} to win any period",
     "outcomes": [
       {
         "outcomeId": "406001",
@@ -903,12 +1532,22 @@
         "outcomeId": "406002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "407",
-    "market_name": "Away To Score In all Periods",
-    "common_id": "4120",
+    "id": 407,
+    "name": "{$competitor2} to score in all periods",
     "outcomes": [
       {
         "outcomeId": "407001",
@@ -918,13 +1557,22 @@
         "outcomeId": "407002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "408",
-    "market_name": "Total goals per each period over N",
-    "Special market value": "N",
-    "common_id": "4121",
+    "id": 408,
+    "name": "All periods over {total}",
     "outcomes": [
       {
         "outcomeId": "408001",
@@ -934,13 +1582,22 @@
         "outcomeId": "408002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "27",
-    "market_name": "Both teams to score",
-    "Special market value": "N",
-    "common_id": "4122",
+    "id": 27,
+    "name": "Both teams to score",
     "outcomes": [
       {
         "outcomeId": "27001",
@@ -950,13 +1607,22 @@
         "outcomeId": "27002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "8",
-    "market_name": "N Period X st Goal",
-    "Special market value": "N, X",
-    "common_id": "4123",
+    "id": 8,
+    "name": "which team to score {!goalnr} goal",
     "outcomes": [
       {
         "outcomeId": "8001",
@@ -970,12 +1636,26 @@
         "outcomeId": "8003",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Xst goal",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "28",
-    "market_name": "Which Team To Score",
-    "common_id": "4124",
+    "id": 28,
+    "name": "Which team to score",
     "outcomes": [
       {
         "outcomeId": "28004",
@@ -993,13 +1673,30 @@
         "outcomeId": "28001",
         "outcome": "none"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Both teams",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "None",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "412",
-    "market_name": "Period N Handicap",
-    "Special market value": "N",
-    "common_id": "4125",
+    "id": 412,
+    "name": "{!periodnr} period - handicap {hcp}",
     "outcomes": [
       {
         "outcomeId": "412001",
@@ -1013,12 +1710,30 @@
         "outcomeId": "412003",
         "outcome": "{$competitor2} ({+hcp})"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "29",
-    "market_name": "Home Clean Sheet",
-    "common_id": "4126",
+    "id": 29,
+    "name": "{$competitor1} clean sheet",
     "outcomes": [
       {
         "outcomeId": "29001",
@@ -1028,12 +1743,22 @@
         "outcomeId": "29002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "30",
-    "market_name": "Away Clean Sheet",
-    "common_id": "4127",
+    "id": 30,
+    "name": "{$competitor2} clean sheet",
     "outcomes": [
       {
         "outcomeId": "30001",
@@ -1043,20 +1768,22 @@
         "outcomeId": "30002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "415",
-    "market_name": "Period N Away Exact Goals",
-    "Special market value": "N",
-    "common_id": "4128",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "416",
-    "market_name": "Period N Both Teams To Score",
-    "Special market value": "N",
-    "common_id": "4129",
+    "id": 416,
+    "name": "{!periodnr} period - both teams to score",
     "outcomes": [
       {
         "outcomeId": "416001",
@@ -1066,13 +1793,22 @@
         "outcomeId": "416002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "417",
-    "market_name": "Period N Which Team To Score",
-    "Special market value": "N",
-    "common_id": "4130",
+    "id": 417,
+    "name": "{!periodnr} period - which team to score",
     "outcomes": [
       {
         "outcomeId": "417004",
@@ -1090,12 +1826,30 @@
         "outcomeId": "417001",
         "outcome": "none"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Both teams",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "None",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "33",
-    "market_name": "Matchbet & Both Teams To Score",
-    "common_id": "4131",
+    "id": 33,
+    "name": "1x2 & both teams to score",
     "outcomes": [
       {
         "outcomeId": "33001",
@@ -1121,13 +1875,30 @@
         "outcomeId": "33006",
         "outcome": "{$competitor2} & no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Both teams",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "None",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "418",
-    "market_name": "Period N Home Clean Sheet",
-    "Special market value": "N",
-    "common_id": "4132",
+    "id": 418,
+    "name": "{!periodnr} period - {$competitor1} clean sheet",
     "outcomes": [
       {
         "outcomeId": "418001",
@@ -1137,12 +1908,22 @@
         "outcomeId": "418002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "35",
-    "market_name": "Match winner & total goals",
-    "common_id": "4133",
+    "id": 35,
+    "name": "Matchbet & total goals {total}",
     "outcomes": [
       {
         "outcomeId": "35001",
@@ -1168,13 +1949,18 @@
         "outcomeId": "35006",
         "outcome": "{$competitor2} & over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "419",
-    "market_name": "Period N Away Clean Sheet",
-    "Special market value": "N",
-    "common_id": "4134",
+    "id": 419,
+    "name": "{!periodnr} period - {$competitor2} clean sheet",
     "outcomes": [
       {
         "outcomeId": "419001",
@@ -1184,13 +1970,22 @@
         "outcomeId": "419002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "422",
-    "market_name": "Result (1 X 2) of the rest of the N period , current score",
-    "Special market value": "N",
-    "common_id": "4135",
+    "id": 422,
+    "name": "{!periodnr} period - which team wins the rest",
     "outcomes": [
       {
         "outcomeId": "422002",
@@ -1204,13 +1999,26 @@
         "outcomeId": "422003",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "423",
-    "market_name": "Period N Draw No Bet",
-    "Special market value": "N",
-    "common_id": "4136",
+    "id": 423,
+    "name": "{!periodnr} period - draw no bet",
     "outcomes": [
       {
         "outcomeId": "423001",
@@ -1220,13 +2028,22 @@
         "outcomeId": "423002",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "425",
-    "market_name": "Period N Goals Odds/Even",
-    "Special market value": "N",
-    "common_id": "4137",
+    "id": 425,
+    "name": "{!periodnr} period - odd/even",
     "outcomes": [
       {
         "outcomeId": "425001",
@@ -1236,12 +2053,22 @@
         "outcomeId": "425002",
         "outcome": "even"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Odd",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Even",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "174",
-    "market_name": "X st Goal & Match bet",
-    "common_id": "4138",
+    "id": 174,
+    "name": "{!goalnr} goal & 1x2",
     "outcomes": [
       {
         "outcomeId": "174001",
@@ -1271,18 +2098,42 @@
         "outcomeId": "174007",
         "outcome": "no goal"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home g & home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home g & draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home g & away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away g & home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away g & draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away g & away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No goal",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "187",
-    "market_name": "Correct Score",
-    "common_id": "4139",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "207",
-    "market_name": "Will there be overtime",
-    "common_id": "4140",
+    "id": 207,
+    "name": "Will there be overtime",
     "outcomes": [
       {
         "outcomeId": "207001",
@@ -1292,12 +2143,22 @@
         "outcomeId": "207002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "1131",
-    "market_name": "Away To Win Any Period",
-    "common_id": "4141",
+    "id": 1131,
+    "name": "{$competitor2} to win any period",
     "outcomes": [
       {
         "outcomeId": "1131001",
@@ -1307,12 +2168,22 @@
         "outcomeId": "1131002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "1132",
-    "market_name": "Home To Win Any Period",
-    "common_id": "4142",
+    "id": 1132,
+    "name": "{$competitor1} to score in all periods",
     "outcomes": [
       {
         "outcomeId": "1132001",
@@ -1322,20 +2193,22 @@
         "outcomeId": "1132002",
         "outcome": "no"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "1135",
-    "market_name": "Period N Exact Goals",
-    "Special market value": "N",
-    "common_id": "4143",
-    "outcomes": "not_available"
-  },
-  {
-    "odd_types_id": "377",
-    "market_name": "X st Goal",
-    "Special market value": "X",
-    "common_id": "4144",
+    "id": 377,
+    "name": "{!goalnr} goal (incl. overtime and penalties)",
     "outcomes": [
       {
         "outcomeId": "377001",
@@ -1349,12 +2222,26 @@
         "outcomeId": "377003",
         "outcome": "{$competitor2}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "None",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "odd_types_id": "17",
-    "market_name": "Total goals",
-    "common_id": "4145",
+    "id": 17,
+    "name": "Total",
     "outcomes": [
       {
         "outcomeId": "17002",
@@ -1364,12 +2251,22 @@
         "outcomeId": "17001",
         "outcome": "over {total}"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "prematch_id": "170052",
-    "market_name": "Total 3-Way",
-    "common_id": "4005",
+    "id": 4005,
+    "name": "Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "400500",
@@ -1383,12 +2280,32 @@
         "outcomeId": "400502",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170052",
+        "market_name": "Total 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170406",
-    "market_name": "1st Period Money Line 2-Way",
-    "common_id": "4009",
+    "id": 4009,
+    "name": "1st Period Money Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "400900",
@@ -1398,12 +2315,28 @@
         "outcomeId": "400901",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170406",
+        "market_name": "1st Period Money Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170410",
-    "market_name": "1st Period Total 3-Way",
-    "common_id": "4011",
+    "id": 4011,
+    "name": "1st Period Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "401100",
@@ -1417,12 +2350,32 @@
         "outcomeId": "401102",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170410",
+        "market_name": "1st Period Total 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170411",
-    "market_name": "1st Period Money Line 3-Way",
-    "common_id": "4012",
+    "id": 4012,
+    "name": "1st Period Money Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "401200",
@@ -1436,12 +2389,32 @@
         "outcomeId": "401202",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170411",
+        "market_name": "1st Period Money Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170386",
-    "market_name": "1st 10 Minute Puck Line 2-Way",
-    "common_id": "4013",
+    "id": 4013,
+    "name": "1st 10 Minute Puck Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "401300",
@@ -1451,12 +2424,28 @@
         "outcomeId": "401301",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170386",
+        "market_name": "1st 10 Minute Puck Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170390",
-    "market_name": "1st 10 Minute Total 2-Way",
-    "common_id": "4014",
+    "id": 4014,
+    "name": "1st 10 Minute Total 2-Way",
     "outcomes": [
       {
         "outcomeId": "401400",
@@ -1466,12 +2455,28 @@
         "outcomeId": "401401",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170390",
+        "market_name": "1st 10 Minute Total 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170385",
-    "market_name": "1st 10 Minute Money Line 2-Way",
-    "common_id": "4015",
+    "id": 4015,
+    "name": "1st 10 Minute Money Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "401500",
@@ -1481,12 +2486,28 @@
         "outcomeId": "401501",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170385",
+        "market_name": "1st 10 Minute Money Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170387",
-    "market_name": "1st 10 Minute Puck Line 3-Way",
-    "common_id": "4016",
+    "id": 4016,
+    "name": "1st 10 Minute Puck Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "401600",
@@ -1500,12 +2521,32 @@
         "outcomeId": "401602",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170387",
+        "market_name": "1st 10 Minute Puck Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170391",
-    "market_name": "1st 10 Minute Total 3-Way",
-    "common_id": "4017",
+    "id": 4017,
+    "name": "1st 10 Minute Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "401700",
@@ -1519,12 +2560,32 @@
         "outcomeId": "401702",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170391",
+        "market_name": "1st 10 Minute Total 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170392",
-    "market_name": "1st 10 Minute Money Line 3-Way",
-    "common_id": "4018",
+    "id": 4018,
+    "name": "1st 10 Minute Money Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "401800",
@@ -1538,12 +2599,32 @@
         "outcomeId": "401802",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170392",
+        "market_name": "1st 10 Minute Money Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170226",
-    "market_name": "Alternative Puck Line 2-Way",
-    "common_id": "4019",
+    "id": 4019,
+    "name": "Alternative Puck Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "401900",
@@ -1553,12 +2634,28 @@
         "outcomeId": "401901",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170226",
+        "market_name": "Alternative Puck Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170240",
-    "market_name": "Alternative Total 2-Way",
-    "common_id": "4020",
+    "id": 4020,
+    "name": "Alternative Total 2-Way",
     "outcomes": [
       {
         "outcomeId": "402000",
@@ -1568,12 +2665,28 @@
         "outcomeId": "402001",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170240",
+        "market_name": "Alternative Total 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "1553",
-    "market_name": "Correct Score",
-    "common_id": "4021",
+    "id": 4021,
+    "name": "Correct Score",
     "outcomes": [
       {
         "outcomeId": "402100",
@@ -1587,12 +2700,32 @@
         "outcomeId": "402102",
         "outcome": "Any Other"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home to win X-Y",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away to win X-Y",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Any Other",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1553",
+        "market_name": "Correct Score"
+      }
     ]
   },
   {
-    "prematch_id": "170034",
-    "market_name": "Will Game go to Shootout?",
-    "common_id": "4025",
+    "id": 4025,
+    "name": "Will Game go to Shootout?",
     "outcomes": [
       {
         "outcomeId": "402500",
@@ -1602,12 +2735,28 @@
         "outcomeId": "402501",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170034",
+        "market_name": "Will Game go to Shootout?"
+      }
     ]
   },
   {
-    "prematch_id": "1687",
-    "market_name": "Team Scoring First Wins Game",
-    "common_id": "4026",
+    "id": 4026,
+    "name": "Team Scoring First Wins Game",
     "outcomes": [
       {
         "outcomeId": "402600",
@@ -1617,12 +2766,28 @@
         "outcomeId": "402601",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1687",
+        "market_name": "Team Scoring First Wins Game"
+      }
     ]
   },
   {
-    "prematch_id": "1542",
-    "market_name": "Team to Score First",
-    "common_id": "4027",
+    "id": 4027,
+    "name": "Team to Score First",
     "outcomes": [
       {
         "outcomeId": "402700",
@@ -1636,12 +2801,32 @@
         "outcomeId": "402702",
         "outcome": "No 1st goal"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No 1st goal",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1542",
+        "market_name": "Team to Score First"
+      }
     ]
   },
   {
-    "prematch_id": "170225",
-    "market_name": "Team to Score Last",
-    "common_id": "4028",
+    "id": 4028,
+    "name": "Team to Score Last",
     "outcomes": [
       {
         "outcomeId": "402800",
@@ -1655,12 +2840,32 @@
         "outcomeId": "402802",
         "outcome": "Neither"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170225",
+        "market_name": "Team to Score Last"
+      }
     ]
   },
   {
-    "prematch_id": "1698",
-    "market_name": "Race to 3 Goals",
-    "common_id": "4029",
+    "id": 4029,
+    "name": "Race to 3 Goals",
     "outcomes": [
       {
         "outcomeId": "402900",
@@ -1674,12 +2879,32 @@
         "outcomeId": "402902",
         "outcome": "Neither"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1698",
+        "market_name": "Race to 3 Goals"
+      }
     ]
   },
   {
-    "prematch_id": "1689",
-    "market_name": "Time of 1st Score",
-    "common_id": "4030",
+    "id": 4030,
+    "name": "Time of 1st Score",
     "outcomes": [
       {
         "outcomeId": "403000",
@@ -1689,12 +2914,28 @@
         "outcomeId": "403001",
         "outcome": "No Score Before 09:30 Elapsed"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Score Before 09:30 Elapsed",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Score Before 09:30 Elapsed",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "1689",
+        "market_name": "Time of 1st Score"
+      }
     ]
   },
   {
-    "prematch_id": "170393",
-    "market_name": "1st Period Alternative Puck Line 2-Way",
-    "common_id": "4032",
+    "id": 4032,
+    "name": "1st Period Alternative Puck Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "403200",
@@ -1704,12 +2945,28 @@
         "outcomeId": "403201",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170393",
+        "market_name": "1st Period Alternative Puck Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170395",
-    "market_name": "1st Period Alternative Puck Line 3-Way",
-    "common_id": "4033",
+    "id": 4033,
+    "name": "1st Period Alternative Puck Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "403300",
@@ -1723,12 +2980,32 @@
         "outcomeId": "403302",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170395",
+        "market_name": "1st Period Alternative Puck Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170397",
-    "market_name": "1st Period Alternative Total 2-Way",
-    "common_id": "4034",
+    "id": 4034,
+    "name": "1st Period Alternative Total 2-Way",
     "outcomes": [
       {
         "outcomeId": "403400",
@@ -1738,12 +3015,28 @@
         "outcomeId": "403401",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170397",
+        "market_name": "1st Period Alternative Total 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170399",
-    "market_name": "1st Period Alternative Total 3-Way",
-    "common_id": "4035",
+    "id": 4035,
+    "name": "1st Period Alternative Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "403500",
@@ -1757,12 +3050,32 @@
         "outcomeId": "403502",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170399",
+        "market_name": "1st Period Alternative Total 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170372",
-    "market_name": "1st 10 Minute Alternative Puck Line 2-Way",
-    "common_id": "4036",
+    "id": 4036,
+    "name": "1st 10 Minute Alternative Puck Line 2-Way",
     "outcomes": [
       {
         "outcomeId": "403600",
@@ -1772,12 +3085,28 @@
         "outcomeId": "403601",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170372",
+        "market_name": "1st 10 Minute Alternative Puck Line 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170374",
-    "market_name": "1st 10 Minute Alternative Puck Line 3-Way",
-    "common_id": "4037",
+    "id": 4037,
+    "name": "1st 10 Minute Alternative Puck Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "403700",
@@ -1791,12 +3120,32 @@
         "outcomeId": "403702",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Tie",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170374",
+        "market_name": "1st 10 Minute Alternative Puck Line 3-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170376",
-    "market_name": "1st 10 Minute Alternative Total 2-Way",
-    "common_id": "4038",
+    "id": 4038,
+    "name": "1st 10 Minute Alternative Total 2-Way",
     "outcomes": [
       {
         "outcomeId": "403800",
@@ -1806,12 +3155,28 @@
         "outcomeId": "403801",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170376",
+        "market_name": "1st 10 Minute Alternative Total 2-Way"
+      }
     ]
   },
   {
-    "prematch_id": "170378",
-    "market_name": "1st 10 Minute Alternative Total 3-Way",
-    "common_id": "4039",
+    "id": 4039,
+    "name": "1st 10 Minute Alternative Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "403900",
@@ -1825,12 +3190,32 @@
         "outcomeId": "403902",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170378",
+        "market_name": "1st 10 Minute Alternative Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170091",
-    "market_name": "Game Total 3-Way",
-    "common_id": "4044",
+    "id": 4044,
+    "name": "Game Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "404400",
@@ -1844,12 +3229,32 @@
         "outcomeId": "404402",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170091",
+        "marketName": "Game Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170095",
-    "market_name": "Double Chance",
-    "common_id": "4047",
+    "id": 4047,
+    "name": "Double Chance",
     "outcomes": [
       {
         "outcomeId": "404700",
@@ -1863,13 +3268,32 @@
         "outcomeId": "404702",
         "outcome": "Away or Draw"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home or Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home or Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away or Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170095",
+        "marketName": "Double Chance"
+      }
     ]
   },
   {
-    "live_id": "170093",
-    "market_name": "Asian Puck Line (Y-Z)",
-    "Special market value": "Y-Z",
-    "common_id": "4049",
+    "id": 4049,
+    "name": "Asian Puck Line (Y-Z)",
     "outcomes": [
       {
         "outcomeId": "404900",
@@ -1879,13 +3303,28 @@
         "outcomeId": "404901",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170093",
+        "marketName": "Asian Puck Line (Y-Z)"
+      }
     ]
   },
   {
-    "live_id": "170094",
-    "market_name": "Asian Goal Line (Y-Z)",
-    "Special market value": "Y-Z",
-    "common_id": "4050",
+    "id": 4050,
+    "name": "Asian Goal Line (Y-Z)",
     "outcomes": [
       {
         "outcomeId": "405000",
@@ -1895,12 +3334,28 @@
         "outcomeId": "405001",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170094",
+        "marketName": "Asian Goal Line (Y-Z)"
+      }
     ]
   },
   {
-    "live_id": "170112",
-    "market_name": "Race to",
-    "common_id": "4051",
+    "id": 4051,
+    "name": "Race to",
     "outcomes": [
       {
         "outcomeId": "405100",
@@ -1950,13 +3405,68 @@
         "outcomeId": "4051011",
         "outcome": "Neither to 5"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home to 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away to 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither to 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home to 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away to 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither to 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home to 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away to 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither to 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home to 5",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away to 5",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither to 5",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170112",
+        "marketName": "Race to"
+      }
     ]
   },
   {
-    "live_id": "170133",
-    "market_name": "Period N Game Total 3-Way",
-    "Special market value": "N",
-    "common_id": "4054",
+    "id": 4054,
+    "name": "Period N Game Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "405400",
@@ -1970,13 +3480,32 @@
         "outcomeId": "405402",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170133",
+        "marketName": "Period N Game Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170132",
-    "market_name": "Period N Asian Puck Line Y-Z",
-    "Special market value": "N,Y-Z",
-    "common_id": "4057",
+    "id": 4057,
+    "name": "Period N Asian Puck Line Y-Z",
     "outcomes": [
       {
         "outcomeId": "405700",
@@ -1986,13 +3515,28 @@
         "outcomeId": "405701",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170132",
+        "marketName": "Period N Asian Puck Line Y-Z"
+      }
     ]
   },
   {
-    "live_id": "170134",
-    "market_name": "Period N Asian Goal Line",
-    "Special market value": "N",
-    "common_id": "4058",
+    "id": 4058,
+    "name": "Period N Asian Goal Line",
     "outcomes": [
       {
         "outcomeId": "405800",
@@ -2002,13 +3546,28 @@
         "outcomeId": "405801",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170134",
+        "marketName": "Period N Asian Goal Line"
+      }
     ]
   },
   {
-    "live_id": "170136",
-    "market_name": "Period N Correct Score",
-    "Special market value": "N",
-    "common_id": "4061",
+    "id": 4061,
+    "name": "Period N Correct Score",
     "outcomes": [
       {
         "outcomeId": "406100",
@@ -2018,12 +3577,28 @@
         "outcomeId": "406101",
         "outcome": "Any Other Score"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "X-YDraw Z-Z",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Any Other Score",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170136",
+        "marketName": "Period N Correct Score"
+      }
     ]
   },
   {
-    "live_id": "170099",
-    "market_name": "Alternative Puck Lines",
-    "common_id": "4062",
+    "id": 4062,
+    "name": "Alternative Puck Lines",
     "outcomes": [
       {
         "outcomeId": "406200",
@@ -2033,12 +3608,28 @@
         "outcomeId": "406201",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170099",
+        "marketName": "Alternative Puck Lines"
+      }
     ]
   },
   {
-    "live_id": "170100",
-    "market_name": "Alternative Game Total",
-    "common_id": "4063",
+    "id": 4063,
+    "name": "Alternative Game Total",
     "outcomes": [
       {
         "outcomeId": "406300",
@@ -2048,12 +3639,28 @@
         "outcomeId": "406301",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170100",
+        "marketName": "Alternative Game Total"
+      }
     ]
   },
   {
-    "live_id": "170103",
-    "market_name": "Alternative Puck Line 3-Way",
-    "common_id": "4064",
+    "id": 4064,
+    "name": "Alternative Puck Line 3-Way",
     "outcomes": [
       {
         "outcomeId": "406400",
@@ -2067,12 +3674,32 @@
         "outcomeId": "406402",
         "outcome": "Away"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170103",
+        "marketName": "Alternative Puck Line 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170105",
-    "market_name": "Alternative Game Total 3-Way",
-    "common_id": "4065",
+    "id": 4065,
+    "name": "Alternative Game Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "406500",
@@ -2086,12 +3713,32 @@
         "outcomeId": "406502",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170105",
+        "marketName": "Alternative Game Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170106",
-    "market_name": "Home Game Total",
-    "common_id": "4066",
+    "id": 4066,
+    "name": "Home Game Total",
     "outcomes": [
       {
         "outcomeId": "406600",
@@ -2101,12 +3748,28 @@
         "outcomeId": "406601",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170106",
+        "marketName": "Home Game Total"
+      }
     ]
   },
   {
-    "live_id": "170108",
-    "market_name": "Away Game Total",
-    "common_id": "4067",
+    "id": 4067,
+    "name": "Away Game Total",
     "outcomes": [
       {
         "outcomeId": "406700",
@@ -2116,12 +3779,28 @@
         "outcomeId": "406701",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170108",
+        "marketName": "Away Game Total"
+      }
     ]
   },
   {
-    "live_id": "170107",
-    "market_name": "Home Game Total 3-Way",
-    "common_id": "4068",
+    "id": 4068,
+    "name": "Home Game Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "406800",
@@ -2135,12 +3814,32 @@
         "outcomeId": "406802",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170107",
+        "marketName": "Home Game Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170109",
-    "market_name": "Away Game Total 3-Way",
-    "common_id": "4069",
+    "id": 4069,
+    "name": "Away Game Total 3-Way",
     "outcomes": [
       {
         "outcomeId": "406900",
@@ -2154,12 +3853,32 @@
         "outcomeId": "406902",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Exactly",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170109",
+        "marketName": "Away Game Total 3-Way"
+      }
     ]
   },
   {
-    "live_id": "170118",
-    "market_name": "Home Exact Goals",
-    "common_id": "4070",
+    "id": 4070,
+    "name": "Home Exact Goals",
     "outcomes": [
       {
         "outcomeId": "407000",
@@ -2177,12 +3896,36 @@
         "outcomeId": "407003",
         "outcome": "3 or more Goals"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "0 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "1 Goal",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "3 or more Goals",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170118",
+        "marketName": "Home Exact Goals"
+      }
     ]
   },
   {
-    "live_id": "170119",
-    "market_name": "Away Exact Goals",
-    "common_id": "4071",
+    "id": 4071,
+    "name": "Away Exact Goals",
     "outcomes": [
       {
         "outcomeId": "407100",
@@ -2200,12 +3943,36 @@
         "outcomeId": "407103",
         "outcome": "3 or more Goals"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "0 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "1 Goal",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "3 or more Goals",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170119",
+        "marketName": "Away Exact Goals"
+      }
     ]
   },
   {
-    "live_id": "170121",
-    "market_name": "Both Teams to Score At Least 2 Goals",
-    "common_id": "4072",
+    "id": 4072,
+    "name": "Both Teams to Score At Least 2 Goals",
     "outcomes": [
       {
         "outcomeId": "407200",
@@ -2215,12 +3982,28 @@
         "outcomeId": "407201",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170121",
+        "marketName": "Both Teams to Score At Least 2 Goals"
+      }
     ]
   },
   {
-    "live_id": "170120",
-    "market_name": "Both Teams to Score At Least 3 Goals",
-    "common_id": "4073",
+    "id": 4073,
+    "name": "Both Teams to Score At Least 3 Goals",
     "outcomes": [
       {
         "outcomeId": "407300",
@@ -2230,12 +4013,28 @@
         "outcomeId": "407301",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170120",
+        "marketName": "Both Teams to Score At Least 3 Goals"
+      }
     ]
   },
   {
-    "live_id": "170151",
-    "market_name": "When Will Game End",
-    "common_id": "4074",
+    "id": 4074,
+    "name": "When Will Game End",
     "outcomes": [
       {
         "outcomeId": "407400",
@@ -2249,12 +4048,32 @@
         "outcomeId": "407402",
         "outcome": "Shootout"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Regulation",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Overtime",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Shootout",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170151",
+        "marketName": "When Will Game End"
+      }
     ]
   },
   {
-    "live_id": "170097",
-    "market_name": "Will Match go to Overtime",
-    "common_id": "4075",
+    "id": 4075,
+    "name": "Will Match go to Overtime",
     "outcomes": [
       {
         "outcomeId": "407500",
@@ -2264,12 +4083,28 @@
         "outcomeId": "407501",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170097",
+        "marketName": "Will Match go to Overtime"
+      }
     ]
   },
   {
-    "live_id": "170122",
-    "market_name": "Team To Win The Most Periods",
-    "common_id": "4077",
+    "id": 4077,
+    "name": "Team To Win The Most Periods",
     "outcomes": [
       {
         "outcomeId": "407700",
@@ -2283,12 +4118,32 @@
         "outcomeId": "407702",
         "outcome": "Draw"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170122",
+        "marketName": "Team To Win The Most Periods"
+      }
     ]
   },
   {
-    "live_id": "170123",
-    "market_name": "Highest Scoring Period",
-    "common_id": "4078",
+    "id": 4078,
+    "name": "Highest Scoring Period",
     "outcomes": [
       {
         "outcomeId": "407800",
@@ -2306,12 +4161,36 @@
         "outcomeId": "407803",
         "outcome": "Draw"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Period 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Period 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Period 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170123",
+        "marketName": "Highest Scoring Period"
+      }
     ]
   },
   {
-    "live_id": "170125",
-    "market_name": "Team to Score Last in Regulation",
-    "common_id": "4079",
+    "id": 4079,
+    "name": "Team to Score Last in Regulation",
     "outcomes": [
       {
         "outcomeId": "407900",
@@ -2325,13 +4204,32 @@
         "outcomeId": "407902",
         "outcome": "Neither"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Neither",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170125",
+        "marketName": "Team to Score Last in Regulation"
+      }
     ]
   },
   {
-    "live_id": "170126",
-    "market_name": "Either Team To Score 3 Successive Goals",
-    "Description": "любая команда три последовательных гола",
-    "common_id": "4080",
+    "id": 4080,
+    "name": "Either Team To Score 3 Successive Goals",
     "outcomes": [
       {
         "outcomeId": "408000",
@@ -2341,23 +4239,51 @@
         "outcomeId": "408001",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170126",
+        "marketName": "Either Team To Score 3 Successive Goals"
+      }
     ]
   },
   {
-    "live_id": "170116",
-    "market_name": "Correct Score",
-    "common_id": "4081",
+    "id": 4081,
+    "name": "Correct Score",
     "outcomes": [
       {
         "outcomeId": "408100",
         "outcome": "X-Y"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "X-Y",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170116",
+        "marketName": "Correct Score"
+      }
     ]
   },
   {
-    "live_id": "170115",
-    "market_name": "Winning Margin",
-    "common_id": "4082",
+    "id": 4082,
+    "name": "Winning Margin",
     "outcomes": [
       {
         "outcomeId": "408200",
@@ -2399,13 +4325,60 @@
         "outcomeId": "408209",
         "outcome": "Away by 5 or more"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home by 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Home by 5 or more",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 1",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 2",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 3",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 4",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away by 5 or more",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170115",
+        "marketName": "Winning Margin"
+      }
     ]
   },
   {
-    "live_id": "170140",
-    "market_name": "10 Minute Winner 3-Way MM:SS - MM:SS",
-    "Special market value": " MM:SS - MM:SS",
-    "common_id": "4084",
+    "id": 4084,
+    "name": "10 Minute Winner 3-Way MM:SS - MM:SS",
     "outcomes": [
       {
         "outcomeId": "408400",
@@ -2419,13 +4392,32 @@
         "outcomeId": "408402",
         "outcome": "Draw"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Home",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Away",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Draw",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170140",
+        "marketName": "10 Minute Winner 3-Way MM:SS - MM:SS"
+      }
     ]
   },
   {
-    "live_id": "170141",
-    "market_name": "10 Minute Game Total MM:SS - MM:SS",
-    "Special market value": " MM:SS - MM:SS",
-    "common_id": "4085",
+    "id": 4085,
+    "name": "10 Minute Game Total MM:SS - MM:SS",
     "outcomes": [
       {
         "outcomeId": "408500",
@@ -2435,13 +4427,28 @@
         "outcomeId": "408501",
         "outcome": "Under"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Over",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Under",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170141",
+        "marketName": "10 Minute Game Total MM:SS - MM:SS"
+      }
     ]
   },
   {
-    "live_id": "170142",
-    "market_name": "10 Minute Home to score MM:SS - MM:SS",
-    "Special market value": " MM:SS - MM:SS",
-    "common_id": "4086",
+    "id": 4086,
+    "name": "10 Minute Home to score MM:SS - MM:SS",
     "outcomes": [
       {
         "outcomeId": "408600",
@@ -2451,13 +4458,28 @@
         "outcomeId": "408601",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170142",
+        "marketName": "10 Minute Home to score MM:SS - MM:SS"
+      }
     ]
   },
   {
-    "live_id": "170143",
-    "market_name": "10 Minute Away to score MM:SS - MM:SS",
-    "Special market value": " MM:SS - MM:SS",
-    "common_id": "4087",
+    "id": 4087,
+    "name": "10 Minute Away to score MM:SS - MM:SS",
     "outcomes": [
       {
         "outcomeId": "408700",
@@ -2467,13 +4489,28 @@
         "outcomeId": "408701",
         "outcome": "No"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Yes",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170143",
+        "marketName": "10 Minute Away to score MM:SS - MM:SS"
+      }
     ]
   },
   {
-    "live_id": "170358",
-    "market_name": "1st Goalscorer",
-    "Special market value": "Players",
-    "common_id": "4088",
+    "id": 4088,
+    "name": "1st Goalscorer",
     "outcomes": [
       {
         "outcomeId": "408800",
@@ -2491,13 +4528,36 @@
         "outcomeId": "408803",
         "outcome": "No Goalscorer"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player (Home)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Player (Away)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Any Other Goalscorer",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Goalscorer",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170358",
+        "marketName": "1st Goalscorer"
+      }
     ]
   },
   {
-    "live_id": "170365",
-    "market_name": "To Score in Period 1",
-    "Special market value": "Players",
-    "common_id": "4089",
+    "id": 4089,
+    "name": "To Score in Period 1",
     "outcomes": [
       {
         "outcomeId": "408900",
@@ -2511,13 +4571,32 @@
         "outcomeId": "408902",
         "outcome": "No Goalscorer"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player (Home)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Player (Away)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Goalscorer",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170365",
+        "marketName": "To Score in Period 1"
+      }
     ]
   },
   {
-    "live_id": "170362",
-    "market_name": "Anytime Goalscorer",
-    "Special market value": "Players",
-    "common_id": "4090",
+    "id": 4090,
+    "name": "Anytime Goalscorer",
     "outcomes": [
       {
         "outcomeId": "409000",
@@ -2531,13 +4610,32 @@
         "outcomeId": "409002",
         "outcome": "No Goalscorer"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player (Home)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Player (Away)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Goalscorer",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170362",
+        "marketName": "Anytime Goalscorer"
+      }
     ]
   },
   {
-    "live_id": "170359",
-    "market_name": "Home 1st Goalscorer",
-    "Special market value": "Players",
-    "common_id": "4091",
+    "id": 4091,
+    "name": "Home 1st Goalscorer",
     "outcomes": [
       {
         "outcomeId": "409100",
@@ -2551,13 +4649,32 @@
         "outcomeId": "409102",
         "outcome": "No Goalscorer"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Any Other Goalscorer",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Goalscorer",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170359",
+        "marketName": "Home 1st Goalscorer"
+      }
     ]
   },
   {
-    "live_id": "170360",
-    "market_name": "Away 1st Goalscorer",
-    "Special market value": "Players",
-    "common_id": "4092",
+    "id": 4092,
+    "name": "Away 1st Goalscorer",
     "outcomes": [
       {
         "outcomeId": "409200",
@@ -2571,13 +4688,32 @@
         "outcomeId": "409202",
         "outcome": "No Goalscorer"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Any Other Goalscorer",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "No Goalscorer",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170360",
+        "marketName": "Away 1st Goalscorer"
+      }
     ]
   },
   {
-    "live_id": "170363",
-    "market_name": "To Score 2 or More",
-    "Special market value": "Players",
-    "common_id": "4093",
+    "id": 4093,
+    "name": "To Score 2 or More",
     "outcomes": [
       {
         "outcomeId": "409300",
@@ -2587,13 +4723,28 @@
         "outcomeId": "409301",
         "outcome": "Player (Away)"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player (Home)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Player (Away)",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170363",
+        "marketName": "To Score 2 or More"
+      }
     ]
   },
   {
-    "live_id": "170364",
-    "market_name": "To Score 3 or More",
-    "Special market value": "Players",
-    "common_id": "4094",
+    "id": 4094,
+    "name": "To Score 3 or More",
     "outcomes": [
       {
         "outcomeId": "409400",
@@ -2603,11 +4754,28 @@
         "outcomeId": "409401",
         "outcome": "Player (Away)"
       }
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "Player (Home)",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Player (Away)",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": [
+      {
+        "feedName": "bet365",
+        "externalId": "170364",
+        "marketName": "To Score 3 or More"
+      }
     ]
   },
   {
-    "market_name": "Home Exact Goals",
-    "common_id": "4097",
+    "id": 4097,
+    "name": "Home Exact Goals",
     "outcomes": [
       {
         "outcomeId": "409700",
@@ -2625,11 +4793,30 @@
         "outcomeId": "409703",
         "outcome": "3 or more Goals"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "0 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "1 Goal",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "3 or more Goals",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   },
   {
-    "market_name": "Away Exact Goals",
-    "common_id": "4098",
+    "id": 4098,
+    "name": "Away Exact Goals",
     "outcomes": [
       {
         "outcomeId": "409800",
@@ -2647,6 +4834,25 @@
         "outcomeId": "409803",
         "outcome": "3 or more Goals"
       }
-    ]
+    ],
+    "externalOutcomes": [
+      {
+        "outcome": "0 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "1 Goal",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "2 Goals",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "3 or more Goals",
+        "feedName": "bet365"
+      }
+    ],
+    "externalIds": []
   }
 ]

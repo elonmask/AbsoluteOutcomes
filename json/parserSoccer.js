@@ -2,9 +2,7 @@ const fs = require("fs");
 
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
-  const markets = JSON.parse(
-    fs.readFileSync("./soccer_markets_status.json", "utf8")
-  );
+  const markets = JSON.parse(fs.readFileSync("./soccer.json", "utf8"));
 
   const newMarkets = [];
   const marketsWithoutOddTypes = [];

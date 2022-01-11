@@ -1,0 +1,2378 @@
+{
+  "sport": [
+    {
+      "common_id": "10001",
+      "live_id": "1777",
+      "odd_types_id": "1",
+      "prematch_id": "40",
+      "market_name": "Full time Result",
+      "Outcomes": "Home,Draw,Away",
+      "Odd-types OutcomeId": "1001,1002,1003",
+      "Common Outcomes ID": "1001,1002,1003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10002",
+      "live_id": "10560",
+      "odd_types_id": "42",
+      "prematch_id": "42",
+      "market_name": "Half Time/Full Time",
+      "Outcomes": "Home - Home,Home - Draw,Home - Away,Draw - Home,Draw - Draw,Draw -Away,Away - Home,Away - Draw,Away - Away",
+      "Odd-types OutcomeId": "42001,42002,42003,42004,42005,42006,42007,42008,42009",
+      "Common Outcomes ID": "2001,2002,2003,2004,2005,2006,2007,2008,2009",
+      "Group ID": "1,2,3,4,5,6,7,8,9",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10003",
+      "prematch_id": "43",
+      "market_name": "Correct Score",
+      "Outcomes": "Home - Home,Home - Draw,Home - Away,Draw - Home,Draw - Draw,Draw -Away,Away - Home,Away - Draw,Away - Away",
+      "Common Outcomes ID": "3001,3002,3003,3004,3005,3006,3007,3008,3009",
+      "Group ID": "1",
+      "Special outcome value": "Y-Z",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10004",
+      "odd_types_id": "939",
+      "prematch_id": "43",
+      "market_name": "Scorecast",
+      "Special market value": "Players  to score first,Team,Y-Z",
+      "Common Outcomes ID": "4001,4002",
+      "Special outcome value": "Player,Team Y-Z",
+      "Description": "Player to score first and Team Y-Z",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10005",
+      "prematch_id": "43",
+      "market_name": "Anytime Scorecast",
+      "Special market value": "Players  to score anytime,Team,Y-Z",
+      "Common Outcomes ID": "5001,5002",
+      "Special outcome value": "Player,Team Y-Z",
+      "Description": "Player to score anytime and Team Y-Z",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10006",
+      "prematch_id": "43",
+      "market_name": "1st Half Scorecast"
+    },
+    {
+      "common_id": "10007",
+      "odd_types_id": "963",
+      "prematch_id": "43",
+      "market_name": "Half Time / Full Time Correct Score",
+      "Special outcome value": "Team, score"
+    },
+    {
+      "common_id": "10008",
+      "prematch_id": "45",
+      "market_name": "First Goalscorer",
+      "Outcomes": "Players",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10009",
+      "odd_types_id": "37",
+      "prematch_id": "46",
+      "market_name": "Last Goalscorer",
+      "Outcomes": "Players",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10010",
+      "odd_types_id": "912",
+      "prematch_id": "56",
+      "market_name": "Winning Margin",
+      "Outcomes": "Home to win by 1 goal,Away to win by 1 goal,Home to win by 2 goal,Away to win by 2 goal,Home to win by 3 goal,Away to win by 3 goal,Home to win by 4+ goal,Away to win by 4+ goal,Score Draw,No Goal",
+      "Odd-types OutcomeId": "912003,912004,912005,912006,912007,912008,912009,912010,912001,912002",
+      "Common Outcomes ID": "6001,6002,6003,6004,6005,6006,6007,6008,6009,6010",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10011",
+      "prematch_id": "64",
+      "market_name": "To Score at Any Time",
+      "Outcomes": "Players",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10012",
+      "odd_types_id": "14",
+      "prematch_id": "171",
+      "market_name": "Handicap Result",
+      "Outcomes": "Home,Tie,Away",
+      "Odd-types OutcomeId": "14001,14002,14003",
+      "Common Outcomes ID": "7001,7002,7003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10013",
+      "prematch_id": "460",
+      "market_name": "Man of the Match",
+      "Special market value": "Players",
+      "Outcomes": "Player",
+      "Common Outcomes ID": "47001",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10014",
+      "prematch_id": "476",
+      "market_name": "First Card Received",
+      "Outcomes": "Home,No card,Away",
+      "Common Outcomes ID": "48001,48002,48003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10015",
+      "live_id": "16",
+      "prematch_id": "760",
+      "market_name": "Corners 3 way",
+      "Outcomes": "Over,Exectly,Under",
+      "Common Outcomes ID": "49001,49002,49003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10016",
+      "prematch_id": "761",
+      "market_name": "Time of First Corner",
+      "Outcomes": "Corner before MM:SS,No Corner before MM:SS",
+      "Common Outcomes ID": "50001,50002",
+      "Group ID": "1,2",
+      "Special outcome value": "MM:SS ",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10017",
+      "live_id": "12",
+      "odd_types_id": "940",
+      "prematch_id": "938",
+      "market_name": "Asian Handicap (0-0)",
+      "Special market value": "Y-Z",
+      "Outcomes": "Home,Away",
+      "Odd-types OutcomeId": "940001,940002",
+      "Common Outcomes ID": "8001,8002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10018",
+      "odd_types_id": "17",
+      "prematch_id": "981",
+      "market_name": "Total Goals",
+      "Outcomes": "Over,Under",
+      "Odd-types OutcomeId": "17001,17002",
+      "Common Outcomes ID": "51001,51002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10019",
+      "live_id": "1786",
+      "odd_types_id": "2",
+      "prematch_id": "1094",
+      "market_name": "To Qualify",
+      "Outcomes": "Over,Under",
+      "Odd-types OutcomeId": "2001,2002",
+      "Common Outcomes ID": "9001,9002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10020",
+      "prematch_id": "1175",
+      "market_name": "Corner Match Bet",
+      "Outcomes": "Home,Tie,Away",
+      "Common Outcomes ID": "52001,52002,52003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10021",
+      "prematch_id": "1178",
+      "market_name": "First Team to Score",
+      "Outcomes": "Home,No Goals,Away",
+      "Common Outcomes ID": "53001,53002,53003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10022",
+      "prematch_id": "1181",
+      "market_name": "Multicorners",
+      "Outcomes": "Over,Under",
+      "Common Outcomes ID": "54001,54002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10023",
+      "odd_types_id": "931",
+      "prematch_id": "1183",
+      "market_name": "Time of First Card",
+      "Special market value": "MM:SS",
+      "Outcomes": "Card before MM:SS,No Card before MM:SS",
+      "Common Outcomes ID": "10001,10002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10024",
+      "live_id": "10161",
+      "odd_types_id": "55",
+      "prematch_id": "1579",
+      "market_name": "Half Time Result",
+      "Outcomes": "Home,Draw,Away",
+      "Odd-types OutcomeId": "55001,55002,55003",
+      "Common Outcomes ID": "11001,11002,11003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10025",
+      "prematch_id": "1776",
+      "market_name": "Total Goal Minutes",
+      "Outcomes": "Over 120 minutes,100 To 120 minutes inc.,Under 100 minutes",
+      "Common Outcomes ID": "55001,55002,55003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10026",
+      "prematch_id": "4001",
+      "market_name": "Full Time Result – Enhanced Prices",
+      "Outcomes": "Home,Draw,Away",
+      "Common Outcomes ID": "1001,1002,1003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10027",
+      "prematch_id": "10110",
+      "market_name": "Team Performances",
+      "Special market value": "Team",
+      "Outcomes": "Over X,Under X, X to Y",
+      "Common Outcomes ID": "56001,56002,56003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10028",
+      "live_id": "10562",
+      "odd_types_id": "24",
+      "prematch_id": "10111",
+      "market_name": "Goals Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Odd-types OutcomeId": "24001,24002",
+      "Common Outcomes ID": "12001,12002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10029",
+      "live_id": "10115",
+      "odd_types_id": "10",
+      "prematch_id": "10114",
+      "market_name": "Double Chance",
+      "Outcomes": "Home or Draw,Away or Draw,Home or Away",
+      "Odd-types OutcomeId": "1001,1003,1002",
+      "Common Outcomes ID": "13001,13002,13003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10030",
+      "prematch_id": "10127",
+      "market_name": "Team Total Goals",
+      "Outcomes": "Home - Over,Home - Under,Away - Over,Away - Under",
+      "Common Outcomes ID": "57001,57002,57003,57004",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10031",
+      "live_id": "15",
+      "prematch_id": "10143",
+      "market_name": "Goal Line ",
+      "Outcomes": "Over,Under",
+      "Common Outcomes ID": "58001,58002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10032",
+      "live_id": "10565",
+      "odd_types_id": "27",
+      "prematch_id": "10150",
+      "market_name": "Both Teams to Score",
+      "Outcomes": "Yes,No",
+      "Odd-types OutcomeId": "27001,27002",
+      "Common Outcomes ID": "14001,14002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10033",
+      "prematch_id": "10151",
+      "market_name": "Team Goalscorer",
+      "Special market value": "Team",
+      "Outcomes": "Player First, Player LastNo Goalscorer (Home/Away)",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10034",
+      "prematch_id": "10152",
+      "market_name": "Team Last Goalscorer",
+      "Outcomes": "Players,No Goalscorer (Home/Away)",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10035",
+      "live_id": "441",
+      "prematch_id": "10164",
+      "market_name": "Asian Total Corners",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10036",
+      "prematch_id": "10165",
+      "market_name": "Asian Handicap Corners",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10037",
+      "prematch_id": "10166",
+      "market_name": "Asian Total Cards",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10038",
+      "odd_types_id": "41",
+      "prematch_id": "43",
+      "market_name": "Half Time / Full Time Correct Score",
+      "Special market value": "Y-Z,Y-Z",
+      "Outcomes": "Half Time Y-Z,Full Time Y-Z",
+      "Common Outcomes ID": "15001,15002,15003,15004,15005,15006,15007,15008,15009",
+      "Group ID": "1",
+      "Special outcome value": "Y-Z,Y-Z",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10039",
+      "prematch_id": "10202",
+      "market_name": "Alternative Total Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10040",
+      "odd_types_id": "20",
+      "prematch_id": "10203",
+      "market_name": "Exact Total Goals",
+      "Outcomes": "0 Goals,1 Goal,2 Goals,3 Goals,4 Goals,5 Goals,6 Goals,7+ Goals",
+      "Common Outcomes ID": "16001,16002,16003,16004,16005,16006,16007,16008",
+      "Group ID": "1,2,3,4,5,6,7,8",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10041",
+      "odd_types_id": "14",
+      "prematch_id": "10204",
+      "market_name": "Alternative Handicap Result",
+      "Outcomes": "Home,Tie,Away",
+      "Common Outcomes ID": "7001,7002,7003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10042",
+      "prematch_id": "10205",
+      "market_name": "Exact 1st Half Goals",
+      "Outcomes": "0 Goals,1 Goals,2 Goals,3 Goals,4 Goals,5+ Goals",
+      "Common Outcomes ID": "59001,59002,59003,59004,59005,59006",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10043",
+      "odd_types_id": "68",
+      "prematch_id": "10206",
+      "market_name": "N (1st) Half Goals Odd/Even",
+      "Special market value": "N",
+      "Outcomes": "Odd,Even",
+      "Common Outcomes ID": "17001,17002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10044",
+      "odd_types_id": "60",
+      "prematch_id": "10207",
+      "market_name": "Alternative N (1st) Half Handicap Result",
+      "Special market value": "N",
+      "Outcomes": "Home,Tie (Home/Away),Away",
+      "Common Outcomes ID": "7001,7002,7003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10045",
+      "odd_types_id": "76",
+      "prematch_id": "10208",
+      "market_name": "N (2nd) Half Result",
+      "Special market value": "N",
+      "Outcomes": "Home,Draw,Away",
+      "Common Outcomes ID": "18001,18002,18003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10046",
+      "prematch_id": "10209",
+      "market_name": "2nd Half Goals",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10047",
+      "prematch_id": "10210",
+      "market_name": "Clean Sheet",
+      "Outcomes": " Home - Yes,Home - No,Away - Yes,Away - No",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10048",
+      "prematch_id": "10211",
+      "market_name": "Teams to Score",
+      "Outcomes": "Both Teams,Home Only,No Goals,Away Only",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10049",
+      "prematch_id": "10212",
+      "market_name": "Result / Total Goals",
+      "Outcomes": "Home & Over,Home & Under,Draw & Over,Draw & Under,Away & Over,Away & Under",
+      "Group ID": "1,2,3,4,5,6",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10050",
+      "prematch_id": "10214",
+      "market_name": "Time of N (1st) Team Goal",
+      "Special market value": "N,Team,MM:SS",
+      "Outcomes": "Home - Goal before MM:SS,Home - No Goal before MM:SS,Away - Goal before MM:SS,Away - No Goal before MM:SS",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10051",
+      "live_id": "10157",
+      "prematch_id": "10216",
+      "market_name": "N Goal Method",
+      "Special market value": "N",
+      "Outcomes": "Free Kick,Header,No N Goal,Own Goal,Penalty,Shot",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10052",
+      "prematch_id": "10217",
+      "market_name": "To Score Two or More Goals",
+      "Outcomes": "Players",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10053",
+      "prematch_id": "10217",
+      "market_name": "Multi Scorers",
+      "Special market value": "Players",
+      "Outcomes": "2 or more,3 or More",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "10054",
+      "prematch_id": "10218",
+      "market_name": "To Score Three or More Goals",
+      "Outcomes": "Players",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10055",
+      "odd_types_id": "893",
+      "prematch_id": "10220",
+      "market_name": "Wincast",
+      "Special market value": "Player to score first,Fulltime Result",
+      "Common Outcomes ID": "19001,19002",
+      "Description": "Player to score first and Fulltime Result: Home/Away",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10056",
+      "prematch_id": "10221",
+      "market_name": "N Half Scorecast",
+      "Special market value": "N,Players  to score first,Team,Y-Z",
+      "Outcomes": "Players  to score first ,Team Y-Z",
+      "Special outcome value": "Player,Y-Z",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10057",
+      "odd_types_id": "965",
+      "prematch_id": "10222",
+      "market_name": "Timecast",
+      "Special market value": "Player to score first,time of first goal M-M",
+      "Common Outcomes ID": "20001,20002",
+      "Description": "Player to score first and time of first goal M-M",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10058",
+      "prematch_id": "10223",
+      "market_name": "Own Goal",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10059",
+      "prematch_id": "10224",
+      "market_name": "To Win From Behind",
+      "Outcomes": "Home to win from behind,Away to win from behind",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10060",
+      "odd_types_id": "924",
+      "prematch_id": "10224",
+      "market_name": "To Win to Nil",
+      "Outcomes": "Home to win to nil,Away to win to nil",
+      "Odd-types OutcomeId": "924001,924002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10061",
+      "odd_types_id": "950",
+      "prematch_id": "10224",
+      "market_name": "To Win Either Half",
+      "Outcomes": "Home to win either half,Away to win either half",
+      "Odd-types OutcomeId": "950001,950002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10062",
+      "odd_types_id": "921",
+      "prematch_id": "10224",
+      "market_name": "To Win Both Halves",
+      "Outcomes": "Home to win both halves,Away to win both halves",
+      "Odd-types OutcomeId": "921001,921002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10063",
+      "prematch_id": "10224",
+      "market_name": "To Score in Both Halves",
+      "Outcomes": "Home to score in both halves,Awayto score in both halves",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10064",
+      "prematch_id": "10229",
+      "market_name": "To Score a Penalty",
+      "Outcomes": "Home to score a penalty,Away to score a penalty",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10065",
+      "prematch_id": "10230",
+      "market_name": "To Miss a Penalty",
+      "Outcomes": "Home to miss a penalty,Away to miss a penalty",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10066",
+      "live_id": "442",
+      "prematch_id": "10233",
+      "market_name": "N Half Asian Corners",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10067",
+      "live_id": "1780",
+      "prematch_id": "10234",
+      "market_name": "Total Corners",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10068",
+      "live_id": "50187",
+      "odd_types_id": "156",
+      "prematch_id": "10235",
+      "market_name": "2-Way Corners",
+      "Outcomes": "Over,Under",
+      "Common Outcomes ID": "21001,21002",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10069",
+      "prematch_id": "10236",
+      "market_name": "Team Corners",
+      "Outcomes": "Home - Over,Home - Under,Away - Over,Away - Under",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10070",
+      "live_id": "14",
+      "odd_types_id": "550",
+      "prematch_id": "10238",
+      "market_name": "Race to 3 Corners",
+      "Outcomes": "Home,Away,Neither",
+      "Common Outcomes ID": "22001,22002,22003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10071",
+      "live_id": "14",
+      "odd_types_id": "550",
+      "prematch_id": "10238",
+      "market_name": "Race to 5 Corners",
+      "Outcomes": "Home,Away,Neither",
+      "Common Outcomes ID": "23001,23002,23003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10072",
+      "live_id": "14",
+      "odd_types_id": "550",
+      "prematch_id": "10238",
+      "market_name": "Race to 7 Corners",
+      "Outcomes": "Home,Away,Neither",
+      "Common Outcomes ID": "24001,24002,24003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10073",
+      "live_id": "14",
+      "odd_types_id": "550",
+      "prematch_id": "10238",
+      "market_name": "Race to 9 Corners",
+      "Outcomes": "Home,Away,Neither",
+      "Common Outcomes ID": "25001,25002,25003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10074",
+      "prematch_id": "10239",
+      "market_name": "Asian Handicap Cards",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10075",
+      "prematch_id": "10240",
+      "market_name": "Card Handicap",
+      "Outcomes": "Home,Tie -Home,Tie - Away,Away",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10076",
+      "prematch_id": "10241",
+      "market_name": "Alternative Card Handicap",
+      "Outcomes": "Home,Tie -Home,Tie - Away,Away",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10077",
+      "prematch_id": "10242",
+      "market_name": "Team Cards",
+      "Outcomes": "Home - Over,Home - Under,Away - Over,Away - Under",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10078",
+      "odd_types_id": "96",
+      "prematch_id": "10244",
+      "market_name": "10 Minute Result",
+      "Outcomes": "Home,Draw,Away",
+      "Common Outcomes ID": "26001,26002,26003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10079",
+      "prematch_id": "10245",
+      "market_name": "Goals in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10080",
+      "prematch_id": "10245",
+      "market_name": "Free Kicks in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10081",
+      "prematch_id": "10245",
+      "market_name": "Goal Kicks in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10082",
+      "prematch_id": "10245",
+      "market_name": "Throw-ins in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10083",
+      "prematch_id": "10246",
+      "market_name": "Corners in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10084",
+      "prematch_id": "10247",
+      "market_name": "Cards in First 10 Minutes",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10085",
+      "live_id": "50189",
+      "odd_types_id": "5",
+      "prematch_id": "10251",
+      "market_name": "Method of Victory",
+      "Outcomes": "Home Win in 90 mins,Away Win in 90 mins,Home Win in Extra Time,Away Win in Extra Time,Home Win after Penalties,Away Win after Penalties",
+      "Common Outcomes ID": "27001,27002,27003,27004,27005,27006",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "FT, ET, Penalties"
+    },
+    {
+      "common_id": "10086",
+      "prematch_id": "10252",
+      "market_name": "Exact 2nd Half Goals",
+      "Outcomes": "0 Goals,1 Goals,2 Goals,3 Goals,4 Goals,5+ Goals",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10087",
+      "prematch_id": "10253",
+      "market_name": "1st Player Booked",
+      "Special market value": "Players",
+      "Outcomes": "Players,No Bookings",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10088",
+      "odd_types_id": "6",
+      "prematch_id": "10254",
+      "market_name": "Team to Kick Off",
+      "Outcomes": "Home,Away",
+      "Common Outcomes ID": "28001,28002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10089",
+      "odd_types_id": "78",
+      "prematch_id": "10257",
+      "market_name": "Half Time Double Chance",
+      "Outcomes": "Home or Draw,Draw or Away,Home or Away",
+      "Common Outcomes ID": "29001,29002,29003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10090",
+      "prematch_id": "10258",
+      "market_name": "Early Goal",
+      "Outcomes": "Goal before MM:SS,No Goal before MM:SS",
+      "Group ID": "1,2",
+      "Special outcome value": "MM:SS",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10091",
+      "prematch_id": "10259",
+      "market_name": "Late Goal",
+      "Outcomes": "Goal after MM:SS,No Goal after MM:SS",
+      "Group ID": "1,2",
+      "Special outcome value": "MM:SS",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10092",
+      "prematch_id": "10519",
+      "market_name": "First Match Corner",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10093",
+      "prematch_id": "10520",
+      "market_name": "Last Match Corner",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10094",
+      "live_id": "10564",
+      "prematch_id": "10534",
+      "market_name": "Last Team to Score",
+      "Outcomes": "Home,No Goals,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10095",
+      "live_id": "10569",
+      "prematch_id": "10535",
+      "market_name": "Corner Handicap",
+      "Outcomes": "Home,Tie,Away",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10096",
+      "prematch_id": "10536",
+      "market_name": "Number of Goals in Match",
+      "Outcomes": "Under 2 goals,2 or 3 goals,Over 3 goals",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10097",
+      "prematch_id": "10537",
+      "market_name": "Half with Most Goals",
+      "Outcomes": "1st Half,2nd Half,Tie",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10098",
+      "live_id": "5",
+      "prematch_id": "10538",
+      "market_name": "First Half Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10099",
+      "live_id": "10160",
+      "prematch_id": "10539",
+      "market_name": "First Half Corners",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10100",
+      "live_id": "10561",
+      "odd_types_id": "913",
+      "prematch_id": "10540",
+      "market_name": "Half Time Correct Score",
+      "Outcomes": "X-Y",
+      "Odd-types OutcomeId": "913001 - 913021",
+      "Group ID": "1",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10101",
+      "prematch_id": "10541",
+      "market_name": "Time of First Goal Brackets",
+      "Outcomes": "1-10,11-20,21-30,31-40,41-50,51-60,61-70,71-80,81 - Full Time,No Goal",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10102",
+      "live_id": "1781",
+      "prematch_id": "10542",
+      "market_name": "Number of Cards",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10103",
+      "live_id": "10563",
+      "odd_types_id": "11",
+      "prematch_id": "10544",
+      "market_name": "Draw No Bet",
+      "Outcomes": "Home,Away",
+      "Odd-types OutcomeId": "11001,11002",
+      "Common Outcomes ID": "30001,30002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10104",
+      "live_id": "50561",
+      "prematch_id": "50134",
+      "market_name": "Player to be Booked",
+      "Outcomes": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10105",
+      "live_id": "50562",
+      "prematch_id": "50135",
+      "market_name": "Player to be Sent Off",
+      "Special market value": "Players",
+      "Outcomes": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10106",
+      "live_id": "4",
+      "prematch_id": "50136",
+      "market_name": "N Half Goal Line",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10107",
+      "live_id": "3",
+      "prematch_id": "50137",
+      "market_name": "N Half Asian Handicap (0-0)",
+      "Special market value": "N, Y-Z",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10108",
+      "live_id": "50281",
+      "prematch_id": "50138",
+      "market_name": "Alternative Asian Handicap (0-0)",
+      "Special market value": "Y-Z",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10109",
+      "live_id": "50285",
+      "prematch_id": "50139",
+      "market_name": "Alternative Goal Line",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Х",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10110",
+      "prematch_id": "50240",
+      "market_name": "A Penalty in the Match",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10111",
+      "prematch_id": "50241",
+      "market_name": "A Red Card in the Match",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10112",
+      "live_id": "6",
+      "odd_types_id": "60",
+      "prematch_id": "50264",
+      "market_name": "N (1st) Half - Handicap",
+      "Special market value": "N",
+      "Outcomes": "Home,Tie Home/Away,Away",
+      "Odd-types OutcomeId": "60001,60002,60003",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10113",
+      "live_id": "50289",
+      "prematch_id": "50265",
+      "market_name": "Alternative N Half Asian (Y-Z)",
+      "Special market value": "N, Y-Z",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10114",
+      "prematch_id": "50265",
+      "market_name": "Alternative 1st Half Asian Handicap",
+      "Special market value": "N",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10115",
+      "live_id": "50294",
+      "prematch_id": "50266",
+      "market_name": "Alternative 1 Half Goal Line",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10116",
+      "prematch_id": "50279",
+      "market_name": "To Lift the Trophy",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10117",
+      "prematch_id": "50297",
+      "market_name": "Game Decided in Extra Time",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "10118",
+      "prematch_id": "50298",
+      "market_name": "Game Decided After Penalties",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "FT, ET, Penalties"
+    },
+    {
+      "common_id": "10119",
+      "live_id": "50461",
+      "odd_types_id": "33",
+      "prematch_id": "50404",
+      "market_name": "Result / Both Teams To Score",
+      "Outcomes": "Home & Yes,Home & No,Away & Yes,Away & No,Draw & Yes,Draw & No",
+      "Common Outcomes ID": "31001,31002,31003,31004,31005,31006",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10120",
+      "odd_types_id": "34",
+      "prematch_id": "50405",
+      "market_name": "Total Goals/Both Teams to Score",
+      "Outcomes": "Over X & Yes,Over X & No,Under X & Yes,Under X & No",
+      "Common Outcomes ID": "32001,32002,32003,32004",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10121",
+      "odd_types_id": "25",
+      "prematch_id": "50406",
+      "market_name": "Home Team Odd/Even Goals",
+      "Outcomes": "Home - Even,Home - Odd",
+      "Common Outcomes ID": "33001,33002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10122",
+      "odd_types_id": "26",
+      "prematch_id": "50407",
+      "market_name": "Away Team Odd/Even Goals",
+      "Outcomes": "Away - Even,Away - Odd",
+      "Common Outcomes ID": "34001,34002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10123",
+      "live_id": "50396",
+      "odd_types_id": "21",
+      "prematch_id": "50415",
+      "market_name": "Home Team Exact Goals",
+      "Outcomes": "0 Goals,1 Goal,2 Goals,3+ Goals",
+      "Common Outcomes ID": "35001,35002,35003,35004",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10124",
+      "live_id": "50397",
+      "odd_types_id": "22",
+      "prematch_id": "50416",
+      "market_name": "Away Team Exact Goals",
+      "Outcomes": "0 Goals,1 Goal,2 Goals,3+ Goals",
+      "Common Outcomes ID": "36001,36002,36003,36004",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10125",
+      "odd_types_id": "48",
+      "prematch_id": "50417",
+      "market_name": "Home Team Highest Scoring Half",
+      "Outcomes": "Home - 1st Half,Home - 2nd Half,Home - Tie",
+      "Common Outcomes ID": "37001,37002,37003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10126",
+      "odd_types_id": "49",
+      "prematch_id": "50418",
+      "market_name": "Away Team Highest Scoring Half",
+      "Outcomes": "Away - 1st Half,Away - 2nd Half,Away - Tie",
+      "Common Outcomes ID": "38001,38002,38003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10127",
+      "prematch_id": "50419",
+      "market_name": "X Team to Score in N Half",
+      "Special market value": "X,N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10128",
+      "prematch_id": "50419",
+      "market_name": "X Team to Score in N Half",
+      "Special market value": "X,N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10129",
+      "live_id": "50390",
+      "prematch_id": "50424",
+      "market_name": "Both Teams to Score in 1st Half",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10130",
+      "prematch_id": "50425",
+      "market_name": "Half Time Result/Both Teams to Score",
+      "Outcomes": "Home & No,Home & Yes,Away & No,Away & Yes,Draw & No,Draw & Yes",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10131",
+      "prematch_id": "50426",
+      "market_name": "Half Time Result/Total Goals",
+      "Outcomes": "Home & Over X,Home & Under X,Draw & Over X,Draw & Under X,Away & Over X,Away & Under X",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10132",
+      "live_id": "50391",
+      "prematch_id": "50432",
+      "market_name": "Both Teams to Score in 2nd Half",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10133",
+      "prematch_id": "50433",
+      "market_name": "2nd Half Goals Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10134",
+      "odd_types_id": "50",
+      "prematch_id": "50435",
+      "market_name": "Both Teams to Score 1st Half - 2nd Half",
+      "Outcomes": "Yes / Yes,Yes / No,No / Yes,No / No",
+      "Common Outcomes ID": "39001,39002,39003,39004",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10135",
+      "prematch_id": "50441",
+      "market_name": "Total Corners",
+      "Outcomes": "Under 6,6-8,9-11,12-14,Over 14",
+      "Group ID": "1,2,3,4,5",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10136",
+      "prematch_id": "50511",
+      "market_name": "First Set Piece",
+      "Special market value": "00:00 - 04:59",
+      "Outcomes": "Throw In,Free Kick,Goal Kick,Corner,Penalty Awarded,No Set Piece",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10137",
+      "prematch_id": "50516",
+      "market_name": "N Minute Corner",
+      "Special market value": "MM:SS,MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10138",
+      "prematch_id": "50517",
+      "market_name": "N Minute Card",
+      "Special market value": "N,MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10139",
+      "prematch_id": "50518",
+      "market_name": "N (1st) Minute Goal",
+      "Special market value": "N",
+      "Outcomes": "MM:SS,MM:SS - Yes,MM:SS,MM:SS - No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10140",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Goal Kick",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10141",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Free Kick",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10142",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Throw in",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10143",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Corner",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10144",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Card",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No"
+    },
+    {
+      "common_id": "10145",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Goal",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10146",
+      "prematch_id": "50518",
+      "market_name": "1st Minute Penalty Awarded",
+      "Special market value": "0:00 - 00:59",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10147",
+      "live_id": "50543",
+      "prematch_id": "50527",
+      "market_name": "Match Shots on Target",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10148",
+      "live_id": "50544",
+      "prematch_id": "50528",
+      "market_name": "Match Shots",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10149",
+      "prematch_id": "50529",
+      "market_name": "Match Tackles",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10150",
+      "prematch_id": "50530",
+      "market_name": "Team Shots on Target",
+      "Special market value": "Team",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10151",
+      "prematch_id": "50532",
+      "market_name": "Team Shots",
+      "Special market value": "Team",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10152",
+      "prematch_id": "50534",
+      "market_name": "Team Tackles",
+      "Special market value": "Team",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10153",
+      "prematch_id": "50538",
+      "market_name": "Player Shots on Target",
+      "Special market value": "Players",
+      "Outcomes": "Player Over,Player Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Player,X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10154",
+      "prematch_id": "50539",
+      "market_name": "Player Shots",
+      "Special market value": "Players",
+      "Outcomes": "Player Over,Player Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Player,X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10155",
+      "prematch_id": "50540",
+      "market_name": "Player Tackles",
+      "Special market value": "Players",
+      "Outcomes": "Player Over,Player Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Player,X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10156",
+      "prematch_id": "50541",
+      "market_name": "Player Assists",
+      "Special market value": "Players",
+      "Outcomes": "Player Over,Player Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Player,X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10157",
+      "prematch_id": "50542",
+      "market_name": "Player Passes",
+      "Special market value": "Players",
+      "Outcomes": "Player Over,Player Under",
+      "Group ID": "1,2",
+      "Special outcome value": "Player,X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10158",
+      "prematch_id": "50536",
+      "market_name": "Team Offsides",
+      "Special market value": "Team",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10159",
+      "live_id": "50558",
+      "prematch_id": "50559",
+      "market_name": "Match Offsides",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10160",
+      "prematch_id": "50942",
+      "market_name": "Both Teams to Receive a Card",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10161",
+      "prematch_id": "50943",
+      "market_name": "Both Teams to Receive 2+ Cards",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10162",
+      "live_id": "1778",
+      "odd_types_id": "8",
+      "market_name": "N Goal",
+      "Special market value": "N",
+      "Outcomes": "Home,No N Goal,Away",
+      "Odd-types OutcomeId": "8001,8002,8003",
+      "Common Outcomes ID": "40001,40002,40003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10163",
+      "live_id": "10001",
+      "market_name": "Corners",
+      "Outcomes": "X-Y",
+      "Group ID": "1",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10164",
+      "live_id": "10116",
+      "market_name": "To Win the Trophy",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "10165",
+      "live_id": "10117",
+      "market_name": "N Goal - Extra Time",
+      "Special market value": "N",
+      "Outcomes": "Home to score N goal,No N goal,Away to score N goal",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10166",
+      "live_id": "421 (10124) ",
+      "market_name": "Match Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10167",
+      "live_id": "10126",
+      "odd_types_id": "36",
+      "market_name": "N  Goalscorer",
+      "Special market value": "N",
+      "Outcomes": "Players,No N Goal",
+      "Common Outcomes ID": "41001,41002",
+      "Group ID": "1,2",
+      "Special outcome value": "Player, N Goal",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10168",
+      "live_id": "10137",
+      "market_name": "Home - N Penalty",
+      "Special market value": "N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10169",
+      "live_id": "10138",
+      "market_name": "Away - N Penalty",
+      "Special market value": "N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10170",
+      "live_id": "10153",
+      "market_name": "Ten Minute Corners - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10171",
+      "live_id": "10154",
+      "market_name": "Ten Minute Free Kicks  - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10172",
+      "live_id": "10155",
+      "market_name": "Ten Minute Throws - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10173",
+      "live_id": "10156",
+      "market_name": "Ten Minute Cards - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10174",
+      "live_id": "10158",
+      "market_name": "Ten Minute Goal Kicks - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10175",
+      "live_id": "11",
+      "odd_types_id": "14",
+      "market_name": "3-Way Handicap",
+      "Outcomes": "Home,Draw (Home),Draw (Away),Away",
+      "Common Outcomes ID": "42001,42002,42003,42004",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10176",
+      "live_id": "50197",
+      "market_name": "2nd Half Corners",
+      "Special market value": "N",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10177",
+      "live_id": "10162",
+      "market_name": "Extra Time Asian Handicap (Y-Z)",
+      "Special market value": "Y-Z",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10178",
+      "live_id": "10163",
+      "market_name": "Extra Time Goal Line",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10179",
+      "live_id": "13",
+      "market_name": "Last Corner",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10180",
+      "live_id": "13",
+      "market_name": "N Corner",
+      "Special market value": "N",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10181",
+      "live_id": "10551",
+      "market_name": "Extra Time Corners",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10182",
+      "live_id": "10552",
+      "market_name": "Extra Time Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10183",
+      "live_id": "1",
+      "market_name": "Home Team Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10184",
+      "live_id": "2",
+      "market_name": "Away Team Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "10185",
+      "live_id": "10567",
+      "odd_types_id": "29",
+      "market_name": "Home Clean Sheet",
+      "Outcomes": "Yes,No",
+      "Common Outcomes ID": "43001,43002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10186",
+      "live_id": "10570",
+      "odd_types_id": "30",
+      "market_name": "Away Clean Sheet",
+      "Outcomes": "Yes,No",
+      "Common Outcomes ID": "44001,44002",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10187",
+      "live_id": "10571",
+      "market_name": "Home N Penalty Shootout",
+      "Special market value": "N",
+      "Outcomes": "Score N Penalty,Miss N Penalty",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10188",
+      "live_id": "10572",
+      "market_name": "Away N Penalty Shootout",
+      "Special market value": "N",
+      "Outcomes": "Score N Penalty,Miss N Penalty",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10189",
+      "live_id": "50151",
+      "market_name": "To Win Shootout",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10190",
+      "live_id": "50152",
+      "market_name": "Asian Handicap - Penalties converted in Shootout (Y-Z)",
+      "Special market value": "Y-Z",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10191",
+      "live_id": "50153",
+      "market_name": "Goal Line - Penalties converted in Shootout",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10192",
+      "live_id": "50154",
+      "market_name": "Penalties Converted in Shootout Over/Under",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10193",
+      "live_id": "50155",
+      "market_name": "Home Penalties Converted in Shootout",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10194",
+      "live_id": "50156",
+      "market_name": "Away Penalties Converted in Shootout",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10195",
+      "live_id": "50157",
+      "market_name": "Total Penalties Taken in Shootout",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10196",
+      "live_id": "50158",
+      "market_name": "Penalty Shootout to Go to Sudden Death",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10197",
+      "live_id": "50159",
+      "market_name": "Last Penalty in Shootout Score/Miss",
+      "Outcomes": "Score,Miss",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10198",
+      "live_id": "50162",
+      "market_name": "Away Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10199",
+      "live_id": "50165",
+      "market_name": "Team to Take Last Penalty in Shootout",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10200",
+      "live_id": "50166",
+      "market_name": "Ten Minute Goals - MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10201",
+      "live_id": "50169",
+      "odd_types_id": "911",
+      "market_name": "Extra Time Result",
+      "Outcomes": "Home,Draw,Away",
+      "Common Outcomes ID": "44001,44002,44003",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "10202",
+      "live_id": "50176",
+      "market_name": "Alternative Total Corners",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10203",
+      "live_id": "50180",
+      "market_name": "Home To Score in 2nd Half",
+      "Special market value": "N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10204",
+      "live_id": "50181",
+      "market_name": "Away To Score in 2nd Half",
+      "Special market value": "N",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10205",
+      "live_id": "50185",
+      "market_name": "Asian Corners",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10206",
+      "live_id": "50190",
+      "market_name": "Extra Time Double Result",
+      "Outcomes": "Home - Home,Home - Draw,Home - Away,Draw - Home,Draw - Draw,Draw -Away,Away - Home,Away - Draw,Away - Away",
+      "Group ID": "1,2,3,4,5,6,7,8,9",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10207",
+      "live_id": "50191",
+      "market_name": "Extra Time N Half Result",
+      "Special market value": "N",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10208",
+      "live_id": "50192",
+      "market_name": "Extra Time N Half Corners",
+      "Special market value": "N",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "yes"
+    },
+    {
+      "common_id": "10209",
+      "live_id": "50193",
+      "market_name": "10 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10210",
+      "live_id": "50196",
+      "market_name": "Most Corners",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10211",
+      "live_id": "50204",
+      "market_name": "20 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10212",
+      "live_id": "50205",
+      "market_name": "30 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10213",
+      "live_id": "50206",
+      "market_name": "40 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10214",
+      "live_id": "50207",
+      "market_name": "50 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10215",
+      "live_id": "50208",
+      "market_name": "60 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10216",
+      "live_id": "50209",
+      "market_name": "70 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10217",
+      "live_id": "50210",
+      "market_name": "80 mins Result",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10218",
+      "live_id": "17",
+      "market_name": "Alternative Match Goals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10219",
+      "live_id": "50246",
+      "market_name": "To Win N Half",
+      "Special market value": "N",
+      "Outcomes": "Home,Draw,Away",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10220",
+      "live_id": "50275",
+      "market_name": "Shootout Correct Score",
+      "Outcomes": "X-Y,Home by any other score,Away by any other score",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X-Y",
+      "Settled in Over-time": "Penalty Shootout"
+    },
+    {
+      "common_id": "10221",
+      "live_id": "50276",
+      "market_name": "Game Won In Extra Time",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "ET"
+    },
+    {
+      "common_id": "10222",
+      "live_id": "50277",
+      "market_name": "Game Won After Penalties",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "FT, ET, Penalties"
+    },
+    {
+      "common_id": "10223",
+      "live_id": "50295",
+      "market_name": "Alternative 2 Half Goal Line",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10224",
+      "live_id": "50301",
+      "market_name": "Alternative 3-Way Handicap",
+      "Outcomes": "Home,Draw (Home),Draw (Away),Away",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10225",
+      "live_id": "50313",
+      "odd_types_id": "841",
+      "market_name": "To Score 3 or More",
+      "Outcomes": "Players",
+      "Common Outcomes ID": "45001",
+      "Group ID": "1",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10226",
+      "live_id": "50335",
+      "market_name": "Time of N Goal",
+      "Special market value": "N,MM:SS",
+      "Outcomes": "Goal Before MM:SS,No Goal Before MM:SS",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10227",
+      "live_id": "50343",
+      "market_name": "Alternative N Half Goals",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10228",
+      "live_id": "50346",
+      "market_name": "N Half 3-Way Handicap",
+      "Special market value": "N",
+      "Outcomes": "Home,Draw (Home),Draw (Away),Away",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10229",
+      "live_id": "50347",
+      "market_name": "Alternative N Half 3-Way Handicap",
+      "Special market value": "N",
+      "Outcomes": "Home,Draw (Home),Draw (Away),Away",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10230",
+      "live_id": "50349",
+      "market_name": "Time of N Goal - Home",
+      "Special market value": "N,MM:SS",
+      "Outcomes": "Goal Before MM:SS,No Goal Before MM:SS",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10231",
+      "live_id": "50357",
+      "market_name": "Time of N Goal - Away",
+      "Special market value": "N,MM:SS",
+      "Outcomes": "Goal Before MM:SS,No Goal Before MM:SS",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10232",
+      "live_id": "50365",
+      "market_name": "Home To Score in Both Halves",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10233",
+      "live_id": "50366",
+      "market_name": "Away To Score in Both Halves",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10234",
+      "live_id": "50371",
+      "market_name": "To Score at Any Time",
+      "Outcomes": "Players",
+      "Group ID": "1",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10235",
+      "live_id": "50372",
+      "odd_types_id": "840",
+      "market_name": "To Score 2 or More",
+      "Outcomes": "Players",
+      "Common Outcomes ID": "46001",
+      "Group ID": "1",
+      "Special outcome value": "Player",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10236",
+      "live_id": "50383",
+      "market_name": "Extra Time Asian Corners",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "ET"
+    },
+    {
+      "common_id": "10237",
+      "live_id": "50384",
+      "market_name": "Extra Time N Half Asian Corners",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "ET"
+    },
+    {
+      "common_id": "10238",
+      "live_id": "50386",
+      "market_name": "Extra Time N Half Goals",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "ET"
+    },
+    {
+      "common_id": "10239",
+      "live_id": "50512",
+      "market_name": "Next Set Piece MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Goal Kick,Free Kick,Throw In,Corner,Penalty Awarded",
+      "Group ID": "1,2,3,4,5",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10240",
+      "live_id": "50520",
+      "market_name": "Next Minute Goal Kick MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10241",
+      "live_id": "50521",
+      "market_name": "Next Minute Free Kick MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10242",
+      "live_id": "50522",
+      "market_name": "Next Minute Throw In MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10243",
+      "live_id": "50523",
+      "market_name": "Next Minute Corner MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10244",
+      "live_id": "50524",
+      "market_name": "Next Minute Card MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10245",
+      "live_id": "50525",
+      "market_name": "Next Minute Goal MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10246",
+      "live_id": "50526",
+      "market_name": "Next Minute Penalty Awarded MM:SS - MM:SS",
+      "Special market value": "MM:SS - MM:SS",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10247",
+      "live_id": "50546",
+      "market_name": "Home Shots on Target",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10248",
+      "live_id": "50547",
+      "market_name": "Away Shots on Target",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10249",
+      "live_id": "50548",
+      "market_name": "Home Shots",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10250",
+      "live_id": "50549",
+      "market_name": "Away Shots",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10251",
+      "live_id": "50552",
+      "market_name": "Home Offsides",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    },
+    {
+      "common_id": "10252",
+      "live_id": "50553",
+      "market_name": "Away Offsides",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "No"
+    }
+  ]
+}

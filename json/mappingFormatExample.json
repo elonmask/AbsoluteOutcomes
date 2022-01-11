@@ -1,0 +1,44 @@
+{
+  "id": 1, - odd-types ID
+  "name": "3 way", - odd-types market name
+  "outcomes": [
+    {
+      "outcomeId": "1001",
+      "outcome": "{$competitor1}"
+    },
+    {
+      "outcomeId": "1002",
+      "outcome": "draw"
+    },
+    {
+      "outcomeId": "1003",
+      "outcome": "{$competitor2}"
+    }
+  ],
+  "externalOutcomes": [
+    {
+      "outcome": "Home",
+      "feedName": "bet365"
+    },
+    {
+      "outcome": "Draw",
+      "feedName": "bet365"
+    },
+    {
+      "outcome": "Away",
+      "feedName": "bet365"
+    }
+  ],
+  "externalIds": [
+    {
+      "feedName": "bet365",
+      "externalId": "1777",
+      "marketName": "Fulltime Result"
+    },
+    {
+      "feedName": "bet365",
+      "externalId": "40",
+      "marketName": "Fulltime Result"
+    }
+  ]
+}
