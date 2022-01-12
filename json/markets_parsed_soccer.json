@@ -785,6 +785,16 @@
         "externalId": "171",
         "market_name": "Handicap Result"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -821,6 +831,12 @@
         "externalId": "938",
         "market_name": "Asian Handicap (0-0)"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -851,6 +867,12 @@
         "feedName": "bet365",
         "externalId": "981",
         "market_name": "Total Goals"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -1294,6 +1316,16 @@
         "externalId": "10204",
         "market_name": "Alternative Handicap Result"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -1364,6 +1396,16 @@
         "externalId": "10207",
         "market_name": "Alternative N (1st) Half Handicap Result"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -1432,6 +1474,12 @@
         "feedName": "bet365",
         "externalId": "10222",
         "market_name": "Timecast"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "minute",
+        "type": "string"
       }
     ]
   },
@@ -1562,6 +1610,12 @@
         "externalId": "10235",
         "market_name": "2-Way Corners"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -1605,6 +1659,12 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 3 Corners"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "cornernr",
+        "type": "integer"
       }
     ]
   },
@@ -1650,6 +1710,12 @@
         "externalId": "10238",
         "market_name": "Race to 5 Corners"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "cornernr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -1693,6 +1759,12 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 7 Corners"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "cornernr",
+        "type": "integer"
       }
     ]
   },
@@ -1738,6 +1810,12 @@
         "externalId": "10238",
         "market_name": "Race to 9 Corners"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "cornernr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -1776,6 +1854,16 @@
         "feedName": "bet365",
         "externalId": "10244",
         "market_name": "10 Minute Result"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "from",
+        "type": "integer"
+      },
+      {
+        "name": "to",
+        "type": "integer"
       }
     ]
   },
@@ -2103,6 +2191,16 @@
         "externalId": "50264",
         "market_name": "N (1st) Half - Handicap"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -2217,6 +2315,12 @@
         "feedName": "bet365",
         "externalId": "50405",
         "market_name": "Total Goals/Both Teams to Score"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -2444,6 +2548,12 @@
         "externalId": "1778",
         "marketName": "N Goal"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "goalnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -2486,6 +2596,16 @@
         "feedName": "bet365",
         "externalId": "11",
         "marketName": "3-Way Handicap"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
       }
     ]
   },

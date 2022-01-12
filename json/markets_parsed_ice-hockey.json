@@ -28,6 +28,12 @@
         "externalId": "972",
         "market_name": "Puck Line"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -58,6 +64,12 @@
         "feedName": "bet365",
         "externalId": "1530",
         "market_name": "Game Totals"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -129,6 +141,16 @@
         "externalId": "170008",
         "market_name": "Handicap Betting"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -199,6 +221,16 @@
         "externalId": "1531",
         "market_name": "1st Period Puck Line 2-Way"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "hcp",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -229,6 +261,16 @@
         "feedName": "bet365",
         "externalId": "1035",
         "market_name": "1st Period Totals"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -268,6 +310,16 @@
         "feedName": "bet365",
         "externalId": "170407",
         "market_name": "1st Period Puck Line 3-Way"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "hcp",
+        "type": "string"
       }
     ]
   },
@@ -496,6 +548,12 @@
         "externalId": "170153",
         "marketName": "Puck Line"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -526,6 +584,12 @@
         "feedName": "bet365",
         "externalId": "170154",
         "marketName": "Game Total"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -596,6 +660,12 @@
         "feedName": "bet365",
         "externalId": "170090",
         "marketName": "Puck Line 3-Way"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "string"
       }
     ]
   },
@@ -706,6 +776,12 @@
         "externalId": "170096",
         "marketName": "X st Goal"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "goalnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -737,6 +813,16 @@
         "externalId": "170130",
         "marketName": "Period N Puck Line"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "hcp",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -767,6 +853,16 @@
         "feedName": "bet365",
         "externalId": "170131",
         "marketName": "Period N Game Total"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -807,6 +903,12 @@
         "externalId": "170129",
         "marketName": "Period N Winner 3-Way"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -846,6 +948,12 @@
         "externalId": "170135",
         "marketName": "Period N Double Chance"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -877,6 +985,16 @@
         "externalId": "170137",
         "marketName": "Period N Home Total"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "total",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -907,6 +1025,16 @@
         "feedName": "bet365",
         "externalId": "170138",
         "marketName": "Period N Away Total"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -963,6 +1091,12 @@
         "outcome": " Over",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -986,6 +1120,12 @@
       {
         "outcome": " Over",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },
@@ -1050,6 +1190,12 @@
       {
         "outcome": "Draw",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "score",
+        "type": "string"
       }
     ]
   },
@@ -1135,6 +1281,12 @@
         "outcome": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -1210,6 +1362,12 @@
       {
         "outcome": "Home & HomeHome & AwayDraw & HomeDraw & AwayAway & HomeAway & Away",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
       }
     ]
   },
@@ -1307,6 +1465,12 @@
         "outcome": "Home & HomeHome & AwayHome & DrawDraw & HomeDraw & AwayDraw & DrawAway & HomeAway & AwayAway & Draw",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -1330,6 +1494,16 @@
       {
         "outcome": "Away",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "hcp",
+        "type": "decimal"
+      },
+      {
+        "name": "_id",
+        "type": "string"
       }
     ]
   },
@@ -1355,6 +1529,16 @@
         "outcome": "Under",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -1378,6 +1562,16 @@
       {
         "outcome": "Under",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      },
+      {
+        "name": "_id",
+        "type": "string"
       }
     ]
   },
@@ -1571,6 +1765,12 @@
         "outcome": "No",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      }
     ]
   },
   {
@@ -1626,6 +1826,12 @@
       {
         "outcome": "Away",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "goalnr",
+        "type": "integer"
       }
     ]
   },
@@ -1703,6 +1909,16 @@
         "outcome": "",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "hcp",
+        "type": "string"
+      }
     ]
   },
   {
@@ -1775,6 +1991,12 @@
         "outcome": "No",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -1814,6 +2036,12 @@
       {
         "outcome": "None",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
       }
     ]
   },
@@ -1887,6 +2115,12 @@
         "outcome": "No",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -1923,6 +2157,16 @@
         "outcome": "Home & underHome & overDraw & underDraw & overAway & underAway & over",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
+      },
+      {
+        "name": "_id",
+        "type": "string"
+      }
     ]
   },
   {
@@ -1946,6 +2190,12 @@
       {
         "outcome": "No",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
       }
     ]
   },
@@ -1979,6 +2229,16 @@
         "outcome": "Away",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      },
+      {
+        "name": "score",
+        "type": "string"
+      }
     ]
   },
   {
@@ -2003,6 +2263,12 @@
         "outcome": "Away",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -2026,6 +2292,12 @@
       {
         "outcome": "Even",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "periodnr",
+        "type": "integer"
       }
     ]
   },
@@ -2090,6 +2362,12 @@
       {
         "outcome": "No goal",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "goalnr",
+        "type": "integer"
       }
     ]
   },
@@ -2195,6 +2473,12 @@
         "outcome": "Away",
         "feedName": "bet365"
       }
+    ],
+    "specifiers": [
+      {
+        "name": "goalnr",
+        "type": "integer"
+      }
     ]
   },
   {
@@ -2218,6 +2502,12 @@
       {
         "outcome": "Under",
         "feedName": "bet365"
+      }
+    ],
+    "specifiers": [
+      {
+        "name": "total",
+        "type": "decimal"
       }
     ]
   },

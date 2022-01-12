@@ -61,7 +61,6 @@ try {
 
   marketsWithoutOddTypes.forEach((market) => {
     markets.sport.forEach((market_sport) => {
-      //console.log("Market: ", market_basket);
       if (market.common_id === market_sport.common_id) {
         if (
           typeof market_sport?.common_outcomes_id === "undefined" ||
@@ -100,12 +99,16 @@ try {
 
   const addZeros = (str) => (str.length > 1 ? str.toString() : `0${str}`);
 
-  newMarkets.forEach((market) => {
+  newMarkets.forEach((market, idx) => {
     const id = parseInt(market.odd_types_id);
-
     if (typeof id === "number") {
       JSON.parse(oddTypes)[0].response[0].data.forEach((odd) => {
         if (id === odd.id) {
+          // add specifiers
+          if (odd.specifiers) {
+            // console.log(`odd ${odd.name}`, odd.specifiers);
+            market.specifiers = odd.specifiers;
+          }
           market.odd_types_name = odd.name;
           if (odd.outcomes) {
             market.outcomes = [];
@@ -179,6 +182,7 @@ try {
         outcomes: market.outcomes,
         externalOutcomes: externalOutcomes,
         externalIds: externalIds,
+        specifiers: market.specifiers
       };
 
       if (externalIds.length === 0) {
