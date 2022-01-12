@@ -644,7 +644,16 @@
         "outcome": "2:1 - 2:2"
       }
     ],
-    "externalOutcomes": [],
+    "externalOutcomes": [
+      {
+        "outcome": "Half Time Y-Z",
+        "feedName": "bet365"
+      },
+      {
+        "outcome": "Full Time Y-Z",
+        "feedName": "bet365"
+      }
+    ],
     "externalIds": [
       {
         "feedName": "bet365",
@@ -1468,7 +1477,6 @@
         "outcome": "{$competitor2}{$suffix2} team to score the first goal of the match after minute {minute}"
       }
     ],
-    "externalOutcomes": [],
     "externalIds": [
       {
         "feedName": "bet365",
@@ -2794,32 +2802,6 @@
         "feedName": "bet365",
         "externalId": "43",
         "market_name": "Correct Score"
-      }
-    ]
-  },
-  {
-    "id": 10005,
-    "name": "Anytime Scorecast",
-    "outcomes": [],
-    "externalOutcomes": [],
-    "externalIds": [
-      {
-        "feedName": "bet365",
-        "externalId": "43",
-        "market_name": "Anytime Scorecast"
-      }
-    ]
-  },
-  {
-    "id": 10006,
-    "name": "1st Half Scorecast",
-    "outcomes": [],
-    "externalOutcomes": [],
-    "externalIds": [
-      {
-        "feedName": "bet365",
-        "externalId": "43",
-        "market_name": "1st Half Scorecast"
       }
     ]
   },

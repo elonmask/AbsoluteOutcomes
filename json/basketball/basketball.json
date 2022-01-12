@@ -1,0 +1,1520 @@
+{
+  "sport": [
+    {
+      "common_id": "30001",
+      "odd_types_id": "210",
+      "live_id": "1446",
+      "market_name": "Handicap 2-Way",
+      "Odd-types OutcomeId": "210001,210002",
+      "Common outcomes ID": "71001,71002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30002",
+      "odd_types_id": "212",
+      "live_id": "1450",
+      "market_name": "Total 2-Way",
+      "Odd-types OutcomeId": "212002,212001",
+      "Common outcomes ID": "72001,72002",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30003",
+      "odd_types_id": "206",
+      "live_id": "180032",
+      "market_name": "To Win Match",
+      "Odd-types OutcomeId": "206001,206002",
+      "Common outcomes ID": ",73001,73002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30004",
+      "live_id": "180605",
+      "market_name": "Point Spread 3-Way",
+      "Common outcomes ID": "73001,73002,73003",
+      "Outcomes": "Home,Tie,Away",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30005",
+      "odd_types_id": "282",
+      "live_id": "180079",
+      "prematch_id": "",
+      "market_name": "1st Quarter - Handicap",
+      "Odd-types OutcomeId": "282001,282002",
+      "Common outcomes ID": "74001,74002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30006",
+      "odd_types_id": "222",
+      "live_id": "180080",
+      "market_name": "1st Quarter - Total (2-Way)",
+      "Odd-types OutcomeId": "222001,222002",
+      "Common outcomes ID": "75001,75002",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30007",
+      "live_id": "180077",
+      "market_name": "1st Quarter - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30008",
+      "live_id": "180661",
+      "market_name": "1st Quarter Handicap - 3-way",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30009",
+      "live_id": "180081",
+      "market_name": "1st Quarter - Total (3-Way)",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30010",
+      "live_id": "180078",
+      "market_name": "1st Quarter - Winner (3-Way)",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30011",
+      "live_id": "180084",
+      "market_name": "1st Quarter - Race to 10 Points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30012",
+      "live_id": "180085",
+      "market_name": "1st Quarter - Race to 15 Points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30013",
+      "live_id": "180033",
+      "market_name": "1st Quarter - Race to 20 Points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30014",
+      "live_id": "180839",
+      "market_name": "1st Quarter Home To Score 20 Points",
+      "Special market value": "Home",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Home to score 20,Home not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30015",
+      "live_id": "180857",
+      "market_name": "1st Quarter Away To Score 20 Points",
+      "Special market value": "Away",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Away to score 20,Away not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30016",
+      "live_id": "180843",
+      "market_name": "1st Quarter Home To Score 22 Points",
+      "Special market value": "Home",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Home to score 22,Home not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30017",
+      "live_id": "180861",
+      "market_name": "1st Quarter Away To Score 22 Points",
+      "Special market value": "Away",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Away to score 22,Away not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30018",
+      "live_id": "180847",
+      "market_name": "1st Quarter Home To Score 25 Points",
+      "Special market value": "Home",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Home to score 25,Home not to score 25",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30019",
+      "live_id": "180865",
+      "market_name": "1st Quarter Away To Score 25 Points",
+      "Special market value": "Away",
+      "Common outcomes ID": "76001,76002",
+      "Outcomes": "Away to score 25,Away not to score 25",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30020",
+      "live_id": "180821",
+      "market_name": "1st Quarter Both Teams to Score 'X' Points 1",
+      "Special market value": "X",
+      "Common outcomes ID": "77001,77002",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30021",
+      "live_id": "180825",
+      "market_name": "1st Quarter Both Teams to Score 'X' Points 2",
+      "Special market value": "X",
+      "Common outcomes ID": "77001,77002",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30022",
+      "live_id": "180829",
+      "market_name": "1st Quarter Both Teams to Score 'X' Points 3",
+      "Special market value": "X",
+      "Common outcomes ID": "77001,77002",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30023",
+      "live_id": "180705",
+      "market_name": "1st Quarter Result and Total",
+      "Common outcomes ID": "78001,78002,78003,78004,78005,78006",
+      "Outcomes": "Home and Over X,Home and Under X,Away and Over X,Away and Under X,Tie and Over X,Tie and Under X",
+      "Group ID": "1,2,3,4,5,6",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30024",
+      "live_id": "180190",
+      "market_name": "1st Quarter Margin of Victory",
+      "Outcomes": "Home by 3 or more,Away by 3 or more,Any Other Result",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30025",
+      "live_id": "180275",
+      "market_name": "1st Quarter - Team Totals",
+      "Outcomes": "Home - Over X,Home - Under X,Away - Over Y,Away - Under Y",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X,Y"
+    },
+    {
+      "common_id": "30026",
+      "odd_types_id": "280",
+      "live_id": "180717",
+      "market_name": "1st Quarter Winning Margin",
+      "Odd-types OutcomeId": "280001,....,280013",
+      "Common outcomes ID": "79001,...,79013",
+      "Outcomes": "Home by 1-2 pts,Home by 3-4 pts,Home by 5-6 pts,Home by 7-8 pts,Home by 9-10 pts,Home by 11+ pts,Away by 1-2 pts,Away by 3-4 pts,Away by 5-6 pts,Away by 7-8 pts,Awayby 9-10 pts,Away by 11+ pts,Tie",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12,13"
+    },
+    {
+      "common_id": "30027",
+      "odd_types_id": "61",
+      "live_id": "180061",
+      "market_name": "1st Half - Handicap",
+      "Odd-types OutcomeId": "61001,61002",
+      "Common outcomes ID": "80001,80002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30028",
+      "odd_types_id": "62",
+      "live_id": "180062",
+      "market_name": "1st Half - Total (2-Way)",
+      "Odd-types OutcomeId": "62001,62002",
+      "Common outcomes ID": "81001,81002",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30029",
+      "live_id": "180060",
+      "market_name": "1st Half - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30030",
+      "live_id": "180753",
+      "market_name": "1st Half Handicap - 3-way",
+      "Common outcomes ID": "82001,82002,82003",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30031",
+      "live_id": "180063",
+      "market_name": "1st Half - Total (3-Way)",
+      "Common outcomes ID": "83001,83002,83003",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30032",
+      "live_id": "180059",
+      "market_name": "1st Half - Winner (3-Way)",
+      "Common outcomes ID": "84001,84002,84003",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30033",
+      "live_id": "180066",
+      "market_name": "1st Half - Race to 25 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30034",
+      "live_id": "180067",
+      "market_name": "1st Half - Race to 30 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30035",
+      "live_id": "180034",
+      "market_name": "1st Half - Race to 20 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30036",
+      "live_id": "180755",
+      "market_name": "1st Half - Race to 35 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30037",
+      "live_id": "180757",
+      "market_name": "1st Half - Race to 40 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30038",
+      "live_id": "180759",
+      "market_name": "1st Half - Race to 45 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30039",
+      "live_id": "180761",
+      "market_name": "1st Half - Race to 50 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30040",
+      "live_id": "180763",
+      "market_name": "1st Half - Race to 55 Points",
+      "Common outcomes ID": "85001,85002,85003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30041",
+      "live_id": "180773",
+      "market_name": "1st Half Result and Total",
+      "Outcomes": "Home and Over X,Home and Under X,Away and Over X,Away and Under X,Tie and Over X,Tie and Under X",
+      "Group ID": "1,2,3,4,5,6",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30042",
+      "live_id": "180373",
+      "market_name": "1st Half - Team Totals",
+      "Outcomes": "Home - Over X,Home - Under X,Away - Over Y,Away - Under Y",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30043",
+      "odd_types_id": "273",
+      "live_id": "180651",
+      "market_name": "Match Result and Total",
+      "Odd-types OutcomeId": "273001,273002,273003,273004",
+      "Common outcomes ID": "95001,95002,95003,95004",
+      "Outcomes": "Home and Over X,Home and Under X,Away and Over X,Away and Under X",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30044",
+      "live_id": "180239",
+      "market_name": "Team Totals",
+      "Outcomes": "Home - Over X,Home - Under X,Away - Over Y,Away - Under Y",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X,Y",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30045",
+      "live_id": "180058",
+      "market_name": "Winning Margin",
+      "Outcomes": "Home by 1-2 pts,Home by 3-6 pts,Home by 7-9 pts,Home by 10-13 pts,Home by 14-16 pts,Home by 17-20 pts,Home by 21+ pts,Away by 1-2 pts,Away by 3-6 pts,Away by 7-9 pts,Away by 10-13 pts,Away by 14-16 pts,Away by 17-20 pts,Away by 21+ pts",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12,13,14",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30046",
+      "live_id": "180189",
+      "market_name": "Winning Margin 3-Way",
+      "Common outcomes ID": "86001,86002,86003",
+      "Outcomes": "Home by 6 or more,Away by 6 or more,Any Other Result",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30047",
+      "live_id": "180057",
+      "market_name": "Double Result",
+      "Common outcomes ID": "87001,87002,87003,88004,88005,88006",
+      "Outcomes": "Home-Home,Tie-Home,Away-Home,Home-Away,Tie-Away,Away-Away",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30048",
+      "odd_types_id": "207",
+      "live_id": "180056",
+      "market_name": "Will There Be Overtime?",
+      "Odd-types OutcomeId": "207001,207002",
+      "Common outcomes ID": "89001,89002",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30049",
+      "live_id": "180655",
+      "market_name": "Total Band 3-Way",
+      "Outcomes": "X and Under,Y-Z,Q and Over",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30050",
+      "live_id": "180656",
+      "market_name": "Total Band",
+      "Outcomes": "0-X,Y-Z,Q+",
+      "Group ID": "1,2,4",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30051",
+      "live_id": "180616",
+      "market_name": "Alternative Point Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30052",
+      "live_id": "180611",
+      "market_name": "Alternative Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30053",
+      "live_id": "180621",
+      "market_name": "Alternative Home Totals",
+      "Outcomes": "Home - Over,Home - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30054",
+      "live_id": "180625",
+      "market_name": "Alternative Away Totals",
+      "Outcomes": "Away - Over,Away - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30055",
+      "live_id": "180709",
+      "market_name": "Alternative 1st Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30056",
+      "live_id": "180791",
+      "market_name": "Alternative 1st Half Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30057",
+      "live_id": "180783",
+      "market_name": "Alternative 1st Half Home Totals",
+      "Outcomes": "Home - Over,Home - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30058",
+      "live_id": "180785",
+      "market_name": "Alternative 1st Half Away Totals",
+      "Outcomes": "Away - Over,Away - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30059",
+      "live_id": "180653",
+      "market_name": "Team to Score Last Basket",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30060",
+      "odd_types_id": "216",
+      "live_id": "180055",
+      "market_name": "Game Total Odd/Even",
+      "Odd-types OutcomeId": "216001,216002",
+      "Common outcomes ID": "90001,90002",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30061",
+      "odd_types_id": "283",
+      "live_id": "180082",
+      "market_name": "1st Quarter - Total Odd/Even",
+      "Odd-types OutcomeId": "283001,283002",
+      "Common outcomes ID": "91001,91002",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30062",
+      "odd_types_id": "68",
+      "live_id": "180064",
+      "market_name": "1st Half Total Odd/Even",
+      "Odd-types OutcomeId": "68001,68002",
+      "Common outcomes ID": "92001,92002",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30063",
+      "odd_types_id": "282",
+      "live_id": "180097",
+      "market_name": "3rd Quarter - Handicap",
+      "Odd-types OutcomeId": "282001,282002",
+      "Common outcomes ID": "93001,93002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30064",
+      "live_id": "180098",
+      "market_name": "3rd Quarter - Total (2-Way)",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30065",
+      "live_id": "180095",
+      "market_name": "3rd Quarter - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30066",
+      "live_id": "180663",
+      "market_name": "3rd Quarter Handicap - 3-way",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30067",
+      "live_id": "180099",
+      "market_name": "3rd Quarter - Total (3-Way)",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30068",
+      "live_id": "180096",
+      "market_name": "3rd Quarter - Winner (3-Way)",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30069",
+      "live_id": "180102",
+      "market_name": "3rd Quarter - Race to 10 Points",
+      "Common outcomes ID": "94001,94002,94003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30070",
+      "live_id": "180103",
+      "market_name": "3rd Quarter - Race to 15 Points",
+      "Common outcomes ID": "94001,94002,94003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30071",
+      "live_id": "180002",
+      "market_name": "3rd Quarter - Race to 20 points",
+      "Common outcomes ID": "94001,94002,94003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30072",
+      "live_id": "180823",
+      "market_name": "3rd Quarter Both Teams to Score 'X' Points 1",
+      "Special market value": "X",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30073",
+      "live_id": "180827",
+      "market_name": "3rd Quarter Both Teams to Score 'X' Points 2",
+      "Special market value": "X",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30074",
+      "live_id": "180831",
+      "market_name": "3rd Quarter Both Teams to Score 'X' Points 3",
+      "Special market value": "X",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30075",
+      "live_id": "180841",
+      "market_name": "3rd Quarter Home To Score 20 Points",
+      "Common outcomes ID": "95001,95002",
+      "Outcomes": "Home to score 20,Home not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30076",
+      "live_id": "180859",
+      "market_name": "3rd Quarter Away To Score 20 Points",
+      "Common outcomes ID": "95001,95002",
+      "Outcomes": "Away to score 20,Away not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30077",
+      "live_id": "180845",
+      "market_name": "3rd Quarter Home To Score 22 Points",
+      "Common outcomes ID": "95001,95002",
+      "Outcomes": "Home to score 22,Home not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30078",
+      "live_id": "180863",
+      "market_name": "3rd Quarter Away To Score 22 Points",
+      "Common outcomes ID": "95001,95002",
+      "Outcomes": "Away to score 22,Away not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30079",
+      "live_id": "180849",
+      "market_name": "3rd Quarter Home To Score 25 Points",
+      "Common outcomes ID": "95001,95002",
+      "Outcomes": "Home to score 25,Home not to score 25",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30080",
+      "live_id": "180192",
+      "market_name": "3rd Quarter Margin of Victory",
+      "Outcomes": "Home by 3 or more,Away by 3 or more,Any Other Result",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30081",
+      "live_id": "180277",
+      "market_name": "3rd Quarter - Team Totals",
+      "Outcomes": "Home - Over X,Home - Under X,Away - Over Y,Away - Under Y",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X,Y"
+    },
+    {
+      "common_id": "30082",
+      "live_id": "180719",
+      "market_name": "3rd Quarter Winning Margin",
+      "Outcomes": "Home by 1-2 pts,Home by 3-4 pts,Home by 5-6 pts,Home by 7-8 pts,Home by 9-10 pts,Home by 11+ pts,Away by 1-2 pts,Away by 3-4 pts,Away by 5-6 pts,Away by 7-8 pts,Awayby 9-10 pts,Away by 11+ pts,Tie",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12,13"
+    },
+    {
+      "common_id": "30083",
+      "odd_types_id": "81",
+      "live_id": "180070",
+      "market_name": "2nd Half - Handicap",
+      "Odd-types OutcomeId": "81001,81002",
+      "Common outcomes ID": "97001,97002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30084",
+      "odd_types_id": "82",
+      "live_id": "180071",
+      "market_name": "2nd Half - Total (2-Way)",
+      "Odd-types OutcomeId": "82001,82002",
+      "Common outcomes ID": "98001,98002",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30085",
+      "live_id": "180069",
+      "market_name": "2nd Half - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30086",
+      "live_id": "180072",
+      "market_name": "2nd Half - Total (3-Way)",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30087",
+      "live_id": "180035",
+      "market_name": "2nd Half - Race to 20 Points",
+      "Common outcomes ID": ",99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30088",
+      "live_id": "180075",
+      "market_name": "2nd Half - Race to 25 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30089",
+      "live_id": "180076",
+      "market_name": "2nd Half - Race to 30 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30090",
+      "live_id": "180756",
+      "market_name": "2nd Half - Race to 35 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30091",
+      "live_id": "180758",
+      "market_name": "2nd Half - Race to 40 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30092",
+      "live_id": "180760",
+      "market_name": "2nd Half - Race to 45 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30093",
+      "live_id": "180762",
+      "market_name": "2nd Half - Race to 50 Points",
+      "Common outcomes ID": "99001,99002,99003",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30094",
+      "live_id": "180242",
+      "market_name": "2nd Half - Team Totals",
+      "Outcomes": "Home - Over X,Home - Under X,Away - Over Y,Away - Under Y",
+      "Group ID": "1,2,3,4",
+      "Special outcome value": "X,Y",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30095",
+      "live_id": "180100",
+      "market_name": "3rd Quarter - Total Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30096",
+      "live_id": "180073",
+      "market_name": "2nd Half - Total Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30097",
+      "live_id": "180086",
+      "market_name": "2nd Quarter - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30098",
+      "odd_types_id": "76",
+      "live_id": "180087",
+      "market_name": "2nd Quarter - Winner (3-Way)",
+      "Odd-types OutcomeId": "76001,76002,76003",
+      "Common outcomes ID": "96001,96002,96003",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30099",
+      "live_id": "180001",
+      "market_name": "2nd Quarter - Race to 20 points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30100",
+      "live_id": "180830",
+      "market_name": "2nd Quarter Both Teams to Score 'X' Points 3",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30101",
+      "live_id": "180840",
+      "market_name": "2nd Quarter Home To Score 20 Points",
+      "Common outcomes ID": "100001,100002",
+      "Outcomes": "Home to score 20,Home not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30102",
+      "live_id": "180858",
+      "market_name": "2nd Quarter Away To Score 20 Points",
+      "Common outcomes ID": "100001,100002",
+      "Outcomes": "Away to score 20,Away not to score 20",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30103",
+      "live_id": "180844",
+      "market_name": "2nd Quarter Home To Score 22 Points",
+      "Common outcomes ID": "100001,100002",
+      "Outcomes": "Home to score 22,Home not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30104",
+      "live_id": "180862",
+      "market_name": "2nd Quarter Away To Score 22 Points",
+      "Common outcomes ID": "100001,100002",
+      "Outcomes": "Away to score 22,Away not to score 22",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30105",
+      "live_id": "180848",
+      "market_name": "2nd QuarterHome To Score 25 Points",
+      "Common outcomes ID": "100001,100002",
+      "Outcomes": "Home to score 25,Home not to score 25",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30106",
+      "live_id": "180191",
+      "market_name": "2nd Quarter Margin of Victory",
+      "Outcomes": "Home by 3 or more,Away by 3 or more,Any Other Result",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30107",
+      "odd_types_id": "280",
+      "live_id": "180718",
+      "market_name": "2nd Quarter Winning Margin",
+      "Odd-types OutcomeId": "280001,280002,280003,280004,280005,280006,280007,280008,280009,2800010,2800011,2800012,2800013",
+      "Common outcomes ID": "100001,...,100013",
+      "Outcomes": "Home by 1-2 pts,Home by 3-4 pts,Home by 5-6 pts,Home by 7-8 pts,Home by 9-10 pts,Home by 11+ pts,Away by 1-2 pts,Away by 3-4 pts,Away by 5-6 pts,Away by 7-8 pts,Awayby 9-10 pts,Away by 11+ pts,Tie",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12,13"
+    },
+    {
+      "common_id": "30108",
+      "live_id": "180104",
+      "market_name": "4th Quarter - Winner (2-Way)",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30109",
+      "live_id": "180105",
+      "market_name": "4th Quarter - Winner (3-Way)",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30110",
+      "live_id": "180003",
+      "market_name": "4th Quarter - Race to 20 points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30111",
+      "live_id": "180824",
+      "market_name": "4th Quarter Both Teams to Score 'X' Points 1",
+      "Special market value": "X",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30112",
+      "live_id": "180828",
+      "market_name": "4th Quarter Both Teams to Score 'X' Points 2",
+      "Special market value": "X",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30113",
+      "live_id": "180832",
+      "market_name": "4th Quarter Both Teams to Score 'X' Points 3",
+      "Outcomes": "Both Teams to score X - Yes,Both Teams to score X - No",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30114",
+      "live_id": "180842",
+      "market_name": "4th Quarter Home To Score 20 Points",
+      "Outcomes": "Home to score 20,Home not to score 20",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30115",
+      "live_id": "180860",
+      "market_name": "4th Quarter Away To Score 20 Points",
+      "Outcomes": "Away to score 20,Away not to score 20",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30116",
+      "live_id": "180846",
+      "market_name": "4th Quarter Home To Score 22 Points",
+      "Outcomes": "Home to score 22,Home not to score 22",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30117",
+      "live_id": "180864",
+      "market_name": "4th Quarter Away To Score 22 Points",
+      "Outcomes": "Away to score 22,Away not to score 22",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30118",
+      "live_id": "180850",
+      "market_name": "4th Quarter Home To Score 25 Points",
+      "Outcomes": "Home to score 25,Home not to score 25",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30119",
+      "live_id": "180868",
+      "market_name": "4th Quarter Away To Score 25 Points",
+      "Outcomes": "Away to score 25,Away not to score 25",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30120",
+      "live_id": "180193",
+      "market_name": "4th Quarter Margin of Victory",
+      "Outcomes": "Home by 3 or more,Away by 3 or more,Any Other Result",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30121",
+      "live_id": "180764",
+      "market_name": "2nd Half - Race to 55 Points",
+      "Common outcomes ID": "112001,112002",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30122",
+      "live_id": "180766",
+      "market_name": "2nd Half - Race to 60 Points",
+      "Common outcomes ID": "112001,112002",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30123",
+      "live_id": "180765",
+      "market_name": "1st Half - Race to 60 Points",
+      "Outcomes": "Home,Away,Neither",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30124",
+      "live_id": "180867",
+      "market_name": "3rd Quarter Away To Score 25 Points",
+      "Outcomes": "Away to score 25,Away not to score 25",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30125",
+      "odd_types_id": "76",
+      "live_id": "180068",
+      "market_name": "2nd Half - Winner (3-Way)",
+      "Odd-types OutcomeId": "76001,76002,76003",
+      "Common outcomes ID": "101001,101002,101003",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30126",
+      "live_id": "180713",
+      "market_name": "Alternative 3rd Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30127",
+      "live_id": "180793",
+      "market_name": "Alternative 2nd Half Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30128",
+      "live_id": "180787",
+      "market_name": "Alternative 2nd Half Home Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30129",
+      "live_id": "180789",
+      "market_name": "Alternative 2nd Half Away Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30130",
+      "prematch_id": "1453",
+      "market_name": "Point Spread",
+      "Common outcomes ID": "109001,109002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30131",
+      "prematch_id": "1454",
+      "market_name": "Game Totals",
+      "Common outcomes ID": "110001,110002",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30132",
+      "prematch_id": "960",
+      "market_name": "Money Line",
+      "Common outcomes ID": "111001,111002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30133",
+      "prematch_id": "928",
+      "market_name": "1st Half Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30134",
+      "prematch_id": "929",
+      "market_name": "1st Half Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30135",
+      "prematch_id": "180019",
+      "market_name": "1st Half Money Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30136",
+      "prematch_id": "180114",
+      "market_name": "Alternative Game Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30137",
+      "prematch_id": "180113",
+      "market_name": "Alternative Point Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30138",
+      "prematch_id": "941",
+      "market_name": "1st Quarter Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30139",
+      "prematch_id": "995",
+      "market_name": "1st Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30140",
+      "prematch_id": "180021",
+      "market_name": "1st Quarter Money Line",
+      "Common outcomes ID": "108001,108002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30141",
+      "prematch_id": "1503",
+      "market_name": "Race to 20 Points",
+      "Common outcomes ID": "107001,107002",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30142",
+      "prematch_id": "180163",
+      "market_name": "Winning Margin 3-Way",
+      "Outcomes": "Home by 6 or more,Away by 6 or more,Any Other Result",
+      "Group ID": "1,2,3",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30143",
+      "prematch_id": "1518",
+      "market_name": "Winning Margin",
+      "Common outcomes ID": "106001,....,1060012",
+      "Outcomes": "Home by 1-2 pts,Home by 3-6 pts,Home by 7-9 pts,Home by 10-13 pts,Home by 14-16 pts,Home by 17-20 pts,Home by 21+ pts,Away by 1-2 pts,Away by 3-6 pts,Away by 7-9 pts,Away by 10-13 pts,Away by 14-16 pts,Away by 17-20 pts,Away by 21+ pts",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12,13,14",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30144",
+      "prematch_id": "180164",
+      "market_name": "Winning Margin 7-Way",
+      "Outcomes": "1-5,6-10,11-15,16-20,21-25,26-30,31+",
+      "Group ID": "1,2,3,4,5,6,7",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30145",
+      "prematch_id": "180165",
+      "market_name": "Winning Margin 12-Way",
+      "Common outcomes ID": "105001,....,1050012",
+      "Outcomes": "Home by 1-5,Home by 6-10,Home by 11-15,Home by 16-20,Home by 21-25,Home by 26+,Away by 1-5,Away by 6-10,Away by 11-15,Away by 16-20,Away by 21-25,Away by 26+",
+      "Group ID": "1,2,3,4,5,6,7,8,9,10,11,12",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30146",
+      "prematch_id": "1517",
+      "market_name": "Double Result",
+      "Common outcomes ID": "104001,104002,104003,104004,104005,104006",
+      "Outcomes": "Home-Home,Tie-Home,Away-Home,Home-Away,Tie-Away,Away-Away",
+      "Group ID": "1,2,3,4,5,6",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30147",
+      "prematch_id": "1520",
+      "market_name": "Team with Highest Scoring Quarter",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30148",
+      "prematch_id": "180013",
+      "market_name": "Game Total - Odd/Even",
+      "Common outcomes ID": "103001,103002",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30149",
+      "prematch_id": "1731",
+      "market_name": "Team Total - Odd/Even",
+      "Common outcomes ID": "102001,102002,102003,102004",
+      "Outcomes": "Home - Odd,Home - Even,Away - Odd,Away - Even ",
+      "Group ID": "1,2,3,4",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30150",
+      "prematch_id": "180180",
+      "market_name": "1st Quarter Margin of Victory",
+      "Outcomes": "Home by 3+ pts,Away by 3+ pts,Any Other Result",
+      "Group ID": "1,2,3"
+    },
+    {
+      "common_id": "30151",
+      "prematch_id": "180170",
+      "market_name": "1st Quarter Total - Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "common_id": "30152",
+      "prematch_id": "181286",
+      "market_name": "Alternative Game Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30153",
+      "prematch_id": "181285",
+      "market_name": "Alternative Point Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30154",
+      "prematch_id": "1448",
+      "market_name": "2nd Quarter Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30155",
+      "prematch_id": "1451",
+      "market_name": "2nd Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30156",
+      "prematch_id": "1032",
+      "market_name": "3rd Quarter Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30157",
+      "prematch_id": "1033",
+      "market_name": "3rd Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "common_id": "30158",
+      "prematch_id": "1449",
+      "market_name": "4th Quarter Spread",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30159",
+      "prematch_id": "1452",
+      "market_name": "4th Quarter Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30160",
+      "prematch_id": "180009",
+      "market_name": "Handicap Betting",
+      "Outcomes": "Home,Tie,Away",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "Settled in Over-time": "Yes"
+    },
+    {
+      "common_id": "30161",
+      "prematch_id": "181381",
+      "market_name": "Player Steals",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181378",
+      "market_name": "Player Points",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181379",
+      "market_name": "Player Assists",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181380",
+      "market_name": "Player Rebounds",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181382",
+      "market_name": "Player Turnovers",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181383",
+      "market_name": "Player Blocks",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181384",
+      "market_name": "Player Three's Made",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181385",
+      "market_name": "Player Double Double",
+      "Special market value": "Players",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "181386",
+      "market_name": "Player Triple Double",
+      "Special market value": "Players",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "181387",
+      "market_name": "Player Points and Assists",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181388",
+      "market_name": "Player Points and Rebounds",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181389",
+      "market_name": "Player Assists and Rebounds",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181390",
+      "market_name": "Player Points, Assists and Rebounds",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181391",
+      "market_name": "Player Steals and Blocks",
+      "Special market value": "Players",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "181131",
+      "market_name": "Highest Scoring Half",
+      "Outcomes": "1st Half,2nd Half,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "181132",
+      "market_name": "Highest Scoring Quarter",
+      "Outcomes": "1st Quarter,2nd Quarter,3rd Quarter,4th Quarter,Tie",
+      "Group ID": "1,2,3,4,5"
+    },
+    {
+      "prematch_id": "181377",
+      "market_name": "Team With Highest Scoring Quarter",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "181335",
+      "market_name": "Team N Total",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "180188",
+      "market_name": "2nd Quarter Margin of Victory",
+      "Outcomes": "Home by 3 or more,Away by 3 or more,Any Other Result",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "180171",
+      "market_name": "2nd Quarter Total - Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    }
+  ]
+}
