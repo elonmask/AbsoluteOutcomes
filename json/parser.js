@@ -5,8 +5,9 @@ const sports = new Map([
   ["2", "basketball"],
   ["4", "ice-hockey"],
   ["5", "tennis"],
+  ["23", "volleyball"],
 ]);
-const SPORT_ID = "2";
+const SPORT_ID = "23";
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
   const markets = JSON.parse(
@@ -176,6 +177,13 @@ try {
         });
       }
 
+      JSON.parse(oddTypes)[0].response[0].data.forEach((odd) => {
+        if (parseInt(market.odd_types_id) === odd.id) {
+          odd.externalIds.forEach((exId) => {
+            externalIds.push(exId);
+          });
+        }
+      });
       const marketFormat = {
         id: parseInt(market.odd_types_id),
         name: market.odd_types_name,
@@ -191,6 +199,8 @@ try {
 
       if (marketFormat.outcomes !== "not_available") {
         marketsFormated.push(marketFormat);
+      } else {
+        console.log(marketFormat);
       }
     } else {
       const externalOutcomes = [];
@@ -235,8 +245,10 @@ try {
         marketFormat.id !== null &&
         !isNaN(marketFormat.id)
       ) {
-        console.log(marketFormat.id);
+        //console.log(marketFormat.id);
         marketsFormated.push(marketFormat);
+      } else {
+        console.log(marketFormat);
       }
     }
   });

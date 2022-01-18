@@ -40,6 +40,46 @@
         "feedName": "bet365",
         "externalId": "40",
         "market_name": "Full time Result"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "17279"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_1"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "1"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "133"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "3727"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "27244"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "287"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "2865"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "34531"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_1"
       }
     ]
   },
@@ -132,6 +172,34 @@
         "feedName": "bet365",
         "externalId": "42",
         "market_name": "Half Time/Full Time"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "17300"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "34540"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "47"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "140"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "26326"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_4"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "6985"
       }
     ]
   },
@@ -659,6 +727,10 @@
         "feedName": "bet365",
         "externalId": "43",
         "market_name": "Half Time / Full Time Correct Score"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "1782"
       }
     ]
   },
@@ -754,6 +826,14 @@
         "feedName": "bet365",
         "externalId": "56",
         "market_name": "Winning Margin"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_1312"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "184"
       }
     ]
   },
@@ -793,6 +873,18 @@
         "feedName": "bet365",
         "externalId": "171",
         "market_name": "Handicap Result"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_13"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "14"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_13"
       }
     ],
     "specifiers": [
@@ -839,6 +931,10 @@
         "feedName": "bet365",
         "externalId": "938",
         "market_name": "Asian Handicap (0-0)"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "243"
       }
     ],
     "specifiers": [
@@ -876,6 +972,98 @@
         "feedName": "bet365",
         "externalId": "981",
         "market_name": "Total Goals"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "167"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "170"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "3780"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "15884"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "23617"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "23619"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "172"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "165"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "169"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "238"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "34850"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28973"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28972"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_2"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29412"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7000001"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "15883"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "171"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "166"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "23618"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "168"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "18"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "15885"
       }
     ],
     "specifiers": [
@@ -918,6 +1106,22 @@
         "feedName": "bet365",
         "externalId": "1094",
         "market_name": "To Qualify"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "1450"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "26800"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "2"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "137"
       }
     ]
   },
@@ -962,6 +1166,34 @@
         "feedName": "bet365",
         "externalId": "1579",
         "market_name": "Half Time Result"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "60"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28995"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_41"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "141"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "300"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "17316"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_282"
       }
     ]
   },
@@ -998,6 +1230,30 @@
         "feedName": "bet365",
         "externalId": "10111",
         "market_name": "Goals Odd/Even"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "8470"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_5"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "201"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "17283"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "26"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_5"
       }
     ]
   },
@@ -1042,6 +1298,26 @@
         "feedName": "bet365",
         "externalId": "10114",
         "market_name": "Double Chance"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_7"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "35920"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_7"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "252"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "10"
       }
     ]
   },
@@ -1078,6 +1354,18 @@
         "feedName": "bet365",
         "externalId": "10150",
         "market_name": "Both Teams to Score"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_17"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "29"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "273"
       }
     ]
   },
@@ -1285,6 +1573,10 @@
         "feedName": "bet365",
         "externalId": "43",
         "market_name": "Half Time / Full Time Correct Score"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "46"
       }
     ]
   },
@@ -1324,6 +1616,18 @@
         "feedName": "bet365",
         "externalId": "10204",
         "market_name": "Alternative Handicap Result"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_13"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "14"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_13"
       }
     ],
     "specifiers": [
@@ -1365,6 +1669,22 @@
         "feedName": "bet365",
         "externalId": "10206",
         "market_name": "N (1st) Half Goals Odd/Even"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_72"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "74"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "1988"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_62"
       }
     ]
   },
@@ -1404,6 +1724,26 @@
         "feedName": "bet365",
         "externalId": "10207",
         "market_name": "Alternative N (1st) Half Handicap Result"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "291"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "65"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_61"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "186"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_61"
       }
     ],
     "specifiers": [
@@ -1453,6 +1793,34 @@
         "feedName": "bet365",
         "externalId": "10208",
         "market_name": "N (2nd) Half Result"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "17320"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "26555"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "30040"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "205"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_284"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "83"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_42"
       }
     ]
   },
@@ -1482,6 +1850,10 @@
         "feedName": "bet365",
         "externalId": "10222",
         "market_name": "Timecast"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "1785"
       }
     ],
     "specifiers": [
@@ -1519,6 +1891,22 @@
         "feedName": "bet365",
         "externalId": "10224",
         "market_name": "To Win to Nil"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "12074"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_86"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "210"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "303"
       }
     ]
   },
@@ -1550,6 +1938,18 @@
         "feedName": "bet365",
         "externalId": "10224",
         "market_name": "To Win Either Half"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "15435"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "257"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_171"
       }
     ]
   },
@@ -1581,6 +1981,22 @@
         "feedName": "bet365",
         "externalId": "10224",
         "market_name": "To Win Both Halves"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_84"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "207"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "26327"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "3992"
       }
     ]
   },
@@ -1617,6 +2033,90 @@
         "feedName": "bet365",
         "externalId": "10235",
         "market_name": "2-Way Corners"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29814"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29807"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29819"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29803"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29820"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29801"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29812"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29809"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29817"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29806"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29804"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29808"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29815"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29811"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "166"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29818"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29810"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29816"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29805"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29813"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29802"
       }
     ],
     "specifiers": [
@@ -1667,6 +2167,46 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 3 Corners"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7044"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7049"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7041"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7047"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7048"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "601"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7046"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7045"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7042"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7043"
       }
     ],
     "specifiers": [
@@ -1717,6 +2257,46 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 5 Corners"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7044"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7049"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7041"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7047"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7048"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "601"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7046"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7045"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7042"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7043"
       }
     ],
     "specifiers": [
@@ -1767,6 +2347,46 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 7 Corners"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7044"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7049"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7041"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7047"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7048"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "601"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7046"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7045"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7042"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7043"
       }
     ],
     "specifiers": [
@@ -1817,6 +2437,46 @@
         "feedName": "bet365",
         "externalId": "10238",
         "market_name": "Race to 9 Corners"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7044"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7049"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7041"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7047"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7048"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "601"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7046"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7045"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7042"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "7043"
       }
     ],
     "specifiers": [
@@ -1862,6 +2522,10 @@
         "feedName": "bet365",
         "externalId": "10244",
         "market_name": "10 Minute Result"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "105"
       }
     ],
     "specifiers": [
@@ -1940,6 +2604,10 @@
         "feedName": "bet365",
         "externalId": "10251",
         "market_name": "Method of Victory"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "5"
       }
     ]
   },
@@ -1971,6 +2639,10 @@
         "feedName": "bet365",
         "externalId": "10254",
         "market_name": "Team to Kick Off"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "6"
       }
     ]
   },
@@ -2010,6 +2682,18 @@
         "feedName": "bet365",
         "externalId": "10257",
         "market_name": "Half Time Double Chance"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_151"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "85"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_457"
       }
     ]
   },
@@ -2118,6 +2802,10 @@
         "feedName": "bet365",
         "externalId": "10540",
         "market_name": "Half Time Correct Score"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "185"
       }
     ]
   },
@@ -2154,6 +2842,22 @@
         "feedName": "bet365",
         "externalId": "10544",
         "market_name": "Draw No Bet"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "11"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_52"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "35918"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "134"
       }
     ]
   },
@@ -2198,6 +2902,26 @@
         "feedName": "bet365",
         "externalId": "50264",
         "market_name": "N (1st) Half - Handicap"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "291"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "65"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_61"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "186"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_61"
       }
     ],
     "specifiers": [
@@ -2276,6 +3000,18 @@
         "feedName": "bet365",
         "externalId": "50404",
         "market_name": "Result / Both Teams To Score"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_415"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "35"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "29745"
       }
     ]
   },
@@ -2323,6 +3059,14 @@
         "feedName": "bet365",
         "externalId": "50405",
         "market_name": "Total Goals/Both Teams to Score"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "36"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_523"
       }
     ],
     "specifiers": [
@@ -2360,6 +3104,14 @@
         "feedName": "bet365",
         "externalId": "50406",
         "market_name": "Home Team Odd/Even Goals"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_198"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "27"
       }
     ]
   },
@@ -2391,6 +3143,14 @@
         "feedName": "bet365",
         "externalId": "50407",
         "market_name": "Away Team Odd/Even Goals"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_199"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "28"
       }
     ]
   },
@@ -2430,6 +3190,14 @@
         "feedName": "bet365",
         "externalId": "50417",
         "market_name": "Home Team Highest Scoring Half"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "8402"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "53"
       }
     ]
   },
@@ -2469,6 +3237,14 @@
         "feedName": "bet365",
         "externalId": "50418",
         "market_name": "Away Team Highest Scoring Half"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "54"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "8403"
       }
     ]
   },
@@ -2516,6 +3292,10 @@
         "feedName": "bet365",
         "externalId": "50435",
         "market_name": "Both Teams to Score 1st Half - 2nd Half"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "55"
       }
     ]
   },
@@ -2555,6 +3335,54 @@
         "feedName": "bet365",
         "externalId": "1778",
         "marketName": "N Goal"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "193"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "192"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "195"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "190"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28304"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "191"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "194"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "196"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "8"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28303"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_59"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "28305"
       }
     ],
     "specifiers": [
@@ -2604,6 +3432,18 @@
         "feedName": "bet365",
         "externalId": "11",
         "marketName": "3-Way Handicap"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "48242_13"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "14"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_13"
       }
     ],
     "specifiers": [
@@ -2645,6 +3485,14 @@
         "feedName": "bet365",
         "externalId": "10567",
         "marketName": "Home Clean Sheet"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "31"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_98"
       }
     ]
   },
@@ -2676,6 +3524,14 @@
         "feedName": "bet365",
         "externalId": "10570",
         "marketName": "Away Clean Sheet"
+      },
+      {
+        "feedName": "betradarUnified",
+        "externalId": "32"
+      },
+      {
+        "feedName": "LSportsFeed",
+        "externalId": "6046_99"
       }
     ]
   },
@@ -2715,6 +3571,10 @@
         "feedName": "bet365",
         "externalId": "50169",
         "marketName": "Extra Time Result"
+      },
+      {
+        "feedName": "RampFeed",
+        "externalId": "177"
       }
     ]
   },
