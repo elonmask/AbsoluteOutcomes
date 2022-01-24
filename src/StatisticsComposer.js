@@ -4,7 +4,11 @@ const {
   eventNameToCommon,
   BetradarEventWithPlayer,
   BetradarEventWithoutPlayer,
-  Validate, BetradarTennisEventTeam, BetradarTennisEvent, BetradarBasketEventTeam, BetradarBasketEvent,
+  Validate,
+  BetradarTennisEventTeam,
+  BetradarTennisEvent,
+  BetradarBasketEventTeam,
+  BetradarBasketEvent,
 } = require("./utils/utils");
 
 class StatisticsComposer {
@@ -56,7 +60,7 @@ class StatisticsComposer {
                 parseInt(
                   event.text
                     .split(" ")
-                  [event.text.split(" ").length - 1].split(":")[0]
+                    [event.text.split(" ").length - 1].split(":")[0]
                 ) + 1;
               eventsBuffer.push({
                 data: minute + "' - " + event.text,
@@ -199,10 +203,10 @@ class StatisticsComposer {
         validity === 1
           ? "Confirmed by all sources"
           : validity === 2
-            ? "Confirmed by 50% sources"
-            : validity === 3
-              ? "Confirmed by less then 50% sources"
-              : "";
+          ? "Confirmed by 50% sources"
+          : validity === 3
+          ? "Confirmed by less then 50% sources"
+          : "";
       result.push({
         text: event.data,
         validity: validity,
@@ -225,7 +229,9 @@ class StatisticsComposer {
             const player = BetradarTennisEventTeam(event, source);
             const eventData = BetradarTennisEvent(event, player);
 
-            const bufferValue = eventsBuffer.find(event => event.data === eventData);
+            const bufferValue = eventsBuffer.find(
+              (event) => event.data === eventData
+            );
 
             if (typeof bufferValue !== "undefined") {
               //Event exist in buffer
@@ -239,14 +245,17 @@ class StatisticsComposer {
               }
             } else {
               //Event is not in buffer
-              if (eventData.includes("periodscore") || eventData.includes("Score change tennis")) {
+              if (
+                eventData.includes("periodscore") ||
+                eventData.includes("Score change tennis")
+              ) {
                 eventsBuffer.push({
                   data: eventData,
                   extra: {
                     set_score: event.set_score,
                     game_score: event.game_score,
                     game_points: event.game_points,
-                    service: event.service
+                    service: event.service,
                   },
                   confirmations: 1,
                   confirmable: event.time > 0,
@@ -276,11 +285,15 @@ class StatisticsComposer {
         validity === 1
           ? "Confirmed by all sources"
           : validity === 2
-            ? "Confirmed by 50% sources"
-            : validity === 3
-              ? "Confirmed by less then 50% sources"
-              : "";
-      if (typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
+          ? "Confirmed by 50% sources"
+          : validity === 3
+          ? "Confirmed by less then 50% sources"
+          : "";
+      if (
+        typeof event.extra !== "undefined" &&
+        event.extra !== null &&
+        Object.keys(event.extra).length > 1
+      ) {
         result.push({
           text: event.data,
           extra: event.extra || null,
@@ -312,7 +325,9 @@ class StatisticsComposer {
             const player = BetradarBasketEventTeam(event, source);
             const eventData = BetradarBasketEvent(event, player);
 
-            const bufferValue = eventsBuffer.find(event => event.data === eventData);
+            const bufferValue = eventsBuffer.find(
+              (event) => event.data === eventData
+            );
 
             if (typeof bufferValue !== "undefined") {
               //Event exist in buffer
@@ -358,11 +373,15 @@ class StatisticsComposer {
         validity === 1
           ? "Confirmed by all sources"
           : validity === 2
-            ? "Confirmed by 50% sources"
-            : validity === 3
-              ? "Confirmed by less then 50% sources"
-              : "";
-      if (typeof event.extra !== "undefined" && event.extra !== null && Object.keys(event.extra).length > 1) {
+          ? "Confirmed by 50% sources"
+          : validity === 3
+          ? "Confirmed by less then 50% sources"
+          : "";
+      if (
+        typeof event.extra !== "undefined" &&
+        event.extra !== null &&
+        Object.keys(event.extra).length > 1
+      ) {
         result.push({
           text: event.data,
           extra: event.extra || null,
@@ -380,7 +399,7 @@ class StatisticsComposer {
     });
 
     return result;
-  }
+  };
 
   ComposeSoccer = () => {
     const result = {
@@ -619,7 +638,7 @@ class StatisticsComposer {
       const eventText = event.text;
       const eventTeam = event.text
         .split(" - ")
-      [event.text.split(" - ").length - 1].includes(result.home.name)
+        [event.text.split(" - ").length - 1].includes(result.home.name)
         ? "home"
         : "away";
 
@@ -690,7 +709,7 @@ class StatisticsComposer {
     });
 
     return result;
-  }
+  };
   ComposeTennis = () => {
     const result = {
       sport_id: null,
@@ -707,7 +726,7 @@ class StatisticsComposer {
       events: [],
     };
 
-    this.sources.forEach(source => {
+    this.sources.forEach((source) => {
       switch (source.source) {
         case "betradar":
           const sport_id_ = source.data.match._sid.toString();
@@ -721,7 +740,7 @@ class StatisticsComposer {
 
           //time status
           if (source.data.match.timeinfo.running === true) {
-            result.time_status = "not_ended"
+            result.time_status = "not_ended";
           } else {
             result.time_status = "3";
           }
@@ -734,14 +753,14 @@ class StatisticsComposer {
           //result
           result.result = source.data.match.result;
           //periods
-          result.periods = source.data.match.periods
+          result.periods = source.data.match.periods;
 
           //events
-          result.events = this.ComposeEventsTennis()
+          result.events = this.ComposeEventsTennis();
       }
-    })
+    });
     return result;
-  }
+  };
   ComposeLikeBasketball = () => {
     const result = {
       sport_id: null,
@@ -758,7 +777,7 @@ class StatisticsComposer {
       events: [],
     };
 
-    this.sources.forEach(source => {
+    this.sources.forEach((source) => {
       switch (source.source) {
         case "betradar":
           const sport_id_ = source.data.match._sid.toString();
@@ -772,7 +791,7 @@ class StatisticsComposer {
 
           //time status
           if (source.data.match.timeinfo.running === true) {
-            result.time_status = "not_ended"
+            result.time_status = "not_ended";
           } else {
             result.time_status = "3";
           }
@@ -790,19 +809,20 @@ class StatisticsComposer {
           //events
           result.events = this.ComposeEventsBasketball();
       }
-    })
+    });
     return result;
-  }
+  };
 
   Compose = (sportID) => {
     switch (sportID) {
       case 1:
-        return this.ComposeSoccer()
+        return this.ComposeSoccer();
       case 5:
-        return this.ComposeTennis()
-      case 2: case 4:
-        return this.ComposeLikeBasketball()
-
+      case 23:
+        return this.ComposeTennis();
+      case 2:
+      case 4:
+        return this.ComposeLikeBasketball();
     }
   };
 }

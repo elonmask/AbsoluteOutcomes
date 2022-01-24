@@ -1,0 +1,6300 @@
+{
+  "id": 1398445,
+  "providerTimestamp": 1634276142000,
+  "sportsbookTimestamp": 1634276142000,
+  "name": "Sariyer Belediyesi vs. Kuzeyboru Genclik",
+  "startDate": "2021-10-09T14:00:00.000+0000",
+  "status": 7,
+  "providerStatus": "closed",
+  "eventType": "Match",
+  "sportId": 23,
+  "categoryId": 1518,
+  "leagueId": 524,
+  "competitors": [
+    {
+      "id": 4323,
+      "name": "Sariyer Belediyesi",
+      "externalIds": {
+        "betradarUnified": "111180253"
+      }
+    },
+    {
+      "id": 14919,
+      "name": "Kuzey Boru Genclik",
+      "externalIds": {
+        "betradarUnified": "1111476516"
+      }
+    }
+  ],
+  "odds": [
+    {
+      "id": 288,
+      "name": "{!setnr} set - total points odd/even",
+      "specifiers": {
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 327538009,
+          "outcome": "odd",
+          "outcomeId": "288001",
+          "status": 2,
+          "oddValue": 2.8,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 327538008,
+          "outcome": "even",
+          "outcomeId": "288002",
+          "status": 3,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "{!setnr} set - total points odd/even",
+      "specifiers": {
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328243149,
+          "outcome": "odd",
+          "outcomeId": "288001",
+          "status": 2,
+          "oddValue": 2.15,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328243151,
+          "outcome": "even",
+          "outcomeId": "288002",
+          "status": 3,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "{!setnr} set - total points odd/even",
+      "specifiers": {
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328272124,
+          "outcome": "odd",
+          "outcomeId": "288001",
+          "status": 3,
+          "oddValue": 2.9,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328272123,
+          "outcome": "even",
+          "outcomeId": "288002",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "{!setnr} set - total points odd/even",
+      "specifiers": {
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328303259,
+          "outcome": "odd",
+          "outcomeId": "288001",
+          "status": 3,
+          "oddValue": 3.85,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328303258,
+          "outcome": "even",
+          "outcomeId": "288002",
+          "status": 2,
+          "oddValue": 1.2,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 288,
+      "name": "{!setnr} set - total points odd/even",
+      "specifiers": {
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328359010,
+          "outcome": "odd",
+          "outcomeId": "288001",
+          "status": 3,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328359009,
+          "outcome": "even",
+          "outcomeId": "288002",
+          "status": 2,
+          "oddValue": 1.3,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 480,
+      "name": "Will there be a 5th set",
+      "outcomes": [
+        {
+          "id": 327538040,
+          "outcome": "yes",
+          "outcomeId": "480001",
+          "status": 2,
+          "oddValue": 3.65,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538041,
+          "outcome": "no",
+          "outcomeId": "480002",
+          "status": 3,
+          "oddValue": 1.23,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328201866,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:09:58.000+0000"
+        },
+        {
+          "id": 328201867,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:09:58.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328247002,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:45:59.000+0000"
+        },
+        {
+          "id": 328247003,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:45:59.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328274536,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:22:44.000+0000"
+        },
+        {
+          "id": 328274535,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:22:44.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328306321,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:03:11.000+0000"
+        },
+        {
+          "id": 328306322,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:03:11.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328362578,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:42:28.000+0000"
+        },
+        {
+          "id": 328362575,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:42:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328205821,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:13:21.000+0000"
+        },
+        {
+          "id": 328205822,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:13:21.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328249376,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:48:37.000+0000"
+        },
+        {
+          "id": 328249375,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:48:37.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328276978,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:29:35.000+0000"
+        },
+        {
+          "id": 328276977,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:29:35.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328309189,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:06:40.000+0000"
+        },
+        {
+          "id": 328309188,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:06:40.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328363451,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:45:39.000+0000"
+        },
+        {
+          "id": 328363450,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:45:39.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328217392,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:16:14.000+0000"
+        },
+        {
+          "id": 328217391,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:16:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328252811,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:52:52.000+0000"
+        },
+        {
+          "id": 328252810,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:52:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328283252,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:33:30.000+0000"
+        },
+        {
+          "id": 328283251,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:33:30.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328322919,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:09:33.000+0000"
+        },
+        {
+          "id": 328322917,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:09:33.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328366203,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:49:23.000+0000"
+        },
+        {
+          "id": 328366202,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:49:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "25"
+      },
+      "outcomes": [
+        {
+          "id": 328221749,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:18:49.000+0000"
+        },
+        {
+          "id": 328221748,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:18:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "25"
+      },
+      "outcomes": [
+        {
+          "id": 328254277,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T14:56:02.000+0000"
+        },
+        {
+          "id": 328254276,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:56:02.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "25"
+      },
+      "outcomes": [
+        {
+          "id": 328286061,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:36:21.000+0000"
+        },
+        {
+          "id": 328286060,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:36:21.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "25"
+      },
+      "outcomes": [
+        {
+          "id": 328329096,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:13:18.000+0000"
+        },
+        {
+          "id": 328329097,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:13:18.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "25"
+      },
+      "outcomes": [
+        {
+          "id": 328369068,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        },
+        {
+          "id": 328369069,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "30"
+      },
+      "outcomes": [
+        {
+          "id": 328226173,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:21:56.000+0000"
+        },
+        {
+          "id": 328226174,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:21:56.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "30"
+      },
+      "outcomes": [
+        {
+          "id": 328256963,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:00:00.000+0000"
+        },
+        {
+          "id": 328256965,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:00:00.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "30"
+      },
+      "outcomes": [
+        {
+          "id": 328290672,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:39:59.000+0000"
+        },
+        {
+          "id": 328290671,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:39:59.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "30"
+      },
+      "outcomes": [
+        {
+          "id": 328333253,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:16:42.000+0000"
+        },
+        {
+          "id": 328333254,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:16:42.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "30"
+      },
+      "outcomes": [
+        {
+          "id": 328371092,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 4,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328371093,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 4,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "35"
+      },
+      "outcomes": [
+        {
+          "id": 328227417,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:26:39.000+0000"
+        },
+        {
+          "id": 328227418,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:26:39.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "35"
+      },
+      "outcomes": [
+        {
+          "id": 328258611,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:02:31.000+0000"
+        },
+        {
+          "id": 328258612,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:02:31.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "35"
+      },
+      "outcomes": [
+        {
+          "id": 328292513,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:43:49.000+0000"
+        },
+        {
+          "id": 328292515,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:43:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "35"
+      },
+      "outcomes": [
+        {
+          "id": 328337010,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:20:46.000+0000"
+        },
+        {
+          "id": 328337011,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:20:46.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "40"
+      },
+      "outcomes": [
+        {
+          "id": 328233351,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:30:42.000+0000"
+        },
+        {
+          "id": 328233352,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:30:42.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "40"
+      },
+      "outcomes": [
+        {
+          "id": 328260842,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:07:08.000+0000"
+        },
+        {
+          "id": 328260843,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:07:08.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "40"
+      },
+      "outcomes": [
+        {
+          "id": 328294450,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:49:34.000+0000"
+        },
+        {
+          "id": 328294449,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:49:34.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "40"
+      },
+      "outcomes": [
+        {
+          "id": 328340871,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:23:36.000+0000"
+        },
+        {
+          "id": 328340872,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:23:36.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "45"
+      },
+      "outcomes": [
+        {
+          "id": 328236492,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:32:48.000+0000"
+        },
+        {
+          "id": 328236493,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "45"
+      },
+      "outcomes": [
+        {
+          "id": 328264351,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328264350,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "45"
+      },
+      "outcomes": [
+        {
+          "id": 328297868,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 2.0,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328297870,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.65,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "45"
+      },
+      "outcomes": [
+        {
+          "id": 328345736,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        },
+        {
+          "id": 328345735,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "50"
+      },
+      "outcomes": [
+        {
+          "id": 328239064,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 4,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328239065,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 4,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "50"
+      },
+      "outcomes": [
+        {
+          "id": 328347895,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:31:16.000+0000"
+        },
+        {
+          "id": 328347896,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:31:16.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "55"
+      },
+      "outcomes": [
+        {
+          "id": 328352301,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 4,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328352300,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 4,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328201661,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:05:04.000+0000"
+        },
+        {
+          "id": 328201662,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:05:04.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328243153,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:41:46.000+0000"
+        },
+        {
+          "id": 328243152,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T14:41:46.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328272128,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:17:36.000+0000"
+        },
+        {
+          "id": 328272127,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:17:36.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328303263,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:00:10.000+0000"
+        },
+        {
+          "id": 328303262,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:00:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 289,
+      "name": "{!setnr} set - {!pointnr} point winner",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "60"
+      },
+      "outcomes": [
+        {
+          "id": 328357340,
+          "outcome": "{$competitor1}",
+          "outcomeId": "289001",
+          "status": 4,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328357337,
+          "outcome": "{$competitor2}",
+          "outcomeId": "289002",
+          "status": 4,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328201667,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 5.5,
+          "providerTimestamp": "2021-10-09T14:16:04.000+0000"
+        },
+        {
+          "id": 328201670,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 1.09,
+          "providerTimestamp": "2021-10-09T14:16:04.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328243162,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 1.05,
+          "providerTimestamp": "2021-10-09T14:48:47.000+0000"
+        },
+        {
+          "id": 328243160,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 6.75,
+          "providerTimestamp": "2021-10-09T14:48:47.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328272138,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 9.5,
+          "providerTimestamp": "2021-10-09T15:29:35.000+0000"
+        },
+        {
+          "id": 328272139,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-10-09T15:29:35.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328303274,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 5.2,
+          "providerTimestamp": "2021-10-09T16:08:56.000+0000"
+        },
+        {
+          "id": 328303275,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.1,
+          "providerTimestamp": "2021-10-09T16:08:56.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "10"
+      },
+      "outcomes": [
+        {
+          "id": 328362577,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 4.0,
+          "providerTimestamp": "2021-10-09T16:48:58.000+0000"
+        },
+        {
+          "id": 328362576,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 1.18,
+          "providerTimestamp": "2021-10-09T16:48:58.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328201668,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 2.95,
+          "providerTimestamp": "2021-10-09T14:21:24.000+0000"
+        },
+        {
+          "id": 328201669,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 1.32,
+          "providerTimestamp": "2021-10-09T14:21:24.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328243161,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-10-09T14:56:02.000+0000"
+        },
+        {
+          "id": 328243165,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 10.0,
+          "providerTimestamp": "2021-10-09T14:56:02.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328272136,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 9.5,
+          "providerTimestamp": "2021-10-09T15:36:21.000+0000"
+        },
+        {
+          "id": 328272137,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-10-09T15:36:21.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328303273,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 5.2,
+          "providerTimestamp": "2021-10-09T16:13:48.000+0000"
+        },
+        {
+          "id": 328303272,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.1,
+          "providerTimestamp": "2021-10-09T16:13:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "15"
+      },
+      "outcomes": [
+        {
+          "id": 328362579,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328362580,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "1",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328201665,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 2.9,
+          "providerTimestamp": "2021-10-09T14:28:20.000+0000"
+        },
+        {
+          "id": 328201666,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 1.32,
+          "providerTimestamp": "2021-10-09T14:28:20.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "2",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328243158,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 2,
+          "oddValue": 1.02,
+          "providerTimestamp": "2021-10-09T15:02:18.000+0000"
+        },
+        {
+          "id": 328243156,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 3,
+          "oddValue": 9.75,
+          "providerTimestamp": "2021-10-09T15:02:18.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328272132,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 8.0,
+          "providerTimestamp": "2021-10-09T15:43:49.000+0000"
+        },
+        {
+          "id": 328272131,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.02,
+          "providerTimestamp": "2021-10-09T15:43:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "4",
+        "pointnr": "20"
+      },
+      "outcomes": [
+        {
+          "id": 328303266,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 6.0,
+          "providerTimestamp": "2021-10-09T16:21:40.000+0000"
+        },
+        {
+          "id": 328303267,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.07,
+          "providerTimestamp": "2021-10-09T16:21:40.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "3",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328275060,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 5.1,
+          "providerTimestamp": "2021-10-09T15:19:56.000+0000"
+        },
+        {
+          "id": 328275061,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.1,
+          "providerTimestamp": "2021-10-09T15:19:56.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 290,
+      "name": "{!setnr} set - race to {pointnr} points",
+      "specifiers": {
+        "setnr": "5",
+        "pointnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328362782,
+          "outcome": "{$competitor1}",
+          "outcomeId": "290001",
+          "status": 3,
+          "oddValue": 5.8,
+          "providerTimestamp": "2021-10-09T16:41:58.000+0000"
+        },
+        {
+          "id": 328362781,
+          "outcome": "{$competitor2}",
+          "outcomeId": "290002",
+          "status": 2,
+          "oddValue": 1.08,
+          "providerTimestamp": "2021-10-09T16:41:58.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 175,
+      "name": "2  Way",
+      "outcomes": [
+        {
+          "id": 327538053,
+          "outcome": "{$competitor1}",
+          "outcomeId": "175001",
+          "status": 2,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538055,
+          "outcome": "{$competitor2}",
+          "outcomeId": "175002",
+          "status": 3,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "139.5"
+      },
+      "outcomes": [
+        {
+          "id": 328206866,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:57:52.000+0000"
+        },
+        {
+          "id": 328206865,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:57:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "141.5"
+      },
+      "outcomes": [
+        {
+          "id": 328214864,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:59:16.000+0000"
+        },
+        {
+          "id": 328214863,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:59:16.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "142.5"
+      },
+      "outcomes": [
+        {
+          "id": 328206331,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:59:53.000+0000"
+        },
+        {
+          "id": 328206332,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:59:53.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "143.5"
+      },
+      "outcomes": [
+        {
+          "id": 328215123,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:00:10.000+0000"
+        },
+        {
+          "id": 328215122,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:00:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "144.5"
+      },
+      "outcomes": [
+        {
+          "id": 328215357,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:00:40.000+0000"
+        },
+        {
+          "id": 328215358,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:00:40.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "147.5"
+      },
+      "outcomes": [
+        {
+          "id": 328205818,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:02:25.000+0000"
+        },
+        {
+          "id": 328205817,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:02:25.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "149.5"
+      },
+      "outcomes": [
+        {
+          "id": 328218842,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:04:18.000+0000"
+        },
+        {
+          "id": 328218843,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:04:18.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "159.5"
+      },
+      "outcomes": [
+        {
+          "id": 328217848,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:10:03.000+0000"
+        },
+        {
+          "id": 328217849,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:10:03.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "164.5"
+      },
+      "outcomes": [
+        {
+          "id": 328205063,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:13:48.000+0000"
+        },
+        {
+          "id": 328205064,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:13:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "165.5"
+      },
+      "outcomes": [
+        {
+          "id": 328204688,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:14:19.000+0000"
+        },
+        {
+          "id": 328204687,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:14:19.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "166.5"
+      },
+      "outcomes": [
+        {
+          "id": 328201484,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:14:42.000+0000"
+        },
+        {
+          "id": 328201483,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:14:42.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "167.5"
+      },
+      "outcomes": [
+        {
+          "id": 328198971,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:15:11.000+0000"
+        },
+        {
+          "id": 328198973,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:15:11.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "168.5"
+      },
+      "outcomes": [
+        {
+          "id": 328201481,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:16:42.000+0000"
+        },
+        {
+          "id": 328201482,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:16:42.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "169.5"
+      },
+      "outcomes": [
+        {
+          "id": 328203062,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:17:13.000+0000"
+        },
+        {
+          "id": 328203061,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:17:13.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "170.5"
+      },
+      "outcomes": [
+        {
+          "id": 328201659,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:17:52.000+0000"
+        },
+        {
+          "id": 328201660,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:17:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "171.5"
+      },
+      "outcomes": [
+        {
+          "id": 328220314,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:18:18.000+0000"
+        },
+        {
+          "id": 328220315,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:18:18.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "172.5"
+      },
+      "outcomes": [
+        {
+          "id": 328219206,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:20:41.000+0000"
+        },
+        {
+          "id": 328219205,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:20:41.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "173.5"
+      },
+      "outcomes": [
+        {
+          "id": 328225205,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:20:46.000+0000"
+        },
+        {
+          "id": 328225204,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:20:46.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "174.5"
+      },
+      "outcomes": [
+        {
+          "id": 328222089,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:21:12.000+0000"
+        },
+        {
+          "id": 328222090,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:21:12.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "175.5"
+      },
+      "outcomes": [
+        {
+          "id": 328191529,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:21:40.000+0000"
+        },
+        {
+          "id": 328191528,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:21:40.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "176.5"
+      },
+      "outcomes": [
+        {
+          "id": 328226176,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:22:43.000+0000"
+        },
+        {
+          "id": 328226175,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:22:43.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "177.5"
+      },
+      "outcomes": [
+        {
+          "id": 328225931,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:23:06.000+0000"
+        },
+        {
+          "id": 328225930,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:23:06.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "178.5"
+      },
+      "outcomes": [
+        {
+          "id": 327537573,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:23:36.000+0000"
+        },
+        {
+          "id": 327537574,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:23:36.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "179.5"
+      },
+      "outcomes": [
+        {
+          "id": 328236373,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:25:14.000+0000"
+        },
+        {
+          "id": 328236372,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:25:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "180.5"
+      },
+      "outcomes": [
+        {
+          "id": 328235147,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:25:59.000+0000"
+        },
+        {
+          "id": 328235146,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:25:59.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "181.5"
+      },
+      "outcomes": [
+        {
+          "id": 328234953,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:27:31.000+0000"
+        },
+        {
+          "id": 328234954,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:27:31.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "182.5"
+      },
+      "outcomes": [
+        {
+          "id": 328236771,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:27:53.000+0000"
+        },
+        {
+          "id": 328236770,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:27:53.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "183.5"
+      },
+      "outcomes": [
+        {
+          "id": 328238269,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        },
+        {
+          "id": 328238268,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "184.5"
+      },
+      "outcomes": [
+        {
+          "id": 328239348,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:28:52.000+0000"
+        },
+        {
+          "id": 328239347,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:28:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "185.5"
+      },
+      "outcomes": [
+        {
+          "id": 328243146,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:29:49.000+0000"
+        },
+        {
+          "id": 328243147,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:29:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "186.5"
+      },
+      "outcomes": [
+        {
+          "id": 328250070,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:30:14.000+0000"
+        },
+        {
+          "id": 328250069,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:30:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "187.5"
+      },
+      "outcomes": [
+        {
+          "id": 328274638,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:31:04.000+0000"
+        },
+        {
+          "id": 328274637,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:31:04.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "188.5"
+      },
+      "outcomes": [
+        {
+          "id": 328274537,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:32:00.000+0000"
+        },
+        {
+          "id": 328274538,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:32:00.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "189.5"
+      },
+      "outcomes": [
+        {
+          "id": 328275266,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328275267,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "190.5"
+      },
+      "outcomes": [
+        {
+          "id": 328275701,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:37:07.000+0000"
+        },
+        {
+          "id": 328275700,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:37:07.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "191.5"
+      },
+      "outcomes": [
+        {
+          "id": 328275699,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:37:47.000+0000"
+        },
+        {
+          "id": 328275698,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:37:47.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "192.5"
+      },
+      "outcomes": [
+        {
+          "id": 328275063,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:38:29.000+0000"
+        },
+        {
+          "id": 328275065,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:38:29.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "193.5"
+      },
+      "outcomes": [
+        {
+          "id": 328275297,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:38:49.000+0000"
+        },
+        {
+          "id": 328275298,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:38:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "194.5"
+      },
+      "outcomes": [
+        {
+          "id": 328276976,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:39:19.000+0000"
+        },
+        {
+          "id": 328276975,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:39:19.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "196.5"
+      },
+      "outcomes": [
+        {
+          "id": 328276234,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:40:29.000+0000"
+        },
+        {
+          "id": 328276235,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:40:29.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "197.5"
+      },
+      "outcomes": [
+        {
+          "id": 328279124,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:40:59.000+0000"
+        },
+        {
+          "id": 328279125,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:40:59.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "198.5"
+      },
+      "outcomes": [
+        {
+          "id": 328278944,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:41:39.000+0000"
+        },
+        {
+          "id": 328278943,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:41:39.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "199.5"
+      },
+      "outcomes": [
+        {
+          "id": 328283249,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:41:58.000+0000"
+        },
+        {
+          "id": 328283250,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:41:58.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "200.5"
+      },
+      "outcomes": [
+        {
+          "id": 328290670,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:42:28.000+0000"
+        },
+        {
+          "id": 328290669,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:42:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "201.5"
+      },
+      "outcomes": [
+        {
+          "id": 328292754,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:43:02.000+0000"
+        },
+        {
+          "id": 328292753,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:43:02.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "202.5"
+      },
+      "outcomes": [
+        {
+          "id": 328294451,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:43:33.000+0000"
+        },
+        {
+          "id": 328294452,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:43:33.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "203.5"
+      },
+      "outcomes": [
+        {
+          "id": 328297867,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:44:05.000+0000"
+        },
+        {
+          "id": 328297869,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:44:05.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "204.5"
+      },
+      "outcomes": [
+        {
+          "id": 328301326,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:44:35.000+0000"
+        },
+        {
+          "id": 328301325,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:44:35.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "205.5"
+      },
+      "outcomes": [
+        {
+          "id": 328303019,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:45:45.000+0000"
+        },
+        {
+          "id": 328303020,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:45:45.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "206.5"
+      },
+      "outcomes": [
+        {
+          "id": 328314832,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:46:32.000+0000"
+        },
+        {
+          "id": 328314833,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:46:32.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "207.5"
+      },
+      "outcomes": [
+        {
+          "id": 328323778,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:47:26.000+0000"
+        },
+        {
+          "id": 328323777,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:47:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "208.5"
+      },
+      "outcomes": [
+        {
+          "id": 328335480,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:48:09.000+0000"
+        },
+        {
+          "id": 328335479,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:48:09.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "209.5"
+      },
+      "outcomes": [
+        {
+          "id": 328340870,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:48:58.000+0000"
+        },
+        {
+          "id": 328340869,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:48:58.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "210.5"
+      },
+      "outcomes": [
+        {
+          "id": 328345732,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:49:23.000+0000"
+        },
+        {
+          "id": 328345733,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:49:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "215.5"
+      },
+      "outcomes": [
+        {
+          "id": 328363037,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        },
+        {
+          "id": 328363035,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "216.5"
+      },
+      "outcomes": [
+        {
+          "id": 328357339,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:55:43.000+0000"
+        },
+        {
+          "id": 328357338,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:55:43.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "217.5"
+      },
+      "outcomes": [
+        {
+          "id": 328365069,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328365070,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Total points",
+      "specifiers": {
+        "total": "218.5"
+      },
+      "outcomes": [
+        {
+          "id": 328370339,
+          "outcome": "under {total}",
+          "outcomeId": "17002",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328370337,
+          "outcome": "over {total}",
+          "outcomeId": "17001",
+          "status": 3,
+          "oddValue": 2.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 181,
+      "name": "{$competitor1} to win a set",
+      "outcomes": [
+        {
+          "id": 327538019,
+          "outcome": "yes",
+          "outcomeId": "181001",
+          "status": 2,
+          "oddValue": 1.57,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538018,
+          "outcome": "no",
+          "outcomeId": "181002",
+          "status": 3,
+          "oddValue": 2.15,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 182,
+      "name": "{$competitor2} to win a set",
+      "outcomes": [
+        {
+          "id": 327538025,
+          "outcome": "yes",
+          "outcomeId": "182001",
+          "status": 2,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538028,
+          "outcome": "no",
+          "outcomeId": "182002",
+          "status": 3,
+          "oddValue": 8.8,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 185,
+      "name": "Exact sets",
+      "specifiers": {
+        "variant": "sr:exact_sets:bestof:5"
+      },
+      "outcomes": [
+        {
+          "id": 327538044,
+          "outcome": "4",
+          "outcomeId": "196:sr:exact_sets:bestof:5:35",
+          "status": 3,
+          "oddValue": 4.9,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 327538045,
+          "outcome": "3",
+          "outcomeId": "196:sr:exact_sets:bestof:5:34",
+          "status": 3,
+          "oddValue": 15.5,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 327538054,
+          "outcome": "5",
+          "outcomeId": "196:sr:exact_sets:bestof:5:36",
+          "status": 2,
+          "oddValue": 1.12,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 794,
+      "name": "{$competitor1} to win exactly 1 set",
+      "outcomes": [
+        {
+          "id": 327538033,
+          "outcome": "yes",
+          "outcomeId": "794001",
+          "status": 3,
+          "oddValue": 3.3,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538032,
+          "outcome": "no",
+          "outcomeId": "794002",
+          "status": 2,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 187,
+      "name": "Correct Set Score",
+      "specifiers": {
+        "variant": "sr:correct_score:bestof:5"
+      },
+      "outcomes": [
+        {
+          "id": 327538046,
+          "outcome": "0:3",
+          "outcomeId": "199:sr:correct_score:bestof:5:13",
+          "status": 3,
+          "oddValue": 12.0,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538052,
+          "outcome": "3:0",
+          "outcomeId": "199:sr:correct_score:bestof:5:8",
+          "status": 3,
+          "oddValue": 15.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538051,
+          "outcome": "3:1",
+          "outcomeId": "199:sr:correct_score:bestof:5:9",
+          "status": 3,
+          "oddValue": 4.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538047,
+          "outcome": "1:3",
+          "outcomeId": "199:sr:correct_score:bestof:5:12",
+          "status": 3,
+          "oddValue": 50.0,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538048,
+          "outcome": "2:3",
+          "outcomeId": "199:sr:correct_score:bestof:5:11",
+          "status": 3,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538049,
+          "outcome": "3:2",
+          "outcomeId": "199:sr:correct_score:bestof:5:10",
+          "status": 2,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 795,
+      "name": "{$competitor2} to win exactly 1 set",
+      "outcomes": [
+        {
+          "id": 327538060,
+          "outcome": "yes",
+          "outcomeId": "795001",
+          "status": 3,
+          "oddValue": 7.4,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538056,
+          "outcome": "no",
+          "outcomeId": "795002",
+          "status": 2,
+          "oddValue": 1.04,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 796,
+      "name": "{$competitor1} to win exactly 2 sets",
+      "outcomes": [
+        {
+          "id": 327538011,
+          "outcome": "yes",
+          "outcomeId": "796001",
+          "status": 3,
+          "oddValue": 5.3,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538010,
+          "outcome": "no",
+          "outcomeId": "796002",
+          "status": 2,
+          "oddValue": 1.1,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 797,
+      "name": "{$competitor2} to win exactly 2 sets",
+      "outcomes": [
+        {
+          "id": 327538020,
+          "outcome": "yes",
+          "outcomeId": "797001",
+          "status": 2,
+          "oddValue": 6.5,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538021,
+          "outcome": "no",
+          "outcomeId": "797002",
+          "status": 3,
+          "oddValue": 1.06,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "{!setnr} set - winner",
+      "specifiers": {
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 327538024,
+          "outcome": "{$competitor1}",
+          "outcomeId": "189001",
+          "status": 2,
+          "oddValue": 1.09,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 327538027,
+          "outcome": "{$competitor2}",
+          "outcomeId": "189002",
+          "status": 3,
+          "oddValue": 5.4,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "{!setnr} set - winner",
+      "specifiers": {
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 327538029,
+          "outcome": "{$competitor1}",
+          "outcomeId": "189001",
+          "status": 2,
+          "oddValue": 1.03,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 327538026,
+          "outcome": "{$competitor2}",
+          "outcomeId": "189002",
+          "status": 3,
+          "oddValue": 7.75,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "{!setnr} set - winner",
+      "specifiers": {
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 327538035,
+          "outcome": "{$competitor1}",
+          "outcomeId": "189001",
+          "status": 3,
+          "oddValue": 15.5,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 327538037,
+          "outcome": "{$competitor2}",
+          "outcomeId": "189002",
+          "status": 2,
+          "oddValue": 1.01,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "{!setnr} set - winner",
+      "specifiers": {
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 327538038,
+          "outcome": "{$competitor1}",
+          "outcomeId": "189001",
+          "status": 3,
+          "oddValue": 4.9,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 327538034,
+          "outcome": "{$competitor2}",
+          "outcomeId": "189002",
+          "status": 2,
+          "oddValue": 1.12,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "name": "{!setnr} set - winner",
+      "specifiers": {
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 327538039,
+          "outcome": "{$competitor1}",
+          "outcomeId": "189001",
+          "status": 2,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538036,
+          "outcome": "{$competitor2}",
+          "outcomeId": "189002",
+          "status": 3,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "name": "How many sets will be decided by extra points",
+      "specifiers": {
+        "variant": "sr:decided_by_extra_points:bestof:5"
+      },
+      "outcomes": [
+        {
+          "id": 327538064,
+          "outcome": "5",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:58",
+          "status": 3,
+          "oddValue": 50.0,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538061,
+          "outcome": "3",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:56",
+          "status": 3,
+          "oddValue": 50.0,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538059,
+          "outcome": "4",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:57",
+          "status": 3,
+          "oddValue": 50.0,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538058,
+          "outcome": "1",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:54",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538057,
+          "outcome": "2",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:55",
+          "status": 3,
+          "oddValue": 2.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538050,
+          "outcome": "0",
+          "outcomeId": "306:sr:decided_by_extra_points:bestof:5:53",
+          "status": 3,
+          "oddValue": 2.3,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-2.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 328225934,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 2.2,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328225929,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.52,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-2.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328249110,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328249111,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-2.5",
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328307354,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 2.2,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328307355,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.52,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-2.5",
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328368829,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 2.05,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328368828,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-3.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328253074,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.57,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328253075,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-4.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328255118,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328255119,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-5.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328255960,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328255961,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-6.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328256443,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328256444,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-7.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328256803,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328256802,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "-8.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328256968,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328256967,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "2.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 327538042,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 327538043,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 2.4,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "2.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328247906,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.5,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328247907,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "2.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328272129,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328272130,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "2.5",
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328303264,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328303265,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.57,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "2.5",
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328359015,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.32,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328359016,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 2.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "3.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 327538015,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.65,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 327538017,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "3.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328243159,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328243157,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "3.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328274534,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328274533,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "3.5",
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328314835,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328314834,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "3.5",
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328362779,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328362780,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "4.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 327538066,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.65,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 327538065,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "4.5",
+        "setnr": "2"
+      },
+      "outcomes": [
+        {
+          "id": 328247005,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328247004,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "4.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328275062,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328275064,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.57,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "4.5",
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328321858,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328321857,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 2.05,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "4.5",
+        "setnr": "5"
+      },
+      "outcomes": [
+        {
+          "id": 328363034,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328363036,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "5.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 328191017,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328191016,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "5.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328276236,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328276237,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "5.5",
+        "setnr": "4"
+      },
+      "outcomes": [
+        {
+          "id": 328322918,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.65,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        },
+        {
+          "id": 328322916,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T16:32:48.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "6.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 328206328,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328206327,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "6.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328278946,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328278945,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "7.5",
+        "setnr": "1"
+      },
+      "outcomes": [
+        {
+          "id": 328206860,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328206863,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 286,
+      "name": "{!setnr} set - point handicap",
+      "specifiers": {
+        "hcp": "7.5",
+        "setnr": "3"
+      },
+      "outcomes": [
+        {
+          "id": 328279128,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "286001",
+          "status": 2,
+          "oddValue": 1.65,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328279129,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "286002",
+          "status": 3,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 479,
+      "name": "Will there be a 4th set",
+      "outcomes": [
+        {
+          "id": 327538012,
+          "outcome": "yes",
+          "outcomeId": "479001",
+          "status": 2,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        },
+        {
+          "id": 327538013,
+          "outcome": "no",
+          "outcomeId": "479002",
+          "status": 3,
+          "oddValue": 2.0,
+          "providerTimestamp": "2021-10-09T16:58:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "41.5"
+      },
+      "outcomes": [
+        {
+          "id": 328206861,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.35,
+          "providerTimestamp": "2021-10-09T14:31:12.000+0000"
+        },
+        {
+          "id": 328206862,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.5,
+          "providerTimestamp": "2021-10-09T14:31:12.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "42.5"
+      },
+      "outcomes": [
+        {
+          "id": 328205816,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.3,
+          "providerTimestamp": "2021-10-09T14:31:38.000+0000"
+        },
+        {
+          "id": 328205815,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.5,
+          "providerTimestamp": "2021-10-09T14:31:38.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "43.5"
+      },
+      "outcomes": [
+        {
+          "id": 327538063,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.25,
+          "providerTimestamp": "2021-10-09T14:32:08.000+0000"
+        },
+        {
+          "id": 327538062,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.52,
+          "providerTimestamp": "2021-10-09T14:32:08.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "44.5"
+      },
+      "outcomes": [
+        {
+          "id": 327538022,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.8,
+          "providerTimestamp": "2021-10-09T14:32:42.000+0000"
+        },
+        {
+          "id": 327538023,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T14:32:42.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "45.5"
+      },
+      "outcomes": [
+        {
+          "id": 327538014,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 3.65,
+          "providerTimestamp": "2021-10-09T14:33:26.000+0000"
+        },
+        {
+          "id": 327538016,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.22,
+          "providerTimestamp": "2021-10-09T14:33:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "46.5"
+      },
+      "outcomes": [
+        {
+          "id": 328218921,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328218922,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "47.5"
+      },
+      "outcomes": [
+        {
+          "id": 328222088,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328222087,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "48.5"
+      },
+      "outcomes": [
+        {
+          "id": 328233886,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.3,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328233885,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 3.05,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "1",
+        "total": "49.5"
+      },
+      "outcomes": [
+        {
+          "id": 328236773,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.3,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        },
+        {
+          "id": 328236772,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 3.05,
+          "providerTimestamp": "2021-10-09T14:34:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "40.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256966,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.1,
+          "providerTimestamp": "2021-10-09T15:07:08.000+0000"
+        },
+        {
+          "id": 328256964,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.6,
+          "providerTimestamp": "2021-10-09T15:07:08.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "41.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256805,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T15:08:44.000+0000"
+        },
+        {
+          "id": 328256804,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T15:08:44.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "42.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256445,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.8,
+          "providerTimestamp": "2021-10-09T15:09:16.000+0000"
+        },
+        {
+          "id": 328256446,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T15:09:16.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "43.5"
+      },
+      "outcomes": [
+        {
+          "id": 328243150,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.85,
+          "providerTimestamp": "2021-10-09T15:09:51.000+0000"
+        },
+        {
+          "id": 328243148,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T15:09:51.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "44.5"
+      },
+      "outcomes": [
+        {
+          "id": 328243155,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328243154,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 2.65,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "45.5"
+      },
+      "outcomes": [
+        {
+          "id": 328243163,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328243164,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 2.85,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "46.5"
+      },
+      "outcomes": [
+        {
+          "id": 328247902,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.27,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328247903,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 3.1,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "47.5"
+      },
+      "outcomes": [
+        {
+          "id": 328264349,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328264348,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 2.45,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "2",
+        "total": "49.5"
+      },
+      "outcomes": [
+        {
+          "id": 328266518,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.16,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        },
+        {
+          "id": 328266517,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 4.25,
+          "providerTimestamp": "2021-10-09T15:10:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "41.5"
+      },
+      "outcomes": [
+        {
+          "id": 328279131,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.65,
+          "providerTimestamp": "2021-10-09T15:49:55.000+0000"
+        },
+        {
+          "id": 328279130,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.4,
+          "providerTimestamp": "2021-10-09T15:49:55.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "42.5"
+      },
+      "outcomes": [
+        {
+          "id": 328276233,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.9,
+          "providerTimestamp": "2021-10-09T15:50:26.000+0000"
+        },
+        {
+          "id": 328276232,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.32,
+          "providerTimestamp": "2021-10-09T15:50:26.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "43.5"
+      },
+      "outcomes": [
+        {
+          "id": 328272197,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-10-09T15:51:50.000+0000"
+        },
+        {
+          "id": 328272198,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T15:51:50.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "44.5"
+      },
+      "outcomes": [
+        {
+          "id": 328272135,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T15:52:23.000+0000"
+        },
+        {
+          "id": 328272140,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-10-09T15:52:23.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "45.5"
+      },
+      "outcomes": [
+        {
+          "id": 328272125,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 1.57,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328272126,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 2.15,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "46.5"
+      },
+      "outcomes": [
+        {
+          "id": 328272133,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.18,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328272134,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 4.05,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "3",
+        "total": "47.5"
+      },
+      "outcomes": [
+        {
+          "id": 328295266,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.27,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        },
+        {
+          "id": 328295265,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 3.2,
+          "providerTimestamp": "2021-10-09T15:53:10.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "43.5"
+      },
+      "outcomes": [
+        {
+          "id": 328322921,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.65,
+          "providerTimestamp": "2021-10-09T16:27:31.000+0000"
+        },
+        {
+          "id": 328322920,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.4,
+          "providerTimestamp": "2021-10-09T16:27:31.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "44.5"
+      },
+      "outcomes": [
+        {
+          "id": 328303261,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 4.05,
+          "providerTimestamp": "2021-10-09T16:27:53.000+0000"
+        },
+        {
+          "id": 328303260,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.18,
+          "providerTimestamp": "2021-10-09T16:27:53.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "45.5"
+      },
+      "outcomes": [
+        {
+          "id": 328303268,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.4,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        },
+        {
+          "id": 328303269,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:28:24.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "46.5"
+      },
+      "outcomes": [
+        {
+          "id": 328303270,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.4,
+          "providerTimestamp": "2021-10-09T16:28:52.000+0000"
+        },
+        {
+          "id": 328303271,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.47,
+          "providerTimestamp": "2021-10-09T16:28:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "47.5"
+      },
+      "outcomes": [
+        {
+          "id": 328329094,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.85,
+          "providerTimestamp": "2021-10-09T16:29:49.000+0000"
+        },
+        {
+          "id": 328329095,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T16:29:49.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "48.5"
+      },
+      "outcomes": [
+        {
+          "id": 328345715,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:30:14.000+0000"
+        },
+        {
+          "id": 328345714,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 2.45,
+          "providerTimestamp": "2021-10-09T16:30:14.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "4",
+        "total": "49.5"
+      },
+      "outcomes": [
+        {
+          "id": 328345737,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:31:04.000+0000"
+        },
+        {
+          "id": 328345734,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 2.45,
+          "providerTimestamp": "2021-10-09T16:31:04.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "24.5"
+      },
+      "outcomes": [
+        {
+          "id": 328362784,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-10-09T16:53:52.000+0000"
+        },
+        {
+          "id": 328362783,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T16:53:52.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "25.5"
+      },
+      "outcomes": [
+        {
+          "id": 328359011,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 3.4,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        },
+        {
+          "id": 328359012,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.25,
+          "providerTimestamp": "2021-10-09T16:54:22.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "26.5"
+      },
+      "outcomes": [
+        {
+          "id": 328359013,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.7,
+          "providerTimestamp": "2021-10-09T16:55:43.000+0000"
+        },
+        {
+          "id": 328359014,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.37,
+          "providerTimestamp": "2021-10-09T16:55:43.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "27.5"
+      },
+      "outcomes": [
+        {
+          "id": 328359018,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 3,
+          "oddValue": 2.35,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328359017,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 2,
+          "oddValue": 1.47,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "28.5"
+      },
+      "outcomes": [
+        {
+          "id": 328370340,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328370338,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 2.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "29.5"
+      },
+      "outcomes": [
+        {
+          "id": 328367145,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.45,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328367146,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 2.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 287,
+      "name": "{!setnr} set - total points",
+      "specifiers": {
+        "setnr": "5",
+        "total": "31.5"
+      },
+      "outcomes": [
+        {
+          "id": 328371788,
+          "outcome": "under {total}",
+          "outcomeId": "287002",
+          "status": 2,
+          "oddValue": 1.18,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328371789,
+          "outcome": "over {total}",
+          "outcomeId": "287001",
+          "status": 3,
+          "oddValue": 3.95,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-0.5"
+      },
+      "outcomes": [
+        {
+          "id": 328250350,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 2.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328250351,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.35,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-1.5"
+      },
+      "outcomes": [
+        {
+          "id": 328250668,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328250667,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-10.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256969,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328256970,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-2.5"
+      },
+      "outcomes": [
+        {
+          "id": 328253073,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328253072,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-3.5"
+      },
+      "outcomes": [
+        {
+          "id": 328253083,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328253082,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-4.5"
+      },
+      "outcomes": [
+        {
+          "id": 328255134,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328255135,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-5.5"
+      },
+      "outcomes": [
+        {
+          "id": 328255121,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328255120,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-6.5"
+      },
+      "outcomes": [
+        {
+          "id": 328255963,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 7.5,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328255962,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.12,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-7.5"
+      },
+      "outcomes": [
+        {
+          "id": 328257399,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328257400,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-8.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256441,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328256442,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "-9.5"
+      },
+      "outcomes": [
+        {
+          "id": 328256806,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 3,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328256807,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "0.5"
+      },
+      "outcomes": [
+        {
+          "id": 328250370,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328250369,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "1.5"
+      },
+      "outcomes": [
+        {
+          "id": 328249108,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328249109,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "10.5"
+      },
+      "outcomes": [
+        {
+          "id": 328225933,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328225932,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "11.5"
+      },
+      "outcomes": [
+        {
+          "id": 327538030,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327538031,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "12.5"
+      },
+      "outcomes": [
+        {
+          "id": 327627117,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 327627118,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "13.5"
+      },
+      "outcomes": [
+        {
+          "id": 328201664,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328201663,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "14.5"
+      },
+      "outcomes": [
+        {
+          "id": 328198967,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328198963,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "15.5"
+      },
+      "outcomes": [
+        {
+          "id": 328205820,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328205819,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "16.5"
+      },
+      "outcomes": [
+        {
+          "id": 328206329,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.95,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328206330,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.7,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "17.5"
+      },
+      "outcomes": [
+        {
+          "id": 328206864,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328206859,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "2.5"
+      },
+      "outcomes": [
+        {
+          "id": 328249373,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328249374,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "3.5"
+      },
+      "outcomes": [
+        {
+          "id": 328248075,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328248074,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "5.5"
+      },
+      "outcomes": [
+        {
+          "id": 328247904,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.9,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328247905,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.75,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "6.5"
+      },
+      "outcomes": [
+        {
+          "id": 328241475,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328241476,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "7.5"
+      },
+      "outcomes": [
+        {
+          "id": 328238271,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328238270,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "8.5"
+      },
+      "outcomes": [
+        {
+          "id": 328236769,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328236768,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "name": "point handicap",
+      "specifiers": {
+        "hcp": "9.5"
+      },
+      "outcomes": [
+        {
+          "id": 328234951,
+          "outcome": "{$competitor1} ({+hcp})",
+          "outcomeId": "223001",
+          "status": 2,
+          "oddValue": 1.85,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        },
+        {
+          "id": 328234952,
+          "outcome": "{$competitor2} ({-hcp})",
+          "outcomeId": "223002",
+          "status": 3,
+          "oddValue": 1.8,
+          "providerTimestamp": "2021-10-09T16:56:28.000+0000"
+        }
+      ]
+    }
+  ],
+  "score": {
+    "CURRENT": "-:-"
+  },
+  "externalIds": {
+    "betradarUnified": "sr:match:29098360",
+    "betradar": "sr:match:29098360",
+    "aams": "1890703",
+    "BetradarCtrl": "44780016"
+  },
+  "additionalData": {
+    "decidedByFeds": {
+      "data": false
+    },
+    "periodId": {
+      "data": 100
+    },
+    "static": {
+      "venue": {
+        "name": "Sariyer Kapali Sports Hall",
+        "city": "Istanbul",
+        "country": "Turkey"
+      },
+      "extraInfo": {
+        "RTS": "not_available",
+        "neutral_ground": "false",
+        "streaming": "false",
+        "auto_traded": "false",
+        "best_of": "5",
+        "extended_live_markets_offered": "false",
+        "coverage_source": "venue",
+        "set_limit": "25",
+        "period_length": "25"
+      }
+    },
+    "numberOfSets": {
+      "data": 5
+    },
+    "scoreboard": {
+      "data": {
+        "currentHomeScore": "3",
+        "currentAwayScore": "2",
+        "periodScores": [
+          {
+            "homeScore": "25",
+            "awayScore": "22",
+            "periodType": "RegularPeriod",
+            "periodNumber": 1
+          },
+          {
+            "homeScore": "25",
+            "awayScore": "20",
+            "periodType": "RegularPeriod",
+            "periodNumber": 2
+          },
+          {
+            "homeScore": "21",
+            "awayScore": "25",
+            "periodType": "RegularPeriod",
+            "periodNumber": 3
+          },
+          {
+            "homeScore": "25",
+            "awayScore": "27",
+            "periodType": "RegularPeriod",
+            "periodNumber": 4
+          },
+          {
+            "homeScore": "15",
+            "awayScore": "13",
+            "periodType": "RegularPeriod",
+            "periodNumber": 5
+          }
+        ],
+        "currentGamePoints": {
+          "homePoints": "15",
+          "awayPoints": "13"
+        },
+        "fullTimeHomeScore": "3",
+        "fullTimeAwayScore": "2"
+      }
+    },
+    "currentServer": {
+      "data": "HOME"
+    }
+  },
+  "oddsCount": 0,
+  "enrichment": {
+    "animation": [
+      "betradarTracker"
+    ]
+  },
+  "marketsCount": 0
+}

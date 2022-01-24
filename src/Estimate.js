@@ -105,8 +105,41 @@ const {
   QuarterTotal,
   Total3WayBeforeMin,
 } = require("./Markets/Basketball");
-const { CompetitorExactGoals, OddEven, WhichTeamToScore, CompetitorCleanSheet, ResultRestOfMatch, MatchWinnerTotalGoals, MatchWinnerBothTeamsToScore, PeriodAndWinner, CompetitorNoBet, PeriodAndMatchBet, WinningMargin, HighestScoringPeriod, CompetitorHighestScoringPeriod, ExactGoals, ToWinAllPeriods, ToScoreInAllPeriods, ToWinAnyPeriod, TotalGoalsPerPeriod, PeriodThreeWay, PeriodGoal, PeriodHandicap, PeriodTotalGoals, CompetitorPeriodExactGoals, BothTeamsToScoreHockey, ResultRestOfPeriod, DrawNoBetHockey, GoalAndMatchbet, CorrectScoreHockey, PeriodDoubleChance, Goal, PeriodMoneyLine, TotalGoalsBeforeMin, Handicap3WayBeforeMin } = require("./Markets/IceHockey");
-
+const {
+  CompetitorExactGoals,
+  OddEven,
+  WhichTeamToScore,
+  CompetitorCleanSheet,
+  ResultRestOfMatch,
+  MatchWinnerTotalGoals,
+  MatchWinnerBothTeamsToScore,
+  PeriodAndWinner,
+  CompetitorNoBet,
+  PeriodAndMatchBet,
+  WinningMargin,
+  HighestScoringPeriod,
+  CompetitorHighestScoringPeriod,
+  ExactGoals,
+  ToWinAllPeriods,
+  ToScoreInAllPeriods,
+  ToWinAnyPeriod,
+  TotalGoalsPerPeriod,
+  PeriodThreeWay,
+  PeriodGoal,
+  PeriodHandicap,
+  PeriodTotalGoals,
+  CompetitorPeriodExactGoals,
+  BothTeamsToScoreHockey,
+  ResultRestOfPeriod,
+  DrawNoBetHockey,
+  GoalAndMatchbet,
+  CorrectScoreHockey,
+  PeriodDoubleChance,
+  Goal,
+  PeriodMoneyLine,
+  TotalGoalsBeforeMin,
+  Handicap3WayBeforeMin,
+} = require("./Markets/IceHockey");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -301,7 +334,7 @@ class Estimate {
       case "918001":
         HalfTimeGoals(this.statistics, market);
         break;
-      /*Tennis*/
+      /*Tennis & Volleyball*/
       case "1024002":
         SetGameTotalPoints(this.statistics, market);
         break;
@@ -478,16 +511,16 @@ class Estimate {
         Total3Way(this.statistics, market);
         break;
       case "401401":
-        TotalGoalsBeforeMin(this.statistics, market)
+        TotalGoalsBeforeMin(this.statistics, market);
         break;
       case "401501":
-        TwoWayBeforeMin(this.statistics, market)
+        TwoWayBeforeMin(this.statistics, market);
         break;
       case "401601":
-        Handicap3WayBeforeMin(this.statistics, market)
+        Handicap3WayBeforeMin(this.statistics, market);
         break;
       case "401701":
-        Total3WayBeforeMin(this.statistics, market)
+        Total3WayBeforeMin(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
@@ -510,13 +543,17 @@ class Estimate {
         SetCorrectScore(this.statistics, market);
         break;
     }
-    if (market.name.toLowerCase().includes('exact goals (incl. overtime and penalties)')) {
+    if (
+      market.name
+        .toLowerCase()
+        .includes("exact goals (incl. overtime and penalties)")
+    ) {
       CompetitorExactGoals(this.statistics, market, false);
       return;
     }
-    if (market.name.toLowerCase().includes('exact goals')) {
-      if (market.name.includes('period')) {
-        if (market.name.includes('competitor')) {
+    if (market.name.toLowerCase().includes("exact goals")) {
+      if (market.name.includes("period")) {
+        if (market.name.includes("competitor")) {
           CompetitorExactGoals(this.statistics, market, true);
         } else {
           ExactGoals(this.statistics, market, true); // 1135
@@ -526,11 +563,11 @@ class Estimate {
       }
       return;
     }
-    if (market.name.includes('Winning margin')) {
+    if (market.name.includes("Winning margin")) {
       WinningMargin(this.statistics, market);
       return;
     }
-    if (market.name.includes('Correct score')) {
+    if (market.name.includes("Correct score")) {
       CorrectScoreHockey(this.statistics, market);
       return;
     }

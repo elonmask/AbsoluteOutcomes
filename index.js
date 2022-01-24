@@ -8,7 +8,7 @@ const StatisticsComposer = require("./src/StatisticsComposer");
 
 app.get("/estimation", (req, res) => {
   const sportID = parseInt(req.query.sport_id);
-  let odds = null
+  let odds = null;
   switch (sportID) {
     case 1:
       odds = require("./json/soccer/event.json").odds;
@@ -22,7 +22,9 @@ app.get("/estimation", (req, res) => {
     case 5:
       odds = require("./json/tennis/event1_outcomes.json").odds;
       break;
-  };
+    case 23:
+      odds = require("./json/volleyball/event.json").odds;
+  }
 
   if (odds) {
     axios
@@ -36,7 +38,7 @@ app.get("/estimation", (req, res) => {
         res.send(odds);
       })
       .catch(function (error) {
-        console.log(error)
+        console.log(error);
         // handle error
         res.send(error);
       });
@@ -65,10 +67,11 @@ app.get("/statistics", (req, res) => {
           },
         ];
       case 5:
+      case 23:
         return [
           {
             source: "betradar",
-            data: require("./json/tennis/event1_statistics_live.json").doc[0]
+            data: require("./json/tennis/event1_statistics_ended.json").doc[0]
               .data,
           },
         ];
@@ -77,8 +80,8 @@ app.get("/statistics", (req, res) => {
           {
             source: "betradar",
             data: require("./json/basketball/timeline.json").doc[0].data,
-          }
-        ]
+          },
+        ];
     }
   };
   const id = parseInt(req.query.sport_id);
