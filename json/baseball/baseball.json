@@ -1,0 +1,597 @@
+{
+  "sport": [
+    {
+      "live_id": "160031",
+      "market_name": "Run Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160030",
+      "market_name": "Money Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160033",
+      "market_name": "Game Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160053",
+      "market_name": "A Run Scored - Away Inning 1",
+      "Outcomes": "Away Inning 1 - Yes,Away Inning 1 - No",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160049",
+      "market_name": "To Win Inning 1",
+      "Outcomes": "Inning 1 - Home,Inning 1 - Away,Inning 1 - Tie",
+      "Group ID": "1,2,3",
+      "odd_types_id": 268
+    },
+    {
+      "live_id": "160050",
+      "market_name": "A Run Scored - Inning 1",
+      "Outcomes": "Inning 1 - Yes,Inning 1 - No",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160073",
+      "market_name": "Total Runs - Inning 1",
+      "Outcomes": "Inning 1 - Over,Inning 1 - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 269
+    },
+    {
+      "live_id": "160037",
+      "market_name": "Alternative Run Lines",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160041",
+      "market_name": "Alternative Game Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160063",
+      "market_name": "3 Innings Run Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160068",
+      "market_name": "3 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 554
+    },
+    {
+      "live_id": "160064",
+      "market_name": "5 Innings Run Lines",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 257
+    },
+    {
+      "live_id": "160069",
+      "market_name": "5 Innings Totals",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160067",
+      "market_name": "7 Innings Run Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160072",
+      "market_name": "7 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "160047",
+      "market_name": "Race to N(Runs)",
+      "Special market value": "N",
+      "Outcomes": "Home to N,Away to N,Neither to N",
+      "Group ID": "1,2,3",
+      "odd_types_id": 248
+    },
+    {
+      "live_id": "160048",
+      "market_name": "Lead After N(Innings)",
+      "Special market value": "N",
+      "Outcomes": "Home after N,Away after N,Tie after N",
+      "Group ID": "1,2,3"
+    },
+    {
+      "live_id": "160060",
+      "market_name": "A Run Scored - Home Inning N",
+      "Special market value": "N",
+      "Outcomes": "Home Inning N - Yes,Home Inning N - No",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160055",
+      "market_name": "To Win Inning N",
+      "Special market value": "N",
+      "Outcomes": "Inning N - Home,Inning N - Away,Inning N - Tie",
+      "Group ID": "1,2,3",
+      "odd_types_id": 268
+    },
+    {
+      "live_id": "160056",
+      "market_name": "A Run Scored - Inning N",
+      "Special market value": "N",
+      "Outcomes": "Inning N - Yes,Inning N - No",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160074",
+      "market_name": "Total Runs - Inning N",
+      "Special market value": "N",
+      "Outcomes": "Inning N - Over,Inning N - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 269
+    },
+    {
+      "live_id": "160045",
+      "market_name": "Home Total",
+      "Outcomes": "Home - Over,Home - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 241
+    },
+    {
+      "live_id": "160046",
+      "market_name": "Away Total",
+      "Outcomes": "Away - Over,Away - Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 242
+    },
+    {
+      "live_id": "160035",
+      "market_name": "To Go to Extra Innings",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "live_id": "160032",
+      "market_name": "3-way Handicap",
+      "Outcomes": "Home,Tie,Away",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "odd_types_id": 1107
+    },
+    {
+      "live_id": "160036",
+      "market_name": "Winning Margin",
+      "Outcomes": "Home by 1 run exactly,Home by 2 Runs Exactly,Home by 3 Runs Exactly,Home by 4 or More Runs,Away by 1 run exactly,Away by 2 Runs Exactly,Away by 3 Runs Exactly,Away by 4 or More Runs",
+      "Group ID": "1,2,3,4,5,6,7,8",
+      "odd_types_id": 236
+    },
+    {
+      "prematch_id": "1096",
+      "market_name": "Money Line",
+      "Special market value": "Players must start BAL Orioles,Players must start BOS Red Sox",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "1099",
+      "market_name": "Game Totals",
+      "Special market value": "Players must start BAL Orioles,Players must start BOS Red Sox",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "1097",
+      "market_name": "Run Line",
+      "Special market value": "Players must start BAL Orioles,Players must start BOS Red Sox",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "1101",
+      "market_name": "4 1/2 Innings Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "1102",
+      "market_name": "4 1/2 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160138",
+      "market_name": "1st Innings Winner",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "160139",
+      "market_name": "A Run in the 1st Innings",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160141",
+      "market_name": "1st Innings Runs",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160140",
+      "market_name": "1st Innings Hits",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X",
+      "odd_types_id": 863
+    },
+    {
+      "prematch_id": "160011",
+      "market_name": "Most Hits in the 1st Innings",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "odd_types_id": 1225
+    },
+    {
+      "prematch_id": "160143",
+      "market_name": "Top 1st Run",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160142",
+      "market_name": "Top 1st Hit",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160145",
+      "market_name": "Bottom 1st Run",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160144",
+      "market_name": "Bottom 1st Hit",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160118",
+      "market_name": "3 Innings Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160025",
+      "market_name": "5 Innings Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160120",
+      "market_name": "7 Innings Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160137",
+      "market_name": "Race to (Runs)",
+      "Special market value": "N",
+      "Outcomes": "Home to N,Away to N,Neither to N",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "160121",
+      "market_name": "3 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160122",
+      "market_name": "5 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 257
+    },
+    {
+      "prematch_id": "160123",
+      "market_name": "7 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160146",
+      "market_name": "Lead After (Innings)",
+      "Special market value": "N",
+      "Outcomes": "Home after N,Away after N,Tie after N",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "160147",
+      "market_name": "Extra Innings",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160135",
+      "market_name": "First Team to Score",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "odd_types_id": 1277
+    },
+    {
+      "prematch_id": "160136",
+      "market_name": "Last Team to Score",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "odd_types_id": 1915
+    },
+    {
+      "prematch_id": "1672",
+      "market_name": "Team Scoring First Wins Game",
+      "Outcomes": "Yes,No",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160014",
+      "market_name": "3-Way Run Line",
+      "Special market value": "Players must start BAL Orioles,Players must start BOS Red Sox",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160015",
+      "market_name": "3-Way Total",
+      "Special market value": "Players must start BAL Orioles,Players must start BOS Red Sox",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160125",
+      "market_name": "Game Totals - Bands",
+      "Outcomes": "5 Runs or Less,6 or 7 Runs,8 or 9 Runs,10 or 11 Runs,12 or More Runs",
+      "Group ID": "1,2,3,4,5"
+    },
+    {
+      "prematch_id": "160077",
+      "market_name": "Alternative Run Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160086",
+      "market_name": "Alternative Game Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160095",
+      "market_name": "Alternative 3-Way Run Line",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160100",
+      "market_name": "Alternative Total 3-Way",
+      "Outcomes": "Over,Exactly,Under",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160105",
+      "market_name": "Alternative 5 Innings Line",
+      "Outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160110",
+      "market_name": "Alternative 5 Innings Total",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "1470",
+      "market_name": "Team with Highest Scoring Innings",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "1468",
+      "market_name": "Double Result",
+      "Outcomes": "Home - Home,Tie - Home,Away - Home,Home - Away,Tie - Away,Away - Away",
+      "Group ID": "1,2,3,4,5,6"
+    },
+    {
+      "prematch_id": "1469",
+      "market_name": "Winning Margins",
+      "Outcomes": "Home by 1 run exactly,Home by 2 Runs Exactly,Home by 3 Runs Exactly,Home by 4+ Runs,Away by 1 run exactly,Away by 2 Runs Exactly,Away by 3 Runs Exactly,Away by 4+ Runs",
+      "Group ID": "1,2,3,4,5,6,7,8",
+      "odd_types_id": 236
+    },
+    {
+      "prematch_id": "1479",
+      "market_name": "First Home Run of Game Will be",
+      "Outcomes": "Solo HR,2-Run HR,3-Run HR,Grand Slam,No HR Scored",
+      "Group ID": "1,2,3,4,5"
+    },
+    {
+      "prematch_id": "160009",
+      "market_name": "Game Total Odd/Even",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160149",
+      "market_name": "Highest Scoring Period",
+      "Outcomes": "First 5 Innings,Rest Of The Game,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "160127",
+      "market_name": "Team N Total",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160129",
+      "market_name": "Team N Hits",
+      "Special market value": "N",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160133",
+      "market_name": "Team N Total Odd/Even",
+      "Special market value": "N",
+      "Outcomes": "Odd,Even",
+      "Group ID": "1,2"
+    },
+    {
+      "prematch_id": "160126",
+      "market_name": "Total Hits",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "1462",
+      "market_name": "Most Hits",
+      "Outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3"
+    },
+    {
+      "prematch_id": "160293",
+      "market_name": "Pitcher Strikeouts",
+      "Special market value": "Pitcher",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 730
+    },
+    {
+      "prematch_id": "160295",
+      "market_name": "Pitcher Hits Allowed",
+      "Special market value": "Pitcher",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160296",
+      "market_name": "Pitcher Earned Runs",
+      "Special market value": "Pitcher",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "odd_types_id": 731
+    },
+    {
+      "prematch_id": "160297",
+      "market_name": "Pitcher Outs",
+      "Special market value": "Pitcher",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160298",
+      "market_name": "Player Singles",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160299",
+      "market_name": "Player Doubles",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160300",
+      "market_name": "Player Triples",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160301",
+      "market_name": "Player Home Runs",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160302",
+      "market_name": "Player Total Bases",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160303",
+      "market_name": "Player Runs",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "prematch_id": "160304",
+      "market_name": "Player Stolen Bases",
+      "Special market value": "Player",
+      "Outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    }
+  ]
+}

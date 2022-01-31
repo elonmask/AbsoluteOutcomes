@@ -6,8 +6,9 @@ const sports = new Map([
   ["4", "ice-hockey"],
   ["5", "tennis"],
   ["23", "volleyball"],
+  ["3", "baseball"],
 ]);
-const SPORT_ID = "23";
+const SPORT_ID = "3";
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
   const markets = JSON.parse(
@@ -19,6 +20,13 @@ try {
 
   const newMarkets = [];
   const marketsWithoutOddTypes = [];
+
+  markets.sport.forEach((market) => {
+    if (market.odd_types_id) {
+      const string_type = market.odd_types_id;
+      market.odd_types_id = string_type.toString();
+    }
+  });
 
   markets.sport.forEach((market) => {
     delete market["Odd-types outcomes ID"];
