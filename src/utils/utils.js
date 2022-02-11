@@ -132,7 +132,7 @@ const BetradarBaseballEventTeam = (event, source) => {
 const BetradarBasketEvent = (event, team) => {
   if (event.time === -1) {
     if (team.length > 1) {
-      if (event.type === "goal" && event.scorer.name.length > 1) {
+      if (event.type === "goal" && event.scorer?.name.length > 1) {
         return event.name + " - " + team + " - " + event.scorer.name;
       } else {
         return event.name + " - " + team;
@@ -172,7 +172,7 @@ const BetradarBasketEvent = (event, team) => {
 };
 
 const BetradarBaseballEvent = (event, team) => {
-  if (event.time === -1) {
+  /*if (event.time === -1) {
     if (team.length > 1) {
       if (event.type === "goal" && event.scorer?.name.length > 1) {
         return event.name + " - " + team + " - " + event.scorer.name;
@@ -180,37 +180,56 @@ const BetradarBaseballEvent = (event, team) => {
         return event.name + " - " + team;
       }
     } else {
-      return event.name;
-    }
-  } else {
-    if (team.length > 1) {
-      if (event.type === "goal" && event.scorer.name.length > 1) {
+      if (event.type === "periodscore") {
         return (
           event.name +
           " - " +
-          team +
+          `${event.periodnumber} Period Score` +
+          ` ${event.periodscore.home + ":" + event.periodscore.away}`
+        );
+      } else {
+        return event.name;
+      }
+    }
+  } else {*/
+  if (event.type === "goal" && event.scorer?.name.length > 1) {
+    return (
+      event.name +
+      " - " +
+      team +
+      " - " +
+      event.scorer.name +
+      " - " +
+      event.time +
+      "' " +
+      event.updated_uts
+    );
+  } else {
+    if (event.type === "periodscore") {
+      if (event.periodnumber) {
+        return (
+          event.name +
           " - " +
-          event.scorer.name +
-          " - " +
-          event.time +
-          "' " +
-          event.updated_uts
+          `${event.periodnumber} Period Score` +
+          ` ${event.periodscore.home + ":" + event.periodscore.away}`
         );
       } else {
         return (
           event.name +
           " - " +
-          team +
-          " - " +
-          event.time +
-          "' " +
-          event.updated_uts
+          `${event.name} Period Score` +
+          ` ${event.periodscore.home + ":" + event.periodscore.away}`
         );
       }
     } else {
-      return event.name + " - " + event.time + "'";
+      if (team.length > 1) {
+        return event.name + " - " + team + " - " + event.updated_uts;
+      } else {
+        return event.name + " - " + event.updated_uts;
+      }
     }
   }
+  //}
 };
 
 const BetradarTennisEvent = (event, team) => {

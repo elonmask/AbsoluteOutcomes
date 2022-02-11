@@ -905,7 +905,7 @@ class StatisticsComposer {
   ComposeBaseball = () => {
     const result = {
       sport_id: null,
-      //time: null,
+      time: null,
       time_status: null,
       home: {
         name: null,
@@ -915,10 +915,11 @@ class StatisticsComposer {
       },
       result: null,
       periods: null,
+      overtimeperiods: null,
       events: [],
     };
 
-    /* this.sources.forEach((source) => {
+    this.sources.forEach((source) => {
       switch (source.source) {
         case "betradar":
           const sport_id_ = source.data.match._sid.toString();
@@ -931,11 +932,15 @@ class StatisticsComposer {
           }
 
           //time status
-          if (source.data.match.timeinfo.running === true) {
-            result.time_status = "not_ended";
-          } else {
+          if (source.data.match.result?.winner) {
             result.time_status = "3";
+          } else {
+            result.time_status = "not_ended";
           }
+
+          //time
+          result.time = source.data.time;
+          //delete result.time["_doc"];
 
           //home
           result.home.name = source.data.match.teams.home.name;
@@ -946,12 +951,12 @@ class StatisticsComposer {
           result.result = source.data.match.result;
           //periods
           result.periods = source.data.match.periods;
-
+          //extratime
+          result.overtimeperiods = source.data.match.overtimeperiods;
           //events
-          result.events = this.ComposeEventsBasketball();
+          result.events = this.ComposeEventsBaseball();
       }
-    });*/
-    result.events = this.ComposeEventsBaseball();
+    });
     return result;
   };
 
