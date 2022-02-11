@@ -121,30 +121,97 @@ const BetradarBasketEventTeam = (event, source) => {
     : "";
 };
 
+const BetradarBaseballEventTeam = (event, source) => {
+  return event.team.length > 3
+    ? event.team === "home"
+      ? source.data.match.teams.home.name
+      : source.data.match.teams.away.name
+    : "";
+};
+
 const BetradarBasketEvent = (event, team) => {
   if (event.time === -1) {
     if (team.length > 1) {
       if (event.type === "goal" && event.scorer.name.length > 1) {
-        return event.name + " - " + team + " - " + event.scorer.name
+        return event.name + " - " + team + " - " + event.scorer.name;
       } else {
-        return event.name + " - " + team
+        return event.name + " - " + team;
       }
     } else {
-      return event.name
+      return event.name;
     }
   } else {
     if (team.length > 1) {
       if (event.type === "goal" && event.scorer.name.length > 1) {
-        return event.name + " - " + team + " - " + event.scorer.name + " - " + event.time + "' " + event.updated_uts
+        return (
+          event.name +
+          " - " +
+          team +
+          " - " +
+          event.scorer.name +
+          " - " +
+          event.time +
+          "' " +
+          event.updated_uts
+        );
       } else {
-        return event.name + " - " + team + " - " + event.time + "' " + event.updated_uts
+        return (
+          event.name +
+          " - " +
+          team +
+          " - " +
+          event.time +
+          "' " +
+          event.updated_uts
+        );
       }
     } else {
-      return event.name + " - " + event.time + "'"
+      return event.name + " - " + event.time + "'";
     }
   }
 };
 
+const BetradarBaseballEvent = (event, team) => {
+  if (event.time === -1) {
+    if (team.length > 1) {
+      if (event.type === "goal" && event.scorer?.name.length > 1) {
+        return event.name + " - " + team + " - " + event.scorer.name;
+      } else {
+        return event.name + " - " + team;
+      }
+    } else {
+      return event.name;
+    }
+  } else {
+    if (team.length > 1) {
+      if (event.type === "goal" && event.scorer.name.length > 1) {
+        return (
+          event.name +
+          " - " +
+          team +
+          " - " +
+          event.scorer.name +
+          " - " +
+          event.time +
+          "' " +
+          event.updated_uts
+        );
+      } else {
+        return (
+          event.name +
+          " - " +
+          team +
+          " - " +
+          event.time +
+          "' " +
+          event.updated_uts
+        );
+      }
+    } else {
+      return event.name + " - " + event.time + "'";
+    }
+  }
+};
 
 const BetradarTennisEvent = (event, team) => {
   if (team.length > 1) {
@@ -202,4 +269,6 @@ module.exports = {
   getCurrentSetNumber,
   BetradarBasketEvent,
   BetradarBasketEventTeam,
+  BetradarBaseballEvent,
+  BetradarBaseballEventTeam,
 };
