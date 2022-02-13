@@ -522,6 +522,15 @@ class Estimate {
       case "401701":
         Total3WayBeforeMin(this.statistics, market);
         break;
+      /* 
+        Baseball 
+      */
+      case "268001":
+        InningThreeWay(this.statistics, market);
+        break;
+      case "268001":
+        InningThreeWay(this.statistics, market);
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
