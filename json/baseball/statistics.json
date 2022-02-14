@@ -1,0 +1,417 @@
+{
+  "sport_id": "3",
+  "time_status": "3",
+  "home": {
+    "name": "Chicago White Sox"
+  },
+  "away": {
+    "name": "Houston"
+  },
+  "result": {
+    "home": 12,
+    "away": 6,
+    "period": "nt",
+    "winner": "home"
+  },
+  "periods": {
+    "p1": {
+      "home": 1,
+      "away": 0
+    },
+    "p2": {
+      "home": 0,
+      "away": 3
+    },
+    "p3": {
+      "home": 5,
+      "away": 2
+    },
+    "p4": {
+      "home": 3,
+      "away": 1
+    },
+    "p5": {
+      "home": 0,
+      "away": 0
+    },
+    "p6": {
+      "home": 0,
+      "away": 0
+    },
+    "p7": {
+      "home": 0,
+      "away": 0
+    },
+    "p8": {
+      "home": 3,
+      "away": 0
+    },
+    "p9": {
+      "home": 0,
+      "away": 0
+    },
+    "ft": {
+      "home": 12,
+      "away": 6
+    }
+  },
+  "overtimeperiods": [
+
+  ],
+  "events": [
+    {
+      "text": "Started - 1633910885",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "1st inning - 1633910885",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Started - 1633910901",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "1st inning - 1633910901",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "1st inning - 1 Period Score 1:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633912510",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633912813",
+      "extra": {
+        "home": 1,
+        "away": 0
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Current serve (Volleyball) - 1633926625",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "2nd inning - 1633912689",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633913264",
+      "extra": {
+        "home": 1,
+        "away": 2
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633913156",
+      "extra": {
+        "home": 1,
+        "away": 2
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "2nd inning - 2 Period Score 0:3",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633914690",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633915119",
+      "extra": {
+        "home": 1,
+        "away": 3
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "3rd inning - 1633914861",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633915309",
+      "extra": {
+        "home": 1,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633915266",
+      "extra": {
+        "home": 1,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633916064",
+      "extra": {
+        "home": 3,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633916425",
+      "extra": {
+        "home": 3,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633916791",
+      "extra": {
+        "home": 6,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633916778",
+      "extra": {
+        "home": 6,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "3rd inning - 3 Period Score 5:2",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633916918",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633917731",
+      "extra": {
+        "home": 6,
+        "away": 5
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "4th inning - 1633917085",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Houston - 1633918577",
+      "extra": {
+        "home": 6,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633918670",
+      "extra": {
+        "home": 7,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633920776",
+      "extra": {
+        "home": 9,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "4th inning - 4 Period Score 3:1",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633919758",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633920249",
+      "extra": {
+        "home": 9,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "5th inning - 1633919854",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "5th inning - 5 Period Score 0:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633921294",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "6th inning - 1633921494",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "6th inning - 6 Period Score 0:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633922409",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "7th inning - 1633922512",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "7th inning - 7 Period Score 0:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633924048",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "8th inning - 1633924225",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633925650",
+      "extra": {
+        "home": 10,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633926109",
+      "extra": {
+        "home": 11,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Chicago White Sox - 1633926449",
+      "extra": {
+        "home": 12,
+        "away": 6
+      },
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "8th inning - 8 Period Score 3:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Break - 1633926446",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "9th inning - 1633926586",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "9th inning - 9 Period Score 0:0",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Full Time - Full Time Period Score 12:6",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Match end - 1633926936",
+      "extra": null,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    }
+  ]
+}

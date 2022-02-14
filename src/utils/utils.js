@@ -211,14 +211,18 @@ const BetradarBaseballEvent = (event, team) => {
           event.name +
           " - " +
           `${event.periodnumber} Period Score` +
-          ` ${event.periodscore.home + ":" + event.periodscore.away}`
+          ` ${event.periodscore.home + ":" + event.periodscore.away} - ${
+            event.updated_uts
+          }`
         );
       } else {
         return (
           event.name +
           " - " +
           `${event.name} Period Score` +
-          ` ${event.periodscore.home + ":" + event.periodscore.away}`
+          ` ${event.periodscore.home + ":" + event.periodscore.away} - ${
+            event.updated_uts
+          }`
         );
       }
     } else {
