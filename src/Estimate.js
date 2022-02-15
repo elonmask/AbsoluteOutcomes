@@ -140,7 +140,22 @@ const {
   TotalGoalsBeforeMin,
   Handicap3WayBeforeMin,
 } = require("./Markets/IceHockey");
-const { InningsTotal, InningTotalRuns, FirstFiveInningsTotalRuns, CompetitorTotalRuns, GameHandicap3Way, WinningMarginsRuns, InningTotalHits, FirstTeamToScore } = require("./Markets/Baseball");
+const {
+  InningsTotal,
+  InningTotalRuns,
+  FirstFiveInningsTotalRuns,
+  CompetitorTotalRuns,
+  GameHandicap3Way,
+  WinningMarginsRuns,
+  InningTotalHits,
+  FirstTeamToScore,
+  FirstFiveInningsRunHundicup,
+  InningsFromToTotal,
+  EachTeamTotalOverRuns,
+  InningsFromTo3Way,
+  InningRunHandicup,
+  RunsHandicap,
+} = require("./Markets/Baseball");
 
 class Estimate {
   constructor(statistics, marketsToEstimate) {
@@ -557,6 +572,24 @@ class Estimate {
         break;
       case "1915001":
         LastTeamToScore(this.statistics, market);
+        break;
+      case "256001":
+        FirstFiveInningsRunHundicup(this.statistics, market);
+        break;
+      case "265002":
+        InningsFromToTotal(this.statistics, market);
+        break;
+      case "686001":
+        EachTeamTotalOverRuns(this.statistics, market);
+        break;
+      case "688001":
+        InningsFromTo3Way(this.statistics, market);
+        break;
+      case "691001":
+        InningRunHandicup(this.statistics, market);
+        break;
+      case "237001":
+        RunsHandicap(this.statistics, market);
         break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
