@@ -394,7 +394,7 @@ const WinOver = (statistics, market) => {
 };
 
 const Handicap3Way = (statistics, market) => {
-  if (statistics.sport_id === '4') {
+  if (statistics.sport_id === '4' || statistics.sport_id === '3') {
     return Handicap3WayHockey(statistics, market);
   }
   if (isFullTimeEnded(statistics)) {
