@@ -488,7 +488,29 @@ class StatisticsComposer {
       }
     });
 
-    return result;
+    //Sorting by timestamp
+    const formatted = [];
+    for (let i = 0; i < result.length; ++i) {
+      if (
+        result[i].text.split(" - ")[1].includes(" ") ||
+        result[i].text.split(" - ")[0].includes("Goal")
+      ) {
+        result[i].eventTime = new Date(
+          parseInt(result[i].text.split(" - ")[2]) * 1000
+        );
+        formatted.push(result[i]);
+      } else {
+        result[i].eventTime = new Date(
+          parseInt(result[i].text.split(" - ")[1]) * 1000
+        );
+        formatted.push(result[i]);
+      }
+    }
+    return formatted
+      .sort(function (x, y) {
+        return y.eventTime - x.eventTime;
+      })
+      .reverse();
   };
 
   ComposeSoccer = () => {
