@@ -156,9 +156,6 @@ try {
   const marketsFormated = [];
 
   newMarkets.forEach((market) => {
-    //delete market["common_outcomes_id"];
-    //delete market["Outcomes"];
-
     if (market.odd_types_id) {
       const externalOutcomes = [];
       if (market.Outcomes) {
@@ -206,7 +203,10 @@ try {
       }
 
       if (marketFormat.outcomes !== "not_available") {
-        marketsFormated.push(marketFormat);
+        // filtering replicas
+        if (!marketsFormated.some(market => market.id === marketFormat.id)) {
+          marketsFormated.push(marketFormat);
+        }
       } else {
         console.log(marketFormat);
       }
