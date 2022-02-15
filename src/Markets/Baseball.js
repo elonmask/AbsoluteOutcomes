@@ -1,3 +1,5 @@
+const e = require("express");
+
 const InningThreeWay = (statistics, market) => {
   const homeScore = statistics.periods[`p${market.specifiers['inningnr']}`].home;
   const awayScore = statistics.periods[`p${market.specifiers['inningnr']}`].away;
@@ -235,6 +237,57 @@ const InningMostHits = (statistics, market) => {
   }
 }
 
+const FirstTeamToScore = (statistics, market) => {
+  let goalScorer = 'no goal';
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Goal")) {
+      if (event.text.includes("competitor1")) {
+        goalScorer = 'home';
+      } else {
+        goalScorer = 'away';
+      }
+      break;
+    }
+  });
+  if (goalScorer === 'no goal') {
+    market.outomes[0].status = 3;
+    market.outomes[1].status = 2;
+    market.outomes[2].status = 3;
+  } else {
+    if (goalScorer === 'home') {
+      market.outomes[0].status = 2;
+      market.outomes[1].status = 3;
+      market.outomes[2].status = 3;
+    } else {
+      market.outomes[0].status = 3;
+      market.outomes[1].status = 3;
+      market.outomes[2].status = 2;
+    }
+  }
+}
+
+const LastTeamToScore = (statistics, market) => {
+  let goalScorer = 'no goal';
+  statistics.events.forEach((event) => {
+    if (event.text.includes("Goal")) {
+      if (event.text.includes("competitor1")) {
+        goalScorer = 'home';
+      } else {
+        goalScorer = 'away';
+      }
+    }
+  });
+  if (goalScorer === 'home') {
+    market.outomes[0].status = 2;
+    market.outomes[1].status = 3;
+    market.outomes[2].status = 3;
+  } else {
+    market.outomes[0].status = 3;
+    market.outomes[1].status = 3;
+    market.outomes[2].status = 2;
+  }
+}
+}
 
 module.exports = {
   InningThreeWay,
@@ -244,5 +297,7 @@ module.exports = {
   RaceToRuns,
   CompetitorTotalRuns,
   InningTotalHits,
-  InningMostHits
+  InningMostHits,
+  FirstTeamToScore,
+  LastTeamToScore
 }
