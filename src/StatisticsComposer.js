@@ -11,6 +11,8 @@ const {
   BetradarBasketEvent,
   BetradarBaseballEventTeam,
   BetradarBaseballEvent,
+  BetradarRugbyEventTeam,
+  BetradarRugbyEvent,
 } = require("./utils/utils");
 
 class StatisticsComposer {
@@ -512,6 +514,98 @@ class StatisticsComposer {
       })
       .reverse();
   };
+  ComposeEventsRugby = () => {
+    const eventsBuffer = [];
+
+    this.sources.forEach((source) => {
+      switch (source.source) {
+        case "bet365":
+          //TODO
+          break;
+        case "betradar":
+          source.data.events.forEach((event) => {
+            const player = BetradarRugbyEventTeam(event, source);
+            const eventData = BetradarRugbyEvent(event, player);
+
+            const bufferValue = eventsBuffer.find(
+              (event) => event.data === eventData
+            );
+
+            if (typeof bufferValue !== "undefined") {
+              //Event exist in buffer
+              if (bufferValue.confirmable) {
+                if (eventData.length > bufferValue.data.length) {
+                  bufferValue.data = eventData;
+                  bufferValue.confirmations++;
+                } else {
+                  bufferValue.confirmations++;
+                }
+              }
+            } else {
+              //Event is not in buffer
+              if (event.result) {
+                eventsBuffer.push({
+                  data: eventData,
+                  extra: event.result,
+                  timestamp: event.updated_uts,
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+              } else {
+                eventsBuffer.push({
+                  data: eventData,
+                  timestamp: event.updated_uts,
+                  confirmations: 1,
+                  confirmable: event.time > 0,
+                });
+              }
+            }
+          });
+      }
+    });
+
+    const result = [];
+
+    /*
+     * validity: 1 - Event was confirmed by all sources
+     * validuty: 2 - Event was confirmed by 50% sources
+     * validity: 3 - Event was confirmed by less then 50% sources
+     * */
+    eventsBuffer.forEach((event) => {
+      const validity = Validate(this.sources, event);
+      const info =
+        validity === 1
+          ? "Confirmed by all sources"
+          : validity === 2
+          ? "Confirmed by 50% sources"
+          : validity === 3
+          ? "Confirmed by less then 50% sources"
+          : "";
+      if (
+        typeof event.extra !== "undefined" &&
+        event.extra !== null &&
+        Object.keys(event.extra).length > 1
+      ) {
+        result.push({
+          text: event.data,
+          extra: event.extra || null,
+          timestamp: event.timestamp,
+          validity: validity,
+          info: info,
+        });
+      } else {
+        result.push({
+          text: event.data,
+          extra: null,
+          timestamp: event.timestamp,
+          validity: validity,
+          info: info,
+        });
+      }
+    });
+
+    return result;
+  };
 
   ComposeSoccer = () => {
     const result = {
@@ -981,6 +1075,60 @@ class StatisticsComposer {
     });
     return result;
   };
+  ComposeRugby = () => {
+    const result = {
+      sport_id: null,
+      time: null,
+      time_status: null,
+      home: {
+        name: null,
+      },
+      away: {
+        name: null,
+      },
+      result: null,
+      periods: null,
+      events: [],
+    };
+
+    this.sources.forEach((source) => {
+      switch (source.source) {
+        case "betradar":
+          const sport_id_ = source.data.match._sid.toString();
+          if (result.sport_id === null) {
+            result.sport_id = sport_id_;
+          } else {
+            if (result.sport_id !== sport_id_) {
+              result.sport_id = "not_defined";
+            }
+          }
+
+          //time status
+          if (source.data.match.result?.winner) {
+            result.time_status = "3";
+          } else {
+            result.time_status = "not_ended";
+          }
+
+          //time
+          result.time = source.data.match.time;
+          //result.time["_doc"];
+
+          //home
+          result.home.name = source.data.match.teams.home.name;
+          //away
+          result.away.name = source.data.match.teams.away.name;
+
+          //result
+          result.result = source.data.match.result;
+          //periods
+          result.periods = source.data.match.periods;
+          //events
+          result.events = this.ComposeEventsRugby();
+      }
+    });
+    return result;
+  };
 
   Compose = (sportID) => {
     switch (sportID) {
@@ -994,6 +1142,8 @@ class StatisticsComposer {
         return this.ComposeLikeBasketball();
       case 3:
         return this.ComposeBaseball();
+      case 12:
+        return this.ComposeRugby();
     }
   };
 }
