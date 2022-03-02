@@ -1,5 +1,45 @@
 const fs = require("fs");
 
+const editDistance = (s1, s2) => {
+  s1 = s1.toLowerCase();
+  s2 = s2.toLowerCase();
+
+  const costs = new Array();
+  for (let i = 0; i <= s1.length; i++) {
+    let lastValue = i;
+    for (let j = 0; j <= s2.length; j++) {
+      if (i === 0) costs[j] = j;
+      else {
+        if (j > 0) {
+          let newValue = costs[j - 1];
+          if (s1.charAt(i - 1) !== s2.charAt(j - 1))
+            newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+          costs[j - 1] = lastValue;
+          lastValue = newValue;
+        }
+      }
+    }
+    if (i > 0) costs[s2.length] = lastValue;
+  }
+  return costs[s2.length];
+};
+
+const similarity = (s1, s2) => {
+  let longer = s1;
+  let shorter = s2;
+  if (s1.length < s2.length) {
+    longer = s2;
+    shorter = s1;
+  }
+  let longerLength = longer.length;
+  if (longerLength === 0) {
+    return 1.0;
+  }
+  return (
+    (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)
+  );
+};
+
 const sports = new Map([
   ["1", "soccer"],
   ["2", "basketball"],
@@ -7,8 +47,9 @@ const sports = new Map([
   ["5", "tennis"],
   ["23", "volleyball"],
   ["3", "baseball"],
+  ["6", "cricket"],
 ]);
-const SPORT_ID = "3";
+const SPORT_ID = "6";
 try {
   const oddTypes = fs.readFileSync("./odd-types.json", "utf8");
   const markets = JSON.parse(
@@ -17,6 +58,24 @@ try {
       "utf8"
     )
   );
+
+  //automatic adding odd_types:
+  /*
+  markets.sport.forEach((market) => {
+    const marketName = market.market_name;
+    const numberOfOutcomes =
+      market.outcomes.split(",").length || market.Outcomes.split(",").length;
+
+    JSON.parse(oddTypes)[0].response[0].data.forEach((odd_market) => {
+      if (odd_market.outcomes) {
+        const similar = similarity(odd_market.name, marketName);
+        if (similar > 0.5) {
+          console.log(similar, marketName, odd_market.name);
+        }
+      }
+    });
+  });
+  */
 
   const newMarkets = [];
   const marketsWithoutOddTypes = [];
@@ -204,11 +263,11 @@ try {
 
       if (marketFormat.outcomes !== "not_available") {
         // filtering replicas
-        if (!marketsFormated.some(market => market.id === marketFormat.id)) {
+        if (!marketsFormated.some((market) => market.id === marketFormat.id)) {
           marketsFormated.push(marketFormat);
         }
       } else {
-        console.log(marketFormat);
+        //  console.log(marketFormat);
       }
     } else {
       const externalOutcomes = [];
@@ -256,7 +315,7 @@ try {
         //console.log(marketFormat.id);
         marketsFormated.push(marketFormat);
       } else {
-        console.log(marketFormat);
+        // console.log(marketFormat);
       }
     }
   });
@@ -267,7 +326,7 @@ try {
     "utf8",
     function (err) {
       if (err) {
-        console.log("An error occured while writing JSON Object to File.");
+        // console.log("An error occured while writing JSON Object to File.");
         return console.log(err);
       }
 
