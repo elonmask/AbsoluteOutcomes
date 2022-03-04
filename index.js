@@ -89,6 +89,13 @@ app.get("/statistics", (req, res) => {
             data: require("./json/baseball/timeline.json").doc[0].data,
           },
         ];
+      case 12:
+        return [
+          {
+            source: "betradar",
+            data: require("./json/rugby/timeline_1.json").doc[0].data,
+          },
+        ];
     }
   };
   const id = parseInt(req.query.sport_id);

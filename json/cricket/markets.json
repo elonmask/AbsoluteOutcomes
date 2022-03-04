@@ -1,0 +1,198 @@
+{
+  "sport": [
+    {
+      "live_id": "30154",
+      "market_name": "Match Winner 2-Way",
+      "outcomes": "Home,Away",
+      "Group ID": "1,2",
+      "Description": "победитель матча"
+    },
+    {
+      "live_id": "30143",
+      "market_name": "Runs off N Delivery, Y Over",
+      "Special market value": "Home,Away",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Description": "тотал очков (ранов)  за определенную подачу N в определенном овере"
+    },
+    {
+      "live_id": "30149",
+      "market_name": "N Over, Runs",
+      "Special market value": "Home,Away",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Description": "тотал очков набранные в определенном овере"
+    },
+    {
+      "live_id": "30150",
+      "market_name": "N Over, Runs Odd/Even",
+      "Special market value": "Home,Away",
+      "outcomes": "Odd,Even",
+      "Group ID": "1,2",
+      "Description": "очки набранные в определенном овере, чет/нечет"
+    },
+    {
+      "live_id": "30151",
+      "market_name": "N Over, Wicket",
+      "Special market value": "Home,Away",
+      "outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Description": "будут ли разрушенны калитки за N овер"
+    },
+    {
+      "live_id": "30122",
+      "market_name": "50 Overs Runs - 2-way",
+      "Special market value": "Home,Away",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Description": "тотал очков набранные за 50 оверов"
+    },
+    {
+      "live_id": "30123",
+      "market_name": "50 Overs Runs - 3-Way",
+      "Special market value": "Home,Away",
+      "outcomes": "Over X1,X-X1 Inclusive,Under X",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X,X1",
+      "Description": "тотал очков набранные за 50 оверов"
+    },
+    {
+      "live_id": "30171",
+      "market_name": "Runs in First N Overs",
+      "Special market value": "Home,Away",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Description": "кто первый наберет тотал очков за N оверов"
+    },
+    {
+      "live_id": "30142",
+      "market_name": "Method of Dismissal 6-Way",
+      "Special market value": "Home,Away",
+      "outcomes": "Caught (N wkt)LBW (N wkt)Bowled (N wkt)Run Out (N wkt)Stumped (N wkt)Others (N wkt)",
+      "Group ID": "1,2,3,4,5,6",
+      "Description": "метод вывода бетсмена из игры с указание N калитки: 1. мяч пойман в поле, 2. бетсмен поставил ногу перед мячом, 3. разрушение калитки во время подачи , 4. Бетсмен вышел за зону и его калитка была разрушена соперником, 5.  калитка разрушается уикет-кипером в то время как сам бэтсмен находится вне зоны и не пытается выполнить ран"
+    },
+    {
+      "live_id": "1747",
+      "market_name": "Dismissal Method",
+      "Special market value": "Home,Away",
+      "outcomes": "Caught (N wkt)Not Caught (N wkt)",
+      "Group ID": "1,2",
+      "Description": "Поймали ли мяч в воздухе после подачи или нет (вывод бетсмена)"
+    },
+    {
+      "live_id": "30126",
+      "market_name": "Top Batsman",
+      "Special market value": "Home,Away",
+      "outcomes": "Player",
+      "Group ID": "1"
+    },
+    {
+      "live_id": "30128",
+      "market_name": "Player N Runs 2-way",
+      "Special market value": "Player N, Over",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30129",
+      "market_name": "Player N Runs 3-way",
+      "Special market value": "Player N, Over",
+      "outcomes": "Over X1,X to X1 Inclusive,Under X",
+      "Group ID": "1,2,3",
+      "Special outcome value": "X,X1"
+    },
+    {
+      "live_id": "30132",
+      "market_name": "Player N to Score 50 or More",
+      "Special market value": "Player N, Over",
+      "outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30133",
+      "market_name": "Player N to Score 100 or More",
+      "Special market value": "Player N, Over",
+      "outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30157",
+      "market_name": "Player N Runs 2-way",
+      "Special market value": "Player N, Over",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30158",
+      "market_name": "Player N Runs 3-way",
+      "Special market value": "Player N,Over",
+      "outcomes": "Over X1,X to X1 Inclusive,Under X",
+      "Group ID": "1,2",
+      "Special outcome value": "X,X1"
+    },
+    {
+      "live_id": "30161",
+      "market_name": "Player N to Score 50 or More",
+      "Special market value": "Player N, Over",
+      "outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30162",
+      "market_name": "Player N to Score 100 or More",
+      "Special market value": "Player N, Over",
+      "outcomes": "Yes,No",
+      "Group ID": "1,2",
+      "Special outcome value": "X"
+    },
+    {
+      "live_id": "30137",
+      "market_name": "Runs at Fall of N Wicket - 2-way",
+      "Special market value": "Home,Away",
+      "outcomes": "Over,Under",
+      "Group ID": "1,2",
+      "Special outcome value": "X",
+      "Description": "Очки набранные от разрушения калитки и выхода бетсмена из игры. Номер калитки должен соответствовать"
+    },
+    {
+      "live_id": "30188",
+      "market_name": "Highest Opening Partnership",
+      "outcomes": "Home,Away,Tie",
+      "Group ID": "1,2,3",
+      "Description": "группа участников из одной команды, которая принесет своей команде большее количество очков"
+    },
+    {
+      "live_id": "30136",
+      "market_name": "To Score Most Runs",
+      "Special market value": "Players",
+      "outcomes": "Player N (v Player W)Player W (v Player N),Tie (Player N v Player W)",
+      "Group ID": "1,2,3",
+      "Description": "Кто из игроков одной команды в паре наберет большее количество очков"
+    },
+    {
+      "live_id": "30253",
+      "market_name": "To Score Most Runs - Group",
+      "Special market value": "Players",
+      "outcomes": "Player N (v Player W v Player Z)Player W (v Player N v Player N),Player Z (v Player N v Player W)",
+      "Group ID": "1,2,3",
+      "Description": "Кто из игроков одной команды в группе наберет большее количество очков"
+    },
+    {
+      "live_id": "30169",
+      "market_name": "Top Batsman",
+      "Special market value": "Home,Away",
+      "outcomes": "Player",
+      "Group ID": "1"
+    }
+  ]
+}

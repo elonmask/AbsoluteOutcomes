@@ -1,0 +1,2397 @@
+{
+  "sport_id": "12",
+  "time": {
+    "_doc": "time",
+    "time": "21:45",
+    "date": "03/12/21",
+    "tz": "EET",
+    "tzoffset": 7200,
+    "uts": 1638560700
+  },
+  "time_status": "3",
+  "home": {
+    "name": "Leinster"
+  },
+  "away": {
+    "name": "Connacht"
+  },
+  "result": {
+    "home": 47,
+    "away": 19,
+    "period": "nt",
+    "winner": "home"
+  },
+  "periods": {
+    "p1": {
+      "home": 19,
+      "away": 12
+    },
+    "ft": {
+      "home": 47,
+      "away": 19
+    }
+  },
+  "events": [
+    {
+      "text": "Players on pitch",
+      "extra": null,
+      "timestamp": 1638564263,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Started",
+      "extra": {
+        "home": 0,
+        "away": 0
+      },
+      "timestamp": 1638560704,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Matchtime",
+      "extra": null,
+      "timestamp": 1638567229,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Starts with possession",
+      "extra": null,
+      "timestamp": 1638560693,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "1st half",
+      "extra": null,
+      "timestamp": 1638560704,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop",
+      "extra": null,
+      "timestamp": 1638560704,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 1'",
+      "extra": null,
+      "timestamp": 1638560714,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 1'",
+      "extra": null,
+      "timestamp": 1638560732,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 2'",
+      "extra": null,
+      "timestamp": 1638560774,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 2'",
+      "extra": null,
+      "timestamp": 1638560780,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 2'",
+      "extra": null,
+      "timestamp": 1638560787,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 2'",
+      "extra": null,
+      "timestamp": 1638560793,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 2'",
+      "extra": null,
+      "timestamp": 1638560808,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 3'",
+      "extra": null,
+      "timestamp": 1638560826,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Leinster - 3'",
+      "extra": null,
+      "timestamp": 1638560868,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 4'",
+      "extra": null,
+      "timestamp": 1638560890,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 4'",
+      "extra": null,
+      "timestamp": 1638560896,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 4'",
+      "extra": null,
+      "timestamp": 1638560905,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum reset - Connacht - 5'",
+      "extra": null,
+      "timestamp": 1638560947,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 5'",
+      "extra": null,
+      "timestamp": 1638560980,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Freekick - Connacht - 5'",
+      "extra": null,
+      "timestamp": 1638560981,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Connacht - 5'",
+      "extra": null,
+      "timestamp": 1638560983,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 5'",
+      "extra": null,
+      "timestamp": 1638560988,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 6'",
+      "extra": null,
+      "timestamp": 1638561008,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 6'",
+      "extra": null,
+      "timestamp": 1638561044,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 6'",
+      "extra": null,
+      "timestamp": 1638561055,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 6'",
+      "extra": null,
+      "timestamp": 1638561059,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 6'",
+      "extra": null,
+      "timestamp": 1638561061,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 7'",
+      "extra": null,
+      "timestamp": 1638561068,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 7'",
+      "extra": null,
+      "timestamp": 1638561094,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 7'",
+      "extra": null,
+      "timestamp": 1638561098,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 7'",
+      "extra": null,
+      "timestamp": 1638561106,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 7'",
+      "extra": null,
+      "timestamp": 1638561111,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 8'",
+      "extra": null,
+      "timestamp": 1638561133,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 8'",
+      "extra": null,
+      "timestamp": 1638561141,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 8'",
+      "extra": null,
+      "timestamp": 1638561162,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 8'",
+      "extra": null,
+      "timestamp": 1638561174,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 9'",
+      "extra": null,
+      "timestamp": 1638561197,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 9'",
+      "extra": null,
+      "timestamp": 1638561202,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 10'",
+      "extra": null,
+      "timestamp": 1638561254,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 10'",
+      "extra": null,
+      "timestamp": 1638561264,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 10'",
+      "extra": null,
+      "timestamp": 1638561270,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 10'",
+      "extra": null,
+      "timestamp": 1638561288,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 11'",
+      "extra": null,
+      "timestamp": 1638561312,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 11'",
+      "extra": null,
+      "timestamp": 1638561364,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 12'",
+      "extra": null,
+      "timestamp": 1638561454,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 12'",
+      "extra": null,
+      "timestamp": 1638561459,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 12'",
+      "extra": null,
+      "timestamp": 1638561459,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 12'",
+      "extra": null,
+      "timestamp": 1638561490,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 12'",
+      "extra": null,
+      "timestamp": 1638561495,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 13'",
+      "extra": null,
+      "timestamp": 1638561518,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 13'",
+      "extra": null,
+      "timestamp": 1638561537,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 13'",
+      "extra": null,
+      "timestamp": 1638561554,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 13'",
+      "extra": null,
+      "timestamp": 1638561568,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 14'",
+      "extra": null,
+      "timestamp": 1638561587,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 14'",
+      "extra": null,
+      "timestamp": 1638561593,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Connacht - 14'",
+      "extra": null,
+      "timestamp": 1638561604,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Connacht - Hansen, Mack - 15'",
+      "extra": {
+        "home": 0,
+        "away": 5
+      },
+      "timestamp": 1638561650,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Connacht - 15'",
+      "extra": null,
+      "timestamp": 1638561650,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion missed - Connacht - 16'",
+      "extra": null,
+      "timestamp": 1638561710,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 16'",
+      "extra": null,
+      "timestamp": 1638561736,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 16'",
+      "extra": null,
+      "timestamp": 1638561741,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 16'",
+      "extra": null,
+      "timestamp": 1638561747,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 17'",
+      "extra": null,
+      "timestamp": 1638561754,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 17'",
+      "extra": null,
+      "timestamp": 1638561761,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 17'",
+      "extra": null,
+      "timestamp": 1638561766,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 17'",
+      "extra": null,
+      "timestamp": 1638561768,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 18'",
+      "extra": null,
+      "timestamp": 1638561809,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Leinster - 18'",
+      "extra": null,
+      "timestamp": 1638561880,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum reset - Leinster - 18'",
+      "extra": null,
+      "timestamp": 1638561885,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 19'",
+      "extra": null,
+      "timestamp": 1638561969,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 19'",
+      "extra": null,
+      "timestamp": 1638561973,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 20'",
+      "extra": null,
+      "timestamp": 1638561997,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 20'",
+      "extra": null,
+      "timestamp": 1638562007,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 20'",
+      "extra": null,
+      "timestamp": 1638562016,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Leinster - 20'",
+      "extra": null,
+      "timestamp": 1638562033,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 20'",
+      "extra": null,
+      "timestamp": 1638562046,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 21'",
+      "extra": null,
+      "timestamp": 1638562064,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 21'",
+      "extra": null,
+      "timestamp": 1638562070,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 21'",
+      "extra": null,
+      "timestamp": 1638562083,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 21'",
+      "extra": null,
+      "timestamp": 1638562095,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562122,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562128,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562131,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562138,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562152,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Leinster - 22'",
+      "extra": null,
+      "timestamp": 1638562165,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 23'",
+      "extra": null,
+      "timestamp": 1638562182,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Ruddock, Rhys - 23'",
+      "extra": {
+        "home": 5,
+        "away": 5
+      },
+      "timestamp": 1638562206,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 23'",
+      "extra": null,
+      "timestamp": 1638562206,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Harry - 24'",
+      "extra": {
+        "home": 7,
+        "away": 5
+      },
+      "timestamp": 1638562247,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 24'",
+      "extra": null,
+      "timestamp": 1638562247,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 24'",
+      "extra": null,
+      "timestamp": 1638562279,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 24'",
+      "extra": null,
+      "timestamp": 1638562290,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Television Match Official - Connacht - 25'",
+      "extra": null,
+      "timestamp": 1638562304,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 25'",
+      "extra": null,
+      "timestamp": 1638562304,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 25'",
+      "extra": null,
+      "timestamp": 1638562383,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 25'",
+      "extra": null,
+      "timestamp": 1638562495,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum reset - Connacht - 25'",
+      "extra": null,
+      "timestamp": 1638562497,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 26'",
+      "extra": null,
+      "timestamp": 1638562542,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 26'",
+      "extra": null,
+      "timestamp": 1638562549,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 26'",
+      "extra": null,
+      "timestamp": 1638562591,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 27'",
+      "extra": null,
+      "timestamp": 1638562610,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 27'",
+      "extra": null,
+      "timestamp": 1638562632,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 27'",
+      "extra": null,
+      "timestamp": 1638562759,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 27'",
+      "extra": null,
+      "timestamp": 1638562764,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Connacht - 27'",
+      "extra": null,
+      "timestamp": 1638562791,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 28'",
+      "extra": null,
+      "timestamp": 1638562825,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 28'",
+      "extra": null,
+      "timestamp": 1638562839,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 28'",
+      "extra": null,
+      "timestamp": 1638562843,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 28'",
+      "extra": null,
+      "timestamp": 1638562853,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 29'",
+      "extra": null,
+      "timestamp": 1638562866,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Connacht - Arnold, Sam - 29'",
+      "extra": {
+        "home": 7,
+        "away": 10
+      },
+      "timestamp": 1638562901,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Connacht - 29'",
+      "extra": null,
+      "timestamp": 1638562901,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Connacht - Carty, Jack - 30'",
+      "extra": {
+        "home": 7,
+        "away": 12
+      },
+      "timestamp": 1638562962,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Connacht - 30'",
+      "extra": null,
+      "timestamp": 1638562962,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 31'",
+      "extra": null,
+      "timestamp": 1638562999,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 31'",
+      "extra": null,
+      "timestamp": 1638563008,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 31'",
+      "extra": null,
+      "timestamp": 1638563017,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 31'",
+      "extra": null,
+      "timestamp": 1638563024,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 31'",
+      "extra": null,
+      "timestamp": 1638563031,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 32'",
+      "extra": null,
+      "timestamp": 1638563043,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 33'",
+      "extra": null,
+      "timestamp": 1638563096,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Ringrose, Garry - 34'",
+      "extra": {
+        "home": 12,
+        "away": 12
+      },
+      "timestamp": 1638563179,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 34'",
+      "extra": null,
+      "timestamp": 1638563179,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Harry - 34'",
+      "extra": {
+        "home": 14,
+        "away": 12
+      },
+      "timestamp": 1638563197,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 34'",
+      "extra": null,
+      "timestamp": 1638563197,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 35'",
+      "extra": null,
+      "timestamp": 1638563227,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 35'",
+      "extra": null,
+      "timestamp": 1638563230,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 35'",
+      "extra": null,
+      "timestamp": 1638563244,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 35'",
+      "extra": null,
+      "timestamp": 1638563248,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 36'",
+      "extra": null,
+      "timestamp": 1638563291,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 36'",
+      "extra": null,
+      "timestamp": 1638563298,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 36'",
+      "extra": null,
+      "timestamp": 1638563304,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 36'",
+      "extra": null,
+      "timestamp": 1638563330,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 37'",
+      "extra": null,
+      "timestamp": 1638563344,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 37'",
+      "extra": null,
+      "timestamp": 1638563364,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Leinster - 37'",
+      "extra": null,
+      "timestamp": 1638563367,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 37'",
+      "extra": null,
+      "timestamp": 1638563382,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 38'",
+      "extra": null,
+      "timestamp": 1638563409,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 38'",
+      "extra": null,
+      "timestamp": 1638563416,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 38'",
+      "extra": null,
+      "timestamp": 1638563424,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 39'",
+      "extra": null,
+      "timestamp": 1638563468,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 39'",
+      "extra": null,
+      "timestamp": 1638563478,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 39'",
+      "extra": null,
+      "timestamp": 1638563490,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 39'",
+      "extra": null,
+      "timestamp": 1638563502,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 39'",
+      "extra": null,
+      "timestamp": 1638563510,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 40'",
+      "extra": null,
+      "timestamp": 1638563526,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Sheehan, Dan - 40'",
+      "extra": {
+        "home": 19,
+        "away": 12
+      },
+      "timestamp": 1638563558,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 40'",
+      "extra": null,
+      "timestamp": 1638563558,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 40'",
+      "extra": null,
+      "timestamp": 1638564335,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 40'",
+      "extra": null,
+      "timestamp": 1638564345,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion missed - Leinster - 40'",
+      "extra": null,
+      "timestamp": 1638563617,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Halftime",
+      "extra": null,
+      "timestamp": 1638563622,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "2nd half",
+      "extra": null,
+      "timestamp": 1638564345,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Leinster - 41'",
+      "extra": null,
+      "timestamp": 1638564364,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 41'",
+      "extra": null,
+      "timestamp": 1638564396,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 42'",
+      "extra": null,
+      "timestamp": 1638564409,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 42'",
+      "extra": null,
+      "timestamp": 1638564429,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Larmour, Jordan - 42'",
+      "extra": {
+        "home": 24,
+        "away": 12
+      },
+      "timestamp": 1638564456,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 42'",
+      "extra": null,
+      "timestamp": 1638564456,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Harry - 43'",
+      "extra": {
+        "home": 26,
+        "away": 12
+      },
+      "timestamp": 1638564508,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 43'",
+      "extra": null,
+      "timestamp": 1638564508,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 44'",
+      "extra": null,
+      "timestamp": 1638564537,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 44'",
+      "extra": null,
+      "timestamp": 1638564547,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 45'",
+      "extra": null,
+      "timestamp": 1638564603,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 45'",
+      "extra": null,
+      "timestamp": 1638564610,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 45'",
+      "extra": null,
+      "timestamp": 1638564645,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 45'",
+      "extra": null,
+      "timestamp": 1638564658,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 45'",
+      "extra": null,
+      "timestamp": 1638564662,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 46'",
+      "extra": null,
+      "timestamp": 1638564673,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 46'",
+      "extra": null,
+      "timestamp": 1638564694,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 46'",
+      "extra": null,
+      "timestamp": 1638564759,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 46'",
+      "extra": null,
+      "timestamp": 1638564782,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 46'",
+      "extra": null,
+      "timestamp": 1638564790,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Freekick - Leinster - 46'",
+      "extra": null,
+      "timestamp": 1638564790,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Leinster - 46'",
+      "extra": null,
+      "timestamp": 1638564794,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 46'",
+      "extra": null,
+      "timestamp": 1638564803,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 47'",
+      "extra": null,
+      "timestamp": 1638564823,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 47'",
+      "extra": null,
+      "timestamp": 1638564869,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 47'",
+      "extra": null,
+      "timestamp": 1638564869,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 48'",
+      "extra": null,
+      "timestamp": 1638564891,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 48'",
+      "extra": null,
+      "timestamp": 1638564897,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 48'",
+      "extra": null,
+      "timestamp": 1638564915,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 49'",
+      "extra": null,
+      "timestamp": 1638564939,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 49'",
+      "extra": null,
+      "timestamp": 1638564951,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Leinster - 49'",
+      "extra": null,
+      "timestamp": 1638564978,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 50'",
+      "extra": null,
+      "timestamp": 1638564992,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Doris, Caelan - 50'",
+      "extra": {
+        "home": 31,
+        "away": 12
+      },
+      "timestamp": 1638565005,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 50'",
+      "extra": null,
+      "timestamp": 1638565005,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Harry - 50'",
+      "extra": {
+        "home": 33,
+        "away": 12
+      },
+      "timestamp": 1638565029,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 50'",
+      "extra": null,
+      "timestamp": 1638565029,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 51'",
+      "extra": null,
+      "timestamp": 1638565054,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 51'",
+      "extra": null,
+      "timestamp": 1638565071,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 51'",
+      "extra": null,
+      "timestamp": 1638565080,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 51'",
+      "extra": null,
+      "timestamp": 1638565086,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 52'",
+      "extra": null,
+      "timestamp": 1638565128,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 52'",
+      "extra": null,
+      "timestamp": 1638565135,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum reset - Connacht - 53'",
+      "extra": null,
+      "timestamp": 1638565177,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 54'",
+      "extra": null,
+      "timestamp": 1638565254,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Freekick - Connacht - 54'",
+      "extra": null,
+      "timestamp": 1638565255,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Connacht - 54'",
+      "extra": null,
+      "timestamp": 1638565257,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 54'",
+      "extra": null,
+      "timestamp": 1638565263,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 55'",
+      "extra": null,
+      "timestamp": 1638565303,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 55'",
+      "extra": null,
+      "timestamp": 1638565318,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 55'",
+      "extra": null,
+      "timestamp": 1638565332,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 55'",
+      "extra": null,
+      "timestamp": 1638565342,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 55'",
+      "extra": null,
+      "timestamp": 1638565350,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 55'",
+      "extra": null,
+      "timestamp": 1638565366,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 55'",
+      "extra": null,
+      "timestamp": 1638565378,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Connacht - 56'",
+      "extra": null,
+      "timestamp": 1638565397,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 56'",
+      "extra": null,
+      "timestamp": 1638565402,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565444,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 57'",
+      "extra": null,
+      "timestamp": 1638565450,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565484,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565508,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565512,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 57'",
+      "extra": null,
+      "timestamp": 1638565530,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565533,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565536,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Leinster - 57'",
+      "extra": null,
+      "timestamp": 1638565551,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 58'",
+      "extra": null,
+      "timestamp": 1638565559,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 58'",
+      "extra": null,
+      "timestamp": 1638565592,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 58'",
+      "extra": null,
+      "timestamp": 1638565601,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 58'",
+      "extra": null,
+      "timestamp": 1638565609,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 59'",
+      "extra": null,
+      "timestamp": 1638565631,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 59'",
+      "extra": null,
+      "timestamp": 1638565633,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Television Match Official - Leinster - 59'",
+      "extra": null,
+      "timestamp": 1638565643,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 59'",
+      "extra": null,
+      "timestamp": 1638565644,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Baird, Ryan - 59'",
+      "extra": {
+        "home": 38,
+        "away": 12
+      },
+      "timestamp": 1638566942,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 59'",
+      "extra": null,
+      "timestamp": 1638565788,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Harry - 59'",
+      "extra": {
+        "home": 40,
+        "away": 12
+      },
+      "timestamp": 1638565796,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 59'",
+      "extra": null,
+      "timestamp": 1638565796,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 60'",
+      "extra": null,
+      "timestamp": 1638565804,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 60'",
+      "extra": null,
+      "timestamp": 1638565808,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 60'",
+      "extra": null,
+      "timestamp": 1638565812,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 60'",
+      "extra": null,
+      "timestamp": 1638565820,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 60'",
+      "extra": null,
+      "timestamp": 1638565843,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565862,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565879,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565899,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565903,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 61'",
+      "extra": null,
+      "timestamp": 1638565908,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 61'",
+      "extra": null,
+      "timestamp": 1638565923,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565942,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565944,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Connacht - Oliver, Conor - 61'",
+      "extra": {
+        "home": 40,
+        "away": 17
+      },
+      "timestamp": 1638565950,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Connacht - 61'",
+      "extra": null,
+      "timestamp": 1638565950,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Connacht - Carty, Jack - 62'",
+      "extra": {
+        "home": 40,
+        "away": 19
+      },
+      "timestamp": 1638565988,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Connacht - 62'",
+      "extra": null,
+      "timestamp": 1638565988,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 63'",
+      "extra": null,
+      "timestamp": 1638566021,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 63'",
+      "extra": null,
+      "timestamp": 1638566026,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 63'",
+      "extra": null,
+      "timestamp": 1638566071,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 64'",
+      "extra": null,
+      "timestamp": 1638566082,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 64'",
+      "extra": null,
+      "timestamp": 1638566099,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 64'",
+      "extra": null,
+      "timestamp": 1638566104,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 64'",
+      "extra": null,
+      "timestamp": 1638566116,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 64'",
+      "extra": null,
+      "timestamp": 1638566121,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 65'",
+      "extra": null,
+      "timestamp": 1638566154,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Leinster - 65'",
+      "extra": null,
+      "timestamp": 1638566200,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Leinster - 66'",
+      "extra": null,
+      "timestamp": 1638566219,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Leinster - 66'",
+      "extra": null,
+      "timestamp": 1638566223,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Leinster - 66'",
+      "extra": null,
+      "timestamp": 1638566235,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Leinster - 66'",
+      "extra": null,
+      "timestamp": 1638566241,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 66'",
+      "extra": null,
+      "timestamp": 1638566246,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 67'",
+      "extra": null,
+      "timestamp": 1638566270,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 67'",
+      "extra": null,
+      "timestamp": 1638566277,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 67'",
+      "extra": null,
+      "timestamp": 1638566382,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 67'",
+      "extra": null,
+      "timestamp": 1638566389,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 67'",
+      "extra": null,
+      "timestamp": 1638566391,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 67'",
+      "extra": null,
+      "timestamp": 1638566397,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 68'",
+      "extra": null,
+      "timestamp": 1638566409,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 68'",
+      "extra": null,
+      "timestamp": 1638566419,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 68'",
+      "extra": null,
+      "timestamp": 1638566422,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 68'",
+      "extra": null,
+      "timestamp": 1638566367,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 68'",
+      "extra": null,
+      "timestamp": 1638566449,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 69'",
+      "extra": null,
+      "timestamp": 1638566473,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 69'",
+      "extra": null,
+      "timestamp": 1638566515,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Connacht - 69'",
+      "extra": null,
+      "timestamp": 1638566534,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum reset - Connacht - 69'",
+      "extra": null,
+      "timestamp": 1638566548,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Connacht - 70'",
+      "extra": null,
+      "timestamp": 1638566583,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 70'",
+      "extra": null,
+      "timestamp": 1638566583,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 70'",
+      "extra": null,
+      "timestamp": 1638566592,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 70'",
+      "extra": null,
+      "timestamp": 1638566602,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Replacement - Connacht - 70'",
+      "extra": null,
+      "timestamp": 1638566623,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 71'",
+      "extra": null,
+      "timestamp": 1638566632,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 71'",
+      "extra": null,
+      "timestamp": 1638566638,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 71'",
+      "extra": null,
+      "timestamp": 1638566648,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 71'",
+      "extra": null,
+      "timestamp": 1638566664,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 71'",
+      "extra": null,
+      "timestamp": 1638566673,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 72'",
+      "extra": null,
+      "timestamp": 1638566686,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 72'",
+      "extra": null,
+      "timestamp": 1638566704,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 72'",
+      "extra": null,
+      "timestamp": 1638566723,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum awarded - Leinster - 72'",
+      "extra": null,
+      "timestamp": 1638566728,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Scrum won - Leinster - 73'",
+      "extra": null,
+      "timestamp": 1638566783,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Deegan, Max - 74'",
+      "extra": {
+        "home": 45,
+        "away": 19
+      },
+      "timestamp": 1638566812,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Try - Leinster - 74'",
+      "extra": null,
+      "timestamp": 1638566812,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Goal - Leinster - Byrne, Ross - 75'",
+      "extra": {
+        "home": 47,
+        "away": 19
+      },
+      "timestamp": 1638566903,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Conversion - Leinster - 75'",
+      "extra": null,
+      "timestamp": 1638566890,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Connacht - 75'",
+      "extra": null,
+      "timestamp": 1638566914,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Leinster - 75'",
+      "extra": null,
+      "timestamp": 1638566923,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 76'",
+      "extra": null,
+      "timestamp": 1638566932,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 76'",
+      "extra": null,
+      "timestamp": 1638566959,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 76'",
+      "extra": null,
+      "timestamp": 1638566970,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 77'",
+      "extra": null,
+      "timestamp": 1638566993,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 77'",
+      "extra": null,
+      "timestamp": 1638567012,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball kicked downfield - Leinster - 77'",
+      "extra": null,
+      "timestamp": 1638567017,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 78'",
+      "extra": null,
+      "timestamp": 1638567051,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 78'",
+      "extra": null,
+      "timestamp": 1638567056,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 78'",
+      "extra": null,
+      "timestamp": 1638567071,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 78'",
+      "extra": null,
+      "timestamp": 1638567087,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 78'",
+      "extra": null,
+      "timestamp": 1638567092,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Connacht - 79'",
+      "extra": null,
+      "timestamp": 1638567107,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 79'",
+      "extra": null,
+      "timestamp": 1638567118,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Kick to touch - Connacht - 79'",
+      "extra": null,
+      "timestamp": 1638567130,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout awarded - Connacht - 79'",
+      "extra": null,
+      "timestamp": 1638567146,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Lineout won - Connacht - 79'",
+      "extra": null,
+      "timestamp": 1638567160,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball recycled - Connacht - 80'",
+      "extra": null,
+      "timestamp": 1638567173,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty advantage - Connacht - 80'",
+      "extra": null,
+      "timestamp": 1638567215,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "matchsituation - Leinster - 80'",
+      "extra": null,
+      "timestamp": 1638567258,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Pitch coordinates",
+      "extra": null,
+      "timestamp": 1638567258,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Penalty Awarded - Connacht - 80'",
+      "extra": null,
+      "timestamp": 1638567229,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Tap and go - Connacht - 80'",
+      "extra": null,
+      "timestamp": 1638567239,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Turnover - Leinster - 80'",
+      "extra": null,
+      "timestamp": 1638567258,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Ball possession - Leinster - 80'",
+      "extra": null,
+      "timestamp": 1638567258,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Time start/stop - 80'",
+      "extra": null,
+      "timestamp": 1638567265,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Full Time",
+      "extra": {
+        "home": 47,
+        "away": 19,
+        "winner": "home"
+      },
+      "timestamp": 1638567266,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    },
+    {
+      "text": "Match end",
+      "extra": {
+        "home": 47,
+        "away": 19,
+        "winner": "home"
+      },
+      "timestamp": 1638567266,
+      "validity": 1,
+      "info": "Confirmed by all sources"
+    }
+  ]
+}
