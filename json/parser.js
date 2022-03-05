@@ -267,7 +267,7 @@ try {
           marketsFormated.push(marketFormat);
         }
       } else {
-        //  console.log(marketFormat);
+        // console.log(marketFormat);
       }
     } else {
       const externalOutcomes = [];
@@ -307,6 +307,7 @@ try {
         delete marketFormat.externalIds;
       }
 
+      console.log(`market`, marketFormat);
       if (
         marketFormat.outcomes !== "not_available" &&
         marketFormat.id !== null &&
