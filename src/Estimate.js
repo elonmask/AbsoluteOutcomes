@@ -591,6 +591,10 @@ class Estimate {
       case "237001":
         RunsHandicap(this.statistics, market);
         break;
+      /* Cricket */
+      case "":
+        
+        break;
       default:
         console.log(`Market with outcome id ${outcomeID} undefined.`);
     }
